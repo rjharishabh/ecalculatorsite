@@ -3,12 +3,14 @@
 }
 
 body{
-  background: url('../imgs/background.jpg') no-repeat fixed center #5DADE2;
+  /* background: url('../imgs/background-2.jpg') no-repeat fixed center ; */
+  background-color: green;
 }
-
+/* .container{
+  background:url('../imgs/background.jpg') no-repeat fixed center #5DADE2;
+} */
 .jumbotron{
   background-color:#90D1FC;
-  height:20px;
 }
 
 .logo{
@@ -19,4 +21,21 @@ body{
 .logo:hover{
   text-decoration: none;
   color: red;
+}
+.container:nth-child(2){
+  /* background: url('../imgs/background.jpg') no-repeat fixed center; */
+  background-color: skyblue;
+}
+.f-img{
+  width: 100%;
+}
+.k{
+  position: fixed;
+  top: 2vw;
+  left:2px;
+}
+.g{
+  position: fixed;
+  top: 2vw;
+  right:2px;
 }
