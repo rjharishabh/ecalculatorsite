@@ -4,14 +4,14 @@
 
 body{
   /* background: url('../imgs/background-2.jpg') no-repeat fixed center ; */
-  background-color: green;
+
+  background-color: #DCF5EB;
+
 }
 /* .container{
   background:url('../imgs/background.jpg') no-repeat fixed center #5DADE2;
 } */
-.jumbotron{
-  background-color:#90D1FC;
-}
+
 
 .logo{
   color: floralwhite;
@@ -22,20 +22,54 @@ body{
   text-decoration: none;
   color: red;
 }
-.container:nth-child(2){
+.container{
   /* background: url('../imgs/background.jpg') no-repeat fixed center; */
-  background-color: skyblue;
+  background-color: #ECE8F4;
 }
-.f-img{
-  width: 100%;
+.nav-link{
+  font-size: 20px;
 }
-.k{
-  position: fixed;
-  top: 2vw;
-  left:2px;
+.row a{
+  color: #9066F0;
+  transition: color 1s linear;
 }
-.g{
-  position: fixed;
-  top: 2vw;
-  right:2px;
+
+.row a:hover{
+  color:red;
+  text-decoration:none;
+}
+.shape-heading{
+  font-size: 200%;
+  color: #7D3C98;
+  text-align: center;
+  font-weight: bold;
+
+}
+.row li{
+  font-size: 120%;
+
+    text-align: center;
+}
+
+h1{
+color:#3A7DF7;
+font-size: 50px;
+animation: color-change 3s infinite alternate;
+}
+@keyframes color-change {
+  from{
+    color:#5DADE2;
+  }
+  to{
+    color:#CB4335;
+  }
+}
+
+.col-form-label, .form-control-plaintext{
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.reset-btn{
+margin-bottom: 10px;
 }
