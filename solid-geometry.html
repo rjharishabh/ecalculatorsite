@@ -5,6 +5,11 @@
     <title>Solid Geometry</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+<style media="screen">
+li.solid-geometry:hover div{
+    display:block;
+  }
+</style>
   </head>
   <body>
 
@@ -20,7 +25,19 @@
    <ul class="navbar-nav ml-auto text-monospace">
      <li class="nav-item active"><a href="#" class="nav-link">Home</a> </li>
      <li class="nav-item"> <a href="#" class="nav-link">Statistics</a></li>
-     <li class="nav-item"> <a href="solid-geometry.html" class="nav-link" >Solid Geometry</a></li>
+     <li class="nav-item  solid-geometry dropdown">
+       <a href="solid-geometry.html" class="nav-link" id="solidDropdown" role="button" data-toggle="dropdown">Solid Geometry</a>
+ <div   class="dropdown-menu bg-warning" aria-labelledby="solidDropdown">
+   <a href="cube.html" class="dropdown-item">Cube</a>
+   <a href="cuboid.html" class="dropdown-item">Cuboid</a>
+   <a href="cylinder.html" class="dropdown-item">Cylinder</a>
+   <a href="cylinder.html" class="dropdown-item">Cone</a>
+   <a href="sphere.html" class="dropdown-item">Sphere</a>
+   <a href="hemisphere.html" class="dropdown-item">Hemisphere</a>
+   <a href="frustum.html" class="dropdown-item">Frustum</a>
+   <a href="euler.html" class="dropdown-item">Euler's Formula</a>
+ </div>
+     </li>
    </ul>
  </div>
   </nav>
@@ -43,7 +60,7 @@
   </div>
 
 <div class=" col-6 col-md-4">
-  <a href="#">
+  <a href="cuboid.html">
   <div class="shape-heading">Cuboid</div>
   <ul class="list-unstyled">
     <li>Volume of Cuboid</li>
@@ -63,7 +80,7 @@
 <hr>
 <div class="row">
   <div class="col-6 col-md-4">
-    <a href="#">
+    <a href="cylinder.html">
   <div class="shape-heading">Cylinder</div>
   <ul class="list-unstyled">
     <li>Volume of Cube</li>
@@ -75,7 +92,7 @@
     </div>
 
   <div class=" col-6 col-md-4">
-    <a href="#">
+    <a href="cone.html">
     <div class="shape-heading">Cone</div>
     <ul class="list-unstyled">
       <li>Volume of Cuboid</li>
@@ -94,7 +111,7 @@
 
 <div class="row">
   <div class="col-6 col-md-4">
-    <a href="#">
+    <a href="sphere.html">
   <div class="shape-heading">Sphere</div>
   <ul class="list-unstyled">
     <li>Volume of Cube</li>
@@ -106,7 +123,7 @@
     </div>
 
   <div class=" col-6 col-md-4">
-    <a href="#">
+    <a href="hemisphere.html">
     <div class="shape-heading">Hemisphere</div>
     <ul class="list-unstyled">
       <li>Volume of Cuboid</li>
@@ -122,43 +139,11 @@
     </div>
 </div>
     <hr>
-    <div class="row">
-
-
-      <div class=" col-6 col-md-4">
-        <a href="#">
-        <div class="shape-heading">Prism</div>
-        <ul class="list-unstyled">
-          <li>Volume of Cuboid</li>
-          <li>Total Surface Area</li>
-          <li>Curved Surface Area</li>
-          <li>Length of diagonal</li>
-        </ul>
-        </a>
-          </div>
-
-          <div class=" col-6 col-md-4">
-            <a href="#">
-            <div class="shape-heading">Pyramid</div>
-            <ul class="list-unstyled">
-              <li>Volume of Cuboid</li>
-              <li>Total Surface Area</li>
-              <li>Curved Surface Area</li>
-              <li>Length of diagonal</li>
-            </ul>
-            </a>
-              </div>
-
-        <div class="ads d-none d-md-block  col-md-4">
-
-        </div>
-</div>
-<hr>
 
 <div class="row">
   <div class="col-6 col-md-4">
-<a href="#">
-  <div class="shape-heading">Frustum</div>
+<a href="frustum.html">
+  <div class="shape-heading">Frustum of Cone</div>
   <ul class="list-unstyled">
     <li>Volume of Cube</li>
     <li>Total Surface Area</li>
@@ -169,7 +154,7 @@
     </div>
 
     <div class=" col-6 col-md-4">
-      <a href="#">
+      <a href="euler.html">
     <div class="shape-heading">Euler's Formula</div>
     <ul class="list-unstyled">
       <li>No. of Edges</li>
