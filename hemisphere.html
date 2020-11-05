@@ -5,10 +5,8 @@
     <title>Solid Geometry</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
   </head>
   <body>
-
 
   <div class="container">
 
@@ -19,7 +17,7 @@
  </button>
  <div class="collapse navbar-collapse " id="navbar">
    <ul class="navbar-nav ml-auto text-monospace">
-     <li class="nav-item active"><a href="#" class="nav-link">Home</a> </li>
+     <li class="nav-item active"><a href="#" class="nav-link text-danger">Home</a> </li>
      <li class="nav-item"> <a href="#" class="nav-link">Statistics</a></li>
      <li class="nav-item"> <a href="solid-geometry.html" class="nav-link" >Solid Geometry</a></li>
    </ul>
@@ -27,17 +25,17 @@
   </nav>
 
 <main class="container">
-<h1 class=" text-monospace">Hemisphere Calculator</h1>
+<center><h1 class=" text-monospace">Hemisphere Calculator</h1></center>
 <div class="row">
-<div class=" col-md-8 offset-md-1">
+<div class="col-12 col-lg-10 col-xl-8">
   <form>
     <center><button type="button" class="reset-btn btn btn-danger" onclick="reset()" name="button">Reset</button></center>
   <div class="form-group row">
-    <label for="r-hs" class="col-sm-2 col-form-label col-md-4">Radius of Hemisphere</label>
-    <div class="col-sm-8 col-md-4">
+    <label for="r-hs" class="col-form-label col-12 col-md-5 col-lg-5">Radius of Hemisphere</label>
+    <div class="col-8 col-md-4 col-lg-5">
       <input type="text"  class="form-control" onblur="elc()" id="r-hs" >
     </div>
-    <div class="col-2 col-md-2">
+    <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="units">
    </div>
   </div>
@@ -45,31 +43,31 @@
 
 
   <div class="form-group row">
-    <label for="vol-hs" class="col-sm-2 col-form-label col-md-4">Volume of Hemisphere </label>
-    <div class="col-sm-10 col-md-4">
+    <label for="vol-hs" class=" col-form-label col-12 col-md-5 col-lg-5">Volume of Hemisphere </label>
+    <div class="col-8 col-md-4 col-lg-5">
       <input type="text" class="form-control" onblur="volc()" id="vol-hs">
     </div>
-    <div class="col-sm-10 col-md-2">
+    <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="cubic units">
    </div>
   </div>
 
   <div class="form-group row">
-    <label for="tsa-hs" class="col-sm-2 col-form-label col-md-4">Total Surface Area of Sphere</label>
-    <div class="col-sm-10 col-md-4">
-      <input type="text" class="form-control" onblur="lsac()" id="tsa-s">
+    <label for="tsa-hs" class="col-form-label col-12 col-md-5 col-lg-5">Total Surface Area of Hemisphere</label>
+    <div class="col-8 col-md-4 col-lg-5">
+      <input type="text" class="form-control" onblur="lsac()" id="tsa-hs">
     </div>
-    <div class="col-sm-10 col-md-2">
+    <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="square units">
    </div>
   </div>
 
   <div class="form-group row">
-    <label for="csa-hs" class="col-sm-2 col-form-label col-md-4">Curved Surface Area of Sphere</label>
-    <div class="col-sm-10 col-md-4">
-      <input type="text" class="form-control" onblur="lsac()" id="csa-s">
+    <label for="csa-hs" class=" col-form-label col-12 col-md-5 col-lg-5">Curved Surface Area of Hemisphere</label>
+    <div class="col-8 col-md-4 col-lg-5">
+      <input type="text" class="form-control" onblur="lsac()" id="csa-hs">
     </div>
-    <div class="col-sm-10 col-md-2">
+    <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="square units">
    </div>
   </div>
@@ -78,7 +76,8 @@
 
 </form>
 </div>
-<!-- <div class="col-md-2 ads offset-md-1">
+
+<!-- <div class="col-lg-4">
 </div> -->
 
 </div>
@@ -90,7 +89,6 @@
 
 </div>
 </footer>
-
 </div>
 
 
