@@ -2,14 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cube Calculator</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hemisphere Calculator</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body>
-
 
   <div class="container">
 
@@ -20,7 +18,7 @@
  </button>
  <div class="collapse navbar-collapse " id="navbar">
    <ul class="navbar-nav ml-auto text-monospace">
-     <li class="nav-item active"><a href="#" class="nav-link">Home</a> </li>
+     <li class="nav-item active"><a href="#" class="nav-link text-danger">Home</a> </li>
      <li class="nav-item"> <a href="#" class="nav-link">Statistics</a></li>
      <li class="nav-item"> <a href="solid-geometry.html" class="nav-link" >Solid Geometry</a></li>
    </ul>
@@ -28,14 +26,14 @@
   </nav>
 
 <main class="container">
-<center><h1 class="text-monospace">Cube Calculator</h1></center>
+<center><h1 class=" text-monospace">Hemisphere Calculator</h1></center>
 <div class="row">
 <div class="col-12 col-lg-10 col-xl-8">
   <form>
-      <div class="form-group row">
-    <label for="el-c" class="col-form-label col-12 col-md-5 col-lg-5">Edge length of Cube </label>
+    <div class="form-group row">
+    <label for="r-hs" class="col-form-label col-12 col-md-5 col-lg-5">Radius of Hemisphere</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text"  class="form-control" onblur="elc()" id="el-c" >
+      <input type="text"  class="form-control" onblur="elc()" id="r-hs" >
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="units">
@@ -54,27 +52,19 @@
 
 <form>
   <div class="form-group row">
-    <label for="vol-c" class="col-form-label col-12 col-md-5 col-lg-5">Volume of Cube </label>
+    <label for="vol-hs" class=" col-form-label col-12 col-md-5 col-lg-5">Volume of Hemisphere </label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="volc()" id="vol-c">
+      <input type="text" readonly class="form-control" onblur="volc()" id="vol-hs">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="cubic units">
    </div>
   </div>
+
   <div class="form-group row">
-    <label for="tsa-c" class="col-form-label col-12 col-md-5 col-lg-5">Total Surface Area of Cube </label>
+    <label for="tsa-hs" class="col-form-label col-12 col-md-5 col-lg-5">Total Surface Area of Hemisphere</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="tsac()" id="tsa-c">
-    </div>
-    <div class="col-4 col-md-3 col-lg-2">
-     <input type="text" readonly class="form-control-plaintext" value="square units">
-   </div>
-  </div>
-  <div class="form-group row">
-    <label for="lsa-c" class="col-form-label col-12 col-md-5 col-lg-5">Lateral Surface Area of Cube</label>
-    <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly  class="form-control" onblur="lsac()" id="lsa-c">
+      <input type="text" readonly class="form-control" onblur="lsac()" id="tsa-hs">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="square units">
@@ -82,12 +72,12 @@
   </div>
 
   <div class="form-group row">
-    <label for="lod-c" class="col-form-label col-12 col-md-5 col-lg-5">Length of Space Diagonal of Cube</label>
+    <label for="csa-hs" class=" col-form-label col-12 col-md-5 col-lg-5">Curved Surface Area of Hemisphere</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="lodc()" id="lod-c">
+      <input type="text" readonly class="form-control" onblur="lsac()" id="csa-hs">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
-     <input type="text" readonly class="form-control-plaintext" value="units">
+     <input type="text" readonly class="form-control-plaintext" value="square units">
    </div>
   </div>
 
@@ -106,7 +96,6 @@
 
 </div>
 </footer>
-
 </div>
 
 

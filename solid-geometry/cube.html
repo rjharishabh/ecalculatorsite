@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cuboid Calculator</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cube Calculator</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
   </head>
   <body>
@@ -28,34 +28,14 @@
   </nav>
 
 <main class="container">
-<center><h1 class=" text-monospace">Cuboid Calculator</h1></center>
+<center><h1 class="text-monospace">Cube Calculator</h1></center>
 <div class="row">
 <div class="col-12 col-lg-10 col-xl-8">
   <form>
-    <div class="form-group row">
-    <label for="l-cd" class="col-form-label col-12 col-md-5 col-lg-5">Length of Cuboid </label>
+      <div class="form-group row">
+    <label for="el-c" class="col-form-label col-12 col-md-5 col-lg-5">Edge length of Cube </label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text"  class="form-control" onblur="cd()" id="l-cd" >
-    </div>
-    <div class="col-4 col-md-3 col-lg-2">
-     <input type="text" readonly class="form-control-plaintext" value="units">
-   </div>
-  </div>
-
-  <div class="form-group row">
-    <label for="b-cd" class="col-form-label col-12 col-md-5 col-lg-5">Breadth of Cuboid </label>
-    <div class="col-8 col-md-4 col-lg-5">
-      <input type="text"  class="form-control" onblur="cd()" id="b-cd" >
-    </div>
-    <div class="col-4 col-md-3 col-lg-2">
-     <input type="text" readonly class="form-control-plaintext" value="units">
-   </div>
-  </div>
-
-  <div class="form-group row">
-    <label for="h-cd" class="col-form-label col-12 col-md-5 col-lg-5">Height of Cuboid </label>
-    <div class="col-8 col-md-4 col-lg-5">
-      <input type="text"  class="form-control" onblur="cd()" id="h-cd" >
+      <input type="text"  class="form-control" onblur="elc()" id="el-c" >
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="units">
@@ -74,27 +54,27 @@
 
 <form>
   <div class="form-group row">
-    <label for="vol-cd" class="col-form-label col-12 col-md-5 col-lg-5">Volume of Cuboid </label>
+    <label for="vol-c" class="col-form-label col-12 col-md-5 col-lg-5">Volume of Cube </label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="console.log(value)" id="vol-cd">
+      <input type="text" readonly class="form-control" onblur="volc()" id="vol-c">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="cubic units">
    </div>
   </div>
   <div class="form-group row">
-    <label for="tsa-cd" class="col-form-label col-12 col-md-5 col-lg-5">Total Surface Area of Cuboid </label>
+    <label for="tsa-c" class="col-form-label col-12 col-md-5 col-lg-5">Total Surface Area of Cube </label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="cd()" id="tsa-cd">
+      <input type="text" readonly class="form-control" onblur="tsac()" id="tsa-c">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="square units">
    </div>
   </div>
   <div class="form-group row">
-    <label for="lsa-cd" class="col-form-label col-12 col-md-5 col-lg-5">Lateral Surface Area of Cuboid</label>
+    <label for="lsa-c" class="col-form-label col-12 col-md-5 col-lg-5">Lateral Surface Area of Cube</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="cd()" id="lsa-cd">
+      <input type="text" readonly  class="form-control" onblur="lsac()" id="lsa-c">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="square units">
@@ -102,9 +82,9 @@
   </div>
 
   <div class="form-group row">
-    <label for="lod-cd" class="col-form-label col-12 col-md-5 col-lg-5">Length of Space Diagonal of Cuboid</label>
+    <label for="lod-c" class="col-form-label col-12 col-md-5 col-lg-5">Length of Space Diagonal of Cube</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="cd()" id="lod-cd">
+      <input type="text" readonly class="form-control" onblur="lodc()" id="lod-c">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="units">
@@ -113,6 +93,7 @@
 
 </form>
 </div>
+
 <!-- <div class="col-lg-4">
 </div> -->
 
@@ -136,7 +117,7 @@
 
 
 
-<script src="js/cuboid.js" charset="utf-8"></script>
+<script src="js/cube.js" charset="utf-8"></script>
     <!-- Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>

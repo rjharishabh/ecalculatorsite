@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Euler's Formula Calculator</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
   </head>
   <body>
@@ -29,10 +29,10 @@
 
 <main class="container">
 <center><h1 class=" text-monospace">Euler's Formula Calculator</h1></center>
+
 <div class="row">
 <div class="col-12 col-lg-6">
   <form>
-    <center><button type="button" class="reset-btn btn btn-danger" onclick="reset()" name="button">Reset</button></center>
   <div class="form-group row">
     <label for="v-e" class="col-form-label col-6">No. of Vertices in Solid</label>
     <div class="col-6">
@@ -53,15 +53,23 @@
       <input type="text"  class="form-control" onblur="elc()" id="h-f" >
     </div>
   </div>
-
-  <center><button type="button" class="reset-btn btn btn-danger" onclick="reset()" name="button">Reset</button></center>
-
 </form>
+<div class="row">
+  <div class="col-1 offset-6">
+ <button type="button" class=" reset-btn btn btn-primary" onclick="p()" id="cal" name="button">Calculate</button>
+  </div>
+  <div class="col-1 offset-2">
+ <button type="button" class=" reset-btn btn btn-danger" onclick="p()" id="cal" name="button">Reset</button>
+  </div>
+</div>
 </div>
 <!-- <div class="col-md-2 ads offset-md-1">
 </div> -->
 
 </div>
+
+
+
 
 </main>
 

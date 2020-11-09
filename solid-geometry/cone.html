@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hemisphere Calculator</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Cone Calculator</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
   </head>
   <body>
+
 
   <div class="container">
 
@@ -16,9 +18,9 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
          <span class="navbar-toggler-icon"></span>
  </button>
- <div class="collapse navbar-collapse " id="navbar">
+ <div class="collapse navbar-collapse" id="navbar">
    <ul class="navbar-nav ml-auto text-monospace">
-     <li class="nav-item active"><a href="#" class="nav-link text-danger">Home</a> </li>
+     <li class="nav-item active"><a href="#" class="nav-link">Home</a> </li>
      <li class="nav-item"> <a href="#" class="nav-link">Statistics</a></li>
      <li class="nav-item"> <a href="solid-geometry.html" class="nav-link" >Solid Geometry</a></li>
    </ul>
@@ -26,14 +28,24 @@
   </nav>
 
 <main class="container">
-<center><h1 class=" text-monospace">Hemisphere Calculator</h1></center>
+<center><h1 class=" text-monospace">Cone Calculator</h1></center>
 <div class="row">
 <div class="col-12 col-lg-10 col-xl-8">
   <form>
     <div class="form-group row">
-    <label for="r-hs" class="col-form-label col-12 col-md-5 col-lg-5">Radius of Hemisphere</label>
+    <label for="r-cn" class="col-form-label col-12 col-md-5 col-lg-5">Radius of Cone </label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text"  class="form-control" onblur="elc()" id="r-hs" >
+      <input type="text"  class="form-control" onblur="elc()" id="r-cn" >
+    </div>
+    <div class="col-4 col-md-3 col-lg-2">
+     <input type="text" readonly class="form-control-plaintext" value="units">
+   </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="h-cn" class="col-form-label col-12 col-md-5 col-lg-5">Height of Cone</label>
+    <div class="col-8 col-md-4 col-lg-5">
+      <input type="text"  class="form-control" onblur="elc()" id="h-cn" >
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="units">
@@ -52,19 +64,18 @@
 
 <form>
   <div class="form-group row">
-    <label for="vol-hs" class=" col-form-label col-12 col-md-5 col-lg-5">Volume of Hemisphere </label>
+    <label for="vol-cn" class="col-form-label col-12 col-md-5 col-lg-5">Volume of Cone</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="volc()" id="vol-hs">
+      <input type="text" readonly class="form-control" onblur="volc()" id="vol-cn">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="cubic units">
    </div>
   </div>
-
   <div class="form-group row">
-    <label for="tsa-hs" class="col-form-label col-12 col-md-5 col-lg-5">Total Surface Area of Hemisphere</label>
+    <label for="tsa-cn" class="col-form-label col-12 col-md-5 col-lg-5">Total Surface Area of Cone</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="lsac()" id="tsa-hs">
+      <input type="text" readonly class="form-control" onblur="tsac()" id="tsa-cn">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="square units">
@@ -72,19 +83,29 @@
   </div>
 
   <div class="form-group row">
-    <label for="csa-hs" class=" col-form-label col-12 col-md-5 col-lg-5">Curved Surface Area of Hemisphere</label>
+    <label for="lsa-cn" class="col-form-label col-12 col-md-5 col-lg-5">Curved Surface Area of Cone</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" readonly class="form-control" onblur="lsac()" id="csa-hs">
+      <input type="text" readonly class="form-control" onblur="lsac()" id="lsa-cd">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="square units">
    </div>
   </div>
+
+  <div class="form-group row">
+    <label for="sl-cn" class="col-form-label col-12 col-md-5 col-lg-5">Slant Height of Cone</label>
+    <div class="col-8 col-md-4 col-lg-5">
+      <input type="text"  readonly class="form-control" onblur="elc()" id="sl-cn" >
+    </div>
+    <div class="col-4 col-md-3 col-lg-2">
+     <input type="text" readonly class="form-control-plaintext" value="units">
+   </div>
+  </div>
+
 
 </form>
 </div>
-
-<!-- <div class="col-lg-4">
+<!-- <div class="col-md-2 ads offset-md-1">
 </div> -->
 
 </div>
@@ -106,7 +127,7 @@
 
 
 
-<script src="js/cube.js" charset="utf-8"></script>
+<script src="js/solid-geometry.js" charset="utf-8"></script>
     <!-- Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
