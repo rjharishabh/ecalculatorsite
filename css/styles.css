@@ -1,17 +1,15 @@
 *{
   box-sizing: border-box;
 }
-
 body{
   /* background: url('../imgs/background-2.jpg') no-repeat fixed center ; */
 
-  background-color: #DCF5EB;
+  background-color: #dcf5eb;
 
 }
 /* .container{
   background:url('../imgs/background.jpg') no-repeat fixed center #5DADE2;
 } */
-
 
 .logo{
   color: floralwhite;
@@ -24,7 +22,7 @@ body{
 }
 .container{
   /* background: url('../imgs/background.jpg') no-repeat fixed center; */
-  background-color: #ECE8F4;
+  background-color: ##DCF5EB;
 }
 .nav-link{
   font-size: 20px;

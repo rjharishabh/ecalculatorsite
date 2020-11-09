@@ -32,8 +32,7 @@
 <div class="row">
 <div class="col-12 col-lg-10 col-xl-8">
   <form>
-    <center><button type="button" class="reset-btn btn btn-danger" onclick="reset()" name="button">Reset</button></center>
-  <div class="form-group row">
+    <div class="form-group row">
     <label for="r-cn" class="col-form-label col-12 col-md-5 col-lg-5">Radius of Cone </label>
     <div class="col-8 col-md-4 col-lg-5">
       <input type="text"  class="form-control" onblur="elc()" id="r-cn" >
@@ -52,11 +51,22 @@
      <input type="text" readonly class="form-control-plaintext" value="units">
    </div>
   </div>
+</form>
 
+<div class="row">
+  <div class="col-1 offset-md-5 offset-lg-5">
+ <button type="button" class=" reset-btn btn btn-primary" onclick="p()" id="cal" name="button">Calculate</button>
+  </div>
+  <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+ <button type="button" class=" reset-btn btn btn-danger" onclick="p()" id="cal" name="button">Reset</button>
+  </div>
+</div>
+
+<form>
   <div class="form-group row">
     <label for="vol-cn" class="col-form-label col-12 col-md-5 col-lg-5">Volume of Cone</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" class="form-control" onblur="volc()" id="vol-cn">
+      <input type="text" readonly class="form-control" onblur="volc()" id="vol-cn">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="cubic units">
@@ -65,7 +75,7 @@
   <div class="form-group row">
     <label for="tsa-cn" class="col-form-label col-12 col-md-5 col-lg-5">Total Surface Area of Cone</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" class="form-control" onblur="tsac()" id="tsa-cn">
+      <input type="text" readonly class="form-control" onblur="tsac()" id="tsa-cn">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="square units">
@@ -75,7 +85,7 @@
   <div class="form-group row">
     <label for="lsa-cn" class="col-form-label col-12 col-md-5 col-lg-5">Curved Surface Area of Cone</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text" class="form-control" onblur="lsac()" id="lsa-cd">
+      <input type="text" readonly class="form-control" onblur="lsac()" id="lsa-cd">
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="square units">
@@ -85,14 +95,13 @@
   <div class="form-group row">
     <label for="sl-cn" class="col-form-label col-12 col-md-5 col-lg-5">Slant Height of Cone</label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text"  class="form-control" onblur="elc()" id="sl-cn" >
+      <input type="text"  readonly class="form-control" onblur="elc()" id="sl-cn" >
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="units">
    </div>
   </div>
 
-  <center><button type="button" class="reset-btn btn btn-danger" onclick="reset()" name="button">Reset</button></center>
 
 </form>
 </div>

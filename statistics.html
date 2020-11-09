@@ -6,12 +6,8 @@
     <title>Statistics Calculator</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
-
   </head>
   <body>
-
-
   <div class="container">
 
   <nav class=" navbar navbar-expand-md navbar-light text-primary bg-info ">
@@ -21,8 +17,8 @@
  </button>
  <div class="collapse navbar-collapse " id="navbar">
    <ul class="navbar-nav ml-auto text-monospace">
-     <li class="nav-item active"><a href="#" class="nav-link">Home</a> </li>
-     <li class="nav-item"> <a href="#" class="nav-link">Statistics</a></li>
+     <li class="nav-item "><a href="#" class="nav-link">Home</a> </li>
+     <li class="nav-item "> <a href="statistics.html" class="nav-link active">Statistics</a></li>
      <li class="nav-item"> <a href="solid-geometry.html" class="nav-link" >Solid Geometry</a></li>
    </ul>
  </div>
@@ -36,13 +32,19 @@
 
   <div class="form-group row">
     <label for="el-c" class="text-center col-form-label col-12 ">Enter the values</label>
-    <div class="col-12 col-md-8 offset-md-2">
-      <textarea name="name" class="form-control" id="el-c" <rows="2" ></textarea>
+    <div class=" col-12 col-md-10 ">
+    <textarea name="name" class="form-control" id="el-c" <rows="2" ></textarea>
     </div>
   </div>
   </form>
-
-   <center><button type="button" class=" reset-btn btn btn-primary" onclick="p()" id="cal" name="button">Calculate</button></center>
+  <div class="row">
+    <div class="col-1 offset-1">
+   <button type="button" class=" reset-btn btn btn-primary" onclick="p()" id="cal" name="button">Calculate</button>
+    </div>
+    <div class="col-1 offset-5">
+   <button type="button" class=" reset-btn btn btn-danger" onclick="p()" id="cal" name="button">Reset</button>
+    </div>
+  </div>
 
 <form>
   <div class="form-group row">
@@ -51,7 +53,7 @@
   </div>
   <div class="form-group row">
   <div class="col-6 col-md-4 col-lg-5">
-        <input type="text" class="form-control" readonly onblur="volc()" id="vol-c">
+        <input type="text" class="form-control " readonly onblur="volc()" id="vol-c">
       </div>
         <div class="col-6 col-md-4 col-lg-5">
       <input type="text" class=" form-control" readonly onblur="volc()" id="vol-7">
@@ -73,8 +75,8 @@
   </div>
 
   <div class="form-group row">
-    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Mean</label>
-      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Median</label>
+    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Sum</label>
+      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Mean</label>
   </div>
 
   <div class="form-group row">
@@ -86,8 +88,8 @@
     </div>
   </div>
   <div class="form-group row">
-    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Variance</label>
-      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Std. Deviation</label>
+    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Median</label>
+      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Variance</label>
   </div>
 
 
@@ -100,8 +102,19 @@
       </div>
     </div>
 
+    <div class="form-group row">
+      <label for="vol-c" class=" text-center col-form-label col-6 col-md-5 col-lg-5">Standard Deviation</label>
+        <label for="vol-7" class=" text-center col-form-label col-6 col-md-5 col-lg-5">Coefficient of Variation</label>
+    </div>
 
-  <center><button type="button" class="reset-btn btn btn-danger" onclick="reset()" name="button">Reset</button></center>
+    <div class="form-group row">
+        <div class="col-6 col-md-4 col-lg-5">
+          <input type="text" class="form-control" readonly onblur="volc()" id="vol-c">
+        </div>
+          <div class="col-6 col-md-4 col-lg-5">
+        <input type="text" class="form-control" readonly onblur="volc()" id="vol-7">
+      </div>
+    </div>
 
 </form>
 </div>
