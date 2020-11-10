@@ -1,7 +1,7 @@
 function cube(){
   var el=document.getElementById('elcube').value;
   if(el===""){
-     document.getElementById('elcube').value="Please Enter Value";
+     document.getElementById('elcube').placeholder="Please Enter Value";
   }
   else if (!isNaN(el)) {
     document.getElementById('volcube').value=volcube(el);
@@ -10,19 +10,68 @@ function cube(){
           document.getElementById('lodcube').value=lodcube(el);
   }
 else {
- document.getElementById('elcube').value="Only numbers are allowed";
+ document.getElementById('elcube').placeholder="Only numbers are allowed";
   document.getElementById('elcube').style.backgroundColor="red";
 }
-
 }
 
-function reset(){
+function cuboid(){
+    var l=document.getElementById('lcuboid').value;
+    var b=document.getElementById('bcuboid').value;
+    var h=document.getElementById('hcuboid').value;
+
+    if(l===""){
+       document.getElementById('lcuboid').placeholder="Please Enter Value";
+    }
+    if(b===""){
+       document.getElementById('bcuboid').placeholder="Please Enter Value";
+    }
+    if(h===""){
+       document.getElementById('hcuboid').placeholder="Please Enter Value";
+    }
+
+    else if (!isNaN(l) && !isNaN(b) && !isNaN(h)) {
+      document.getElementById('volcuboid').value=volcuboid(l,b,h);
+        document.getElementById('tsacuboid').value=tsacuboid(l,b,h);
+          document.getElementById('lsacuboid').value=lsacuboid(l,b,h);
+            document.getElementById('lodcuboid').value=lodcuboid(l,b,h);
+    }
+
+    else {
+      if(isNaN(l)){
+        document.getElementById('lcuboid').placeholder="Only numbers are allowed";
+         document.getElementById('lcuboid').style.backgroundColor="red";
+      }
+      if(isNaN(b)){
+        document.getElementById('bcuboid').placeholder="Only numbers are allowed";
+         document.getElementById('bcuboid').style.backgroundColor="red";
+      }
+      if(isNaN(l)){
+        document.getElementById('hcuboid').placeholder="Only numbers are allowed";
+         document.getElementById('hcuboid').style.backgroundColor="red";
+      }
+    }
+}
+
+function resetcube(){
     document.getElementById('elcube').style.backgroundColor="white";
   document.getElementById('elcube').value="";
   document.getElementById('volcube').value="";
   document.getElementById('tsacube').value="";
   document.getElementById('lsacube').value="";
   document.getElementById('lodcube').value="";
+}
+function resetcuboid(){
+  document.getElementById('lcuboid').style.backgroundColor="white";
+  document.getElementById('bcuboid').style.backgroundColor="white";
+    document.getElementById('hcuboid').style.backgroundColor="white";
+document.getElementById('lcuboid').value="";
+document.getElementById('bcuboid').value="";
+document.getElementById('hcuboid').value="";
+  document.getElementById('volcuboid').value="";
+    document.getElementById('tsacuboid').value="";
+      document.getElementById('lsacuboid').value="";
+        document.getElementById('lodcuboid').value="";
 }
 
 
