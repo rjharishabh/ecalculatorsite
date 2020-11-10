@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mean Median Mode Range Calculator</title>
+    <title>Variance and Standard Deviation Calculator</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
   </head>
@@ -25,13 +25,13 @@
   </nav>
 
 <main class="container">
-<center><h1 class="text-monospace">Mean Median Mode Range Calculator</h1></center>
+<center><h1 class="text-monospace">Variance and Standard Deviation Calculator</h1></center>
 <div class="row">
 <div class="col-12 col-lg-10 col-xl-8">
   <form>
 
   <div class="form-group row">
-    <label for="el-c" class="text-center col-form-label col-10 ">Enter the values</label>
+    <label for="el-c" class="text-center col-form-label col-12 ">Enter the values</label>
     <div class=" col-12 col-md-10 ">
     <textarea name="name" class="form-control" id="el-c" <rows="2" ></textarea>
     </div>
@@ -47,49 +47,18 @@
   </div>
 
 <form>
-
   <div class="form-group row">
-    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Range</label>
-      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Count</label>
+    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Variance</label>
+      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Standard Deviation</label>
   </div>
-
   <div class="form-group row">
-      <div class="col-6 col-md-4 col-lg-5">
-        <input type="text" class="form-control" readonly onblur="volc()" id="vol-c">
+  <div class="col-6 col-md-4 col-lg-5">
+        <input type="text" class="form-control " readonly onblur="volc()" id="vol-c">
       </div>
         <div class="col-6 col-md-4 col-lg-5">
-      <input type="text" class="form-control" readonly onblur="volc()" id="vol-7">
+      <input type="text" class=" form-control" readonly onblur="volc()" id="vol-7">
     </div>
   </div>
-
-  <div class="form-group row">
-    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Sum</label>
-      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Mean</label>
-  </div>
-
-  <div class="form-group row">
-      <div class="col-6 col-md-4 col-lg-5">
-        <input type="text" class="form-control" readonly onblur="volc()" id="vol-c">
-      </div>
-        <div class="col-6 col-md-4 col-lg-5">
-      <input type="text" class="form-control" readonly onblur="volc()" id="vol-7">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Median</label>
-      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Mode</label>
-  </div>
-
-
-    <div class="form-group row">
-        <div class="col-6 col-md-4 col-lg-5">
-          <input type="text" class="form-control" readonly onblur="volc()" id="vol-c">
-        </div>
-          <div class="col-6 col-md-4 col-lg-5">
-        <input type="text" class="form-control" readonly onblur="volc()" id="vol-7">
-      </div>
-    </div>
-
 </form>
 </div>
 
