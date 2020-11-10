@@ -10,7 +10,9 @@ body{
 /* .container{
   background:url('../imgs/background.jpg') no-repeat fixed center #5DADE2;
 } */
-
+.btn{
+  margin-bottom: 10px;
+}
 .logo{
   color: floralwhite;
   font-size: 20px;
