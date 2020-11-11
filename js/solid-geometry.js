@@ -192,6 +192,34 @@ function resetsphere(){
   document.getElementById('sasph').value="";
 }
 
+function hemisphere(){
+  var r=parseFloat(document.getElementById('rhemisph').value);
+
+  if(r<=0){
+    document.getElementById('rhemisph').value="Only positive numbers are allowed";
+     document.getElementById('rhemisph').style.backgroundColor="red";
+  }
+  else if (!isNaN(r)) {
+    document.getElementById('volhemisph').value=volhemisphere(r);
+      document.getElementById('tsahemisph').value=tsahemisphere(r);
+          document.getElementById('csahemisph').value=csahemisphere(r);
+    }
+else {
+ document.getElementById('rhemisph').value="Only positive numbers are allowed";
+  document.getElementById('rhemisph').style.backgroundColor="red";
+}
+}
+
+function resethemisphere(){
+  document.getElementById('rhemisph').style.backgroundColor="white";
+  document.getElementById('rhemisph').value="";
+  document.getElementById('rhemisph').placeholder="Please Enter Value";
+  document.getElementById('volhemisph').value="";
+  document.getElementById('tsahemisph').value="";
+  document.getElementById('csahemisph').value="";
+}
+
+
 
 
 function volcube(el){
@@ -271,6 +299,6 @@ function tsahemisphere(r){
     return 3*Math.PI*Math.pow(r,2);
 }
 
-function lsahemisphere(r){
+function csahemisphere(r){
     return 2*Math.PI*Math.pow(r,2);
 }
