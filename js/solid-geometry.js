@@ -124,9 +124,48 @@ function resetcylinder(){
   document.getElementById('lsacyl').value="";
 }
 
+function cone(){
+  var r=parseFloat(document.getElementById('rcone').value);
+  var h=parseFloat(document.getElementById('hcone').value);
 
+if(r<=0){
+        document.getElementById('rcone').value="Only positive numbers are allowed";
+         document.getElementById('rcone').style.backgroundColor="red";
+     }
+ if(h<=0){
+        document.getElementById('hcone').value="Only positive numbers are allowed";
+            document.getElementById('hcone').style.backgroundColor="red";
+     }
 
+    if(isNaN(r)){
+      document.getElementById('rcone').value="Only positive numbers are allowed";
+       document.getElementById('rcone').style.backgroundColor="red";
+    }
+    if(isNaN(h)){
+      document.getElementById('hcone').value="Only positive numbers are allowed";
+       document.getElementById('hcone').style.backgroundColor="red";
+    }
 
+   if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
+        document.getElementById('volcone').value=volcone(r,h);
+          document.getElementById('tsacone').value=tsacone(r,h);
+            document.getElementById('lsacone').value=lsacone(r,h);
+              document.getElementById('shcone').value=shcone(r,h);
+      }
+}
+
+function resetcone(){
+  document.getElementById('rcone').style.backgroundColor="white";
+  document.getElementById('hcone').style.backgroundColor="white";
+  document.getElementById('rcone').value="";
+  document.getElementById('hcone').value="";
+  document.getElementById('rcone').placeholder="Please Enter Value";
+  document.getElementById('hcone').placeholder="Please Enter Value";
+  document.getElementById('volcone').value="";
+  document.getElementById('tsacone').value="";
+  document.getElementById('lsacone').value="";
+  document.getElementById('shcone').value="";
+}
 
 
 
