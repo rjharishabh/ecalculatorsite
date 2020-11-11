@@ -1,9 +1,7 @@
 function cube(){
   var el=parseFloat(document.getElementById('elcube').value);
-  if(el===""){
-     document.getElementById('elcube').placeholder="Please Enter Value";
-  }
-  else if(el<=0){
+
+  if(el<=0){
     document.getElementById('elcube').value="Only positive numbers are allowed";
      document.getElementById('elcube').style.backgroundColor="red";
   }
@@ -34,17 +32,6 @@ function cuboid(){
     var b=parseFloat(document.getElementById('bcuboid').value);
     var h=parseFloat(document.getElementById('hcuboid').value);
 
-    if(l===""){
-       document.getElementById('lcuboid').placeholder="Please Enter Value";
-    }
-    if(b===""){
-       document.getElementById('bcuboid').placeholder="Please Enter Value";
-    }
-    if(h===""){
-       document.getElementById('hcuboid').placeholder="Please Enter Value";
-    }
-
-else{
   if(l<=0){
           document.getElementById('lcuboid').value="Only positive numbers are allowed";
            document.getElementById('lcuboid').style.backgroundColor="red";
@@ -57,7 +44,7 @@ else{
           document.getElementById('hcuboid').value="Only positive numbers are allowed";
               document.getElementById('hcuboid').style.backgroundColor="red";
        }
-}
+
 
       if(isNaN(l)){
         document.getElementById('lcuboid').value="Only positive numbers are allowed";
@@ -96,9 +83,46 @@ document.getElementById('hcuboid').placeholder="Please Enter Value";
         document.getElementById('lodcuboid').value="";
 }
 
+function cylinder(){
+  var r=parseFloat(document.getElementById('rcyl').value);
+  var h=parseFloat(document.getElementById('hcyl').value);
 
+if(r<=0){
+        document.getElementById('rcyl').value="Only positive numbers are allowed";
+         document.getElementById('rcyl').style.backgroundColor="red";
+     }
+ if(h<=0){
+        document.getElementById('hcyl').value="Only positive numbers are allowed";
+            document.getElementById('hcyl').style.backgroundColor="red";
+     }
 
+    if(isNaN(r)){
+      document.getElementById('rcyl').value="Only positive numbers are allowed";
+       document.getElementById('rcyl').style.backgroundColor="red";
+    }
+    if(isNaN(h)){
+      document.getElementById('hcyl').value="Only positive numbers are allowed";
+       document.getElementById('hcyl').style.backgroundColor="red";
+    }
 
+   if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
+        document.getElementById('volcyl').value=volcyl(r,h);
+          document.getElementById('tsacyl').value=tsacyl(r,h);
+            document.getElementById('lsacyl').value=lsacyl(r,h);
+      }
+}
+
+function resetcylinder(){
+  document.getElementById('rcyl').style.backgroundColor="white";
+  document.getElementById('hcyl').style.backgroundColor="white";
+  document.getElementById('rcyl').value="";
+  document.getElementById('hcyl').value="";
+  document.getElementById('rcyl').placeholder="Please Enter Value";
+  document.getElementById('hcyl').placeholder="Please Enter Value";
+  document.getElementById('volcyl').value="";
+  document.getElementById('tsacyl').value="";
+  document.getElementById('lsacyl').value="";
+}
 
 
 
