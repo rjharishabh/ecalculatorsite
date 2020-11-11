@@ -219,6 +219,60 @@ function resethemisphere(){
   document.getElementById('csahemisph').value="";
 }
 
+function frustum(){
+  var r=parseFloat(document.getElementById('srfrustum').value);
+  var R=parseFloat(document.getElementById('lrfrustum').value);
+  var h=parseFloat(document.getElementById('hfrustum').value);
+
+if(r<=0){
+        document.getElementById('srfrustum').value="Only positive numbers are allowed";
+         document.getElementById('srfrustum').style.backgroundColor="red";
+     }
+if(R<=0){
+             document.getElementById('lrfrustum').value="Only positive numbers are allowed";
+              document.getElementById('lrfrustum').style.backgroundColor="red";
+          }
+ if(h<=0){
+        document.getElementById('hfrustum').value="Only positive numbers are allowed";
+            document.getElementById('hfrustum').style.backgroundColor="red";
+     }
+
+    if(isNaN(r)){
+      document.getElementById('srfrustum').value="Only positive numbers are allowed";
+       document.getElementById('srfrustum').style.backgroundColor="red";
+    }
+    if(isNaN(R)){
+      document.getElementById('lrfrustum').value="Only positive numbers are allowed";
+       document.getElementById('lrfrustum').style.backgroundColor="red";
+    }
+    if(isNaN(h)){
+      document.getElementById('hfrustum').value="Only positive numbers are allowed";
+       document.getElementById('hfrustum').style.backgroundColor="red";
+    }
+
+   if (!isNaN(r) && !isNaN(R) && !isNaN(h) && r>0 && R>0 && h>0) {
+        document.getElementById('volfrustum').value=volfrustum(r,R,h);
+          document.getElementById('tsafrustum').value=tsafrustum(r,R,h);
+            document.getElementById('csafrustum').value=csafrustum(r,R,h);
+              document.getElementById('shfrustum').value=shfrustum(r,R,h);
+      }
+}
+
+function resetfrustum(){
+  document.getElementById('srfrustum').style.backgroundColor="white";
+    document.getElementById('lrfrustum').style.backgroundColor="white";
+  document.getElementById('hfrustum').style.backgroundColor="white";
+  document.getElementById('srfrustum').value="";
+    document.getElementById('lrfrustum').value="";
+  document.getElementById('hfrustum').value="";
+  document.getElementById('srfrustum').placeholder="Please Enter Value";
+  document.getElementById('lrfrustum').placeholder="Please Enter Value";
+  document.getElementById('hfrustum').placeholder="Please Enter Value";
+  document.getElementById('volfrustum').value="";
+  document.getElementById('tsafrustum').value="";
+  document.getElementById('lsafrustum').value="";
+  document.getElementById('shfrustum').value="";
+}
 
 
 
@@ -301,4 +355,22 @@ function tsahemisphere(r){
 
 function csahemisphere(r){
     return 2*Math.PI*Math.pow(r,2);
+}
+
+function volfrustum(r,R,h){
+  return (Math.PI*h*(Math.pow(r,2)+Math.pow(R,2)+r*R))/3;
+}
+
+function shfrustum(r,R,h){
+  return Math.sqrt(Math.pow(h,2)+Math.pow((R-r),2))
+}
+
+function csafrustum(r,R,h){
+  var l=shfrustum(r,R,h);
+  return Math.PI*l*(r+R);
+}
+
+function tsafrustum(r,R,h){
+  var l=shfrustum(r,R,h);
+  return Math.PI*((l*(r+R))+Math.pow(r,2)+Math.pow(R,2));
 }
