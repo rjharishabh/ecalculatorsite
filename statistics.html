@@ -6,6 +6,11 @@
     <title>Statistics Calculator</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <style media="screen">
+      .bor{
+        background-color: white
+      }
+    </style>
   </head>
   <body>
   <div class="container">
@@ -23,108 +28,125 @@
    </ul>
  </div>
   </nav>
-
-<main class="container">
-<center><h1 class="text-monospace">Statistics Calculator</h1></center>
-<div class="row">
-<div class="col-12 col-lg-10 col-xl-8">
-  <form>
-
-  <div class="form-group row">
-    <label for="el-c" class="text-center col-form-label col-12 ">Enter the values</label>
-    <div class=" col-12 col-md-10 ">
-    <textarea name="name" class="form-control" id="el-c" <rows="2" ></textarea>
-    </div>
-  </div>
-  </form>
+<div class="bor">
+  <main class="container">
+  <center><h1 class="text-monospace">Statistics Calculator</h1></center>
   <div class="row">
-    <div class="col-1 offset-1">
-   <button type="button" class=" reset-btn btn btn-primary" onclick="p()" id="cal" name="button">Calculate</button>
-    </div>
-    <div class="col-1 offset-5">
-   <button type="button" class=" reset-btn btn btn-danger" onclick="p()" id="cal" name="button">Reset</button>
-    </div>
-  </div>
-
-<form>
-  <div class="form-group row">
-    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Maximum Value</label>
-      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Minimum Value</label>
-  </div>
-  <div class="form-group row">
-  <div class="col-6 col-md-4 col-lg-5">
-        <input type="text" class="form-control " readonly onblur="volc()" id="vol-c">
-      </div>
-        <div class="col-6 col-md-4 col-lg-5">
-      <input type="text" class=" form-control" readonly onblur="volc()" id="vol-7">
-    </div>
-  </div>
-
-  <div class="form-group row">
-    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Range</label>
-      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Count</label>
-  </div>
-
-  <div class="form-group row">
-      <div class="col-6 col-md-4 col-lg-5">
-        <input type="text" class="form-control" readonly onblur="volc()" id="vol-c">
-      </div>
-        <div class="col-6 col-md-4 col-lg-5">
-      <input type="text" class="form-control" readonly onblur="volc()" id="vol-7">
-    </div>
-  </div>
-
-  <div class="form-group row">
-    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Sum</label>
-      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Mean</label>
-  </div>
-
-  <div class="form-group row">
-      <div class="col-6 col-md-4 col-lg-5">
-        <input type="text" class="form-control" readonly onblur="volc()" id="vol-c">
-      </div>
-        <div class="col-6 col-md-4 col-lg-5">
-      <input type="text" class="form-control" readonly onblur="volc()" id="vol-7">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Median</label>
-      <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Variance</label>
-  </div>
-
+  <div class="col-12 col-lg-10 col-xl-8">
+    <form>
 
     <div class="form-group row">
-        <div class="col-6 col-md-4 col-lg-5">
-          <input type="text" class="form-control" readonly onblur="volc()" id="vol-c">
+      <label for="stat" class="text-center col-form-label col-12 ">Enter the values</label>
+      <div class=" col-12 col-md-10 ">
+      <textarea name="name" class="form-control" id="stat" <rows="2" ></textarea>
+      </div>
+    </div>
+    </form>
+    <div class="row">
+      <div class="col-1 offset-1">
+     <button type="button" class=" reset-btn btn btn-primary" onclick="p()"  name="button">Calculate</button>
+      </div>
+      <div class="col-1 offset-5">
+     <button type="button" class=" reset-btn btn btn-danger"  name="button">Reset</button>
+      </div>
+    </div>
+  <script type="text/javascript">
+    function p(){
+      var b=[];
+    var  a=document.getElementById('stat').value.split(",");
+    console.log(a);
+
+        for (var i = 0; i < a.length; i++) {
+        b[i]=parseInt(a[i]);
+        }
+
+
+      b.sort();
+  console.log(typeof(a));
+      }
+
+  </script>
+  <form>
+    <div class="form-group row">
+      <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Maximum Value</label>
+        <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Minimum Value</label>
+    </div>
+    <div class="form-group row">
+    <div class="col-6 col-md-4 col-lg-5">
+          <input type="text" class="form-control " readonly  id="vol-c">
         </div>
           <div class="col-6 col-md-4 col-lg-5">
-        <input type="text" class="form-control" readonly onblur="volc()" id="vol-7">
+        <input type="text" class=" form-control" readonly  id="vol-7">
       </div>
     </div>
 
     <div class="form-group row">
-      <label for="vol-c" class=" text-center col-form-label col-6 col-md-5 col-lg-5">Standard Deviation</label>
-        <label for="vol-7" class=" text-center col-form-label col-6 col-md-5 col-lg-5">Coefficient of Variation</label>
+      <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Range</label>
+        <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Count</label>
     </div>
 
     <div class="form-group row">
         <div class="col-6 col-md-4 col-lg-5">
-          <input type="text" class="form-control" readonly onblur="volc()" id="vol-c">
+          <input type="text" class="form-control" readonly  id="vol-c">
         </div>
           <div class="col-6 col-md-4 col-lg-5">
-        <input type="text" class="form-control" readonly onblur="volc()" id="vol-7">
+        <input type="text" class="form-control" readonly  id="vol-7">
       </div>
     </div>
 
-</form>
+    <div class="form-group row">
+      <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Sum</label>
+        <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Mean</label>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-6 col-md-4 col-lg-5">
+          <input type="text" class="form-control" readonly  id="vol-c">
+        </div>
+          <div class="col-6 col-md-4 col-lg-5">
+        <input type="text" class="form-control" readonly  id="vol-7">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="vol-c" class="text-center col-form-label col-6 col-md-5 col-lg-5">Median</label>
+        <label for="vol-7" class="text-center col-form-label col-6 col-md-5 col-lg-5">Variance</label>
+    </div>
+
+
+      <div class="form-group row">
+          <div class="col-6 col-md-4 col-lg-5">
+            <input type="text" class="form-control" readonly  id="vol-c">
+          </div>
+            <div class="col-6 col-md-4 col-lg-5">
+          <input type="text" class="form-control" readonly  id="vol-7">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="vol-c" class=" text-center col-form-label col-6 col-md-5 col-lg-5">Standard Deviation</label>
+          <label for="vol-7" class=" text-center col-form-label col-6 col-md-5 col-lg-5">Coefficient of Variation</label>
+      </div>
+
+      <div class="form-group row">
+          <div class="col-6 col-md-4 col-lg-5">
+            <input type="text" class="form-control" readonly id="vol-c">
+          </div>
+            <div class="col-6 col-md-4 col-lg-5">
+          <input type="text" class="form-control" readonly  id="vol-7">
+        </div>
+      </div>
+
+  </form>
+  </div>
+
+  <!-- <div class="col-lg-4">
+  </div> -->
+
+  </div>
+
+  </main>
 </div>
 
-<!-- <div class="col-lg-4">
-</div> -->
-
-</div>
-
-</main>
 
 <footer class="bg-info">
 <div class="row">

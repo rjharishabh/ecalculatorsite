@@ -2,16 +2,25 @@
   box-sizing: border-box;
 }
 body{
-  /* background: url('../imgs/background-2.jpg') no-repeat fixed center ; */
-
   background-color: #dcf5eb;
-
 }
+
+/* @media screen and (min-width="576px"){
+  .container-sm{
+    width:70%;
+  } */
+}
+/*
+
+ */
+/* }
 /* .container{
   background:url('../imgs/background.jpg') no-repeat fixed center #5DADE2;
 } */
+/*
 .btn{
   margin-bottom: 10px;
+
 }
 .logo{
   color: floralwhite;
@@ -24,7 +33,7 @@ body{
 }
 .container{
   /* background: url('../imgs/background.jpg') no-repeat fixed center; */
-  background-color: ##DCF5EB;
+  /* background-color: ##DCF5EB;
 }
 .nav-link{
   font-size: 20px;
@@ -72,4 +81,4 @@ animation: color-change 3s infinite alternate;
 
 .reset-btn{
 margin-bottom: 10px;
-}
+} */ */

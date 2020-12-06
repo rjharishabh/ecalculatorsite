@@ -5,16 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cube Calculator</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+<style media="screen">
 
+  .container{
+  width:70%;
+  }
+  .bg-primary{
+    opacity:0.8;
+  }
+</style>
   </head>
   <body>
 
 
-  <div class="container">
+<div class="sticky-top container-fluid bg-secondary">
 
-  <nav class=" navbar navbar-expand-md navbar-light text-primary bg-info ">
-    <a href="#" class="logo">LOGO</a>
+
+  <nav class="  navbar navbar-expand-md navbar-light text-danger">
+    <a href="#"  class="logo">LOGO</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
          <span class="navbar-toggler-icon"></span>
  </button>
@@ -27,15 +36,21 @@
  </div>
   </nav>
 
+
+</div>
+
+
+
+
 <main class="container">
 <center><h1 class="text-monospace">Cube Calculator</h1></center>
 <div class="row">
-<div class="col-12 col-lg-10 col-xl-8">
+<div class="col-12 col-md-10">
   <form>
       <div class="form-group row">
-    <label for="elcube" class="col-form-label col-12 col-md-5 col-lg-5">Edge length of Cube </label>
+    <label for="elcube" class="col-form-label col-12 col-md-5 ">Edge length of Cube </label>
     <div class="col-8 col-md-4 col-lg-5">
-      <input type="text"  class="form-control" id="elcube" >
+      <input type="text" onkeyup="cube()" class="form-control" id="elcube" >
     </div>
     <div class="col-4 col-md-3 col-lg-2">
      <input type="text" readonly class="form-control-plaintext" value="units">
@@ -101,13 +116,14 @@
 
 </main>
 
-<footer class="bg-info">
+<footer class="container ">
 <div class="row">
 
 </div>
+
 </footer>
 
-</div>
+
 
 
 
