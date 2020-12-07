@@ -1,11 +1,20 @@
 *{
   box-sizing: border-box;
 }
+
 body{
   background-color: #dcf5eb;
   font-size: 18px;
+  
 }
-
+/* ::-webkit-scrollbar{
+  background: #dcf5eb;;
+  width:10px
+}
+::-webkit-scrollbar-thumb{
+  background:darkblue;
+  border-radius: 25px;
+} */
 @media screen and (min-width="576px"){
   .container-sm{
     width:60%;
