@@ -3,12 +3,13 @@
 }
 body{
   background-color: #dcf5eb;
+  font-size: 18px;
 }
 
-/* @media screen and (min-width="576px"){
+@media screen and (min-width="576px"){
   .container-sm{
-    width:70%;
-  } */
+    width:60%;
+  }
 }
 /*
 
