@@ -9,43 +9,41 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-<style media="screen">
-  .container-sm{
-    width: 70%;
-  }
-</style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
   </head>
 
   <body>
 
-<!--
-<div class="sticky-top container-fluid bg-secondary">
+    <nav class="navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="photos/logo.png" width="70"  alt="" loading="lazy">
+        </a>
+      </div>
+    </nav>
 
+<div class="container">
+  <div class="row">
+  <div class="col-6">
+<img src="photos/ech-header.jpg" width="100%" alt="">
+  </div>
+  <div class="col">
 
-  <nav class="  navbar navbar-expand-md navbar-light text-danger">
-    <a href="#"  class="logo">LOGO</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-         <span class="navbar-toggler-icon"></span>
- </button>
- <div class="collapse navbar-collapse " id="navbar">
-   <ul class="navbar-nav ml-auto text-monospace">
-     <li class="nav-item active"><a href="#" class="nav-link">Home</a> </li>
-     <li class="nav-item"> <a href="#" class="nav-link">Statistics</a></li>
-     <li class="nav-item"> <a href="solid-geometry.html" class="nav-link" >Solid Geometry</a></li>
-   </ul>
- </div>
-  </nav>
-
-
+  </div>
+  </div>
 </div>
- -->
 
-<main class="container-sm">
+<main class="container-md">
 <div class="row">
 <div class="col-12 col-md-8 col-lg-8">
   <div class="card">
 <div class="card-header bg-primary">
-    <center><h1 class="text-monospace">Cube Calculator</h1></center>
+    <center><h1 class="text-monospace text-white">Cube Calculator</h1></center>
 </div>
 <div class="card-body bg-info">
 
@@ -60,16 +58,16 @@
        <input type="text" readonly class="form-control-plaintext" value="units">
      </div>
     </div>
-    </form>
 
     <div class="row">
     <div class="col-1 offset-md-5 offset-lg-5">
-    <button type="button" class=" btn btn-primary" onclick="cube()" name="button">Calculate</button>
+    <button type="submit" class=" btn btn-primary" onclick="cube()" name="button">Calculate</button>
     </div>
     <div class="col-1 offset-3 offset-md-1 offset-lg-2">
     <button type="button" class=" btn btn-danger" onclick="resetcube()" name="button">Reset</button>
     </div>
     </div>
+  </form>
 
     <form>
     <div class="form-group row">
@@ -128,20 +126,20 @@
 </div> -->
 
 </div>
-<div class="col-lg-4 d-none d-lg-block">
-  <div class="btn-group-vertical ">
+<div class="col-lg-4 d-none d-lg-block ">
+  <div class="btn-group-vertical">
     <h3 class="text-primary " >More Calculators</h3>
-  <button type="button" class="btn btn-block btn-warning" >Cuboid Calculator</button>
-  <button type="button" class="btn btn-block btn-warning" >Cylinder Calculator</button>
-  <button type="button" class="btn btn-block btn-warning" >Cone Calculator</button>
-  <button type="button" class="btn btn-block btn-warning" >Sphere Calculator</button>
-  <button type="button" class="btn btn-block btn-warning" >Hemisphere Calculator</button>
-  <button type="button" class="btn btn-block btn-warning" >VolumeCalculator</button>
-  <button type="button" class="btn btn-block btn-warning" >Surface Area Calculator</button>
-  <button type="button" class="btn btn-block btn-warning" >Statistics Calculator</button>
-  <button type="button" class="btn btn-block btn-warning" >Algebra Calculator</button>
-  <button type="button" class="btn btn-block btn-warning" >Arithmetic Progression Calculator</button>
-  <button type="button" class="btn btn-block btn-warning" >Geometric Progression Calculator</button>
+  <button type="button" class="btn btn-warning" >Cuboid Calculator</button>
+  <button type="button" class="btn btn-warning" >Cylinder Calculator</button>
+  <button type="button" class="btn btn-warning" >Cone Calculator</button>
+  <button type="button" class="btn btn-warning" >Sphere Calculator</button>
+  <button type="button" class="btn btn-warning" >Hemisphere Calculator</button>
+  <button type="button" class="btn btn-warning" >VolumeCalculator</button>
+  <button type="button" class="btn btn-warning" >Surface Area Calculator</button>
+  <button type="button" class="btn btn-warning" >Statistics Calculator</button>
+  <button type="button" class="btn  btn-warning" >Algebra Calculator</button>
+  <button type="button" class="btn btn-warning" >Arithmetic Progression Calculator</button>
+  <button type="button" class="btn btn-warning" >Geometric Progression Calculator</button>
   </div>
 </div>
 </div>
@@ -176,12 +174,12 @@
   <li><a href="#">Sitemap</a></li>
 </ul>
 </div>
-<div class="offset-1 col">
+<div class="offset-1 col-2">
   <button type="button" name="button">Donate</button>
 </div>
 </div>
 <div class="row justify-content-center">
-&copy; Copyright 2020 E Calculator Help. All rights reserved.
+&copy; E Calculator Help 2020. All rights reserved.
 </div>
   </div>
 </div>
