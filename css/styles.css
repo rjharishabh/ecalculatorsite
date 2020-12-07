@@ -20,11 +20,7 @@ body{
   background:darkblue;
   border-radius: 25px;
 } */
-@media screen and (min-width="576px"){
-  .container-sm{
-    width:60%;
-  }
-}
+
 /*
 
  */
