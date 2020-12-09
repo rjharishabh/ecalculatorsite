@@ -3,15 +3,25 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
 body{
   background-color: #dcf5eb;
   font-size: 18px;
-font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Andika New Basic', 'Noto Sans JP', sans-serif;
 }
 ::-webkit-scrollbar{
   width:10px;
   background-color: #dcf5eb;
+
+}
+
+.share-btn{
+  background-color: #007bff;
+  color:#fff;
+}
+.share-btn#link{
+  background-color: #8544fb;
+  color:#fff;
 }
 .support a{
   margin-left: 20px;

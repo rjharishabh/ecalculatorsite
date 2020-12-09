@@ -31,9 +31,9 @@
     </div>
 
     <nav class="navbar navbar-light navbar-expand-lg">
-      <div class="container">
+<div class="container">
         <a class="navbar-brand" href="#">
-          <img src="photos/logo.png" class="img-fluid logo" alt="logo" >
+          <img src="photos/logo.png" class="img-fluid logo " alt="logo" >
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
    <span class=" navbar-toggler-icon"></span>
@@ -60,7 +60,7 @@
       </li>
     </ul>
   </div>
-      </div>
+</div>
     </nav>
 
 
@@ -78,8 +78,8 @@
 <main class="container-md">
 <div class="row">
 <div class="col-12 col-md-8 col-lg-8">
-  <div class="card border-primary">
-<div class="card-header border-primary bg-primary">
+  <div class="card border-primary shadow  rounded">
+<div class="card-header border border-primary bg-primary">
     <center><h1 class="text-monospace text-white">Cube Calculator</h1></center>
 </div>
 <div class="card-body">
@@ -161,9 +161,9 @@
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons">
-  <button type="button" class="btn btn-outline-primary" name="button">Mail</button>
-  <button type="button" class="btn btn-outline-primary" name="button">Link</button>
-  <button type="button" class="btn btn-outline-primary" name="button">share</button>
+  <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon">Mail</button>
+  <button type="button" id="link" class="share-btn rounded" name="button"><img src="photos/insert-link.png" alt="insert-link icon">Link</button>
+  <button type="button" class="btn btn-warning" name="button">share</button>
   </div>
 </div>
 
@@ -191,18 +191,22 @@
   </div>
 </div>
 </div>
-
-
 </main>
+
+<div class="explanation">
+
+</div>
+
+
 
 <div class="container-fluid support">
   <div class="container">
-    <div class="row text-primary text-center justify-content-center">
-      <h2>Want To Support This Website? &#128512;</h2><br>
+    <div class="row text-danger text-center justify-content-center">
+      <h2>Want To Support This Website? &#128512;</h2>
     </div>
     <div class="row justify-content-center">
-<a class="btn btn-primary btn-lg" href="http://google.com">Paypal</a>
-<a class="btn btn-primary btn-lg" href="http://google.com">Razorpay</a>
+<a class="btn btn-primary" href="https://paypal.me/rishabhranjanjha?locale.x=en_GB" target="_blank">Donate via Paypal</a>
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GAJE6mmnGkVZNr"> </script> </form>
     </div>
   </div>
 </div>
@@ -214,7 +218,7 @@
   <div class="col-12 col-md-6 text-center">
   <ul>
       <li> <a href="about.html">About</a></li>
-        <li><a href="maitto:?">Contact</a></li>
+        <li><a href="maitto:?">Contact Us</a></li>
           <li><a href="terms-of-use.html">Terms of Use</a></li>
     <li> <a href="privacy-policy.html">Privacy Policy</a></li>
   </ul>
@@ -224,6 +228,7 @@
   <ul>
     <li><a href="#">Sitemap</a></li>
         <li><a href="#">Feedback</a></li>
+    <li><a href="#">Report an Error</a></li>
     <li><a href="#">Request a Calculator</a></li>
   </ul>
   </div>
@@ -271,7 +276,14 @@
 
     }
   document.querySelector("#copy").addEventListener("click", copy);
-
+function linkCopy(){
+var copyText=window.location.href;
+  navigator.clipboard.writeText(copyText);
+  document.getElementById('link').textContent="Link Copied";
+  document.getElementById('copy').textContent="Copy";
+  document.getElementById('code').style.backgroundColor="#fff";
+}
+  document.querySelector("#link").addEventListener("click", linkCopy);
 </script>
   </body>
 </html>
