@@ -2,15 +2,83 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
 body{
   background-color: #dcf5eb;
   font-size: 18px;
+font-family: 'Noto Sans JP', sans-serif;
+}
+::-webkit-scrollbar{
+  width:10px;
+  background-color: #dcf5eb;
+}
+.support a{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.wrong{
+  background-color:#b1a4cd47;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#c7ced5;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color:#007bff;
+}
+footer{
+  background-color: #d3c8e7;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+a,a:hover{
+text-decoration:none;
+}
+ul{
+  list-style-type: none
+}
+.code-box{
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 20px;
 
 }
-.modal{
-  position:fixed;
-  left:10px;
-  bottom:10px;
+.code-box button{
+  float:right
+}
+.alert .btn{
+  float:right;
+}
+.card-body{
+  background-color: #88b5e542;
+}
+.btn-primary,.btn-danger{
+  margin-bottom: 10px;
+}
+.logo{
+  width: 80px;
+}
+.header{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.navbar{
+  background-color:#d3c8e7;
+  height: 50%;
+  margin-bottom:10px;
+}
+.support{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color:#f3c848;
+padding-top: 50px;
+padding-bottom: 50px;
+color: floralwhite;
 }
 /* ::-webkit-scrollbar{
   background: #dcf5eb;;
