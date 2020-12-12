@@ -18,6 +18,16 @@ font-family: 'Andika New Basic', 'Noto Sans JP', sans-serif;
   background-color: #dcf5eb;
 
 }
+.active{
+  color:red !important;
+}
+.nav-link{
+  font-weight: bold;
+}
+.nav-link:hover{
+  font-weight: bold;
+  background-color: #17a2b8 !important;
+}
 .how-to-calculate{
   margin-top: 30px;
   margin-bottom: 30px;

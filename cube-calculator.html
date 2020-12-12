@@ -41,22 +41,20 @@
 
  <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Statistics</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <li class="nav-item ">
+        <a class="nav-link active" href="#">Solid Geometry</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Plane Geometry</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Coordinate Geometry</a>
       </li>
     </ul>
   </div>
@@ -87,7 +85,7 @@
         <div class="form-group row">
       <label for="elcube" class="col-form-label col-12 col-md-5 ">Edge length of Cube </label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" onkeyup="cube()" required class="form-control" id="elcube" >
+        <input type="text" required class="form-control" id="elcube" >
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="units">
@@ -161,7 +159,7 @@
         <h5>Please <a href="#" class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
-      <h5>&#128151; Like this Calculator? Please Share it with your friends.</h5>
+      <h5>&#128151; Like this Calculator? Please Share it with your friends or Add it in your page.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
@@ -334,7 +332,7 @@ function des(){
 function linkCopy(){
 var copyText=window.location.href;
   navigator.clipboard.writeText(copyText);
-  document.getElementById('link').textContent="✓";
+  document.getElementById('link').innerHTML='<img src="photos/done.png" alt="insert-link icon">';
   document.getElementById('copy').textContent="Copy";
   document.getElementById('code').style.backgroundColor="#fff";
 
