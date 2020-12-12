@@ -93,6 +93,7 @@ ul{
 .card-body{
   background-color: #88b5e542;
 }
+
 .btn-primary,.btn-danger{
   margin-bottom: 10px;
 }
@@ -117,84 +118,3 @@ padding-top: 50px;
 padding-bottom: 50px;
 color: floralwhite;
 }
-/* ::-webkit-scrollbar{
-  background: #dcf5eb;;
-  width:10px
-}
-::-webkit-scrollbar-thumb{
-  background:darkblue;
-  border-radius: 25px;
-} */
-
-/*
-
- */
-/* }
-/* .container{
-  background:url('../imgs/background.jpg') no-repeat fixed center #5DADE2;
-} */
-/*
-.btn{
-  margin-bottom: 10px;
-
-}
-.logo{
-  color: floralwhite;
-  font-size: 20px;
-  text-decoration: none;
-}
-.logo:hover{
-  text-decoration: none;
-  color: red;
-}
-.container{
-  /* background: url('../imgs/background.jpg') no-repeat fixed center; */
-  /* background-color: ##DCF5EB;
-}
-.nav-link{
-  font-size: 20px;
-}
-.row a{
-  color: #9066F0;
-  transition: color 1s linear;
-}
-
-.row a:hover{
-  color:red;
-  text-decoration:none;
-}
-.shape-heading{
-  font-size: 200%;
-  color: #7D3C98;
-  text-align: center;
-  font-weight: bold;
-
-}
-.row li{
-  font-size: 120%;
-
-    text-align: center;
-}
-
-h1{
-color:#3A7DF7;
-font-size: 50px;
-animation: color-change 3s infinite alternate;
-}
-@keyframes color-change {
-  from{
-    color:#5DADE2;
-  }
-  to{
-    color:#CB4335;
-  }
-}
-
-.col-form-label, .form-control-plaintext{
-  font-size: 100%;
-  font-weight: bold;
-}
-
-.reset-btn{
-margin-bottom: 10px;
-} */ */
