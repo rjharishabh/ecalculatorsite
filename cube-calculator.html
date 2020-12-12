@@ -3,11 +3,11 @@
   <head>
 
     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#01c9ff">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Cube Calculator | E Calculator Help</title>
+    <title>Cube Calculator | E Calculator Site</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -70,21 +70,19 @@
   <div class="col-6">
 <img src="photos/ecs-header.jpg" class="header img-fluid rounded" alt="">
   </div>
-  <div class=" header rounded col">
-  </div>
+  <!-- <div class=" header rounded col-6">
+  </div> -->
   </div>
 </div>
 
 <main class="container-md">
 <div class="row">
-<div class="col-12 col-md-8 col-lg-8">
-  <div class="card border-primary shadow  rounded">
+<div class="col-lg-8">
+  <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-monospace text-white">Cube Calculator</h1></center>
+    <center><h1 class="text-white">Cube Calculator</h1></center>
 </div>
 <div class="card-body">
-
-
     <form>
         <div class="form-group row">
       <label for="elcube" class="col-form-label col-12 col-md-5 ">Edge length of Cube </label>
@@ -97,7 +95,7 @@
     </div>
 
     <div class="row">
-    <div class="col-1 offset-md-5 offset-lg-5">
+    <div class="col-1 offset-1 col-md-1 offset-md-5 offset-lg-5">
     <button type="submit" class=" btn btn-primary" onclick="cube()" name="button">Calculate</button>
     </div>
     <div class="col-1 offset-3 offset-md-1 offset-lg-2">
@@ -113,7 +111,7 @@
         <input type="text" readonly class="form-control" id="volcube">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="cubic units">
+       <input type="text" readonly class="form-control-plaintext" value="cc. units">
      </div>
     </div>
     <div class="form-group row">
@@ -122,7 +120,7 @@
         <input type="text" readonly class="form-control" id="tsacube">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="square units">
+       <input type="text" readonly class="form-control-plaintext" value="sq. units">
      </div>
     </div>
     <div class="form-group row">
@@ -131,7 +129,17 @@
         <input type="text" readonly  class="form-control" id="lsacube">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="square units">
+       <input type="text" readonly class="form-control-plaintext" value="sq. units">
+     </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="lodcube" class="col-form-label col-12 col-md-5 col-lg-5">Length of Face Diagonal of Cube</label>
+      <div class="col-8 col-md-4 col-lg-5">
+        <input type="text" readonly class="form-control" id="lodcube">
+      </div>
+      <div class="col-4 col-md-3 col-lg-2">
+       <input type="text" readonly class="form-control-plaintext" value="units">
      </div>
     </div>
 
@@ -160,10 +168,10 @@
 <code id="code">&lt;a href="http://www.google.com"&gt;Cube Calculator&lt;a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
-<div class="share-buttons">
-  <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon">Mail</button>
-  <button type="button" id="link" class="share-btn rounded" name="button"><img src="photos/insert-link.png" alt="insert-link icon">Link</button>
-  <button type="button" class="btn btn-warning" name="button">share</button>
+<div class="share-buttons text-center">
+  <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button>
+  <button type="button" id="link" class="share-btn rounded" name="button"><img src="photos/insert-link.png" alt="insert-link icon"></button>
+
   </div>
 </div>
 
@@ -188,14 +196,61 @@
   <button type="button" class="text-white btn btn-warning" >Algebra Calculator</button>
   <button type="button" class="text-white btn btn-warning" >Arithmetic Progression Calculator</button>
   <button type="button" class="text-white btn btn-warning" >Geometric Progression Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cuboid Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cylinder Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cone Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Sphere Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Hemisphere Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >VolumeCalculator</button>
+  <button type="button" class="text-white btn btn-warning" >Surface Area Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Statistics Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Algebra Calculator</button>
+
   </div>
 </div>
+</div><script type="text/javascript">
+function des(){
+  var t=document.getElementById('htc-button');
+    var p=document.getElementById('description');
+  if((t.textContent).localeCompare("Hide")===0){
+    p.style.display="none";
+    t.textContent="Show";
+  }
+  else if((t.textContent).localeCompare("Hide")!=0){
+    p.style.display="block";
+    t.textContent="Hide";
+  }
+
+}
+  // document.getElementById('ex-button').addEventListener('click',des);
+</script>
+<div class="row">
+  <div class="col-lg-8">
+    <div class="card how-to-calculate border border-primary shadow rounded">
+      <div class="card-header border border-primary bg-primary">
+          <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="des()" class="btn btn-sm btn-dark">Hide</span></h3>
+      </div>
+      <div class="card-body " id="description">
+        <p>Number of Faces in the Cube: 6 </p>
+        <p>Number of Edges in the Cube: 12 </p>
+        <p>Number of Vertices in the Cube: 8</p><br>
+        <p>Let the Length of the edge of the Cube be L units.</p>
+        <p>Then </p>
+          <p>the Volume of the Cube will be L<sup>3</sup> cubic units.</p>
+            <p>the Total Surface Area of the Cube will be 6 L<sup>2</sup> square units.</p>
+            <p>the Lateral Surface Area of the Cube will be 4 L<sup>2</sup> square units.</p>
+            <p>the Length of Face Diagonal of the Cube will be \(\sqrt{2}\) L units.</p>
+            <p>the Length of Space Diagonal of the Cube will be \(\sqrt{3}\) L units.</p>
+      </div>
+      <div class="card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
+        <p>Learn more about Cube</p>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 </main>
-
-<div class="explanation">
-
-</div>
 
 
 
@@ -235,7 +290,7 @@
 </div>
 
 <div class="row justify-content-center">
-<small class="text-primary">&copy; ecalculatorsite.com 2020. All rights reserved.</small>
+<small class="text-dark">&copy;2020-2021 ecalculatorsite.com</small>
 </div>
   </div>
 </footer>
@@ -279,11 +334,18 @@
 function linkCopy(){
 var copyText=window.location.href;
   navigator.clipboard.writeText(copyText);
-  document.getElementById('link').textContent="Link Copied";
+  document.getElementById('link').textContent="✓";
   document.getElementById('copy').textContent="Copy";
   document.getElementById('code').style.backgroundColor="#fff";
+
 }
   document.querySelector("#link").addEventListener("click", linkCopy);
 </script>
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   </body>
 </html>
