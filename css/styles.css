@@ -13,6 +13,9 @@ body{
   font-size: 18px;
 font-family: 'Andika New Basic', 'Noto Sans JP', sans-serif;
 }
+.card-body#description{
+  background-color: #007bff42;
+}
 ::-webkit-scrollbar{
   width:10px;
   background-color: #dcf5eb;
