@@ -17,6 +17,7 @@ font-family: 'Andika New Basic', 'Noto Sans JP', sans-serif;
 .card-body#description{
   background-color: #007bff42;
 }
+
 ::-webkit-scrollbar{
   width:10px;
   background-color: #dcf5eb;
@@ -31,6 +32,7 @@ font-family: 'Andika New Basic', 'Noto Sans JP', sans-serif;
 .nav-link:hover{
   font-weight: bold;
   background-color: #17a2b8 !important;
+    color:white !important;
 }
 .how-to-calculate{
   margin-top: 30px;
@@ -121,11 +123,12 @@ color: floralwhite;
 }
 #back-to-top{
 display:none;
-text-align: justify;
-width: 50px;
-height: 50px;
+justify-content: center;
+width: 15px;
+height: 10px;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50% !important;
   z-index: 100;
 }
