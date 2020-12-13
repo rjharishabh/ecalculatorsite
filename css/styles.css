@@ -4,11 +4,12 @@
 *{
   box-sizing: border-box;
 }
+:root{
+    scroll-behavior: smooth;
 
+}
 
 body{
-
-  scroll-behavior: smooth;
   background-color: #dcf5eb;
   font-size: 18px;
 font-family: 'Andika New Basic', 'Noto Sans JP', sans-serif;
@@ -118,13 +119,11 @@ padding-top: 50px;
 padding-bottom: 50px;
 color: floralwhite;
 }
-.back-to-top{
-
-  justify-content: center;
-  text-align: center;
-  background-color: red;
+#back-to-top{
+display:none;
+text-align: justify;
 width: 50px;
-height: 30px;
+height: 50px;
   position: fixed;
   bottom: 30px;
   right: 30px;

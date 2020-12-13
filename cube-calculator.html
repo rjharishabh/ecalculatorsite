@@ -5,11 +5,9 @@
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#01c9ff">
-   <meta http-equiv="x-ua-compatible" content="IE=edge">
-   <meta name="author" content="">
+   <meta name="author" content="Rishabh Ranjan Jha">
    <meta name="description" content="">
 
-<base href="#" target="_blank">
 
     <title>Cube Calculator | E Calculator Site</title>
 <link rel="canonical" href="">
@@ -17,7 +15,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/fontawesome.min.css">
+
 
 
 <!-- Favicon -->
@@ -168,7 +166,7 @@
         <h5>Please <a href="#" class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
-      <h5>&#128151; Like this Calculator? Please Share it with your friends or Add it in your page.</h5>
+      <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
@@ -316,8 +314,23 @@
 </div>
   </div>
 </footer>
-<a href="#" target="_self" class=" back-to-top bg-warning text-white">Top</a>
+<a href="#" target="_self"  id="back-to-top" class="btn btn-info "> <img src="photos/arrow-up.png" alt=""> </a>
+<script type="text/javascript">
+  var doc=document.getElementById('back-to-top');
+  function fff(){
+    var scr=window.pageYOffset;
+      var doc=document.getElementById('back-to-top');
+if(scr>200)
+doc.style.display="block";
+else
+doc.style.display="none";
 
+
+  }
+
+
+window.addEventListener('scroll',fff);
+</script>
 
 
 
@@ -351,7 +364,7 @@
       var copyText=document.getElementById('code').textContent;
       navigator.clipboard.writeText(copyText);
     document.getElementById('copy').textContent="Copied";
-    document.getElementById('code').style.backgroundColor="yellow";
+    document.getElementById('code').style.backgroundColor="#ffc107";
 
 
 
