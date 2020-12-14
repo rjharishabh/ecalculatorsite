@@ -10,7 +10,7 @@
    <meta name="description" content="">
 
 
-    <title>Cone Calculator | E Calculator Site</title>
+    <title>Cylinder Calculator | E Calculator Site</title>
 <link rel="canonical" href="">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -83,14 +83,14 @@
 <div class="col-lg-8">
   <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Cone Calculator</h1></center>
+    <center><h1 class="text-white">Cylinder Calculator</h1></center>
 </div>
 <div class="card-body">
     <form>
         <div class="form-group row">
-      <label for="rcone" class="col-form-label col-12 col-md-5 ">Radius of Cone</label>
+      <label for="rcyl" class="col-form-label col-12 col-md-5 ">Radius of Cylinder</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" required class="form-control" id="rcone">
+        <input type="text" required class="form-control" id="rcyl">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="units">
@@ -98,9 +98,9 @@
     </div>
 
     <div class="form-group row">
-  <label for="hcone" class="col-form-label col-12 col-md-5 ">Height of Cone</label>
+  <label for="hcyl" class="col-form-label col-12 col-md-5 ">Height of Cylinder</label>
   <div class="col-8 col-md-4 col-lg-5">
-    <input type="text" required class="form-control" id="hcone">
+    <input type="text" required class="form-control" id="hcyl">
   </div>
   <div class="col-4 col-md-3 col-lg-2">
    <input type="text" readonly class="form-control-plaintext" value="units">
@@ -109,51 +109,40 @@
 
     <div class="row">
     <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
-    <button type="button" class=" btn btn-primary" onclick="cone()" name="button">Calculate</button>
+    <button type="button" class=" btn btn-primary" onclick="cylinder()" name="button">Calculate</button>
     </div>
     <div class="col-1 offset-3 offset-md-1 offset-lg-2">
-    <button type="button" class=" btn btn-danger" onclick="resetcone()" name="button">Reset</button>
+    <button type="button" class=" btn btn-danger" onclick="resetcylinder()" name="button">Reset</button>
     </div>
     </div>
   </form>
 
     <form>
     <div class="form-group row">
-      <label for="volcone" class="col-form-label col-12 col-md-5">Volume of Cone</label>
+      <label for="volcyl" class="col-form-label col-12 col-md-5">Volume of Cylinder</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="volcone">
+        <input type="text" readonly class="form-control" id="volcyl">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="cc. units">
      </div>
     </div>
     <div class="form-group row">
-      <label for="tsacone" class="col-form-label col-12 col-md-5">Total Surface Area of Cone</label>
+      <label for="tsacyl" class="col-form-label col-12 col-md-5">Total Surface Area of Cylinder</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="tsacone">
+        <input type="text" readonly class="form-control" id="tsacyl">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="sq. units">
      </div>
     </div>
     <div class="form-group row">
-      <label for="csacone" class="col-form-label col-12 col-md-5">Curved Surface Area of Cone</label>
+      <label for="csacyl" class="col-form-label col-12 col-md-5">Curved Surface Area of Cylinder</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly  class="form-control" id="csacone">
+        <input type="text" readonly  class="form-control" id="csacyl">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="sq. units">
-     </div>
-    </div>
-
-
-    <div class="form-group row">
-      <label for="shcone" class="col-form-label col-12 col-md-5">Slant Height of Cone</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="shcone">
-      </div>
-      <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="units">
      </div>
     </div>
 
@@ -162,18 +151,18 @@
 <div class="card-footer border-top border-primary">
   <div class="text-center border border-dark wrong">
    <h5>If you find anything wrong in this Calculation.</h5>
-        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Cone Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Cylinder Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
       <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/cone-calculator.html"&gt;Cone Calculator&lt;a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/cylinder-calculator.html"&gt;Cylinder Calculator&lt;a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/cone-calculator.html"&gt;Cone Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/cone-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/cylinder-calculator.html"&gt;Cylinder Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/cylinder-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
@@ -218,16 +207,15 @@
           <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the Radius of the Cone be \(R\) units</p>
-        <p>and the Height of the Cone be \(H\) units.</p>
+        <p>Let the Radius of the Cylinder be \(R\) units</p>
+        <p>and the Height of the Cylinder be \(H\) units.</p>
         <p>Then </p>
-          <p>the Volume of the Cone will be \(1/3 \pi R^2 H\) cubic units.</p>
-          <p>the Total Surface Area of the Cone will be \(\pi R(R + \sqrt{R^2 + H^2})\) square units.</p>
-          <p>the Lateral Surface Area of the Cone will be \(\pi R \sqrt{R^2 + H^2}\) square units.</p>
-          <p>the Slant Height of the Cone will be \(\sqrt{R^2 + H^2}\) units.</p>
+          <p>the Volume of the Cylinder will be \(\pi R^2 H\) cubic units.</p>
+          <p>the Total Surface Area of the Cylinder will be \(2\pi R(R + H)\) square units.</p>
+          <p>the Lateral Surface Area of the Cylinder will be \(2\pi R H\) square units.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Cube" target="_blank" class="text-white">Learn more about Cone</a>
+        <a href="https://en.wikipedia.org/wiki/Cube" target="_blank" class="text-white">Learn more about Cylinder</a>
       </div>
     </div>
   </div>

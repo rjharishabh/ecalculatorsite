@@ -91,40 +91,40 @@ function cylinder(){
   var h=parseFloat(document.getElementById('hcyl').value);
 
 if(r<=0){
-        document.getElementById('rcyl').value="Only positive numbers are allowed";
-         document.getElementById('rcyl').style.backgroundColor="red";
+        document.getElementById('rcyl').value="Only positive numbers";
+         document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
      }
  if(h<=0){
-        document.getElementById('hcyl').value="Only positive numbers are allowed";
-            document.getElementById('hcyl').style.backgroundColor="red";
+        document.getElementById('hcyl').value="Only positive numbers";
+            document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('rcyl').value="Only positive numbers are allowed";
-       document.getElementById('rcyl').style.backgroundColor="red";
+      document.getElementById('rcyl').value="Only positive numbers";
+       document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hcyl').value="Only positive numbers are allowed";
-       document.getElementById('hcyl').style.backgroundColor="red";
+      document.getElementById('hcyl').value="Only positive numbers";
+       document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
     }
 
    if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
         document.getElementById('volcyl').value=volcyl(r,h);
           document.getElementById('tsacyl').value=tsacyl(r,h);
-            document.getElementById('lsacyl').value=lsacyl(r,h);
+            document.getElementById('csacyl').value=csacyl(r,h);
       }
 }
 
 function resetcylinder(){
-  document.getElementById('rcyl').style.backgroundColor="white";
-  document.getElementById('hcyl').style.backgroundColor="white";
+  document.getElementById('rcyl').style.backgroundColor="#fff";
+  document.getElementById('hcyl').style.backgroundColor="#fff";
   document.getElementById('rcyl').value="";
   document.getElementById('hcyl').value="";
   document.getElementById('rcyl').placeholder="Please Enter Value";
   document.getElementById('hcyl').placeholder="Please Enter Value";
   document.getElementById('volcyl').value="";
   document.getElementById('tsacyl').value="";
-  document.getElementById('lsacyl').value="";
+  document.getElementById('csacyl').value="";
 }
 
 function cone(){
@@ -132,41 +132,41 @@ function cone(){
   var h=parseFloat(document.getElementById('hcone').value);
 
 if(r<=0){
-        document.getElementById('rcone').value="Only positive numbers are allowed";
-         document.getElementById('rcone').style.backgroundColor="red";
+        document.getElementById('rcone').value="Only positive numbers";
+         document.getElementById('rcone').style.backgroundColor="#97b17eeb";
      }
  if(h<=0){
-        document.getElementById('hcone').value="Only positive numbers are allowed";
-            document.getElementById('hcone').style.backgroundColor="red";
+        document.getElementById('hcone').value="Only positive numbers";
+            document.getElementById('hcone').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('rcone').value="Only positive numbers are allowed";
-       document.getElementById('rcone').style.backgroundColor="red";
+      document.getElementById('rcone').value="Only positive numbers";
+       document.getElementById('rcone').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hcone').value="Only positive numbers are allowed";
-       document.getElementById('hcone').style.backgroundColor="red";
+      document.getElementById('hcone').value="Only positive numbers";
+       document.getElementById('hcone').style.backgroundColor="#97b17eeb";
     }
 
    if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
         document.getElementById('volcone').value=volcone(r,h);
           document.getElementById('tsacone').value=tsacone(r,h);
-            document.getElementById('lsacone').value=lsacone(r,h);
+            document.getElementById('csacone').value=csacone(r,h);
               document.getElementById('shcone').value=shcone(r,h);
       }
 }
 
 function resetcone(){
-  document.getElementById('rcone').style.backgroundColor="white";
-  document.getElementById('hcone').style.backgroundColor="white";
+  document.getElementById('rcone').style.backgroundColor="#fff";
+  document.getElementById('hcone').style.backgroundColor="#fff";
   document.getElementById('rcone').value="";
   document.getElementById('hcone').value="";
   document.getElementById('rcone').placeholder="Please Enter Value";
   document.getElementById('hcone').placeholder="Please Enter Value";
   document.getElementById('volcone').value="";
   document.getElementById('tsacone').value="";
-  document.getElementById('lsacone').value="";
+  document.getElementById('csacone').value="";
   document.getElementById('shcone').value="";
 }
 
@@ -327,7 +327,7 @@ var l=shcone(r,h);
 return Math.PI*r*(l+r);
 }
 
-function lsacone(r,h){
+function csacone(r,h){
 var l=shcone(r,h);
 return Math.PI*r*l;
 }
@@ -340,7 +340,7 @@ function tsacyl(r,h){
   return 2*Math.PI*r*(r+h);
 }
 
-function lsacyl(r,h){
+function csacyl(r,h){
   return 2*Math.PI*r*h;
 }
 
