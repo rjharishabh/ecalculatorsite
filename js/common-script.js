@@ -1,15 +1,16 @@
 
-  function fff(){
-    var scr=window.pageYOffset;
-      var doc=document.getElementById('back-to-top');
-if(scr>200)
-doc.style.display="block";
+  function backToTop(){
+    var pyo=window.pageYOffset;
+      var btt=document.getElementById('back-to-top');
+if(pyo>200)
+btt.style.display="block";
 else
-doc.style.display="none";
+btt.style.display="none";
   }
 
-window.addEventListener('scroll',fff);
+window.addEventListener('scroll',backToTop);
 
+//copy hyperlink
     function copyhlink(){
       var copyText=document.getElementById('code').textContent;
       navigator.clipboard.writeText(copyText);

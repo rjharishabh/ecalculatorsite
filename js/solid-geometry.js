@@ -2,23 +2,24 @@ function cube(){
   var el=parseFloat(document.getElementById('elcube').value);
 
   if(el<=0){
-    document.getElementById('elcube').value="Only positive numbers are allowed";
-     document.getElementById('elcube').style.backgroundColor="red";
+    document.getElementById('elcube').value="Only positive numbers";
+     document.getElementById('elcube').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(el)) {
     document.getElementById('volcube').value=volcube(el);
       document.getElementById('tsacube').value=tsacube(el);
         document.getElementById('lsacube').value=lsacube(el);
-          document.getElementById('lodcube').value=lodcube(el);
+          document.getElementById('losdcube').value=losdcube(el);
+          document.getElementById('lofdcube').value=lofdcube(el);
   }
 else {
- document.getElementById('elcube').value="Only positive numbers are allowed";
-  document.getElementById('elcube').style.backgroundColor="red";
+ document.getElementById('elcube').value="Only positive numbers";
+  document.getElementById('elcube').style.backgroundColor="#97b17eeb";
 }
 }
 
 function resetcube(){
-    document.getElementById('elcube').style.backgroundColor="white";
+    document.getElementById('elcube').style.backgroundColor="#fff";
   document.getElementById('elcube').value="";
     document.getElementById('elcube').placeholder="Please Enter Value";
   document.getElementById('volcube').value="";
@@ -288,8 +289,12 @@ function lsacube(el){
   return 4*Math.pow(el,2);
 }
 
-function lodcube(el){
+function losdcube(el){
   return Math.sqrt(3)*el;
+}
+
+function lofdcube(el){
+  return Math.sqrt(2)*el;
 }
 
 function volcuboid(l,b,h){

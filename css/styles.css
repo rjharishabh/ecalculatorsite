@@ -24,7 +24,7 @@ font-family: 'Andika New Basic', 'Noto Sans JP', sans-serif;
 
 }
 .active{
-  color:red !important;
+  color:#dc3545 !important;
 }
 .nav-link{
   font-weight: bold;
@@ -32,7 +32,12 @@ font-family: 'Andika New Basic', 'Noto Sans JP', sans-serif;
 .nav-link:hover{
   font-weight: bold;
   background-color: #17a2b8 !important;
-    color:white !important;
+    color:#fff !important;
+}
+.nav-link.active:hover{
+  font-weight: bold;
+  background-color: #17a2b8 !important;
+    color:#dc3545 !important;
 }
 .how-to-calculate{
   margin-top: 30px;
@@ -83,7 +88,7 @@ ul{
 }
 .code-box{
   padding: 20px;
-  background-color: white;
+  background-color: #fff;
   margin-bottom: 20px;
 
 }
@@ -119,11 +124,9 @@ ul{
   background-color:#f3c848;
 padding-top: 50px;
 padding-bottom: 50px;
-color: floralwhite;
 }
 #back-to-top{
 display:none;
-justify-content: center;
 width: 15px;
 height: 10px;
   position: fixed;
