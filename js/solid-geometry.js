@@ -1,3 +1,4 @@
+//cube
 function cube(){
   var el=parseFloat(document.getElementById('elcube').value);
 
@@ -28,50 +29,51 @@ function resetcube(){
   document.getElementById('lodcube').value="";
 }
 
+//cuboid
 function cuboid(){
     var l=parseFloat(document.getElementById('lcuboid').value);
     var b=parseFloat(document.getElementById('bcuboid').value);
     var h=parseFloat(document.getElementById('hcuboid').value);
 
   if(l<=0){
-          document.getElementById('lcuboid').value="Only positive numbers are allowed";
-           document.getElementById('lcuboid').style.backgroundColor="red";
+          document.getElementById('lcuboid').value="Only positive numbers";
+           document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
        }
-   if(b<=0){
-          document.getElementById('bcuboid').value="Only positive numbers are allowed";
-              document.getElementById('bcuboid').style.backgroundColor="red";
+  else if(b<=0){
+          document.getElementById('bcuboid').value="Only positive numbers";
+              document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
        }
    if(h<=0){
-          document.getElementById('hcuboid').value="Only positive numbers are allowed";
-              document.getElementById('hcuboid').style.backgroundColor="red";
+          document.getElementById('hcuboid').value="Only positive numbers";
+              document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
        }
 
 
       if(isNaN(l)){
-        document.getElementById('lcuboid').value="Only positive numbers are allowed";
-         document.getElementById('lcuboid').style.backgroundColor="red";
+        document.getElementById('lcuboid').value="Only positive numbers";
+         document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(b)){
-        document.getElementById('bcuboid').value="Only positive numbers are allowed";
-         document.getElementById('bcuboid').style.backgroundColor="red";
+        document.getElementById('bcuboid').value="Only positive numbers";
+         document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(h)){
-        document.getElementById('hcuboid').value="Only positive numbers are allowed";
-         document.getElementById('hcuboid').style.backgroundColor="red";
+        document.getElementById('hcuboid').value="Only positive numbers";
+         document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
       }
 
      if (!isNaN(l) && !isNaN(b) && !isNaN(h) && l>0 && b>0 && h>0) {
           document.getElementById('volcuboid').value=volcuboid(l,b,h);
             document.getElementById('tsacuboid').value=tsacuboid(l,b,h);
               document.getElementById('lsacuboid').value=lsacuboid(l,b,h);
-                document.getElementById('lodcuboid').value=lodcuboid(l,b,h);
+                document.getElementById('losdcuboid').value=losdcuboid(l,b,h);
         }
 }
 
 function resetcuboid(){
-  document.getElementById('lcuboid').style.backgroundColor="white";
-  document.getElementById('bcuboid').style.backgroundColor="white";
-    document.getElementById('hcuboid').style.backgroundColor="white";
+  document.getElementById('lcuboid').style.backgroundColor="#fff";
+  document.getElementById('bcuboid').style.backgroundColor="#fff";
+    document.getElementById('hcuboid').style.backgroundColor="#fff";
 document.getElementById('lcuboid').value="";
 document.getElementById('bcuboid').value="";
 document.getElementById('hcuboid').value="";
@@ -81,7 +83,7 @@ document.getElementById('hcuboid').placeholder="Please Enter Value";
   document.getElementById('volcuboid').value="";
     document.getElementById('tsacuboid').value="";
       document.getElementById('lsacuboid').value="";
-        document.getElementById('lodcuboid').value="";
+        document.getElementById('losdcuboid').value="";
 }
 
 function cylinder(){
@@ -309,7 +311,7 @@ function lsacuboid(l,b,h){
   return 2*h*(l+b);
 }
 
-function lodcuboid(l,b,h){
+function losdcuboid(l,b,h){
   return Math.sqrt(Math.pow(l,2)+Math.pow(b,2)+Math.pow(h,2));
 }
 
