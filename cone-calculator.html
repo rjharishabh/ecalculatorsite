@@ -10,7 +10,7 @@
    <meta name="description" content="">
 
 
-    <title>Cube Calculator | E Calculator Site</title>
+    <title>Cone Calculator | E Calculator Site</title>
 <link rel="canonical" href="">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -83,73 +83,74 @@
 <div class="col-lg-8">
   <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Cube Calculator</h1></center>
+    <center><h1 class="text-white">Cone Calculator</h1></center>
 </div>
 <div class="card-body">
     <form>
         <div class="form-group row">
-      <label for="elcube" class="col-form-label col-12 col-md-5 ">Edge length of Cube </label>
+      <label for="rcone" class="col-form-label col-12 col-md-5 ">Radius of Cone</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" required class="form-control" id="elcube">
+        <input type="text" required class="form-control" id="rcone">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="units">
      </div>
     </div>
 
+    <div class="form-group row">
+  <label for="hcone" class="col-form-label col-12 col-md-5 ">Height of Cone</label>
+  <div class="col-8 col-md-4 col-lg-5">
+    <input type="text" required class="form-control" id="hcone">
+  </div>
+  <div class="col-4 col-md-3 col-lg-2">
+   <input type="text" readonly class="form-control-plaintext" value="units">
+ </div>
+</div>
+
     <div class="row">
     <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
-    <button type="button" class=" btn btn-primary" onclick="cube()" name="button">Calculate</button>
+    <button type="button" class=" btn btn-primary" onclick="cone()" name="button">Calculate</button>
     </div>
     <div class="col-1 offset-3 offset-md-1 offset-lg-2">
-    <button type="button" class=" btn btn-danger" onclick="resetcube()" name="button">Reset</button>
+    <button type="button" class=" btn btn-danger" onclick="resetcone()" name="button">Reset</button>
     </div>
     </div>
   </form>
 
     <form>
     <div class="form-group row">
-      <label for="volcube" class="col-form-label col-12 col-md-5">Volume of Cube </label>
+      <label for="volcone" class="col-form-label col-12 col-md-5">Volume of Cone</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="volcube">
+        <input type="text" readonly class="form-control" id="volcone">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="cc. units">
      </div>
     </div>
     <div class="form-group row">
-      <label for="tsacube" class="col-form-label col-12 col-md-5">Total Surface Area of Cube </label>
+      <label for="tsacone" class="col-form-label col-12 col-md-5">Total Surface Area of Cone</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="tsacube">
+        <input type="text" readonly class="form-control" id="tsacone">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="sq. units">
      </div>
     </div>
     <div class="form-group row">
-      <label for="lsacube" class="col-form-label col-12 col-md-5">Lateral Surface Area of Cube</label>
+      <label for="csacone" class="col-form-label col-12 col-md-5">Curved Surface Area of Cone</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly  class="form-control" id="lsacube">
+        <input type="text" readonly  class="form-control" id="csacone">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="sq. units">
      </div>
     </div>
 
-    <div class="form-group row">
-      <label for="lofdcube" class="col-form-label col-12 col-md-5">Length of Face Diagonal of Cube</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="lofdcube">
-      </div>
-      <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="units">
-     </div>
-    </div>
 
     <div class="form-group row">
-      <label for="losdcube" class="col-form-label col-12 col-md-5">Length of Space Diagonal of Cube</label>
+      <label for="shcone" class="col-form-label col-12 col-md-5">Slant Height of Cone</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="losdcube">
+        <input type="text" readonly class="form-control" id="shcone">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="units">
@@ -161,18 +162,18 @@
 <div class="card-footer border-top border-primary">
   <div class="text-center border border-dark wrong">
    <h5>If you find anything wrong in this Calculation.</h5>
-        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Cube Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Cone Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
       <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/cube-calculator.html"&gt;Cube Calculator&lt;a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/cone-calculator.html"&gt;Cone Calculator&lt;a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/cube-calculator.html"&gt;Cube Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/cube-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/cone-calculator.html"&gt;Cone Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/cone-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
@@ -217,19 +218,16 @@
           <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Number of Faces in the Cube: 6 </p>
-        <p>Number of Edges in the Cube: 12 </p>
-        <p>Number of Vertices in the Cube: 8</p><br>
-        <p>Let the Length of the edge of the Cube be \(L\) units.</p>
+        <p>Let the Radius of the Cone be \(R\) units</p>
+        <p>and the Height of the Cone be \(H\) units.</p>
         <p>Then </p>
-          <p>the Volume of the Cube will be \(L^3\) cubic units.</p>
-            <p>the Total Surface Area of the Cube will be \(6L^2\) square units.</p>
-            <p>the Lateral Surface Area of the Cube will be \(4L^2\) square units.</p>
-            <p>the Length of Face Diagonal of the Cube will be \(\sqrt{2}L\) units.</p>
-            <p>the Length of Space Diagonal of the Cube will be \(\sqrt{3}L\) units.</p>
+          <p>the Volume of the Cone will be \(1/3 \pi R^2 H\) cubic units.</p>
+          <p>the Total Surface Area of the Cone will be \(\pi R(R + L)\) square units.</p>
+          <p>the Lateral Surface Area of the Cone will be \(\pi R L\) square units.</p>
+          <p>the Slant Height of the Cone will be \(\sqrt{R^2 + H^2}\) units.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Cube" target="_blank" class="text-white">Learn more about Cube</a>
+        <a href="https://en.wikipedia.org/wiki/Cube" target="_blank" class="text-white">Learn more about Cone</a>
       </div>
     </div>
   </div>
