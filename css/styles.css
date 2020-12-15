@@ -8,6 +8,13 @@
     scroll-behavior: smooth;
 
 }
+.img-thumbnail{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.img-thumbnail:hover{
+  transform: scale(1.1);
+}
 .head{
   font-size: 25px;
 }
