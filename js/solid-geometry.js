@@ -228,29 +228,29 @@ function frustum(){
   var h=parseFloat(document.getElementById('hfrustum').value);
 
 if(r<=0){
-        document.getElementById('srfrustum').value="Only positive numbers are allowed";
-         document.getElementById('srfrustum').style.backgroundColor="red";
+        document.getElementById('srfrustum').value="Only positive numbers";
+         document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
      }
 if(R<=0){
-             document.getElementById('lrfrustum').value="Only positive numbers are allowed";
-              document.getElementById('lrfrustum').style.backgroundColor="red";
+             document.getElementById('lrfrustum').value="Only positive numbers";
+              document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
           }
  if(h<=0){
-        document.getElementById('hfrustum').value="Only positive numbers are allowed";
-            document.getElementById('hfrustum').style.backgroundColor="red";
+        document.getElementById('hfrustum').value="Only positive numbers";
+            document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('srfrustum').value="Only positive numbers are allowed";
-       document.getElementById('srfrustum').style.backgroundColor="red";
+      document.getElementById('srfrustum').value="Only positive numbers";
+       document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(R)){
-      document.getElementById('lrfrustum').value="Only positive numbers are allowed";
-       document.getElementById('lrfrustum').style.backgroundColor="red";
+      document.getElementById('lrfrustum').value="Only positive numbers";
+       document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hfrustum').value="Only positive numbers are allowed";
-       document.getElementById('hfrustum').style.backgroundColor="red";
+      document.getElementById('hfrustum').value="Only positive numbers";
+       document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
     }
 
    if (!isNaN(r) && !isNaN(R) && !isNaN(h) && r>0 && R>0 && h>0) {
@@ -262,9 +262,9 @@ if(R<=0){
 }
 
 function resetfrustum(){
-  document.getElementById('srfrustum').style.backgroundColor="white";
-    document.getElementById('lrfrustum').style.backgroundColor="white";
-  document.getElementById('hfrustum').style.backgroundColor="white";
+  document.getElementById('srfrustum').style.backgroundColor="#fff";
+    document.getElementById('lrfrustum').style.backgroundColor="#fff";
+  document.getElementById('hfrustum').style.backgroundColor="#fff";
   document.getElementById('srfrustum').value="";
     document.getElementById('lrfrustum').value="";
   document.getElementById('hfrustum').value="";
