@@ -277,7 +277,241 @@ function resetfrustum(){
   document.getElementById('shfrustum').value="";
 }
 
+function vcube(){
+  var el=parseFloat(document.getElementById('elcube').value);
 
+  if(el<=0){
+    document.getElementById('elcube').value="Only positive numbers";
+     document.getElementById('elcube').style.backgroundColor="#97b17eeb";
+  }
+  else if (!isNaN(el)) {
+    document.getElementById('volcube').value=volcube(el);
+  }
+else {
+ document.getElementById('elcube').value="Only positive numbers";
+  document.getElementById('elcube').style.backgroundColor="#97b17eeb";
+}
+}
+function resetvcube(){
+    document.getElementById('elcube').style.backgroundColor="#fff";
+  document.getElementById('elcube').value="";
+    document.getElementById('elcube').placeholder="Please Enter Value";
+  document.getElementById('volcube').value="";
+}
+function vcuboid(){
+    var l=parseFloat(document.getElementById('lcuboid').value);
+    var b=parseFloat(document.getElementById('bcuboid').value);
+    var h=parseFloat(document.getElementById('hcuboid').value);
+
+  if(l<=0){
+          document.getElementById('lcuboid').value="Only positive numbers";
+           document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
+       }
+  else if(b<=0){
+          document.getElementById('bcuboid').value="Only positive numbers";
+              document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
+       }
+   if(h<=0){
+          document.getElementById('hcuboid').value="Only positive numbers";
+              document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
+       }
+
+
+      if(isNaN(l)){
+        document.getElementById('lcuboid').value="Only positive numbers";
+         document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
+      }
+      if(isNaN(b)){
+        document.getElementById('bcuboid').value="Only positive numbers";
+         document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
+      }
+      if(isNaN(h)){
+        document.getElementById('hcuboid').value="Only positive numbers";
+         document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
+      }
+
+     if (!isNaN(l) && !isNaN(b) && !isNaN(h) && l>0 && b>0 && h>0) {
+          document.getElementById('volcuboid').value=volcuboid(l,b,h);
+        }
+}
+
+function resetvcuboid(){
+  document.getElementById('lcuboid').style.backgroundColor="#fff";
+  document.getElementById('bcuboid').style.backgroundColor="#fff";
+    document.getElementById('hcuboid').style.backgroundColor="#fff";
+document.getElementById('lcuboid').value="";
+document.getElementById('bcuboid').value="";
+document.getElementById('hcuboid').value="";
+document.getElementById('lcuboid').placeholder="Please Enter Value";
+document.getElementById('bcuboid').placeholder="Please Enter Value";
+document.getElementById('hcuboid').placeholder="Please Enter Value";
+  document.getElementById('volcuboid').value="";
+}
+
+function vcone(){
+  var r=parseFloat(document.getElementById('rcone').value);
+  var h=parseFloat(document.getElementById('hcone').value);
+
+if(r<=0){
+        document.getElementById('rcone').value="Only positive numbers";
+         document.getElementById('rcone').style.backgroundColor="#97b17eeb";
+     }
+ if(h<=0){
+        document.getElementById('hcone').value="Only positive numbers";
+            document.getElementById('hcone').style.backgroundColor="#97b17eeb";
+     }
+
+    if(isNaN(r)){
+      document.getElementById('rcone').value="Only positive numbers";
+       document.getElementById('rcone').style.backgroundColor="#97b17eeb";
+    }
+    if(isNaN(h)){
+      document.getElementById('hcone').value="Only positive numbers";
+       document.getElementById('hcone').style.backgroundColor="#97b17eeb";
+    }
+
+   if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
+        document.getElementById('volcone').value=volcone(r,h);
+      }
+}
+
+function resetvcone(){
+  document.getElementById('rcone').style.backgroundColor="#fff";
+  document.getElementById('hcone').style.backgroundColor="#fff";
+  document.getElementById('rcone').value="";
+  document.getElementById('hcone').value="";
+  document.getElementById('rcone').placeholder="Please Enter Value";
+  document.getElementById('hcone').placeholder="Please Enter Value";
+  document.getElementById('volcone').value="";
+}
+function vcyl(){
+  var r=parseFloat(document.getElementById('rcyl').value);
+  var h=parseFloat(document.getElementById('hcyl').value);
+
+if(r<=0){
+        document.getElementById('rcyl').value="Only positive numbers";
+         document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
+     }
+ if(h<=0){
+        document.getElementById('hcyl').value="Only positive numbers";
+            document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
+     }
+
+    if(isNaN(r)){
+      document.getElementById('rcyl').value="Only positive numbers";
+       document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
+    }
+    if(isNaN(h)){
+      document.getElementById('hcyl').value="Only positive numbers";
+       document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
+    }
+
+   if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
+        document.getElementById('volcyl').value=volcyl(r,h);
+      }
+}
+
+function resetvcyl(){
+  document.getElementById('rcyl').style.backgroundColor="#fff";
+  document.getElementById('hcyl').style.backgroundColor="#fff";
+  document.getElementById('rcyl').value="";
+  document.getElementById('hcyl').value="";
+  document.getElementById('rcyl').placeholder="Please Enter Value";
+  document.getElementById('hcyl').placeholder="Please Enter Value";
+  document.getElementById('volcyl').value="";
+}
+function vsph(){
+  var r=parseFloat(document.getElementById('rsph').value);
+
+  if(r<=0){
+    document.getElementById('rsph').value="Only positive numbers";
+     document.getElementById('rsph').style.backgroundColor="#97b17eeb";
+  }
+  else if (!isNaN(r)) {
+    document.getElementById('volsph').value=volsphere(r);
+    }
+else {
+ document.getElementById('rsph').value="Only positive numbers";
+  document.getElementById('rsph').style.backgroundColor="#97b17eeb";
+}
+}
+
+function resetvsph(){
+  document.getElementById('rsph').style.backgroundColor="#fff";
+  document.getElementById('rsph').value="";
+  document.getElementById('rsph').placeholder="Please Enter Value";
+  document.getElementById('volsph').value="";
+}
+function vhsph(){
+  var r=parseFloat(document.getElementById('rhsph').value);
+
+  if(r<=0){
+    document.getElementById('rhsph').value="Only positive numbers";
+     document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
+  }
+  else if (!isNaN(r)) {
+    document.getElementById('volhsph').value=volhemisphere(r);
+    }
+else {
+ document.getElementById('rhsph').value="Only positive numbers";
+  document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
+}
+}
+
+function resethsph(){
+  document.getElementById('rhsph').style.backgroundColor="#fff";
+  document.getElementById('rhsph').value="";
+  document.getElementById('rhsph').placeholder="Please Enter Value";
+  document.getElementById('volhsph').value="";
+}
+function vfrustum(){
+  var r=parseFloat(document.getElementById('srfrustum').value);
+  var R=parseFloat(document.getElementById('lrfrustum').value);
+  var h=parseFloat(document.getElementById('hfrustum').value);
+
+if(r<=0){
+        document.getElementById('srfrustum').value="Only positive numbers";
+         document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
+     }
+if(R<=0){
+             document.getElementById('lrfrustum').value="Only positive numbers";
+              document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
+          }
+ if(h<=0){
+        document.getElementById('hfrustum').value="Only positive numbers";
+            document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
+     }
+
+    if(isNaN(r)){
+      document.getElementById('srfrustum').value="Only positive numbers";
+       document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
+    }
+    if(isNaN(R)){
+      document.getElementById('lrfrustum').value="Only positive numbers";
+       document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
+    }
+    if(isNaN(h)){
+      document.getElementById('hfrustum').value="Only positive numbers";
+       document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
+    }
+
+   if (!isNaN(r) && !isNaN(R) && !isNaN(h) && r>0 && R>0 && h>0) {
+        document.getElementById('volfrustum').value=volfrustum(r,R,h);
+      }
+}
+
+function resetvfrustum(){
+  document.getElementById('srfrustum').style.backgroundColor="#fff";
+    document.getElementById('lrfrustum').style.backgroundColor="#fff";
+  document.getElementById('hfrustum').style.backgroundColor="#fff";
+  document.getElementById('srfrustum').value="";
+    document.getElementById('lrfrustum').value="";
+  document.getElementById('hfrustum').value="";
+  document.getElementById('srfrustum').placeholder="Please Enter Value";
+  document.getElementById('lrfrustum').placeholder="Please Enter Value";
+  document.getElementById('hfrustum').placeholder="Please Enter Value";
+  document.getElementById('volfrustum').value="";
+}
 
 function volcube(el){
 return Math.pow(el,3);

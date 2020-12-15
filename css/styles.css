@@ -8,7 +8,9 @@
     scroll-behavior: smooth;
 
 }
-
+.head{
+  font-size: 25px;
+}
 body{
   background-color: #dcf5eb;
   font-size: 18px;
