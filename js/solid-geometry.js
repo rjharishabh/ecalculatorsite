@@ -196,30 +196,30 @@ function resetsphere(){
 }
 
 function hemisphere(){
-  var r=parseFloat(document.getElementById('rhemisph').value);
+  var r=parseFloat(document.getElementById('rhsph').value);
 
   if(r<=0){
-    document.getElementById('rhemisph').value="Only positive numbers are allowed";
-     document.getElementById('rhemisph').style.backgroundColor="red";
+    document.getElementById('rhsph').value="Only positive numbers";
+     document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
-    document.getElementById('volhemisph').value=volhemisphere(r);
-      document.getElementById('tsahemisph').value=tsahemisphere(r);
-          document.getElementById('csahemisph').value=csahemisphere(r);
+    document.getElementById('volhsph').value=volhemisphere(r);
+      document.getElementById('tsahsph').value=tsahemisphere(r);
+          document.getElementById('csahsph').value=csahemisphere(r);
     }
 else {
- document.getElementById('rhemisph').value="Only positive numbers are allowed";
-  document.getElementById('rhemisph').style.backgroundColor="red";
+ document.getElementById('rhsph').value="Only positive numbers";
+  document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
 }
 }
 
 function resethemisphere(){
-  document.getElementById('rhemisph').style.backgroundColor="white";
-  document.getElementById('rhemisph').value="";
-  document.getElementById('rhemisph').placeholder="Please Enter Value";
-  document.getElementById('volhemisph').value="";
-  document.getElementById('tsahemisph').value="";
-  document.getElementById('csahemisph').value="";
+  document.getElementById('rhsph').style.backgroundColor="#fff";
+  document.getElementById('rhsph').value="";
+  document.getElementById('rhsph').placeholder="Please Enter Value";
+  document.getElementById('volhsph').value="";
+  document.getElementById('tsahsph').value="";
+  document.getElementById('csahsph').value="";
 }
 
 function frustum(){
