@@ -174,21 +174,21 @@ function sphere(){
   var r=parseFloat(document.getElementById('rsph').value);
 
   if(r<=0){
-    document.getElementById('rsph').value="Only positive numbers are allowed";
-     document.getElementById('rsph').style.backgroundColor="red";
+    document.getElementById('rsph').value="Only positive numbers";
+     document.getElementById('rsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
     document.getElementById('volsph').value=volsphere(r);
       document.getElementById('sasph').value=sasphere(r);
     }
 else {
- document.getElementById('rsph').value="Only positive numbers are allowed";
-  document.getElementById('rsph').style.backgroundColor="red";
+ document.getElementById('rsph').value="Only positive numbers";
+  document.getElementById('rsph').style.backgroundColor="#97b17eeb";
 }
 }
 
 function resetsphere(){
-  document.getElementById('rsph').style.backgroundColor="white";
+  document.getElementById('rsph').style.backgroundColor="#fff";
   document.getElementById('rsph').value="";
   document.getElementById('rsph').placeholder="Please Enter Value";
   document.getElementById('volsph').value="";
