@@ -6,7 +6,12 @@
 }
 :root{
     scroll-behavior: smooth;
-
+}
+.policy{
+  margin-bottom: 40px;
+}
+.privacy li{
+  list-style-type: disc;
 }
 .img-thumbnail{
 margin-top: 10px;
@@ -17,6 +22,11 @@ margin-bottom: 10px;
 }
 .head{
   font-size: 25px;
+  font-weight: bold;
+}
+p.head{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 body{
   background-color: #dcf5eb;
