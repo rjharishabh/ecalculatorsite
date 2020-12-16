@@ -4,6 +4,10 @@
 *{
   box-sizing: border-box;
 }
+.github{
+  width:10%;
+  float: right;
+}
 :root{
     scroll-behavior: smooth;
 }
