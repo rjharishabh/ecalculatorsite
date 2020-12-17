@@ -10,7 +10,7 @@
    <meta name="description" content="">
 
 
-    <title>Plane Geometry Calculator - E Calculator Site</title>
+    <title>Square Calculator - E Calculator Site</title>
 <link rel="canonical" href="">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -57,7 +57,7 @@
         <a class="nav-link" href="solid-geometry.html">Solid Geometry</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link  active" href="plane-geometry.html">Plane Geometry</a>
+        <a class="nav-link active" href="plane-geometry.html">Plane Geometry</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="coordinate-geometry.html">Coordinate Geometry</a>
@@ -66,6 +66,9 @@
   </div>
 </div>
     </nav>
+
+
+
 
 <div class="container">
   <div class="row">
@@ -78,64 +81,78 @@
 <main class="container-md">
 <div class="row">
 <div class="col-lg-8">
-  <div class="card shadow rounded">
+  <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Plane Geometry Calculator</h1></center>
+    <center><h1 class="text-white">Square Calculator</h1></center>
 </div>
 <div class="card-body">
-  <div class="row">
-<div class="col-12 col-sm-6">
-  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/circle.jpg" alt="cube calculator link"></a>
-</div>
-<div class="col-12 col-sm-6">
-  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/triangle.jpg" alt="triangle calculator link"></a>
-</div>
-  </div>
-  <div class="row">
-<div class="col-12 col-sm-6">
-  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/square.jpg" alt="square calculator link"></a>
-</div>
-<div class="col-12 col-sm-6">
-  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/rectangle.jpg" alt="rectangle calculator link"></a>
-</div>
-  </div>
-  <div class="row">
-<div class="col-12 col-sm-6">
-  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/rhombus.jpg" alt="rhombus calculator link"></a>
-</div>
-<div class="col-12 col-sm-6">
-  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/parallelogram.jpg" alt="parallelogram calculator link"></a>
-</div>
-  </div>
-  <div class="row">
-<div class="col-12 col-sm-6">
-  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/ellipse.jpg" alt="ellipse calculator link"></a>
-</div>
-<div class="col-12 col-sm-6">
-  <a href="regular-polygon-calculator.html"><img class="shadow img-thumbnail img-fluid rounded" src="photos/polygon.jpg" alt="regular polygon calculator link"></a>
-</div>
-  </div>
-  <div class="row">
-<div class="col-12 col-sm-6">
-  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/area.jpg" alt="area calculator link"></a>
-</div>
-<div class="col-12 col-sm-6">
-  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/perimeter.jpg" alt="perimeter calculator link"></a>
-</div>
-  </div>
-  </div>
+    <form>
+        <div class="form-group row">
+      <label for="lsquare" class="col-form-label col-12 col-md-5 ">Side Length of Square</label>
+      <div class="col-8 col-md-4 col-lg-5">
+        <input type="text" required class="form-control" id="lsquare">
+      </div>
+      <div class="col-4 col-md-3 col-lg-2">
+       <input type="text" readonly class="form-control-plaintext" value="units">
+     </div>
+    </div>
 
-<div class="card-footer border border-primary">
+    <div class="row">
+    <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
+    <button type="button" class=" btn btn-primary" onclick="square()" name="button">Calculate</button>
+    </div>
+    <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+    <button type="button" class=" btn btn-danger" onclick="resetsquare()" name="button">Reset</button>
+    </div>
+    </div>
+  </form>
+
+    <form>
+      <div class="form-group row">
+        <label for="dsquare" class="col-form-label col-12 col-md-5">Diagonal of Square</label>
+        <div class="col-8 col-md-4 col-lg-5">
+          <input type="text" readonly class="form-control" id="dsquare">
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+         <input type="text" readonly class="form-control-plaintext" value="units">
+       </div>
+      </div>
+    <div class="form-group row">
+      <label for="psquare" class="col-form-label col-12 col-md-5">Perimeter of Square</label>
+      <div class="col-8 col-md-4 col-lg-5">
+        <input type="text" readonly class="form-control" id="psquare">
+      </div>
+      <div class="col-4 col-md-3 col-lg-2">
+       <input type="text" readonly class="form-control-plaintext" value="units">
+     </div>
+    </div>
+    <div class="form-group row">
+      <label for="asquare" class="col-form-label col-12 col-md-5">Area of Square</label>
+      <div class="col-8 col-md-4 col-lg-5">
+        <input type="text" readonly  class="form-control" id="asquare">
+      </div>
+      <div class="col-4 col-md-3 col-lg-2">
+       <input type="text" readonly class="form-control-plaintext" value="sq. units">
+     </div>
+    </div>
+
+    </form>
+  </div>
+<div class="card-footer border-top border-primary">
+  <div class="text-center border border-dark wrong">
+   <h5>If you find anything wrong in this Calculation.</h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Square Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+  </div>
     <div class="text-center card-header border border-primary">
-      <h5>&#128151; Like this Website? Please Share it with your friends or Add a link to your site.</h5>
+      <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/plane-geometry-calculator.html"&gt;Plane Geometry Calculator&lt;a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/square-calculator.html"&gt;Square Calculator&lt;a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/plane-geometry-calculator.html"&gt;Plane Geometry Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/plane-geometry-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/square-calculator.html"&gt;Square Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/square-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
@@ -172,6 +189,28 @@
 
   </div>
 </div>
+</div>
+<div class="row">
+  <div class="col-lg-8">
+    <div class="card how-to-calculate border border-primary shadow rounded">
+      <div class="card-header border border-primary bg-primary">
+          <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+      </div>
+      <div class="card-body" id="description">
+        <p>Number of Edges: 4</p>
+        <p>Number of Vertices: 4</p>
+        <br>
+        <p>Let the Side Length of the Square be \(L\) units.</p>
+        <p>Then</p>
+          <p>the Diagonal of the Square will be \(\sqrt{2}L\) units.</p>
+            <p>the Perimeter of the Square will be \(4L\) units.</p>
+            <p>the Area of the Square will be \(L^2\) square units.</p>
+      </div>
+      <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
+        <a href="https://en.wikipedia.org/wiki/Square" target="_blank" class="text-white">Learn more about Square</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="row d-lg-none">
@@ -249,7 +288,7 @@
 </div>
   </div>
 </footer>
-<a href="#" id="back-to-top" ><img class="rounded-circle btn btn-info" src="photos/arrow-up.png" alt="Scroll to Top"></a>
+<a href="#" id="back-to-top" ><img class="rounded-circle btn btn-info" src="photos/arrow-up.png" alt="Scroll to Top"> </a>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -257,7 +296,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="js/common-script.js" charset="utf-8"></script>
-<script src="js/solid-geometry.js" charset="utf-8"></script>
+<script src="js/plane-geometry.js" charset="utf-8"></script>
 
   </body>
 </html>
