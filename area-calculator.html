@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#dcf5eb">
+
+   <meta name="author" content="Rishabh Ranjan Jha">
+   <meta name="description" content="">
+
+
+    <title>Area Calculator - E Calculator Site</title>
+<link rel="canonical" href="">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <small>We use cookies to ensure that we give you the best experience on our website.&nbsp; &nbsp;</small>
+      <a class="badge badge-primary" href="privacy-policy.html#cookies" target="_blank">Learn more</a>
+          <button type="button" class="btn btn-sm btn-warning" data-dismiss="alert" aria-label="Close" name="button">Got it!</button>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light navbar-expand-lg">
+<div class="container">
+        <a class="navbar-brand" href="http://www.ecalculatorsite.com">
+          <img src="photos/logo.jpg" class="img-fluid logo rounded" alt="site logo" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+   <img src="photos/menu.png" alt="menu">
+ </button>
+
+ <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.ecalculatorsite.com">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="statistics.html">Statistics</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="solid-geometry.html">Solid Geometry</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="plane-geometry.html">Plane Geometry</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="coordinate-geometry.html">Coordinate Geometry</a>
+      </li>
+    </ul>
+  </div>
+</div>
+    </nav>
+
+
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-6">
+<img src="photos/ecs-header.jpg" class="header img-fluid rounded" alt="site official image">
+  </div>
+  </div>
+</div>
+
+<main class="container-md">
+<div class="row">
+<div class="col-lg-8">
+  <div class="card border border-primary shadow rounded">
+<div class="card-header border border-primary bg-primary">
+    <center><h1 class="text-white">Area Calculator</h1></center>
+</div>
+<div class="card-body">
+<p class="text-dark text-center head">Circle</p>
+    <form>
+        <div class="form-group row">
+      <label for="radcir" class="col-form-label col-12 col-md-5 ">Radius of Circle</label>
+      <div class="col-8 col-md-4 col-lg-5">
+        <input type="text" required class="form-control" id="radcir">
+      </div>
+      <div class="col-4 col-md-3 col-lg-2">
+       <input type="text" readonly class="form-control-plaintext" value="units">
+     </div>
+    </div>
+
+    <div class="row">
+    <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
+    <button type="button" class=" btn btn-primary" onclick="acir()" name="button">Calculate</button>
+    </div>
+    <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+    <button type="button" class=" btn btn-danger" onclick="resetacir()" name="button">Reset</button>
+    </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="acir" class="col-form-label col-12 col-md-5">Area of Circle</label>
+      <div class="col-8 col-md-4 col-lg-5">
+        <input type="text" readonly class="form-control" id="acir">
+      </div>
+      <div class="col-4 col-md-3 col-lg-2">
+       <input type="text" readonly class="form-control-plaintext" value="sq. units">
+     </div>
+    </div>
+    </form>
+
+    <p class="text-dark text-center head">Square</p>
+        <form>
+            <div class="form-group row">
+          <label for="ssquare" class="col-form-label col-12 col-md-5 ">Side of Square</label>
+          <div class="col-8 col-md-4 col-lg-5">
+            <input type="text" required class="form-control" id="ssquare">
+          </div>
+          <div class="col-4 col-md-3 col-lg-2">
+           <input type="text" readonly class="form-control-plaintext" value="units">
+         </div>
+        </div>
+
+        <div class="row">
+        <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
+        <button type="button" class=" btn btn-primary" onclick="asquare()" name="button">Calculate</button>
+        </div>
+        <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+        <button type="button" class=" btn btn-danger" onclick="resetasquare()" name="button">Reset</button>
+        </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="aasquare" class="col-form-label col-12 col-md-5">Area of Square</label>
+          <div class="col-8 col-md-4 col-lg-5">
+            <input type="text" readonly class="form-control" id="aasquare">
+          </div>
+          <div class="col-4 col-md-3 col-lg-2">
+           <input type="text" readonly class="form-control-plaintext" value="sq. units">
+         </div>
+        </div>
+        </form>
+        <p class="text-dark text-center head">Rectangle</p>
+            <form>
+              <div class="form-group row">
+            <label for="larect" class="col-form-label col-12 col-md-5 ">Length of Rectangle</label>
+            <div class="col-8 col-md-4 col-lg-5">
+              <input type="text" required class="form-control" id="larect">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2">
+             <input type="text" readonly class="form-control-plaintext" value="units">
+           </div>
+          </div>
+          <div class="form-group row">
+        <label for="barect" class="col-form-label col-12 col-md-5 ">Breadth of Rectangle</label>
+        <div class="col-8 col-md-4 col-lg-5">
+          <input type="text" required class="form-control" id="barect">
+        </div>
+        <div class="col-4 col-md-3 col-lg-2">
+         <input type="text" readonly class="form-control-plaintext" value="units">
+       </div>
+      </div>
+
+            <div class="row">
+            <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
+            <button type="button" class=" btn btn-primary" onclick="arect()" name="button">Calculate</button>
+            </div>
+            <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+            <button type="button" class=" btn btn-danger" onclick="resetarect()" name="button">Reset</button>
+            </div>
+            </div>
+            <div class="form-group row">
+              <label for="aarect" class="col-form-label col-12 col-md-5">Area of Rectangle</label>
+              <div class="col-8 col-md-4 col-lg-5">
+                <input type="text" readonly class="form-control" id="aarect">
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+               <input type="text" readonly class="form-control-plaintext" value="sq. units">
+             </div>
+            </div>
+            </form>
+            <p class="text-dark text-center head">Rhombus</p>
+                <form>
+                    <div class="form-group row">
+                  <label for="d1rhombus" class="col-form-label col-12 col-md-5 ">1st Diagonal of Rhombus</label>
+                  <div class="col-8 col-md-4 col-lg-5">
+                    <input type="text" required class="form-control" id="d1rhombus">
+                  </div>
+                  <div class="col-4 col-md-3 col-lg-2">
+                   <input type="text" readonly class="form-control-plaintext" value="units">
+                 </div>
+                </div>
+                <div class="form-group row">
+              <label for="d2rhombus" class="col-form-label col-12 col-md-5 ">2nd Diagonal of Rhombus</label>
+              <div class="col-8 col-md-4 col-lg-5">
+                <input type="text" required class="form-control" id="d2rhombus">
+              </div>
+              <div class="col-4 col-md-3 col-lg-2">
+               <input type="text" readonly class="form-control-plaintext" value="units">
+             </div>
+            </div>
+
+                <div class="row">
+                <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
+                <button type="button" class=" btn btn-primary" onclick="arhombus()" name="button">Calculate</button>
+                </div>
+                <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+                <button type="button" class=" btn btn-danger" onclick="resetarhombus()" name="button">Reset</button>
+                </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="arhombus" class="col-form-label col-12 col-md-5">Area of Rhombus</label>
+                  <div class="col-8 col-md-4 col-lg-5">
+                    <input type="text" readonly class="form-control" id="arhombus">
+                  </div>
+                  <div class="col-4 col-md-3 col-lg-2">
+                   <input type="text" readonly class="form-control-plaintext" value="sq. units">
+                 </div>
+                </div>
+                </form>
+                <p class="text-dark text-center head">Parallelogram</p>
+                    <form>
+                        <div class="form-group row">
+                      <label for="bapara" class="col-form-label col-12 col-md-5 ">Base of Parallelogram</label>
+                      <div class="col-8 col-md-4 col-lg-5">
+                        <input type="text" required class="form-control" id="bapara">
+                      </div>
+                      <div class="col-4 col-md-3 col-lg-2">
+                       <input type="text" readonly class="form-control-plaintext" value="units">
+                     </div>
+                    </div>
+
+                    <div class="form-group row">
+                  <label for="hapara" class="col-form-label col-12 col-md-5 ">Height of Parallelogram</label>
+                  <div class="col-8 col-md-4 col-lg-5">
+                    <input type="text" required class="form-control" id="hapara">
+                  </div>
+                  <div class="col-4 col-md-3 col-lg-2">
+                   <input type="text" readonly class="form-control-plaintext" value="units">
+                  </div>
+                  </div>
+                    <div class="row">
+                    <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
+                    <button type="button" class=" btn btn-primary" onclick="apara()" name="button">Calculate</button>
+                    </div>
+                    <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+                    <button type="button" class=" btn btn-danger" onclick="resetapara()" name="button">Reset</button>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="aapara" class="col-form-label col-12 col-md-5">Area of Parallelogram</label>
+                      <div class="col-8 col-md-4 col-lg-5">
+                        <input type="text" readonly class="form-control" id="aapara">
+                      </div>
+                      <div class="col-4 col-md-3 col-lg-2">
+                       <input type="text" readonly class="form-control-plaintext" value="sq. units">
+                     </div>
+                    </div>
+                    <hr>
+
+                    <div class="form-group row">
+                    <label for="aapara2" class="col-form-label col-12 col-md-5 ">Adjacent Side(a) of Parallelogram</label>
+                    <div class="col-8 col-md-4 col-lg-5">
+                    <input type="text" required class="form-control" id="aapara2">
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                    <input type="text" readonly class="form-control-plaintext" value="units">
+                    </div>
+                    </div>
+
+                    <div class="form-group row">
+                    <label for="bapara2" class="col-form-label col-12 col-md-5 ">Adjacent Side(b) of Parallelogram</label>
+                    <div class="col-8 col-md-4 col-lg-5">
+                    <input type="text" required class="form-control" id="bapara2">
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                    <input type="text" readonly class="form-control-plaintext" value="units">
+                    </div>
+                    </div>
+
+                    <div class="form-group row">
+                    <label for="angleapara2" class="col-form-label col-12 col-md-5 ">Angle between Adjacent Sides of Parallelogram</label>
+                    <div class="col-8 col-md-4 col-lg-5">
+                    <input type="text" required class="form-control" id="angleapara2">
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                      <select class="custom-select" id="abas">
+                          <option selected value="1">Degrees</option>
+                          <option value="2">Radians</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
+                    <button type="button" class=" btn btn-primary" onclick="apara2()" name="button">Calculate</button>
+                    </div>
+                    <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+                    <button type="button" class=" btn btn-danger" onclick="resetapara2()" name="button">Reset</button>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                    <label for="aapara2" class="col-form-label col-12 col-md-5">Area of Parallelogram</label>
+                    <div class="col-8 col-md-4 col-lg-5">
+                      <input type="text" readonly class="form-control" id="aapara2">
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2">
+                     <input type="text" readonly class="form-control-plaintext" value="sq. units">
+                    </div>
+                    </div>
+                    </form>
+
+                    <p class="text-dark text-center head">Ellipse</p>
+                        <form>
+                            <div class="form-group row">
+                          <label for="sminaellipse" class="col-form-label col-12 col-md-5 ">Semi-minor Axis of Ellipse</label>
+                          <div class="col-8 col-md-4 col-lg-5">
+                            <input type="text" required class="form-control" id="sminaellipse">
+                          </div>
+                          <div class="col-4 col-md-3 col-lg-2">
+                           <input type="text" readonly class="form-control-plaintext" value="units">
+                         </div>
+                        </div>
+                        <div class="form-group row">
+                      <label for="smajaellipse" class="col-form-label col-12 col-md-5 ">Semi-major Axis of Ellipse</label>
+                      <div class="col-8 col-md-4 col-lg-5">
+                        <input type="text" required class="form-control" id="smajaellipse">
+                      </div>
+                      <div class="col-4 col-md-3 col-lg-2">
+                       <input type="text" readonly class="form-control-plaintext" value="units">
+                      </div>
+                      </div>
+                        <div class="row">
+                        <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
+                        <button type="button" class=" btn btn-primary" onclick="aellipse()" name="button">Calculate</button>
+                        </div>
+                        <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+                        <button type="button" class=" btn btn-danger" onclick="resetaellipse()" name="button">Reset</button>
+                        </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="aaellipse" class="col-form-label col-12 col-md-5">Area of Ellipse</label>
+                          <div class="col-8 col-md-4 col-lg-5">
+                            <input type="text" readonly class="form-control" id="aaellipse">
+                          </div>
+                          <div class="col-4 col-md-3 col-lg-2">
+                           <input type="text" readonly class="form-control-plaintext" value="sq. units">
+                         </div>
+                       </div>
+                        </form>
+  </div>
+<div class="card-footer border-top border-primary">
+  <div class="text-center border border-dark wrong">
+   <h5>If you find anything wrong in this Calculation.</h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Area Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+  </div>
+    <div class="text-center card-header border border-primary">
+      <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
+    </div>
+<div class="card-body border border-top-0 border-primary">
+<div class="code-box border border-primary d-none d-md-block">
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/area-calculator.html"&gt;Area Calculator&lt;a&gt;</code>
+<button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
+</div>
+<div class="share-buttons text-center">
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/area-calculator.html"&gt;Area Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/area-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button></a>
+  <button type="button" id="link" class="share-btn rounded" name="button"><img src="photos/insert-link.png" alt="insert-link icon"></button>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+</div>
+<div class="col-lg-4 d-none d-lg-block ">
+  <div class="btn-group-vertical">
+    <h3 class="text-primary" >More Calculators</h3>
+  <button type="button" class="text-white btn btn-warning" >Cuboid Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cylinder Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cone Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Sphere Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Hemisphere Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >VolumeCalculator</button>
+  <button type="button" class="text-white btn btn-warning" >Surface Area Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Statistics Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Algebra Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Arithmetic Progression Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Geometric Progression Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cuboid Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cylinder Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cone Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Sphere Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Hemisphere Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >VolumeCalculator</button>
+  <button type="button" class="text-white btn btn-warning" >Surface Area Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Statistics Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Algebra Calculator</button>
+
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-8">
+    <div class="card how-to-calculate border border-primary shadow rounded">
+      <div class="card-header border border-primary bg-primary">
+          <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+      </div>
+      <div class="card-body" id="description">
+        <p>Let the Length of the edge of the Cube be \(L\) units.</p>
+        <p>Then, the Volume of the Cube will be \(L^3\) cubic units.</p>
+            <hr>
+          <p>Let the Length, Breadth and Height of the Cuboid be \(L, B, H\) units respectively.</p>
+          <p>Then, the Volume of the Cuboid will be \(L.B.H\) cubic units.</p>
+            <hr>
+          <p>Let the Radius of the Cone be \(R\) units</p>
+          <p>and the Height of the Cone be \(H\) units.</p>
+          <p>Then, the Volume of the Cone will be \(1/3 \pi R^2 H\) cubic units.</p>
+            <hr>
+            <p>Let the Radius of the Cylinder be \(R\) units</p>
+            <p>and the Height of the Cylinder be \(H\) units.</p>
+            <p>Then, the Volume of the Cylinder will be \(\pi R^2 H\) cubic units.</p>
+              <hr>
+              <p>Let the Radius of the Sphere be \(R\) units.</p>
+              <p>Then, the Volume of the Sphere will be \(4/3 \pi R^3\) cubic units.</p>
+                <hr>
+                <p>Let the Radius of the Hemisphere be \(R\) units.</p>
+                <p>Then, the Volume of the Hemisphere will be \(2/3 \pi R^3\) cubic units.</p>
+                  <hr>
+        <p>Let the Smaller Radius of the Conical Frustum be \(r\) units,</p>
+        <p>the Larger Radius of the Conical Frustum be \(R\) units</p>
+        <p>and the Height of the Conical Frustum be \(H\) units,</p>
+        <p>Then, the Volume of the Conical Frustum will be \(2/3 \pi R^3\) cubic units.</p>
+            </div>
+      <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
+        <a href="https://en.wikipedia.org/wiki/Surface_area" target="_blank" class="text-white">Learn more about Surface Area</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row d-lg-none">
+  <div class="col-12">
+    <div class="card border border-warning">
+      <div class="card-header  bg-info">
+    <h3 class="text-white">More Calculators</h3>
+      </div>
+      <div class="card-body more">
+        <div class="row">
+<div class=" col-sm-6 align-items-center">
+<ul>
+  <li><a href="">Cuboid Calculator</a></li>
+    <li><a href="">Cylinder Calculator</a></li>
+      <li><a href="">Cone Calculator</a></li>
+</ul>
+</div>
+
+<div class="col-sm-6">
+<ul>
+  <li><a href="">Volume Calculator</a></li>
+    <li><a href="">Surface Area Calculator</a></li>
+      <li><a href="">Sphere Calculator</a></li>
+</ul>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</main>
+
+
+
+<div class="container-fluid support">
+  <div class="container">
+    <div class="row text-danger text-center justify-content-center">
+      <h2>Want To Support This Website? &#128512;</h2>
+    </div>
+    <div class="row justify-content-center">
+<a class="btn btn-primary btn-sm" href="https://paypal.me/rishabhranjanjha?locale.x=en_GB" target="_blank">Donate via Paypal</a>
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GAJE6mmnGkVZNr"> </script> </form>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <div class="container">
+
+<div class="row">
+  <div class="col-12 col-md-6 text-center">
+  <ul>
+      <li> <a href="about.html">About</a></li>
+        <li><a href="mailto:ecalculatorsite@gmail.com?subject=Contact Us&body=http://www.ecalculatorsite.com%0d%0a%0d%0aThank you for contacting us.">Contact Us</a></li>
+          <li><a href="terms-of-use.html">Terms of Use</a></li>
+    <li> <a href="privacy-policy.html">Privacy Policy</a></li>
+  </ul>
+  </div>
+
+  <div class="col-12 col-md-6  text-center ">
+  <ul>
+    <li><a href="sitemap.html">Sitemap</a></li>
+    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Feedback&body=http://www.ecalculatorsite.com%0d%0a%0d%0aPlease write your valuable feedback.">Feedback</a></li>
+    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Report an Error&body=http://www.ecalculatorsite.com%0d%0a%0d%0aPlease write the error you have faced while using this website.">Report an Error</a></li>
+    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Request a Calculator&body=http://www.ecalculatorsite.com%0d%0a%0d%0aWhat type of calculator do you want to have on this website.">Request a Calculator</a></li>
+  </ul>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+<small class="text-dark">&copy;2020-2021 ecalculatorsite.com</small>
+</div>
+  </div>
+</footer>
+<a href="#" id="back-to-top" ><img class="rounded-circle btn btn-info" src="photos/arrow-up.png" alt="Scroll to Top"> </a>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" charset="utf-8"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="js/common-script.js" charset="utf-8"></script>
+<script src="js/solid-geometry.js" charset="utf-8"></script>
+
+  </body>
+</html>
