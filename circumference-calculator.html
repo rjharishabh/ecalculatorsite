@@ -89,9 +89,9 @@
 <p class="text-dark text-center head">Circle</p>
     <form>
         <div class="form-group row">
-      <label for="rcdcir" class="col-form-label col-12 col-md-5 ">Radius of Circle</label>
+      <label for="rccir" class="col-form-label col-12 col-md-5 ">Radius of Circle</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" required class="form-control" id="rcdcir">
+        <input type="text" required class="form-control" id="rccir">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="units">
@@ -108,9 +108,9 @@
     </div>
 
     <div class="form-group row">
-      <label for="acir" class="col-form-label col-12 col-md-5">Circumference of Circle</label>
+      <label for="cccir" class="col-form-label col-12 col-md-5">Circumference of Circle</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="acir">
+        <input type="text" readonly class="form-control" id="cccir">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="sq. units">
@@ -121,9 +121,9 @@
     <p class="text-dark text-center head">Square</p>
         <form>
             <div class="form-group row">
-          <label for="scquare" class="col-form-label col-12 col-md-5 ">Side of Square</label>
+          <label for="csquare" class="col-form-label col-12 col-md-5 ">Side of Square</label>
           <div class="col-8 col-md-4 col-lg-5">
-            <input type="text" required class="form-control" id="scquare">
+            <input type="text" required class="form-control" id="csquare">
           </div>
           <div class="col-4 col-md-3 col-lg-2">
            <input type="text" readonly class="form-control-plaintext" value="units">
@@ -132,10 +132,10 @@
 
         <div class="row">
         <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
-        <button type="button" class=" btn btn-primary" onclick="csquare()" name="button">Calculate</button>
+        <button type="button" class=" btn btn-primary" onclick="csqu()" name="button">Calculate</button>
         </div>
         <div class="col-1 offset-3 offset-md-1 offset-lg-2">
-        <button type="button" class=" btn btn-danger" onclick="resetcsquare()" name="button">Reset</button>
+        <button type="button" class=" btn btn-danger" onclick="resetcsqu()" name="button">Reset</button>
         </div>
         </div>
 
@@ -382,7 +382,7 @@
         <p>Then, the Volume of the Conical Frustum will be \(2/3 \pi R^3\) cubic units.</p>
             </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Surface_area" target="_blank" class="text-white">Learn more about Surface Area</a>
+        <a href="https://en.wikipedia.org/wiki/Circumference" target="_blank" class="text-white">Learn more about Circumference</a>
       </div>
     </div>
   </div>
@@ -471,7 +471,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="js/common-script.js" charset="utf-8"></script>
-<script src="js/solid-geometry.js" charset="utf-8"></script>
+<script src="js/plane-geometry.js" charset="utf-8"></script>
 
   </body>
 </html>

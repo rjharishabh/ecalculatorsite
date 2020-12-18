@@ -40,7 +40,7 @@ function cuboid(){
           document.getElementById('lcuboid').value="Only positive numbers";
            document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
        }
-  else if(b<=0){
+   if(b<=0){
           document.getElementById('bcuboid').value="Only positive numbers";
               document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
        }

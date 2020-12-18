@@ -18,8 +18,11 @@
   list-style-type: disc;
 }
 .img-thumbnail{
+  margin-left: 25px;
+  margin-right: 25px;
 margin-top: 10px;
 margin-bottom: 10px;
+width: 80%;
 }
 .img-thumbnail:hover{
   transform: scale(1.1);
