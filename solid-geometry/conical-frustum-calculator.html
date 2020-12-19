@@ -10,19 +10,19 @@
    <meta name="description" content="">
 
 
-    <title>Statistics Calculator - E Calculator Site</title>
+    <title>Conical Frustum Calculator - E Calculator Site</title>
 <link rel="canonical" href="">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
 
   </head>
 
@@ -31,7 +31,7 @@
     <div class="container">
       <div class="alert alert-primary alert-dismissible fade show" role="alert">
         <small>We use cookies to ensure that we give you the best experience on our website.&nbsp; &nbsp;</small>
-      <a class="badge badge-primary" href="privacy-policy.html#cookies" target="_blank">Learn more</a>
+        <a class="badge badge-primary" href="privacy-policy.html#cookies" target="_blank">Learn more</a>
           <button type="button" class="btn btn-sm btn-warning" data-dismiss="alert" aria-label="Close" name="button">Got it!</button>
       </div>
     </div>
@@ -39,10 +39,10 @@
     <nav class="navbar navbar-light navbar-expand-lg">
 <div class="container">
         <a class="navbar-brand" href="http://www.ecalculatorsite.com">
-          <img src="photos/logo.jpg" class="img-fluid logo rounded" alt="site logo" >
+          <img src="../photos/logo.jpg" class="img-fluid logo rounded" alt="site logo" >
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-   <img src="photos/menu.png" alt="menu">
+   <img src="../photos/menu.png" alt="menu">
  </button>
 
  <div class="collapse navbar-collapse" id="navbar">
@@ -51,10 +51,10 @@
         <a class="nav-link" href="http://www.ecalculatorsite.com">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="statistics.html">Statistics</a>
+        <a class="nav-link" href="statistics.html">Statistics</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="solid-geometry.html">Solid Geometry</a>
+        <a class="nav-link active" href="solid-geometry.html">Solid Geometry</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="plane-geometry.html">Plane Geometry</a>
@@ -73,7 +73,7 @@
 <div class="container">
   <div class="row">
   <div class="col-6">
-<img src="photos/ecs-header.jpg" class="header img-fluid rounded" alt="site official image">
+<img src="../photos/ecs-header.jpg" class="header img-fluid rounded" alt="site official image">
   </div>
   </div>
 </div>
@@ -83,113 +83,108 @@
 <div class="col-lg-8">
   <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Statistics Calculator</h1></center>
+    <center><h1 class="text-white">Conical Frustum Calculator</h1></center>
 </div>
 <div class="card-body">
     <form>
         <div class="form-group row">
-          <label for="statdata" class="text-center col-form-label col-12 ">Enter the comma separated values and click Calculate.</label>
-          <div class=" col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2 ">
-          <textarea required class="form-control" id="statdata" rows="3" ></textarea>
-          </div>
+      <label for="srfrustum" class="col-form-label col-12 col-md-5 ">Smaller Radius of Frustum</label>
+      <div class="col-8 col-md-4 col-lg-5">
+        <input type="text" required class="form-control" id="srfrustum">
+      </div>
+      <div class="col-4 col-md-3 col-lg-2">
+       <input type="text" readonly class="form-control-plaintext" value="units">
+     </div>
     </div>
+
+    <div class="form-group row">
+    <label for="lrfrustum" class="col-form-label col-12 col-md-5 ">Larger Radius of Frustum</label>
+    <div class="col-8 col-md-4 col-lg-5">
+    <input type="text" required class="form-control" id="lrfrustum">
+    </div>
+    <div class="col-4 col-md-3 col-lg-2">
+    <input type="text" readonly class="form-control-plaintext" value="units">
+    </div>
+    </div>
+
+    <div class="form-group row">
+  <label for="hfrustum" class="col-form-label col-12 col-md-5 ">Height of Frustum</label>
+  <div class="col-8 col-md-4 col-lg-5">
+    <input type="text" required class="form-control" id="hfrustum">
+  </div>
+  <div class="col-4 col-md-3 col-lg-2">
+   <input type="text" readonly class="form-control-plaintext" value="units">
+ </div>
+</div>
 
     <div class="row">
-      <div class="col-1 offset-3">
-     <button type="button" class=" reset-btn btn btn-primary" onclick="stat()"  name="button">Calculate</button>
-      </div>
-      <div class="col-1 offset-3">
-     <button type="button" class=" reset-btn btn btn-danger" onclick="resetstat()">Reset</button>
-      </div>
+    <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
+    <button type="button" class=" btn btn-primary" onclick="frustum()" name="button">Calculate</button>
     </div>
+    <div class="col-1 offset-3 offset-md-1 offset-lg-2">
+    <button type="button" class=" btn btn-danger" onclick="resetfrustum()" name="button">Reset</button>
+    </div>
+    </div>
+  </form>
 
+    <form>
     <div class="form-group row">
-        <label for="min-val" class="text-center col-form-label col-6 col-md-5 col-lg-5">Minimum Value</label>
-<label for="max-val" class="text-center col-form-label col-6 col-md-5 col-lg-5 offset-md-2">Maximum Value</label>
-    </div>
-    <div class="form-group row">
-    <div class="col-6 col-md-4 col-lg-5">
-          <input type="text" class="form-control " readonly  id="min-val">
-        </div>
-          <div class="col-6 col-md-4 col-lg-5 offset-md-2">
-        <input type="text" class=" form-control" readonly  id="max-val">
+      <label for="volfrustum" class="col-form-label col-12 col-md-5">Volume of Frustum</label>
+      <div class="col-8 col-md-4 col-lg-5">
+        <input type="text" readonly class="form-control" id="volfrustum">
       </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="range" class="text-center col-form-label col-6 col-md-5 col-lg-5">Range</label>
-        <label for="count" class="text-center col-form-label col-6 col-md-5 col-lg-5 offset-md-2">Count</label>
+      <div class="col-4 col-md-3 col-lg-2">
+       <input type="text" readonly class="form-control-plaintext" value="cc. units">
+     </div>
     </div>
     <div class="form-group row">
-    <div class="col-6 col-md-4 col-lg-5">
-          <input type="text" class="form-control " readonly  id="range">
-        </div>
-          <div class="col-6 col-md-4 col-lg-5 offset-md-2">
-        <input type="text" class=" form-control" readonly  id="count">
+      <label for="tsafrustum" class="col-form-label col-12 col-md-5">Total Surface Area of Frustum</label>
+      <div class="col-8 col-md-4 col-lg-5">
+        <input type="text" readonly class="form-control" id="tsafrustum">
       </div>
+      <div class="col-4 col-md-3 col-lg-2">
+       <input type="text" readonly class="form-control-plaintext" value="sq. units">
+     </div>
+   </div>
+   <div class="form-group row">
+     <label for="csafrustum" class="col-form-label col-12 col-md-5">Curved Surface Area of Frustum</label>
+     <div class="col-8 col-md-4 col-lg-5">
+       <input type="text" readonly class="form-control" id="csafrustum">
+     </div>
+     <div class="col-4 col-md-3 col-lg-2">
+      <input type="text" readonly class="form-control-plaintext" value="sq. units">
     </div>
-
-    <div class="form-group row">
-      <label for="sum" class="text-center col-form-label col-6 col-md-5 col-lg-5">Sum</label>
-        <label for="mean" class="text-center col-form-label col-6 col-md-5 col-lg-5 offset-md-2">Mean</label>
+  </div>
+  <div class="form-group row">
+    <label for="shfrustum" class="col-form-label col-12 col-md-5">Slant Height of Frustum</label>
+    <div class="col-8 col-md-4 col-lg-5">
+      <input type="text" readonly class="form-control" id="shfrustum">
     </div>
-    <div class="form-group row">
-    <div class="col-6 col-md-4 col-lg-5">
-          <input type="text" class="form-control " readonly  id="sum">
-        </div>
-          <div class="col-6 col-md-4 col-lg-5 offset-md-2">
-        <input type="text" class=" form-control" readonly  id="mean">
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="median" class="text-center col-form-label col-6 col-md-5 col-lg-5">Median</label>
-        <label for="mode" class="text-center col-form-label col-6 col-md-5 col-lg-5 offset-md-2">Mode</label>
-    </div>
-    <div class="form-group row">
-    <div class="col-6 col-md-4 col-lg-5">
-          <input type="text" class="form-control " readonly  id="median">
-        </div>
-          <div class="col-6 col-md-4 col-lg-5 offset-md-2">
-        <input type="text" class=" form-control" readonly  id="mode">
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="var" class="text-center col-form-label col-6 col-md-5 col-lg-5">Variance</label>
-        <label for="std-dev" class="text-center col-form-label col-6 col-md-5 col-lg-5 offset-md-2">Standard Deviation</label>
-    </div>
-    <div class="form-group row">
-    <div class="col-6 col-md-4 col-lg-5">
-          <input type="text" class="form-control " readonly  id="var">
-        </div>
-          <div class="col-6 col-md-4 col-lg-5 offset-md-2">
-        <input type="text" class=" form-control" readonly  id="std-dev">
-      </div>
-    </div>
-
+    <div class="col-4 col-md-3 col-lg-2">
+     <input type="text" readonly class="form-control-plaintext" value="units">
+   </div>
+ </div>
     </form>
   </div>
 <div class="card-footer border-top border-primary">
   <div class="text-center border border-dark wrong">
    <h5>If you find anything wrong in this Calculation.</h5>
-        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Statistics Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Conical Frustum Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
       <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/statistics-calculator.html"&gt;Statistics Calculator&lt;a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/conical-frustum-calculator.html"&gt;Conical Frustum Calculator&lt;a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/statistics-calculator.html"&gt;Statistics Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/statistics-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button></a>
-  <button type="button" id="link" class="share-btn rounded" name="button"><img src="photos/insert-link.png" alt="insert-link icon"></button>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/conical-frustum-calculator.html"&gt;Conical Frustum Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/conical-frustum-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
+  <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
 </div>
-
 </div>
 </div>
 
@@ -229,19 +224,17 @@
           <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Number of Faces in the Cube: 6 </p>
-        <p>Number of Edges in the Cube: 12 </p>
-        <p>Number of Vertices in the Cube: 8</p><br>
-        <p>Let the Length of the edge of the Cube be \(L\) units.</p>
+        <p>Let the Smaller Radius of the Conical Frustum be \(r\) units,</p>
+        <p>the Larger Radius of the Conical Frustum be \(R\) units</p>
+        <p>and the Height of the Conical Frustum be \(H\) units,</p>
         <p>Then </p>
-          <p>the Volume of the Cube will be \(L^3\) cubic units.</p>
-            <p>the Total Surface Area of the Cube will be \(6L^2\) square units.</p>
-            <p>the Lateral Surface Area of the Cube will be \(4L^2\) square units.</p>
-            <p>the Length of Face Diagonal of the Cube will be \(\sqrt{2}L\) units.</p>
-            <p>the Length of Space Diagonal of the Cube will be \(\sqrt{3}L\) units.</p>
+          <p>the Volume of the Conical Frustum will be \(\pi H(r^2 + R^2 +r.R) \over 3\) cubic units.</p>
+          <p>the Total Surface Area of the Conical Frustum will be \(\pi (\sqrt{H^2 + (R - r)^2}(r + R) + r^2 + R^2)\) square units.</p>
+          <p>the Curved Surface Area of the Conical Frustum will be \(\pi (r + R)\sqrt{H^2 + (R - r)^2}\) square units.</p>
+          <p>the Slant Height of the Conical Frustum will be \(\sqrt{H^2 + (R - r)^2}\) units.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Statistics" target="_blank" class="text-white">Learn more about Statistics</a>
+        <a href="https://en.wikipedia.org/wiki/Frustum" target="_blank" class="text-white">Learn more about Frustum</a>
       </div>
     </div>
   </div>
@@ -322,15 +315,15 @@
 </div>
   </div>
 </footer>
-<a href="#" id="back-to-top" ><img class="rounded-circle btn btn-info" src="photos/arrow-up.png" alt="Scroll to Top"> </a>
+<a href="#" id="back-to-top" ><img class="rounded-circle btn btn-info" src="../photos/arrow-up.png" alt="Scroll to Top"> </a>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js" charset="utf-8"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="js/common-script.js" charset="utf-8"></script>
-<script src="js/statistics.js" charset="utf-8"></script>
+<script src="../js/common-script.js"></script>
+<script src="../js/solid-geometry.js"></script>
 
   </body>
 </html>

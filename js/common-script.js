@@ -22,7 +22,7 @@ window.addEventListener('scroll',backToTop);
       navigator.clipboard.writeText(copyText);
     document.getElementById('copy').textContent="Copied";
     document.getElementById('code').style.backgroundColor="#ffc107";
-  document.getElementById('link').innerHTML='<img src="photos/insert-link.png" alt="insert-link icon">';
+  document.getElementById('link').innerHTML='<img src="../photos/insert-link.png" alt="insert-link icon">';
 
 
     }
@@ -32,7 +32,7 @@ document.querySelector("#copy").addEventListener("click", copyhlink);
 function linkCopy(){
 var copyText=window.location.href;
   navigator.clipboard.writeText(copyText);
-  document.getElementById('link').innerHTML='<img src="photos/done.png" alt="link-copied icon">';
+  document.getElementById('link').innerHTML='<img src="../photos/done.png" alt="link-copied icon">';
   document.getElementById('copy').textContent="Copy";
   document.getElementById('code').style.backgroundColor="#fff";
 
