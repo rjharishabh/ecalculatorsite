@@ -10,7 +10,7 @@
    <meta name="description" content="">
 
 
-    <title>Standard Deviation Calculator - E Calculator Site</title>
+    <title>Quadratic Equation Solver - E Calculator Site</title>
 <link rel="canonical" href="">
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -51,7 +51,10 @@
         <a class="nav-link" href="http://www.ecalculatorsite.com">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="statistics.html">Statistics</a>
+        <a class="nav-link active" href="statistics.html">Algebra</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="statistics.html">Statistics</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="solid-geometry.html">Solid Geometry</a>
@@ -83,32 +86,49 @@
 <div class="col-lg-8">
   <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Standard Deviation Calculator</h1></center>
+    <center><h1 class="text-white">Quadratic Equation Solver</h1></center>
 </div>
 <div class="card-body">
     <form>
         <div class="form-group row">
-          <label for="sddata" class="text-center col-form-label col-12 ">Enter the comma separated values and click Calculate.</label>
-          <div class=" col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2 ">
-          <textarea required class="form-control" id="sddata" rows="3" ></textarea>
-          </div>
+      <p class="col-12 text-center">Enter the Quadratic Equation that you want to solve</p>
+      <div class="col-12 quad text-center">
+        <input type="text" class="form-control col-2" placeholder="A" id="A">\(\hspace{0.3cm}X^2\hspace{0.3cm}+\hspace{0.3cm}\)<input type="text" placeholder="B" class="col-2 form-control" id="B">
+        \(\hspace{0.3cm}X\hspace{0.3cm}+\hspace{0.3cm}\)<input type="text" placeholder="C" class="form-control col-2" id="C">
+      </div>
+
     </div>
 
-    <div class="row">
-      <div class="col-1 offset-3">
-     <button type="button" class=" reset-btn btn btn-primary" onclick="stddev()"  name="button">Calculate</button>
+    <div class="row justify-content-center">
+      <div class="btn-group">
+        <button type="button" class="alg-btn btn btn-primary" onclick="quad()" name="button">Calculate</button>
+        <button type="button" class="alg-btn btn btn-danger" onclick="resetquad()" name="button">Reset</button>
       </div>
-      <div class="col-1 offset-3">
-     <button type="button" class=" reset-btn btn btn-danger" onclick="resetstddev()">Reset</button>
-      </div>
+
+
     </div>
+  </form>
+<br>
+    <form>
 
     <div class="form-group row">
-      <label for="std-dev" class="col-form-label col-12 col-md-5 ">Standard Deviation</label>
-      <div class="col-12 col-sm-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="std-dev">
+      <p id="aboutroots" class="col-12 text-center text-danger"></p>
+      <label for="dis" class="col-form-label col-6 col-md-6">Discrimant \((d)\) </label>
+      <div class="col-6 col-md-5">
+        <input type="text" readonly class="form-control" id="dis">
       </div>
-
+    </div>
+    <div class="form-group row">
+      <label for="r1" class="col-form-label col-6 col-md-6">1st Root of Quadratic Equation \((X_1)\) </label>
+      <div class="col-6 col-md-5">
+        <input type="text" readonly class="form-control" id="r1">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="r2" class="col-form-label col-6 col-md-6">2nd Root of Quadratic Equation \((X_2)\) </label>
+      <div class="col-6 col-md-5">
+        <input type="text" readonly class="form-control" id="r2">
+      </div>
     </div>
 
     </form>
@@ -116,18 +136,18 @@
 <div class="card-footer border-top border-primary">
   <div class="text-center border border-dark wrong">
    <h5>If you find anything wrong in this Calculation.</h5>
-        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Standard Deviation Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Quadratic Equation Solver&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
       <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/standard-deviation-calculator.html"&gt;Standard Deviation Calculator&lt;a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/algebra/quadratic-equation-solver.html"&gt;Quadratic Equation Solver&lt;a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/standard-deviation-calculator.html"&gt;Standard Deviation Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/standard-deviation-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/quadratic-equation-solver.html"&gt;Quadratic Equation Solver&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/algebra/quadratic-equation-solver.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
@@ -172,12 +192,19 @@
           <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the set of n terms be x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, x<sub>4</sub>, x<sub>5</sub>, x<sub></sub>, ......, x<sub>n</sub>.</p>
-        $$Mean,\hspace{1cm}\mu = \frac{1}{n}\sum_{i=1}^n x_n = \frac{1}{n}(x_1 + x_2 + x_3 + ... + x_n)$$
-        $$Standard \hspace{0.3cm}Deviation,\hspace{1cm}\sigma = \sqrt{\frac{1}{n}\sum_{i=1}^n (x_i\hspace{0.1cm}-\hspace{0.1cm}\mu)^2}$$
-  </div>
+        <p>Number of Faces in the Cube: 6 </p>
+        <p>Number of Edges in the Cube: 12 </p>
+        <p>Number of Vertices in the Cube: 8</p><br>
+        <p>Let the Length of the edge of the Cube be \(L\) units.</p>
+        <p>Then </p>
+          <p>the Volume of the Cube will be \(L^3\) cubic units.</p>
+            <p>the Total Surface Area of the Cube will be \(6L^2\) square units.</p>
+            <p>the Lateral Surface Area of the Cube will be \(4L^2\) square units.</p>
+            <p>the Length of Face Diagonal of the Cube will be \(\sqrt{2}L\) units.</p>
+            <p>the Length of Space Diagonal of the Cube will be \(\sqrt{3}L\) units.</p>
+      </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Standard_deviation" target="_blank" class="text-white">Learn more about Standard Deviation</a>
+        <a href="https://en.wikipedia.org/wiki/Quadratic_equation" target="_blank" class="text-white">Learn more about Quadratic Equation</a>
       </div>
     </div>
   </div>
@@ -266,7 +293,8 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="../js/common-script.js"></script>
-<script src="../js/statistics.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjs@8.1.0/lib/browser/math.min.js"></script>
+<!-- <script src="../js/algebra.js"></script> -->
 
   </body>
 </html>

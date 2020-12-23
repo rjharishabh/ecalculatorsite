@@ -11,6 +11,13 @@
 .sitemap a{
 line-height: 35px;
 }
+.alg-btn{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.quad input{
+  display: inline;
+}
 :root{
     scroll-behavior: smooth;
 }
