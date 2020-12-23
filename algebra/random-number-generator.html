@@ -10,7 +10,7 @@
    <meta name="description" content="">
 
 
-    <title>Percentage Calculator - E Calculator Site</title>
+    <title>Random Number Generator - E Calculator Site</title>
 <link rel="canonical" href="">
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -86,17 +86,25 @@
 <div class="col-lg-8">
   <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Percentage Calculator</h1></center>
+    <center><h1 class="text-white">Random Number Generator</h1></center>
 </div>
 <div class="card-body">
     <form>
+      <fieldset>
         <div class="form-group row">
-      <p class="col-12 text-center">Enter the values in the respective field to calculate the percentages.</p>
-      <br>
-      <div class="col-12 quad ">
-      <p>What is <input type="text" class="form-control col-2" placeholder="5" id="per1">\(\hspace{0.3cm} \% \hspace{0.3cm}\) of \(\hspace{0.3cm}\)<input type="text" class="form-control col-2" placeholder="100" id="a1">\(\hspace{0.2cm} ?\hspace{0.8cm}\) <input type="text"  readonly class="form-control col-2" placeholder="5" id="sr"></p>
+        <label for="min-val" class="col-form-label col-6 col-md-5">Enter the Minimum Value </label>
+        <div class="col-6 col-md-5">
+          <input type="text" required class="form-control" id="min-val">
+        </div>
       </div>
+      <div class="form-group row">
+      <label for="min-val" class="col-form-label col-6 col-md-5">Enter the Maximum Value </label>
+      <div class="col-6 col-md-5">
+        <input type="text" required class="form-control" id="min-val">
       </div>
+    </div>
+      </fieldset>
+
 
       <div class="row justify-content-center">
         <div class="btn-group">
@@ -104,61 +112,32 @@
           <button type="button" class="alg-btn btn btn-danger" onclick="resetsqcb()" name="button">Reset</button>
         </div>
     </div>
-
-</form>
-<br>
-<form>
     <div class="form-group row">
-    <div class="col-12 quad ">
-  <p><input type="text" class="form-control col-2" placeholder="5" id="per1">\(\hspace{0.3cm}\) is what percent of \(\hspace{0.3cm}\)<input type="text" class="form-control col-2" placeholder="100" id="a1">\(\hspace{0.2cm} ?\hspace{0.5cm}\) <input type="text" readonly class="form-control col-2" placeholder="5" id="sr">\(\hspace{0.2cm}\%\)</p>
-  </div>
-  </div>
-
-  <div class="row justify-content-center">
-    <div class="btn-group">
-      <button type="button" class="alg-btn btn btn-primary" onclick="sqcb()" name="button">Calculate</button>
-      <button type="button" class="alg-btn btn btn-danger" onclick="resetsqcb()" name="button">Reset</button>
+    <label for="random-num" class="col-form-label col-6 col-md-5">Generated Random Number</label>
+    <div class="col-6 col-md-5">
+      <input type="text" required class="form-control" id="random-num">
     </div>
-</div>
+  </div>
 
 </form>
-<br>
-<form>
-    <div class="form-group row">
-    <div class="col-12 quad ">
-  <p>What is the percentage increase/decrease from \(\hspace{0.1cm}\)
-  <input type="text" class="form-control col-2" placeholder="100" id="a1">\(\hspace{0.1cm}\)to <input type="text"  class="form-control col-2" placeholder="5" id="sr">\(\hspace{0.1cm}?\)
-\(\hspace{0.5cm}\)<input type="text" readonly class="form-control col-2" placeholder="5" id="sr">\(\hspace{0.2cm}\%\)</p>
-  </div>
-  </div>
-
-  <div class="row justify-content-center">
-    <div class="btn-group">
-      <button type="button" class="alg-btn btn btn-primary" onclick="sqcb()" name="button">Calculate</button>
-      <button type="button" class="alg-btn btn btn-danger" onclick="resetsqcb()" name="button">Reset</button>
-    </div>
-</div>
-
-</form>
-
 </div>
 
 
 <div class="card-footer border-top border-primary">
   <div class="text-center border border-dark wrong">
    <h5>If you find anything wrong in this Calculation.</h5>
-        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Percentage Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Random Number Generator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
       <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/algebra/percentage-calculator.html"&gt;Percentage Calculator&lt;a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/algebra/random-number-generator.html"&gt;Random Number Generator&lt;a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/percentage-calculator.html"&gt;Percentage Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/algebra/percentage-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/random-number-generator.html"&gt;Random Number Generator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/algebra/random-number-generator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
@@ -213,9 +192,8 @@
             <p>the Length of Space Diagonal of the Cube will be \(\sqrt{3}L\) units.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Square_root" target="_blank" class="text-white">Learn more about Square Root</a><span class="text-white"> and</span>
-                <a href="https://en.wikipedia.org/wiki/Cube_root" target="_blank" class="text-white"> Cube Root</a>
-      </div>
+        <a href="https://mathworld.wolfram.com/RandomNumber.html" target="_blank" class="text-white">Learn more about Random Numbers</a>
+        </div>
     </div>
   </div>
 </div>
