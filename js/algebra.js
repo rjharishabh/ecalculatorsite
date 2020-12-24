@@ -4,7 +4,7 @@ function cbroot(){
 
 if (!isNaN(num)) {
     document.getElementById('cbr').value=Math.cbrt(num);
-    document.getElementById('sr').value=math.sqrt(num);
+    document.getElementById('sr').value=Math.sqrt(num);
   }
 else {
  document.getElementById('cbn').value="Please Enter a Number";
@@ -83,18 +83,18 @@ function lesolve(a1,a2,b1,b2,c1,c2){
   var z2=b1/b2;
   var z3=c1/c2;
   if(z1!==z2){
-      obj.prop="Equations have a unique solution.";
+      obj.prop="Given equations have a unique solution.";
       obj.x=-(((b1*c2)-(b2*c1))/((a1*b2)-(a2*b1)));
       obj.y=-(((c1*a2)-(c2*a1))/((a1*b2)-(a2*b1)));
   }
 
   else if ((z1===z2)&&(z2===z3)){
-  obj.prop="Equations have infinite many solutions.";
+  obj.prop="Given equations have infinite many solutions.";
   obj.x=c1/a1;
   obj.y=0;
   }
   else if ((z1===z2)&&(z2!==z3)){
-      obj.prop="Equations have no solution.";
+      obj.prop="Given equations have no solution.";
       obj.x="";
       obj.y="";
   }
@@ -127,4 +127,77 @@ function resetrng() {
   document.getElementById('min-val').placeholder="Please Enter a Value";
   document.getElementById('max-val').placeholder="Please Enter a Value";
   document.getElementById('random-num').value="";
+}
+
+function sqcb(){
+  var num=parseFloat(document.getElementById('no').value);
+
+
+if (!isNaN(num)) {
+    document.getElementById('cb').value=Math.pow(num,3);
+    document.getElementById('sq').value=Math.pow(num,2);
+  }
+else {
+ document.getElementById('no').value="Please Enter a Number";
+  document.getElementById('no').style.backgroundColor="#97b17eeb";
+}
+}
+
+function resetsqcb(){
+    document.getElementById('no').style.backgroundColor="#fff";
+  document.getElementById('no').value="";
+    document.getElementById('no').placeholder="Please Enter a Number";
+  document.getElementById('cb').value="";
+  document.getElementById('sq').value="";
+}
+
+function quad() {
+  var a=parseFloat(document.getElementById('A').value);
+  var b=parseFloat(document.getElementById('B').value);
+  var c=parseFloat(document.getElementById('C').value);
+  var obj;
+  if(a===0)
+      document.getElementById('aboutroots').textContent="Coefficient of X² can't be zero.";
+if(!isNaN(a)&&!isNaN(b)&&!isNaN(c)&&(a!==0)){
+  obj=quad_roots(a,b,c);
+    document.getElementById('aboutroots').textContent=obj.prop;
+    document.getElementById('dis').value=obj.dis;
+    document.getElementById('r1').value=obj.x1;
+    document.getElementById('r2').value=obj.x2;
+}
+if(isNaN(a)||isNaN(b)||isNaN(c)){
+      document.getElementById('aboutroots').textContent="Please Fill in the All Fields.";
+}
+}
+function resetquad() {
+document.getElementById('A').value="";
+document.getElementById('B').value="";
+document.getElementById('C').value="";
+document.getElementById('aboutroots').textContent="";
+document.getElementById('dis').value="";
+document.getElementById('r1').value="";
+document.getElementById('r2').value="";
+}
+function quad_roots(a,b,c){
+  var obj={};
+  d=obj.dis=(b*b)-(4*a*c);
+if(obj.dis>0){
+  obj.prop="Given equation has two distinct real roots.";
+  obj.x1=(-b+Math.sqrt(d))/(2*a);
+  obj.x2=(-b-Math.sqrt(d))/(2*a);
+}
+else if(obj.dis===0){
+  obj.prop="Given equation has two equal real roots.";
+  obj.x1=(-b)/(2*a);
+  obj.x2=obj.x1;
+}
+else{
+  obj.prop="Given equation has two distinct complex roots.";
+  var re=(-b)/(2*a);
+  var im=Math.sqrt(-d)/(2*a);
+  obj.x1=re+" + "+im+" i";
+  obj.x2=re+" - "+im+" i";
+}
+
+return obj;
 }
