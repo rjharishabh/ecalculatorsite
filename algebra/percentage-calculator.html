@@ -94,14 +94,15 @@
       <p class="col-12 text-center">Enter the values in the respective field to calculate the percentages.</p>
       <br>
       <div class="col-12 quad ">
-      <p>What is <input type="text" class="form-control col-2" placeholder="5" id="per1">\(\hspace{0.3cm} \% \hspace{0.3cm}\) of \(\hspace{0.3cm}\)<input type="text" class="form-control col-2" placeholder="100" id="a1">\(\hspace{0.2cm} ?\hspace{0.8cm}\) <input type="text"  readonly class="form-control col-2" placeholder="5" id="sr"></p>
+      <p>What is <input type="text" class="form-control col-2" placeholder="5" id="p11">\(\hspace{0.1cm}\%\hspace{0.1cm}\)of\(\hspace{0.1cm}\)<input type="text" class="form-control col-2" placeholder="100" id="p12">\(\hspace{0.1cm}?\hspace{0.1cm}\) <input type="text" readonly class="form-control col-2" placeholder="5" id="rp1"></p>
+<p class="text-danger text-center" id="error1"></p>
       </div>
       </div>
 
       <div class="row justify-content-center">
         <div class="btn-group">
-          <button type="button" class="alg-btn btn btn-primary" onclick="sqcb()" name="button">Calculate</button>
-          <button type="button" class="alg-btn btn btn-danger" onclick="resetsqcb()" name="button">Reset</button>
+          <button type="button" class="alg-btn btn btn-primary" onclick="per1()" name="button">Calculate</button>
+          <button type="button" class="alg-btn btn btn-danger" onclick="resetper1()" name="button">Reset</button>
         </div>
     </div>
 
@@ -110,14 +111,15 @@
 <form>
     <div class="form-group row">
     <div class="col-12 quad ">
-  <p><input type="text" class="form-control col-2" placeholder="5" id="per1">\(\hspace{0.3cm}\) is what percent of \(\hspace{0.3cm}\)<input type="text" class="form-control col-2" placeholder="100" id="a1">\(\hspace{0.2cm} ?\hspace{0.5cm}\) <input type="text" readonly class="form-control col-2" placeholder="5" id="sr">\(\hspace{0.2cm}\%\)</p>
+  <p><input type="text" class="form-control col-2" placeholder="5" id="p21">\(\hspace{0.1cm}\) is what percent of \(\hspace{0.1cm}\)<input type="text" class="form-control col-2" placeholder="100" id="p22">\(\hspace{0.1cm} ?\hspace{0.1cm}\) <input type="text" readonly class="form-control col-2" placeholder="5" id="rp2">\(\hspace{0.1cm}\%\)</p>
+<p class="text-danger text-center" id="error2"></p>
   </div>
   </div>
 
   <div class="row justify-content-center">
     <div class="btn-group">
-      <button type="button" class="alg-btn btn btn-primary" onclick="sqcb()" name="button">Calculate</button>
-      <button type="button" class="alg-btn btn btn-danger" onclick="resetsqcb()" name="button">Reset</button>
+      <button type="button" class="alg-btn btn btn-primary" onclick="per2()" name="button">Calculate</button>
+      <button type="button" class="alg-btn btn btn-danger" onclick="resetper2()" name="button">Reset</button>
     </div>
 </div>
 
@@ -127,15 +129,15 @@
     <div class="form-group row">
     <div class="col-12 quad ">
   <p>What is the percentage increase/decrease from \(\hspace{0.1cm}\)
-  <input type="text" class="form-control col-2" placeholder="100" id="a1">\(\hspace{0.1cm}\)to <input type="text"  class="form-control col-2" placeholder="5" id="sr">\(\hspace{0.1cm}?\)
-\(\hspace{0.5cm}\)<input type="text" readonly class="form-control col-2" placeholder="5" id="sr">\(\hspace{0.2cm}\%\)</p>
+  <input type="text" class="form-control col-2" placeholder="50" id="p31">\(\hspace{0.1cm}\)to <input type="text"  class="form-control col-2" placeholder="100" id="p32">\(\hspace{0.1cm}?\)
+  <input type="text" readonly class="form-control col-2" placeholder="+100" id="rp3">\(\hspace{0.1cm}\%\)</p>
   </div>
   </div>
 
   <div class="row justify-content-center">
     <div class="btn-group">
-      <button type="button" class="alg-btn btn btn-primary" onclick="sqcb()" name="button">Calculate</button>
-      <button type="button" class="alg-btn btn btn-danger" onclick="resetsqcb()" name="button">Reset</button>
+      <button type="button" class="alg-btn btn btn-primary" onclick="per3()" name="button">Calculate</button>
+      <button type="button" class="alg-btn btn btn-danger" onclick="resetper3()" name="button">Reset</button>
     </div>
 </div>
 
@@ -304,7 +306,7 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="../js/common-script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjs@8.1.0/lib/browser/math.min.js"></script>
-<!-- <script src="../js/algebra.js"></script> -->
+<script src="../js/algebra.js"></script>
 
   </body>
 </html>

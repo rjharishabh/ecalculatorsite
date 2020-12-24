@@ -201,3 +201,57 @@ else{
 
 return obj;
 }
+
+function per1() {
+  var p1=parseFloat(document.getElementById('p11').value)/100;
+  var p2=parseFloat(document.getElementById('p12').value);
+  if(p1<0)
+  document.getElementById('error1').textContent="Error!";
+  if(!isNaN(p1)&&!isNaN(p2)&&(p1>=0)){
+    document.getElementById('rp1').value=p1*p2;
+  }
+
+}
+function resetper1() {
+  document.getElementById('p11').value="";
+  document.getElementById('p12').value="";
+  document.getElementById('error1').textContent="";
+  document.getElementById('rp1').value="";
+}
+
+function per2() {
+  var p1=parseFloat(document.getElementById('p21').value)*100;
+  var p2=parseFloat(document.getElementById('p22').value);
+  if(p1<0)
+  document.getElementById('error2').textContent="Error!";
+  if(!isNaN(p1)&&!isNaN(p2)&&(p1>=0)){
+    document.getElementById('rp2').value=p1/p2;
+  }
+
+}
+function resetper2() {
+  document.getElementById('p21').value="";
+  document.getElementById('p22').value="";
+  document.getElementById('error2').textContent="";
+  document.getElementById('rp2').value="";
+}
+
+function per3() {
+  var p1=parseFloat(document.getElementById('p31').value);
+  var p2=parseFloat(document.getElementById('p32').value);
+
+  if(!isNaN(p1)&&!isNaN(p2)){
+    var val=((p2-p1)*100)/Math.abs(p1);
+    if(val>0)
+    document.getElementById('rp3').value="+"+val;
+    if(val<=0)
+    document.getElementById('rp3').value=val;
+
+  }
+
+}
+function resetper3() {
+  document.getElementById('p31').value="";
+  document.getElementById('p32').value="";
+  document.getElementById('rp3').value="";
+}
