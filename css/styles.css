@@ -4,12 +4,7 @@
 *{
   box-sizing: border-box;
 }
-.calculator{
-  margin:0 auto;
-  width:80%;
-  border:1px red solid;
-  height: 100px;
-}
+
 .github{
   width:10%;
   float: right;

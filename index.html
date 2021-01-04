@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/index.css">
 
 
 <!-- Favicon -->
@@ -23,7 +23,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
-
+<style media="screen">
+  .row1 button,.row2 button,.row3 button,.row4 button,.row5 button,.row6 button{
+    width:70px;
+  }
+</style>
   </head>
 
   <body>
@@ -79,10 +83,65 @@
 
 
 <main class="container-md">
-<div class=" calculator">
+<div class="calculator">
+  <input class="col-12" type="text" name="" value="" id="value" >
+<div class="calculator-buttons">
+    <button type="button" name="button">ITF</button>
+    <button type="button" name="button">DEG</button>
+    <button type="button" name="button">Sin</button>
+    <button type="button" name="button">Cos</button>
+    <button type="button" name="button">Tan</button>
+    <button type="button" name="button">Rnd</button>
+    <button type="button" name="button">%</button>
+    <button type="button" name="button">/</button>
+
+  <button type="button" name="button">BS</button>
+  <button type="button" name="button">x<sup>y</sup></button>
+  <button type="button" name="button">Cosec</button>
+  <button type="button" name="button">Sec</button>
+  <button type="button" name="button">Cot</button>
+  <button type="button" name="button">(</button>
+  <button type="button" name="button">)</button>
+  <button type="button" name="button">X</button>
+
+
+  <button type="button" name="button">1/x</button>
+  <button type="button" name="button">\(\pi^x\)</button>
+  <button type="button" name="button">\(\pi\)</button>
+  <button type="button" name="button">e</button>
+  <button type="button" name="button">7</button>
+  <button type="button" name="button">8</button>
+  <button type="button" name="button">9</button>
+  <button type="button" name="button">-</button>
+
+  <button type="button" name="button" class="btn btn-secondary">x!</button>
+  <button type="button" name="button">x<sup>3</sup></button>
+  <button type="button" name="button">log<sub>10</sub>x</button>
+  <button type="button" name="button">e<sup>x</button>
+  <button type="button" name="button">4</button>
+  <button type="button" name="button">5</button>
+  <button type="button" name="button">6</button>
+  <button type="button" name="button">+</button>
+
+  <button type="button" name="button">\(\sqrt{x}\)</button>
+  <button type="button" name="button">10<sup>x</sup></button>
+  <button type="button" name="button">ln</button>
+  <button type="button" name="button">1/(e<sup>x</sup>)</button>
+  <button type="button" name="button">1</button>
+  <button type="button" name="button">2</button>
+  <button type="button" name="button">3</button>
+  <button type="button" id="equal" name="button">=</button>
+
+  <button type="button" name="button">x<sup>2</sup></button>
+  <button type="button" name="button">log<sub>2</sub>x</button>
+
+  <button type="button" id="AC" name="button">AC</button>
+  <button type="button" name="button">C</button>
+  <button type="button" name="button">0</button>
+  <button type="button" name="button">.</button>
 
 </div>
-
+</div>
 
 <div class="row d-lg-none">
   <div class="col-12">
@@ -163,11 +222,11 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="../js/common-script.js"></script>
-<script src="../js/plane-geometry.js"></script>
+<script src="js/common-script.js"></script>
+
 
   </body>
 </html>
