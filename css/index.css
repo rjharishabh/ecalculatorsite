@@ -7,10 +7,19 @@ height:45px;
 color:blue;
 font-size: 25px;
 }
-.calculator>input:nth-of-type(odd){
+.calculator #half{
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height:45px;
+  color:blue;
+  font-size: 25px;
   background-color: #eacee0;
+  border: 1px solid #9835dc66;
 }
-
+#deg{
+  background-color:#ff16f2;
+}
 @media screen and (min-width:700px) {
   .calculator{
   width: 80%;
@@ -71,4 +80,199 @@ font-size: 25px;
     background-color: #ffc107;
   }
 
+}
+
+
+@media screen and (max-width:700px) {
+  .calculator{
+  width: 100%;
+  margin: 30px auto;
+  }
+  .calculator-buttons{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+  column-gap: 1px;
+  row-gap:1px;
+  }
+  .calculator-buttons button{
+    padding-bottom: 10px;
+      border-radius: 10px;
+    border: 2px #fffaf0 solid;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #36a9ee;
+    text-align: center;
+    color: #fffaf0;
+    height:35px;
+    margin:1px;
+  }
+  #plus,#sub{
+      font-size: 25px;
+  }
+  .calculator-buttons button:hover{
+    background-color: #ec88bd;
+    border-radius: 100px;
+  }
+  #equal{
+   grid-row: 7 / span 2;
+   grid-column:6/7;
+   height: 72px;
+   background-color: #f811b38c;
+   font-size: 35px;
+ }
+  #AC{
+    grid-column:4/6;
+    grid-row: 1/2;
+    background-color: #e73f3f;
+  }
+  #C{
+    background-color: #e73f3f;
+    grid-column:6/7;
+    grid-row: 1/2;
+  }
+  #bs{
+    background-color: #ffc107;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #itf{
+    grid-column:2/3;
+    grid-row: 1/2;
+  }
+  #deg{
+    grid-column:3/4;
+    grid-row: 1/2;
+  }
+  #itf{
+    grid-column:2/3;
+    grid-row: 1/2;
+  }
+  #lbrac{
+    grid-column:4/5;
+    grid-row: 2/3;
+  }
+  #rbrac{
+    grid-column:5/6;
+    grid-row: 2/3;
+  }
+  #per{
+    grid-column:6/7;
+    grid-row: 2/3;
+  }
+  #cosec{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #sec{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  #cot{
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  #one{
+    grid-column: 4/5;
+    grid-row: 7/8;
+  }
+   #two{
+      grid-column: 5/6;
+      grid-row: 7/8;
+    }
+  #three{
+    grid-column: 4/5;
+    grid-row: 6/7;
+  }
+  #four{
+    grid-column: 5/6;
+    grid-row: 6/7;
+  }
+  #five{
+    grid-column: 4/5;
+    grid-row: 5/6;
+  }
+   #six{
+      grid-column: 5/6;
+      grid-row: 5/6;
+    }
+  #seven{
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+  #eight{
+    grid-column: 5/6;
+    grid-row: 4/5;
+  }
+  #nine{
+    grid-column: 5/6;
+    grid-row: 3/4;
+  }
+  #mult{
+    grid-column: 6/7;
+    grid-row: 4/5;
+  }
+  #sub{
+    grid-column: 6/7;
+    grid-row: 5/6;
+  }
+  #plus{
+    grid-column: 6/7;
+    grid-row: 6/7;
+  }
+  #fact{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  #sqrt{
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  #reci{
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+  #cube{
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  #square{
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
+  #ln{
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  #log2{
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  #log10{
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
+  #epow-x{
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  #e{
+    grid-column: 2/3;
+    grid-row: 7/8;
+  }
+  #epowx{
+    grid-column: 3/4;
+    grid-row: 7/8;
+  }
+  #pi{
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  #pipowx{
+    grid-column: 2/3;
+    grid-row: 8/9;
+  }
+  #tenpowx{
+    grid-column: 3/4;
+    grid-row: 8/9;
+  }
 }

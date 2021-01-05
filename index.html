@@ -23,11 +23,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
-<style media="screen">
-  .row1 button,.row2 button,.row3 button,.row4 button,.row5 button,.row6 button{
-    width:70px;
-  }
-</style>
+
   </head>
 
   <body>
@@ -83,12 +79,12 @@
 
 <main class="container-md">
 <div class="calculator">
-   <input class="col-12 form-control" type="text" id="half" readonly>
+  <div id="half" class="col-12">  </div>
   <input class="col-12 form-control" type="text" id="input" >
 
 <div class="calculator-buttons">
     <button id="itf" type="button" name="button">ITF</button>
-    <button id="deg" type="button" name="button">DEG</button>
+    <button id="deg" class="badge badge-pill badge-light" type="button" name="button">DEG</button>
     <button id="sin" type="button" name="button">Sin</button>
     <button  id="cos" type="button" name="button">Cos</button>
     <button  id="tan" type="button" name="button">Tan</button>
@@ -125,7 +121,7 @@
   <button  id="plus" type="button" name="button">+</button>
 
   <button  id="sqrt" type="button" name="button">\(\sqrt{x}\)</button>
-  <button  id="10powx" type="button" name="button">10<sup>x</sup></button>
+  <button  id="tenpowx" type="button" name="button">10<sup>x</sup></button>
   <button  id="ln" type="button" name="button">ln</button>
   <button  id="epow-x" type="button" name="button">1/(e<sup>x</sup>)</button>
   <button  id="one" type="button" name="button">1</button>
