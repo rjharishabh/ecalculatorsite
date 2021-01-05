@@ -45,7 +45,7 @@
         <a class="navbar-brand" href="http://www.ecalculatorsite.com">
           <img src="photos/logo.jpg" class="img-fluid logo rounded" alt="site logo" >
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button style="background-color:#36a9ee;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
    <img src="photos/menu.png" alt="menu">
  </button>
 
@@ -81,64 +81,64 @@
     </div>
 
 
-
 <main class="container-md">
 <div class="calculator">
-  <input class="col-12" type="text" name="" value="" id="value" >
+   <input class="col-12 form-control" type="text" id="half" readonly>
+  <input class="col-12 form-control" type="text" id="input" >
+
 <div class="calculator-buttons">
-    <button type="button" name="button">ITF</button>
-    <button type="button" name="button">DEG</button>
-    <button type="button" name="button">Sin</button>
-    <button type="button" name="button">Cos</button>
-    <button type="button" name="button">Tan</button>
-    <button type="button" name="button">Rnd</button>
-    <button type="button" name="button">%</button>
-    <button type="button" name="button">/</button>
+    <button id="itf" type="button" name="button">ITF</button>
+    <button id="deg" type="button" name="button">DEG</button>
+    <button id="sin" type="button" name="button">Sin</button>
+    <button  id="cos" type="button" name="button">Cos</button>
+    <button  id="tan" type="button" name="button">Tan</button>
+    <button  id="rnd" type="button" name="button">Rnd</button>
+    <button  id="per"  type="button" name="button">%</button>
+    <button id="div" type="button" name="button">/</button>
 
-  <button type="button" name="button">BS</button>
-  <button type="button" name="button">x<sup>y</sup></button>
-  <button type="button" name="button">Cosec</button>
-  <button type="button" name="button">Sec</button>
-  <button type="button" name="button">Cot</button>
-  <button type="button" name="button">(</button>
-  <button type="button" name="button">)</button>
-  <button type="button" name="button">X</button>
+  <button  id="bs" type="button" name="button"><img height="30px" src="photos/bs.png" alt=""> </button>
+  <button  id="xpowy" type="button" name="button">x<sup>y</sup></button>
+  <button id="cosec" type="button" name="button">Cosec</button>
+  <button id="sec" type="button" name="button">Sec</button>
+  <button  id="cot" type="button" name="button">Cot</button>
+  <button  id="lbrac" type="button" name="button">(</button>
+  <button  id="rbrac" type="button" name="button">)</button>
+  <button  id="mult" type="button" name="button">X</button>
 
 
-  <button type="button" name="button">1/x</button>
-  <button type="button" name="button">\(\pi^x\)</button>
-  <button type="button" name="button">\(\pi\)</button>
-  <button type="button" name="button">e</button>
-  <button type="button" name="button">7</button>
-  <button type="button" name="button">8</button>
-  <button type="button" name="button">9</button>
-  <button type="button" name="button">-</button>
+  <button  id="reci" type="button" name="button">1/x</button>
+  <button  id="pipowx" type="button" name="button">\(\pi^x\)</button>
+  <button  id="pi" type="button" name="button">\(\pi\)</button>
+  <button  id="e" type="button" name="button">e</button>
+  <button  id="seven" type="button" name="button">7</button>
+  <button  id="eight" type="button" name="button">8</button>
+  <button  id="nine" type="button" name="button">9</button>
+  <button  id="sub" type="button" name="button">-</button>
 
-  <button type="button" name="button" class="btn btn-secondary">x!</button>
-  <button type="button" name="button">x<sup>3</sup></button>
-  <button type="button" name="button">log<sub>10</sub>x</button>
-  <button type="button" name="button">e<sup>x</button>
-  <button type="button" name="button">4</button>
-  <button type="button" name="button">5</button>
-  <button type="button" name="button">6</button>
-  <button type="button" name="button">+</button>
+  <button  id="fact" type="button" name="button">x!</button>
+  <button  id="cube" type="button" name="button">x<sup>3</sup></button>
+  <button  id="log10" type="button" name="button">log<sub>10</sub>x</button>
+  <button  id="epowx" type="button" name="button">e<sup>x</button>
+  <button  id="four" type="button" name="button">4</button>
+  <button  id="five" type="button" name="button">5</button>
+  <button  id="six" type="button" name="button">6</button>
+  <button  id="plus" type="button" name="button">+</button>
 
-  <button type="button" name="button">\(\sqrt{x}\)</button>
-  <button type="button" name="button">10<sup>x</sup></button>
-  <button type="button" name="button">ln</button>
-  <button type="button" name="button">1/(e<sup>x</sup>)</button>
-  <button type="button" name="button">1</button>
-  <button type="button" name="button">2</button>
-  <button type="button" name="button">3</button>
-  <button type="button" id="equal" name="button">=</button>
+  <button  id="sqrt" type="button" name="button">\(\sqrt{x}\)</button>
+  <button  id="10powx" type="button" name="button">10<sup>x</sup></button>
+  <button  id="ln" type="button" name="button">ln</button>
+  <button  id="epow-x" type="button" name="button">1/(e<sup>x</sup>)</button>
+  <button  id="one" type="button" name="button">1</button>
+  <button  id="two" type="button" name="button">2</button>
+  <button  id="three" type="button" name="button">3</button>
+  <button  type="button" id="equal" name="button">=</button>
 
-  <button type="button" name="button">x<sup>2</sup></button>
-  <button type="button" name="button">log<sub>2</sub>x</button>
-
-  <button type="button" id="AC" name="button">AC</button>
-  <button type="button" name="button">C</button>
-  <button type="button" name="button">0</button>
-  <button type="button" name="button">.</button>
+  <button  id="square" type="button" name="button">x<sup>2</sup></button>
+  <button  id="log2" type="button" name="button">log<sub>2</sub>x</button>
+  <button  type="button" id="AC" name="button">AC</button>
+  <button   type="button" id="C" name="button">C</button>
+  <button  id="zero" type="button" name="button">0</button>
+  <button  id="decimal" type="button" name="button">.</button>
 
 </div>
 </div>
@@ -218,7 +218,7 @@
 </div>
   </div>
 </footer>
-<a href="#" id="back-to-top" ><img class="rounded-circle btn btn-info" src="../photos/arrow-up.png" alt="Scroll to Top"> </a>
+<a href="#" id="back-to-top" ><img class="rounded-circle btn btn-info" src="photos/arrow-up.png" alt="Scroll to Top"> </a>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
