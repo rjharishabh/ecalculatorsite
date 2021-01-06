@@ -20,7 +20,7 @@ font-size: 25px;
 #deg{
   background-color:#ff16f2;
 }
-@media screen and (min-width:700px) {
+@media all and (min-width:700px) {
   .calculator{
   width: 90%;
   margin: 30px auto;
@@ -95,7 +95,7 @@ font-size: 25px;
 }
 
 
-@media screen and (max-width:700px) {
+@media all and (max-width:700px) {
   .calculator{
   width: 100%;
   margin: 30px auto;

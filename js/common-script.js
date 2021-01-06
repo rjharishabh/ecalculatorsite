@@ -1,8 +1,8 @@
 $('.navbar-toggler').blur(function (event){
   var screenWidth=window.innerWidth;
   if(screenWidth<992){
-    $('#navbar').collapse('hide');
-  }
+      $('#navbar').collapse('hide');
+}
 });
 
   function backToTop(){
@@ -26,7 +26,7 @@ window.addEventListener('scroll',backToTop);
 
 
     }
-document.querySelector("#copy").addEventListener("click", copyhlink);
+// document.querySelector("#copy").addEventListener("click", copyhlink);
 
 //copy window.location.href
 function linkCopy(){
@@ -37,7 +37,7 @@ var copyText=window.location.href;
   document.getElementById('code').style.backgroundColor="#fff";
 
 }
-document.querySelector("#link").addEventListener("click", linkCopy);
+// document.querySelector("#link").addEventListener("click", linkCopy);
 
 //description hide or show
 function description(){
