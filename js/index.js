@@ -143,19 +143,66 @@ document.querySelector('#sqrt').addEventListener('click',()=>{
   var input=document.querySelector('#input').value;
   document.querySelector('#half').innerHTML="&#8730;"+input;
   document.querySelector('#input').value=math.sqrt(input).toString();
-})
+});
 document.querySelector('#ln').addEventListener('click',()=>{
   var input=document.querySelector('#input').value;
   document.querySelector('#half').innerHTML="ln("+input+")";
   document.querySelector('#input').value=Math.log(input);
-})
+});
 document.querySelector('#log2').addEventListener('click',()=>{
   var input=document.querySelector('#input').value;
   document.querySelector('#half').innerHTML="log<sub>2</sub>("+input+")";
   document.querySelector('#input').value=Math.log2(input);
-})
+});
 document.querySelector('#log10').addEventListener('click',()=>{
   var input=document.querySelector('#input').value;
   document.querySelector('#half').innerHTML="log<sub>10</sub>("+input+")";
   document.querySelector('#input').value=Math.log10(input);
-})
+});
+document.querySelector('#e').addEventListener('click',()=>{
+  document.querySelector('#half').innerHTML="e";
+  document.querySelector('#input').value=Math.E;
+});
+document.querySelector('#epowx').addEventListener('click',()=>{
+  var input=document.querySelector('#input').value;
+  document.querySelector('#half').innerHTML="e<sup>"+input+"</sup>";
+  document.querySelector('#input').value=Math.exp(input);
+});
+document.querySelector('#epow-x').addEventListener('click',()=>{
+  var input=document.querySelector('#input').value;
+  document.querySelector('#half').innerHTML="e<sup>"+-input+"</sup>";
+  document.querySelector('#input').value=Math.exp(-input);
+});
+document.querySelector('#pi').addEventListener('click',()=>{
+  document.querySelector('#half').innerHTML="&Pi;";
+  document.querySelector('#input').value=Math.PI;
+});
+document.querySelector('#rnd').addEventListener('click',()=>{
+  document.querySelector('#half').innerHTML="A random integer between 0 and 10000";
+  document.querySelector('#input').value=parseInt(Math.random()*(10000));
+});
+var input1,input2;
+document.querySelector('#mod').addEventListener('click',()=>{
+  if(document.querySelector('#mod').textContent==="mod"){
+     input1=parseFloat(document.querySelector('#input').value);
+    document.querySelector('#half').innerHTML=input1+" mod";
+    document.querySelector('#input').value="";
+    document.querySelector('#mod').textContent="Cal";
+  }
+else{
+   input2=parseFloat(document.querySelector('#input').value);
+      document.querySelector('#half').innerHTML=input1+" mod "+input2;
+        document.querySelector('#input').value=input1%input2;
+       document.querySelector('#mod').textContent="mod";
+}
+});
+document.querySelector('#pipowx').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+  document.querySelector('#half').innerHTML="&Pi;<sup>"+input+"</sup>";
+  document.querySelector('#input').value=Math.pow(Math.PI,input);
+});
+document.querySelector('#tenpowx').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+  document.querySelector('#half').innerHTML="10<sup>"+input+"</sup>";
+  document.querySelector('#input').value=Math.pow(10,input);
+});
