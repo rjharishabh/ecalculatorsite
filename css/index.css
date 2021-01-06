@@ -22,7 +22,7 @@ font-size: 25px;
 }
 @media screen and (min-width:700px) {
   .calculator{
-  width: 80%;
+  width: 90%;
   margin: 30px auto;
   }
 
@@ -57,20 +57,12 @@ font-size: 25px;
   }
 
   .calculator-buttons button:hover{
-    background-color: #ec88bd;
     border-radius: 100px;
-
   }
   #equal:hover{
-    grid-row: 5 / span 2;
-    grid-column-start: 8;
-    height: 72px;
-    background-color: #f811b38c;
     border-radius: 100px;
   }
   #AC{
-    grid-column-start: 3;
-    grid-column-end: 5;
     background-color: #e73f3f;
   }
   #C{
@@ -79,7 +71,27 @@ font-size: 25px;
   #bs{
     background-color: #ffc107;
   }
-
+  #itf{
+    background-color:#fd7e14;
+  }
+  #sin,#cos,#tan,#cosec,#sec,#cot{
+    background-color:#6107ffa1;
+  }
+  #div,#plus,#sub,#per,#mult{
+    background-color:#55ff07;
+  }
+  #xpowy,#tenpowx,#pipowx,#pi,#epowx,#e,#epow-x,#log10,#log2,#ln,#fact,#sqrt,#reci,#cube,#square{
+    background-color:#28a745;
+  }
+  #lbrac,#rbrac{
+    background-color:#20c99794;
+  }
+  #mod,#rnd{
+    background-color: #4edaf0;
+  }
+  #one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#zero,#decimal{
+      background-color: #36a9ee;
+  }
 }
 
 
@@ -100,17 +112,18 @@ font-size: 25px;
     border: 2px #fffaf0 solid;
     font-size: 16px;
     font-weight: bold;
-    background-color: #36a9ee;
     text-align: center;
     color: #fffaf0;
     height:35px;
     margin:1px;
   }
+  #one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#zero,#decimal{
+      background-color: #36a9ee;
+  }
   #plus,#sub{
       font-size: 25px;
   }
   .calculator-buttons button:hover{
-    background-color: #ec88bd;
     border-radius: 100px;
   }
   #equal{
@@ -120,8 +133,36 @@ font-size: 25px;
    background-color: #f811b38c;
    font-size: 35px;
  }
+ #mod{
+       background-color: #4edaf0;
+ }
+ #rnd{
+   grid-column: 4/5;
+   grid-row: 2/3;
+       background-color: #4edaf0;
+ }
+#div{
+  grid-column: 6;
+  grid-row: 3/4;
+    background-color:#55ff07;
+}
+#sin{
+  grid-column: 1/2;
+  grid-row: 2/3;
+   background-color:#6107ffa1;
+}
+#cos{
+  grid-column: 2/3;
+  grid-row: 2/3;
+   background-color:#6107ffa1;
+}
+#tan{
+  grid-column: 3/4;
+  grid-row: 2/3;
+   background-color:#6107ffa1;
+}
   #AC{
-    grid-column:4/6;
+    grid-column:5/6;
     grid-row: 1/2;
     background-color: #e73f3f;
   }
@@ -138,6 +179,7 @@ font-size: 25px;
   #itf{
     grid-column:2/3;
     grid-row: 1/2;
+    background-color:#fd7e14;
   }
   #deg{
     grid-column:3/4;
@@ -148,29 +190,37 @@ font-size: 25px;
     grid-row: 1/2;
   }
   #lbrac{
-    grid-column:4/5;
+    grid-column:5/6;
     grid-row: 2/3;
+    background-color:#20c99794;
   }
   #rbrac{
     grid-column:5/6;
-    grid-row: 2/3;
+    grid-row: 3/4;
+    background-color:#20c99794;
   }
   #per{
     grid-column:6/7;
     grid-row: 2/3;
+    background-color:#55ff07;
   }
+
   #cosec{
     grid-column: 1/2;
     grid-row: 3/4;
+    background-color:#6107ffa1;
   }
   #sec{
     grid-column: 2/3;
     grid-row: 3/4;
+    background-color:#6107ffa1;
   }
   #cot{
     grid-column: 3/4;
     grid-row: 3/4;
+    background-color:#6107ffa1;
   }
+
   #one{
     grid-column: 4/5;
     grid-row: 7/8;
@@ -204,75 +254,100 @@ font-size: 25px;
     grid-row: 4/5;
   }
   #nine{
-    grid-column: 5/6;
+    grid-column: 4/5;
     grid-row: 3/4;
   }
   #mult{
     grid-column: 6/7;
     grid-row: 4/5;
+    background-color:#55ff07;
   }
   #sub{
     grid-column: 6/7;
     grid-row: 5/6;
+    background-color:#55ff07;
   }
   #plus{
     grid-column: 6/7;
     grid-row: 6/7;
+    background-color:#55ff07;
   }
+
   #fact{
     grid-column: 1/2;
     grid-row: 4/5;
+    background-color:#28a745;
   }
   #sqrt{
     grid-column: 2/3;
     grid-row: 4/5;
+      background-color:#28a745;
   }
   #reci{
     grid-column: 3/4;
     grid-row: 4/5;
+      background-color:#28a745;
   }
   #cube{
     grid-column: 2/3;
     grid-row: 5/6;
+      background-color:#28a745;
   }
   #square{
     grid-column: 3/4;
     grid-row: 5/6;
+      background-color:#28a745;
   }
   #ln{
     grid-column: 1/2;
     grid-row: 6/7;
+      background-color:#28a745;
   }
   #log2{
     grid-column: 2/3;
     grid-row: 6/7;
+      background-color:#28a745;
   }
   #log10{
     grid-column: 3/4;
     grid-row: 6/7;
+      background-color:#28a745;
   }
   #epow-x{
     grid-column: 1/2;
     grid-row: 7/8;
+      background-color:#28a745;
   }
+
   #e{
     grid-column: 2/3;
     grid-row: 7/8;
+      background-color:#28a745;
   }
   #epowx{
     grid-column: 3/4;
     grid-row: 7/8;
+      background-color:#28a745;
   }
   #pi{
     grid-column: 1/2;
     grid-row: 8/9;
+      background-color:#28a745;
   }
   #pipowx{
     grid-column: 2/3;
     grid-row: 8/9;
+      background-color:#28a745;
   }
   #tenpowx{
     grid-column: 3/4;
     grid-row: 8/9;
+      background-color:#28a745;
   }
+  #xpowy{
+    grid-column: 1/2;
+    grid-row: 5/6;
+      background-color:#28a745;
+  }
+
 }
