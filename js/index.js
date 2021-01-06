@@ -206,3 +206,184 @@ document.querySelector('#tenpowx').addEventListener('click',()=>{
   document.querySelector('#half').innerHTML="10<sup>"+input+"</sup>";
   document.querySelector('#input').value=Math.pow(10,input);
 });
+document.querySelector('#square').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+  document.querySelector('#half').innerHTML=input+"<sup>2</sup>";
+  document.querySelector('#input').value=Math.pow(input,2);
+});
+document.querySelector('#cube').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+  document.querySelector('#half').innerHTML=input+"<sup>3</sup>";
+  document.querySelector('#input').value=Math.pow(input,3);
+});
+var input3,input4;
+document.querySelector('#xpowy').addEventListener('click',()=>{
+  if(document.querySelector('#xpowy').textContent==="xy"){
+     input3=parseFloat(document.querySelector('#input').value);
+    document.querySelector('#half').innerHTML=input3+"^";
+    document.querySelector('#input').value="";
+    document.querySelector('#xpowy').textContent="Cal";
+  }
+else{
+   input4=parseFloat(document.querySelector('#input').value);
+      document.querySelector('#half').innerHTML=input3+"<sup>"+input4+"</sup>";
+        document.querySelector('#input').value=Math.pow(input3,input4);
+       document.querySelector('#xpowy').innerHTML="x<sup>y</sup>";
+}
+});
+function radtodeg(rad) {
+  return (180*rad)/Math.PI;
+}
+function degtorad(deg) {
+  return (deg*Math.PI)/180;
+}
+document.querySelector('#sin').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+    if(document.querySelector('#itf').textContent==="ITF"){
+      if(document.querySelector('#deg').textContent==="DEG"){
+        var rad=degtorad(input);
+      document.querySelector('#half').innerHTML="Sin("+input+"&deg;)";
+      document.querySelector('#input').value=Math.sin(rad).toFixed(4);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Sin("+input+")";
+        document.querySelector('#input').value=Math.sin(input).toFixed(4);
+      }
+    }
+    else{
+      if(document.querySelector('#deg').textContent==="DEG"){
+      document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
+        var rad=Math.asin(input);
+      document.querySelector('#input').value=radtodeg(rad);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
+        document.querySelector('#input').value=Math.asin(input).toFixed(4);
+      }
+    }
+});
+document.querySelector('#cos').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+    if(document.querySelector('#itf').textContent==="ITF"){
+      if(document.querySelector('#deg').textContent==="DEG"){
+        var rad=degtorad(input);
+      document.querySelector('#half').innerHTML="Cos("+input+"&deg;)";
+      document.querySelector('#input').value=Math.cos(rad).toFixed(4);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Cos("+input+")";
+        document.querySelector('#input').value=Math.cos(input).toFixed(4);
+      }
+    }
+    else{
+      if(document.querySelector('#deg').textContent==="DEG"){
+      document.querySelector('#half').innerHTML="Cos<sup>-1</sup>("+input+")";
+        var rad=Math.acos(input);
+      document.querySelector('#input').value=radtodeg(rad);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Cos<sup>-1</sup>("+input+")";
+        document.querySelector('#input').value=Math.acos(input).toFixed(4);
+      }
+    }
+});
+document.querySelector('#tan').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+    if(document.querySelector('#itf').textContent==="ITF"){
+      if(document.querySelector('#deg').textContent==="DEG"){
+        var rad=degtorad(input);
+      document.querySelector('#half').innerHTML="Tan("+input+"&deg;)";
+      document.querySelector('#input').value=Math.tan(rad).toFixed(4);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Cos("+input+")";
+        document.querySelector('#input').value=Math.tan(input).toFixed(4);
+      }
+    }
+    else{
+      if(document.querySelector('#deg').textContent==="DEG"){
+      document.querySelector('#half').innerHTML="Cos<sup>-1</sup>("+input+")";
+        var rad=Math.atan(input);
+      document.querySelector('#input').value=radtodeg(rad);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Cos<sup>-1</sup>("+input+")";
+        document.querySelector('#input').value=Math.atan(input).toFixed(4);
+      }
+    }
+});
+document.querySelector('#cosec').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+    if(document.querySelector('#itf').textContent==="ITF"){
+      if(document.querySelector('#deg').textContent==="DEG"){
+        var rad=degtorad(input);
+      document.querySelector('#half').innerHTML="Cosec("+input+"&deg;)";
+      document.querySelector('#input').value=(1/Math.sin(rad)).toFixed(4);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Cosec("+input+")";
+        document.querySelector('#input').value=(1/Math.sin(rad)).toFixed(4);
+      }
+    }
+    // else{
+    //   if(document.querySelector('#deg').textContent==="DEG"){
+    //   document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
+    //     var rad=Math.asin(input);
+    //   document.querySelector('#input').value=radtodeg(rad);
+    //   }
+    //   else {
+    //     document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
+    //     document.querySelector('#input').value=Math.asin(input).toFixed(4);
+    //   }
+    // }
+});
+document.querySelector('#sec').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+    if(document.querySelector('#itf').textContent==="ITF"){
+      if(document.querySelector('#deg').textContent==="DEG"){
+        var rad=degtorad(input);
+      document.querySelector('#half').innerHTML="Sec("+input+"&deg;)";
+      document.querySelector('#input').value=(1/Math.cos(rad)).toFixed(4);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Sec("+input+")";
+        document.querySelector('#input').value=(1/Math.cos(rad)).toFixed(4);
+      }
+    }
+    // else{
+    //   if(document.querySelector('#deg').textContent==="DEG"){
+    //   document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
+    //     var rad=Math.asin(input);
+    //   document.querySelector('#input').value=radtodeg(rad);
+    //   }
+    //   else {
+    //     document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
+    //     document.querySelector('#input').value=Math.asin(input).toFixed(4);
+    //   }
+    // }
+});
+document.querySelector('#cot').addEventListener('click',()=>{
+    var input=document.querySelector('#input').value;
+    if(document.querySelector('#itf').textContent==="ITF"){
+      if(document.querySelector('#deg').textContent==="DEG"){
+        var rad=degtorad(input);
+      document.querySelector('#half').innerHTML="Cot("+input+"&deg;)";
+      document.querySelector('#input').value=(1/Math.tan(rad)).toFixed(4);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Cot("+input+")";
+        document.querySelector('#input').value=(1/Math.tan(rad)).toFixed(4);
+      }
+    }
+    // else{
+    //   if(document.querySelector('#deg').textContent==="DEG"){
+    //   document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
+    //     var rad=Math.asin(input);
+    //   document.querySelector('#input').value=radtodeg(rad);
+    //   }
+    //   else {
+    //     document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
+    //     document.querySelector('#input').value=Math.asin(input).toFixed(4);
+    //   }
+    // }
+});

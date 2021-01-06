@@ -52,7 +52,7 @@ font-size: 25px;
     background-color: #f811b38c;
     font-size: 35px;
   }
-  #plus,#sub{
+  #plus,#sub,#mult{
       font-size: 25px;
   }
 
@@ -120,7 +120,7 @@ font-size: 25px;
   #one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#zero,#decimal{
       background-color: #36a9ee;
   }
-  #plus,#sub{
+  #plus,#sub,#mult{
       font-size: 25px;
   }
   .calculator-buttons button:hover{
