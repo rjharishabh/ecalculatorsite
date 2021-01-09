@@ -1,19 +1,39 @@
 
-
 window.onload=document.querySelector('#input').focus();
 document.querySelector('#input').addEventListener('blur',()=>{
   document.querySelector('#input').focus();
 });
 
+var cal=[];
+   count=0;var a;
+var half1=document.querySelector('#half');
 document.querySelector('#plus').addEventListener('click',()=>{
+
+
+  var input=document.querySelector('#input').value;
+  cal.push(input);
+half1.innerHTML=cal.join(' + ');
+
+if (count===0) {
+a=math.chain(input);
+count++;
+}
+else{
+a=a+"."+math.add(input);
+count++;
+}
+
+
+document.querySelector('#input').value=a.value;
+
+
+
+
+
+});
+document.querySelector('#equal').addEventListener('click',()=>{
 var input=document.querySelector('#input').value;
-var half=document.querySelector('#half');
-half.innerHTML=input+" +";
-
-
-
-
-
+document.getElementById('input').value=math.evaluate(input).toFixed(6);
 });
 document.querySelector('#C').addEventListener('click',()=>{
 document.querySelector('#input').value="";
