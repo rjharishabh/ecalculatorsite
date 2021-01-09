@@ -60,6 +60,7 @@ font-family: 'Andika New Basic', 'Noto Sans JP', sans-serif;
 ::-webkit-scrollbar{
   width:10px;
   background-color: #dcf5eb;
+  height: 5px;
 
 }
 .active{
