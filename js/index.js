@@ -325,17 +325,17 @@ document.querySelector('#cosec').addEventListener('click',()=>{
         document.querySelector('#input').value=(1/Math.sin(rad)).toFixed(4);
       }
     }
-    // else{
-    //   if(document.querySelector('#deg').textContent==="DEG"){
-    //   document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
-    //     var rad=Math.asin(input);
-    //   document.querySelector('#input').value=radtodeg(rad);
-    //   }
-    //   else {
-    //     document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
-    //     document.querySelector('#input').value=Math.asin(input).toFixed(4);
-    //   }
-    // }
+    else{
+      if(document.querySelector('#deg').textContent==="DEG"){
+      document.querySelector('#half').innerHTML="Cosec<sup>-1</sup>("+input+")";
+        var rad=Math.asin(1/input);
+      document.querySelector('#input').value=radtodeg(rad);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Cosec<sup>-1</sup>("+input+")";
+        document.querySelector('#input').value=Math.asin(1/input).toFixed(4);
+      }
+    }
 });
 document.querySelector('#sec').addEventListener('click',()=>{
     var input=document.querySelector('#input').value;
@@ -350,17 +350,17 @@ document.querySelector('#sec').addEventListener('click',()=>{
         document.querySelector('#input').value=(1/Math.cos(rad)).toFixed(4);
       }
     }
-    // else{
-    //   if(document.querySelector('#deg').textContent==="DEG"){
-    //   document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
-    //     var rad=Math.asin(input);
-    //   document.querySelector('#input').value=radtodeg(rad);
-    //   }
-    //   else {
-    //     document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
-    //     document.querySelector('#input').value=Math.asin(input).toFixed(4);
-    //   }
-    // }
+    else{
+      if(document.querySelector('#deg').textContent==="DEG"){
+      document.querySelector('#half').innerHTML="Sec<sup>-1</sup>("+input+")";
+        var rad=Math.acos(1/input);
+      document.querySelector('#input').value=radtodeg(rad);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Sec<sup>-1</sup>("+input+")";
+        document.querySelector('#input').value=Math.acos(1/input).toFixed(4);
+      }
+    }
 });
 document.querySelector('#cot').addEventListener('click',()=>{
     var input=document.querySelector('#input').value;
@@ -375,15 +375,15 @@ document.querySelector('#cot').addEventListener('click',()=>{
         document.querySelector('#input').value=(1/Math.tan(rad)).toFixed(4);
       }
     }
-    // else{
-    //   if(document.querySelector('#deg').textContent==="DEG"){
-    //   document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
-    //     var rad=Math.asin(input);
-    //   document.querySelector('#input').value=radtodeg(rad);
-    //   }
-    //   else {
-    //     document.querySelector('#half').innerHTML="Sin<sup>-1</sup>("+input+")";
-    //     document.querySelector('#input').value=Math.asin(input).toFixed(4);
-    //   }
-    // }
+    else{
+      if(document.querySelector('#deg').textContent==="DEG"){
+      document.querySelector('#half').innerHTML="Cot<sup>-1</sup>("+input+")";
+        var rad=Math.atan(1/input);
+      document.querySelector('#input').value=radtodeg(rad);
+      }
+      else {
+        document.querySelector('#half').innerHTML="Cot<sup>-1</sup>("+input+")";
+        document.querySelector('#input').value=Math.atan(1/input).toFixed(4);
+      }
+    }
 });
