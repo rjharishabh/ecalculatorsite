@@ -196,8 +196,10 @@ document.querySelector('#one').addEventListener('click',()=>{
 });
 document.querySelector('#decimal').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
-  document.querySelector('#input').value=str+".";
-  document.getElementById('half').innerHTML=document.getElementById('input').value;
+  if(str[str.length-1]!=='.'){
+    document.querySelector('#input').value=str+".";
+    document.getElementById('half').innerHTML=document.getElementById('input').value;
+  }
 });
 document.querySelector('#lbrac').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;

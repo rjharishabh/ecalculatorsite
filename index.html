@@ -78,62 +78,93 @@
 
 
 <main class="container-md">
-<div class="calculator">
+  <div class="calculator">
+  <div class="row">
+  <div class="col-12">
+    <div class="card border border-primary shadow rounded">
+  <div class="card-header border border-primary bg-primary">
+      <center><h1 class="text-white">Scientific Calculator</h1></center>
+  </div>
+</div>
+
   <div id="half" class="col-12"> </div>
-  <input class="col-12 form-control" type="text" id="input" placeholder="please enter something!">
+  <input class="col-12 form-control" type="text" id="input" placeholder="please enter!">
 
-<div class="calculator-buttons">
-    <button  type="button" id="AC">AC</button>
-    <button id="deg" type="button">DEG</button>
-    <button id="sin" type="button">Sin</button>
-    <button  id="cos" type="button">Cos</button>
-    <button  id="tan" type="button">Tan</button>
-    <button   type="button" id="C">C</button>
-    <button  id="per"  type="button">%</button>
-    <button id="div" type="button">/</button>
-  <button  id="bs" type="button"><img height="30px" src="photos/bs.png" alt="backspace image"> </button>
-  <button id="itf" type="button">ITF</button>
-  <button id="cosec" type="button">Cosec</button>
-  <button id="sec" type="button">Sec</button>
-  <button  id="cot" type="button">Cot</button>
-  <button  id="lbrac" type="button">(</button>
-  <button  id="rbrac" type="button">)</button>
-  <button  id="mult" type="button">*</button>
-  <button  id="reci" type="button">1/x</button>
-  <button  id="pipowx" type="button">\(\pi^x\)</button>
-  <button  id="pi" type="button">\(\pi\)</button>
-  <button  id="e" type="button">e</button>
-  <button  id="seven" type="button">7</button>
-  <button  id="eight"  type="button">8</button>
-  <button  id="nine"  type="button">9</button>
-  <button  id="sub" type="button">-</button>
-  <button  id="fact" type="button">x!</button>
-  <button  id="cube" type="button">x<sup>3</sup></button>
-  <button  id="log10" type="button">log<sub>10</sub>x</button>
-  <button  id="epowx" type="button">e<sup>x</button>
-  <button  id="four" type="button">4</button>
-  <button  id="five" type="button">5</button>
-  <button  id="six" type="button">6</button>
-  <button  id="plus" type="button">+</button>
-  <button  id="sqrt" type="button">\(\sqrt{x}\)</button>
-  <button  id="tenpowx" type="button">10<sup>x</sup></button>
-  <button  id="ln" type="button">lnx</button>
-  <button  id="epow-x" type="button">e<sup>-x</sup></button>
-  <button  id="one" type="button">1</button>
-  <button  id="two"  type="button">2</button>
-  <button  id="three" type="button">3</button>
-  <button  type="button" id="equal">=</button>
-  <button  id="square" type="button">x<sup>2</sup></button>
-  <button  id="log2" type="button">log<sub>2</sub>x</button>
-    <button  id="xpowy" type="button">x<sup>y</sup></button>
-  <button type="button" id="mod">mod</button>
-    <button  id="rnd" type="button">Rnd</button>
-  <button  id="zero" type="button">0</button>
-  <button  id="decimal" type="button">.</button>
+  <div class="calculator-buttons">
+      <button  type="button" id="AC">AC</button>
+      <button id="deg" type="button">DEG</button>
+      <button id="sin" type="button">Sin</button>
+      <button  id="cos" type="button">Cos</button>
+      <button  id="tan" type="button">Tan</button>
+      <button   type="button" id="C">C</button>
+      <button  id="per"  type="button">%</button>
+      <button id="div" type="button">/</button>
+    <button  id="bs" type="button"><img height="30px" src="photos/bs.png" alt="backspace image"> </button>
+    <button id="itf" type="button">ITF</button>
+    <button id="cosec" type="button">Cosec</button>
+    <button id="sec" type="button">Sec</button>
+    <button  id="cot" type="button">Cot</button>
+    <button  id="lbrac" type="button">(</button>
+    <button  id="rbrac" type="button">)</button>
+    <button  id="mult" type="button">*</button>
+    <button  id="reci" type="button">1/x</button>
+    <button  id="pipowx" type="button">\(\pi^x\)</button>
+    <button  id="pi" type="button">\(\pi\)</button>
+    <button  id="e" type="button">e</button>
+    <button  id="seven" type="button">7</button>
+    <button  id="eight"  type="button">8</button>
+    <button  id="nine"  type="button">9</button>
+    <button  id="sub" type="button">-</button>
+    <button  id="fact" type="button">x!</button>
+    <button  id="cube" type="button">x<sup>3</sup></button>
+    <button  id="log10" type="button">log<sub>10</sub>x</button>
+    <button  id="epowx" type="button">e<sup>x</button>
+    <button  id="four" type="button">4</button>
+    <button  id="five" type="button">5</button>
+    <button  id="six" type="button">6</button>
+    <button  id="plus" type="button">+</button>
+    <button  id="sqrt" type="button">\(\sqrt{x}\)</button>
+    <button  id="tenpowx" type="button">10<sup>x</sup></button>
+    <button  id="ln" type="button">lnx</button>
+    <button  id="epow-x" type="button">e<sup>-x</sup></button>
+    <button  id="one" type="button">1</button>
+    <button  id="two"  type="button">2</button>
+    <button  id="three" type="button">3</button>
+    <button  type="button" id="equal">=</button>
+    <button  id="square" type="button">x<sup>2</sup></button>
+    <button  id="log2" type="button">log<sub>2</sub>x</button>
+      <button  id="xpowy" type="button">x<sup>y</sup></button>
+    <button type="button" id="mod">mod</button>
+      <button  id="rnd" type="button">Rnd</button>
+    <button  id="zero" type="button">0</button>
+    <button  id="decimal" type="button">.</button>
 
+  </div>
 </div>
 </div>
+<div class="card">
+  <div class="card-footer border border-primary">
+    <div class="text-center border border-dark wrong">
+     <h5>If you find anything wrong in this Calculation.</h5>
+          <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Scientific Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+    </div>
+      <div class="text-center card-header border border-primary">
+        <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
+      </div>
+  <div class="card-body border border-top-0 border-primary">
+  <div class="code-box border border-primary d-none d-md-block">
+  <code id="code">&lt;a href="http://www.ecalculatorsite.com/index.html"&gt;Scientific Calculator&lt;a&gt;</code>
+  <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
+  </div>
+  <div class="share-buttons text-center">
+  <a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/index.html"&gt;Scientific Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/index.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
+    <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
 
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
 </main>
 
 <div class="container-fluid support">

@@ -1,10 +1,10 @@
 
-.calculator>input{
+#input{
 text-align: right;
 margin-top: 5px;
 margin-bottom: 10px;
 height:45px;
-color:blue;
+color:black;
 font-size: 25px;
 }
 .calculator #half{
@@ -12,7 +12,7 @@ font-size: 25px;
   margin-top: 5px;
   margin-bottom: 10px;
   height:45px;
-  color:blue;
+  color:black;
   font-size: 25px;
   background-color: #eacee0;
   border: 1px solid #9835dc66;
@@ -28,7 +28,8 @@ font-size: 25px;
   }
 
   .calculator-buttons{
-
+  margin-top: 10px;
+  margin-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(8,1fr);
   column-gap: 2px;
@@ -102,6 +103,7 @@ font-size: 25px;
   margin: 30px auto;
   }
   .calculator-buttons{
+margin-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(6,1fr);
   column-gap: 1px;
