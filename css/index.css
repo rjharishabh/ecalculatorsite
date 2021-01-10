@@ -16,6 +16,7 @@ font-size: 25px;
   font-size: 25px;
   background-color: #eacee0;
   border: 1px solid #9835dc66;
+  overflow: auto;
 }
 #deg{
   background-color:#ff16f2;
