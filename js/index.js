@@ -1,39 +1,46 @@
+document.querySelector('input').addEventListener('keyup',()=>{
+    document.getElementById('half').innerHTML=document.getElementById('input').value;
+});
 
 window.onload=document.querySelector('#input').focus();
 document.querySelector('#input').addEventListener('blur',()=>{
   document.querySelector('#input').focus();
 });
 
-var cal=[];
-   count=0;var a;
-var half1=document.querySelector('#half');
 document.querySelector('#plus').addEventListener('click',()=>{
-
-
-  var input=document.querySelector('#input').value;
-  cal.push(input);
-half1.innerHTML=cal.join(' + ');
-
-if (count===0) {
-a=math.chain(input);
-count++;
+var input=document.querySelector('#input').value;
+if(input[input.length-1]!=='+'){
+  document.querySelector('#input').value=input+"+";
+   document.getElementById('half').innerHTML=document.getElementById('input').value;
 }
-else{
-a=a+"."+math.add(input);
-count++;
+});
+
+document.querySelector('#sub').addEventListener('click',()=>{
+var input=document.querySelector('#input').value;
+if(input[input.length-1]!=='-'){
+  document.querySelector('#input').value=input+"-";
+   document.getElementById('half').innerHTML=document.getElementById('input').value;
 }
-
-
-document.querySelector('#input').value=a.value;
-
-
-
-
-
+});
+document.addEventListener('keyup',()=>{
+  if(event.keyCode===13){
+    try {
+      var input=document.querySelector('#input').value;
+      document.getElementById('input').value=math.evaluate(input);
+    } catch (e) {
+      document.querySelector('#input').value='';
+      document.querySelector('#input').placeholder="Error";
+    }
+  }
 });
 document.querySelector('#equal').addEventListener('click',()=>{
-var input=document.querySelector('#input').value;
-document.getElementById('input').value=math.evaluate(input).toFixed(6);
+  try {
+    var input=document.querySelector('#input').value;
+    document.getElementById('input').value=math.evaluate(input);
+  } catch (e) {
+    document.querySelector('#input').value='';
+    document.querySelector('#input').placeholder="Error";
+  }
 });
 document.querySelector('#C').addEventListener('click',()=>{
 document.querySelector('#input').value="";
@@ -53,6 +60,7 @@ document.querySelector('#input').value=per;
 document.querySelector('#bs').addEventListener('click',()=>{
 var input=document.querySelector('#input').value;
 document.querySelector('#input').value=input.substring(0,input.length-1);
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 
 document.querySelector('#itf').addEventListener('click',()=>{
@@ -99,54 +107,67 @@ document.querySelector('#reci').addEventListener('click',()=>{
 document.querySelector('#zero').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"0";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#nine').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"9";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#eight').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"8";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#seven').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"7";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#six').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"6";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#five').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"5";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#four').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"4";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#three').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"3";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#two').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"2";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#one').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"1";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#decimal').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+".";
+  document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#lbrac').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+"(";
+    document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#rbrac').addEventListener('click',()=>{
   var str=document.querySelector('#input').value;
   document.querySelector('#input').value=str+")";
+    document.getElementById('half').innerHTML=document.getElementById('input').value;
 });
 document.querySelector('#fact').addEventListener('click',()=>{
 var input=document.querySelector('#input').value;
@@ -198,7 +219,7 @@ document.querySelector('#pi').addEventListener('click',()=>{
   document.querySelector('#input').value=Math.PI;
 });
 document.querySelector('#rnd').addEventListener('click',()=>{
-  document.querySelector('#half').innerHTML="A random integer between 0 and 10000";
+  document.querySelector('#half').innerHTML=Math.random()*(10000);
   document.querySelector('#input').value=parseInt(Math.random()*(10000));
 });
 var input1,input2;
@@ -245,8 +266,8 @@ document.querySelector('#xpowy').addEventListener('click',()=>{
     document.querySelector('#xpowy').textContent="Cal";
   }
 else{
-   input4=parseFloat(document.querySelector('#input').value);
-      document.querySelector('#half').innerHTML=input3+"<sup>"+input4+"</sup>";
+      input4=parseFloat(document.querySelector('#input').value);
+        document.getElementById('half').innerHTML=input3+"<sup>"+document.getElementById('input').value+"</sup>";
         document.querySelector('#input').value=Math.pow(input3,input4);
        document.querySelector('#xpowy').innerHTML="x<sup>y</sup>";
 }
@@ -407,3 +428,4 @@ document.querySelector('#cot').addEventListener('click',()=>{
       }
     }
 });
+$('body').prop('readonly',true);
