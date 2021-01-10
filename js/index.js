@@ -3,9 +3,7 @@ document.querySelector('input').addEventListener('keyup',()=>{
 });
 
 window.onload=document.querySelector('#input').focus();
-document.querySelector('#input').addEventListener('blur',()=>{
-  document.querySelector('#input').focus();
-});
+
 
 document.querySelector('#plus').addEventListener('click',()=>{
 var input=document.querySelector('#input').value;
@@ -19,6 +17,22 @@ document.querySelector('#sub').addEventListener('click',()=>{
 var input=document.querySelector('#input').value;
 if(input[input.length-1]!=='-'){
   document.querySelector('#input').value=input+"-";
+   document.getElementById('half').innerHTML=document.getElementById('input').value;
+}
+});
+
+document.querySelector('#mult').addEventListener('click',()=>{
+var input=document.querySelector('#input').value;
+if(input[input.length-1]!=='*'){
+  document.querySelector('#input').value=input+"*";
+   document.getElementById('half').innerHTML=document.getElementById('input').value;
+}
+});
+
+document.querySelector('#div').addEventListener('click',()=>{
+var input=document.querySelector('#input').value;
+if(input[input.length-1]!=='/'){
+  document.querySelector('#input').value=input+"/";
    document.getElementById('half').innerHTML=document.getElementById('input').value;
 }
 });
@@ -68,16 +82,26 @@ document.querySelector('#itf').addEventListener('click',()=>{
   document.querySelector('#sin').innerHTML="Sin<sup>-1</sup>";
   document.querySelector('#cos').innerHTML="Cos<sup>-1</sup>";
   document.querySelector('#tan').innerHTML="Tan<sup>-1</sup>";
-  document.querySelector('#cosec').innerHTML="Cosec<sup>-1</sup>";
-  document.querySelector('#sec').innerHTML="Sec<sup>-1</sup>";
-  document.querySelector('#cot').innerHTML="Cot<sup>-1</sup>";
-  document.querySelector('#sin').style.fontSize="12px";
-  document.querySelector('#cos').innerHTML="Cos<sup>-1</sup>";
-  document.querySelector('#tan').innerHTML="Tan<sup>-1</sup>";
-  document.querySelector('#cosec').innerHTML="Cosec<sup>-1</sup>";
+  document.querySelector('#cosec').innerHTML="Csc<sup>-1</sup>";
   document.querySelector('#sec').innerHTML="Sec<sup>-1</sup>";
   document.querySelector('#cot').innerHTML="Cot<sup>-1</sup>";
   document.querySelector('#itf').textContent='TF';
+  if(window.innerWidth<700){
+    document.querySelector('#cosec').style.fontSize="14px";
+      document.querySelector('#sec').style.fontSize="14px";
+      document.querySelector('#cot').style.fontSize="14px";
+        document.querySelector('#sin').style.fontSize="14px";
+        document.querySelector('#cos').style.fontSize="14px";
+          document.querySelector('#tan').style.fontSize="14px";
+  }
+  else {
+    document.querySelector('#cosec').style.fontSize="20px";
+      document.querySelector('#sec').style.fontSize="20px";
+      document.querySelector('#cot').style.fontSize="20px";
+        document.querySelector('#sin').style.fontSize="20px";
+        document.querySelector('#cos').style.fontSize="20px";
+          document.querySelector('#tan').style.fontSize="20px";
+  }
   }
   else {
   document.querySelector('#sin').innerHTML="Sin";
@@ -87,6 +111,22 @@ document.querySelector('#itf').addEventListener('click',()=>{
   document.querySelector('#sec').innerHTML="Sec";
   document.querySelector('#cot').innerHTML="Cot";
   document.querySelector('#itf').textContent='ITF';
+  if(window.innerWidth<700){
+    document.querySelector('#cosec').style.fontSize="16px";
+      document.querySelector('#sec').style.fontSize="16px";
+      document.querySelector('#cot').style.fontSize="16px";
+        document.querySelector('#sin').style.fontSize="16px";
+        document.querySelector('#cos').style.fontSize="16px";
+          document.querySelector('#tan').style.fontSize="16px";
+  }
+  else {
+    document.querySelector('#cosec').style.fontSize="22px";
+      document.querySelector('#sec').style.fontSize="22px";
+      document.querySelector('#cot').style.fontSize="22px";
+        document.querySelector('#sin').style.fontSize="22px";
+        document.querySelector('#cos').style.fontSize="22px";
+          document.querySelector('#tan').style.fontSize="22px";
+  }
   }
 });
 
