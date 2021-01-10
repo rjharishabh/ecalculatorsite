@@ -34,6 +34,9 @@ font-size: 25px;
     grid-template-columns: repeat(8,1fr);
   column-gap: 2px;
   row-gap:2px;
+  -ms-grid-template-columns: repeat(8,1fr);
+-ms-column-gap: 2px;
+-ms-row-gap:2px;
   }
   .calculator-buttons button{
     padding-bottom: 10px;
@@ -50,6 +53,8 @@ font-size: 25px;
   #equal{
     grid-row: 5 / span 2;
     grid-column-start: 8;
+    -ms-grid-row: 5 / span 2;
+    -ms-grid-column-start: 8;
     height: 72px;
     background-color: #f811b38c;
     font-size: 35px;
@@ -106,8 +111,11 @@ font-size: 25px;
 margin-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    -ms-grid-template-columns: repeat(6,1fr);
   column-gap: 1px;
+  -ms-column-gap: 1px;
   row-gap:1px;
+    -ms-row-gap:1px;
   }
   .calculator-buttons button{
     padding-bottom: 10px;
@@ -132,6 +140,8 @@ margin-bottom: 10px;
   #equal{
    grid-row: 7 / span 2;
    grid-column:6/7;
+   -ms-grid-row: 7 / span 2;
+   -ms-grid-column:6/7;
    height: 72px;
    background-color: #f811b38c;
    font-size: 35px;
@@ -142,214 +152,302 @@ margin-bottom: 10px;
  #rnd{
    grid-column: 4/5;
    grid-row: 2/3;
+   -ms-grid-column: 4/5;
+   -ms-grid-row: 2/3;
    background-color: #4edaf0;
  }
 #div{
   grid-column: 6;
   grid-row: 3/4;
+  -ms-grid-column: 6;
+  -ms-grid-row: 3/4;
     background-color:#55ff07;
 }
 #sin{
   grid-column: 1/2;
   grid-row: 2/3;
+  -ms-grid-column: 1/2;
+  -ms-grid-row: 2/3;
    background-color:#6107ffa1;
 }
 #cos{
   grid-column: 2/3;
   grid-row: 2/3;
+  -ms-grid-column: 2/3;
+  -ms-grid-row: 2/3;
    background-color:#6107ffa1;
 }
 #tan{
   grid-column: 3/4;
   grid-row: 2/3;
+  -ms-grid-column: 3/4;
+  -ms-grid-row: 2/3;
    background-color:#6107ffa1;
 }
   #AC{
     grid-column:5/6;
     grid-row: 1/2;
+    -ms-grid-column:5/6;
+    -ms-grid-row: 1/2;
     background-color: #e73f3f;
   }
   #C{
     background-color: #e73f3f;
     grid-column:6/7;
     grid-row: 1/2;
+    -ms-grid-column:6/7;
+    -ms-grid-row: 1/2;
   }
   #bs{
     background-color: #ffc107;
     grid-column: 1/2;
     grid-row: 1/2;
+    -ms-grid-column: 1/2;
+    -ms-grid-row: 1/2;
   }
   #itf{
     grid-column:2/3;
     grid-row: 1/2;
+    -ms-grid-column:2/3;
+    -ms-grid-row: 1/2;
     background-color:#fd7e14;
   }
   #deg{
     grid-column:3/4;
     grid-row: 1/2;
+    -ms-grid-column:3/4;
+    -ms-grid-row: 1/2;
   }
   #itf{
     grid-column:2/3;
     grid-row: 1/2;
+    -ms-grid-column:2/3;
+    -ms-grid-row: 1/2;
   }
   #lbrac{
     grid-column:5/6;
     grid-row: 2/3;
+    -ms-grid-column:5/6;
+    -ms-grid-row: 2/3;
     background-color:#20c99794;
   }
   #rbrac{
     grid-column:5/6;
     grid-row: 3/4;
+    -ms-grid-column:5/6;
+    -ms-grid-row: 3/4;
     background-color:#20c99794;
   }
   #per{
     grid-column:6/7;
     grid-row: 2/3;
+    -ms-grid-column:6/7;
+    -ms-grid-row: 2/3;
     background-color:#55ff07;
   }
 
   #cosec{
     grid-column: 1/2;
     grid-row: 3/4;
+    -ms-grid-column: 1/2;
+    -ms-grid-row: 3/4;
     background-color:#6107ffa1;
   }
   #sec{
     grid-column: 2/3;
     grid-row: 3/4;
+    -ms-grid-column: 2/3;
+    -ms-grid-row: 3/4;
     background-color:#6107ffa1;
   }
   #cot{
     grid-column: 3/4;
     grid-row: 3/4;
+    -ms-grid-column: 3/4;
+    -ms-grid-row: 3/4;
     background-color:#6107ffa1;
   }
 
   #one{
     grid-column: 4/5;
     grid-row: 7/8;
+    -ms-grid-column: 4/5;
+    -ms-grid-row: 7/8;
   }
    #two{
       grid-column: 5/6;
       grid-row: 7/8;
+      -ms-grid-column: 5/6;
+      -ms-grid-row: 7/8;
     }
   #three{
     grid-column: 4/5;
     grid-row: 6/7;
+    -ms-grid-column: 4/5;
+    -ms-grid-row: 6/7;
   }
   #four{
     grid-column: 5/6;
     grid-row: 6/7;
+    -ms-grid-column: 5/6;
+    -ms-grid-row: 6/7;
   }
   #five{
     grid-column: 4/5;
     grid-row: 5/6;
+    -ms-grid-column: 4/5;
+    -ms-grid-row: 5/6;
   }
    #six{
       grid-column: 5/6;
       grid-row: 5/6;
+      -ms-grid-column: 5/6;
+      -ms-grid-row: 5/6;
     }
   #seven{
     grid-column: 4/5;
     grid-row: 4/5;
+    -ms-grid-column: 4/5;
+    -ms-grid-row: 4/5;
   }
   #eight{
     grid-column: 5/6;
     grid-row: 4/5;
+    -ms-grid-column: 5/6;
+    -ms-grid-row: 4/5;
   }
   #nine{
     grid-column: 4/5;
     grid-row: 3/4;
+    -ms-grid-column: 4/5;
+    -ms-grid-row: 3/4;
   }
   #mult{
     grid-column: 6/7;
     grid-row: 4/5;
+    -ms-grid-column: 6/7;
+    -ms-grid-row: 4/5;
     background-color:#55ff07;
   }
   #sub{
     grid-column: 6/7;
     grid-row: 5/6;
+    -ms-grid-column: 6/7;
+    -ms-grid-row: 5/6;
     background-color:#55ff07;
   }
   #plus{
     grid-column: 6/7;
     grid-row: 6/7;
+    -ms-grid-column: 6/7;
+    -ms-grid-row: 6/7;
     background-color:#55ff07;
   }
 
   #fact{
     grid-column: 1/2;
     grid-row: 4/5;
+    -ms-grid-column: 1/2;
+    -ms-grid-row: 4/5;
     background-color:#28a745;
   }
   #sqrt{
     grid-column: 2/3;
     grid-row: 4/5;
+    -ms-grid-column: 2/3;
+    -ms-grid-row: 4/5;
       background-color:#28a745;
   }
   #reci{
     grid-column: 3/4;
     grid-row: 4/5;
+    -ms-grid-column: 3/4;
+    -ms-grid-row: 4/5;
       background-color:#28a745;
   }
   #cube{
     grid-column: 2/3;
     grid-row: 5/6;
+    -ms-grid-column: 2/3;
+    -ms-grid-row: 5/6;
       background-color:#28a745;
   }
   #square{
     grid-column: 3/4;
     grid-row: 5/6;
+    -ms-grid-column: 3/4;
+    -ms-grid-row: 5/6;
       background-color:#28a745;
   }
   #ln{
     grid-column: 1/2;
     grid-row: 6/7;
+    -ms-grid-column: 1/2;
+    -ms-grid-row: 6/7;
       background-color:#28a745;
   }
   #log2{
     grid-column: 2/3;
     grid-row: 6/7;
+    -ms-grid-column: 2/3;
+    -ms-grid-row: 6/7;
       background-color:#28a745;
   }
   #log10{
     grid-column: 3/4;
     grid-row: 6/7;
+    -ms-grid-column: 3/4;
+    -ms-grid-row: 6/7;
       background-color:#28a745;
   }
   #epow-x{
     grid-column: 1/2;
     grid-row: 7/8;
+    -ms-grid-column: 1/2;
+    -ms-grid-row: 7/8;
       background-color:#28a745;
   }
 
   #e{
     grid-column: 2/3;
     grid-row: 7/8;
+    -ms-grid-column: 2/3;
+    -ms-grid-row: 7/8;
       background-color:#28a745;
   }
   #epowx{
     grid-column: 3/4;
     grid-row: 7/8;
+    -ms-grid-column: 3/4;
+    -ms-grid-row: 7/8;
       background-color:#28a745;
   }
   #pi{
     grid-column: 1/2;
     grid-row: 8/9;
+    -ms-grid-column: 1/2;
+    -ms-grid-row: 8/9;
       background-color:#28a745;
   }
   #pipowx{
     grid-column: 2/3;
     grid-row: 8/9;
+    -ms-grid-column: 2/3;
+    -ms-grid-row: 8/9;
       background-color:#28a745;
   }
   #tenpowx{
     grid-column: 3/4;
     grid-row: 8/9;
+    -ms-grid-column: 3/4;
+    -ms-grid-row: 8/9;
       background-color:#28a745;
   }
   #xpowy{
     grid-column: 1/2;
     grid-row: 5/6;
+    -ms-grid-column: 1/2;
+    -ms-grid-row: 5/6;
       background-color:#28a745;
   }
 
