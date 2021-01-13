@@ -11,6 +11,10 @@
   width:10%;
   float: right;
 }
+#message_bmi{
+text-align: center;
+text-transform: uppercase;
+}
 .sitemap a{
 line-height: 35px;
 }

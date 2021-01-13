@@ -255,3 +255,65 @@ function resetper3() {
   document.getElementById('p32').value="";
   document.getElementById('rp3').value="";
 }
+
+function bmi(){
+    var m=parseFloat(document.getElementById('mass').value);
+    var h=parseFloat(document.getElementById('height').value);
+
+      if(isNaN(m)){
+        document.getElementById('mass').value="Please Enter a Number";
+         document.getElementById('mass').style.backgroundColor="#97b17eeb";
+      }
+      if(isNaN(h)){
+        document.getElementById('height').value="Please Enter a Number";
+         document.getElementById('height').style.backgroundColor="#97b17eeb";
+       }
+
+     if (!isNaN(m) && !isNaN(h) ) {
+       let bmi=(m/Math.pow(h,2)).toFixed(6);
+          document.getElementById('bmi_val').value=bmi;
+          if(bmi<=15){
+              document.getElementById('message_bmi').innerHTML="<h3>very severely underweight</h3>";
+                document.getElementById('message_bmi').style.color="#dc3545";
+          }
+          else if(bmi<=16){
+              document.getElementById('message_bmi').innerHTML="<h3>severely underweight</h3>";
+                document.getElementById('message_bmi').style.color="#dc3545";
+          }
+          else if(bmi<=18.5){
+              document.getElementById('message_bmi').innerHTML="<h3>underweight</h3>";
+                document.getElementById('message_bmi').style.color="#dc3545";
+          }
+          else if(bmi<=25){
+              document.getElementById('message_bmi').innerHTML="<h3>normal (healthy weight)</h3>";
+                document.getElementById('message_bmi').style.color="#28a745";
+          }
+          else if(bmi<=30){
+              document.getElementById('message_bmi').innerHTML="<h3>overweight</h3>";
+                document.getElementById('message_bmi').style.color="#dc3545";
+          }
+          else if(bmi<=35){
+              document.getElementById('message_bmi').innerHTML="<h3>moderately obese</h3>";
+                document.getElementById('message_bmi').style.color="#dc3545";
+          }
+          else if(bmi<=40){
+              document.getElementById('message_bmi').innerHTML="<h3>severely obese</h3>";
+                document.getElementById('message_bmi').style.color="#dc3545";
+          }
+          else{
+            document.getElementById('message_bmi').innerHTML="<h3>very severely obese</h3>";
+              document.getElementById('message_bmi').style.color="#dc3545";
+          }
+}
+}
+
+function resetbmi(){
+  document.getElementById('mass').style.backgroundColor="#fff";
+  document.getElementById('height').style.backgroundColor="#fff";
+    document.getElementById('mass').value="";
+    document.getElementById('height').value="";
+    document.getElementById('mass').placeholder="Please Enter a Number";
+    document.getElementById('height').placeholder="Please Enter a Number";
+    document.getElementById('bmi_val').value="";
+    document.getElementById('message_bmi').innerHTML="";
+}

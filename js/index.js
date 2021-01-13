@@ -473,4 +473,3 @@ document.querySelector('#cot').addEventListener('click',()=>{
       }
     }
 });
-$('body').prop('readonly',true);
