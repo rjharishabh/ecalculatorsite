@@ -10,19 +10,19 @@
    <meta name="description" content="">
 
 
-    <title>Simple Interest Calculator - E Calculator Site</title>
+    <title>Finance Calculator - E Calculator Site</title>
 <link rel="canonical" href="">
 
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-<link rel="manifest" href="../site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
 
   </head>
 
@@ -39,10 +39,10 @@
     <nav class="navbar navbar-light navbar-expand-lg">
 <div class="container">
         <a class="navbar-brand" href="http://www.ecalculatorsite.com">
-          <img src="../photos/logo.jpg" class="img-fluid logo rounded" alt="site logo" >
+          <img src="photos/logo.jpg" class="img-fluid logo rounded" alt="site logo" >
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-   <img src="../photos/menu.png" alt="menu">
+   <img src="photos/menu.png" alt="menu">
  </button>
 
  <div class="collapse navbar-collapse" id="navbar">
@@ -57,7 +57,7 @@
         <a class="nav-link" href="solid-geometry.html">Solid Geometry</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="plane-geometry.html">Plane Geometry</a>
+        <a class="nav-link  active" href="plane-geometry.html">Plane Geometry</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="coordinate-geometry.html">Coordinate Geometry</a>
@@ -67,13 +67,10 @@
 </div>
     </nav>
 
-
-
-
 <div class="container">
   <div class="row">
   <div class="col-6">
-<img src="../photos/ecs-header.jpg" class="header img-fluid rounded" alt="site official image">
+<img src="photos/ecs-header.jpg" class="header img-fluid rounded" alt="site official image">
   </div>
   </div>
 </div>
@@ -81,77 +78,33 @@
 <main class="container-md">
 <div class="row">
 <div class="col-lg-8">
-  <div class="card border border-primary shadow rounded">
+  <div class="card shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Simple Interest Calculator</h1></center>
+    <center><h1 class="text-white">Finance Calculator</h1></center>
 </div>
 <div class="card-body">
-    <form>
-        <div class="form-group row">
-      <label for="si_p" class="col-form-label col-12 col-md-5">Principal Sum</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" required class="form-control" id="si_p">
-      </div>
-    </div>
-    <div class="form-group row">
-  <label for="si_r" class="col-form-label col-12 col-md-5">Annual Interest Rate</label>
-  <div class="col-8 col-md-4 col-lg-5">
-    <input type="text" required class="form-control" id="si_r">
-  </div>
-  <div class="col-4 col-md-3 col-lg-2">
-   <input type="text" readonly class="form-control-plaintext" value="%">
+  <div class="row">
+<div class="col-12 col-sm-6">
+  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/simple-interest.jpg" alt="simple interest calculator link"></a>
+</div>
+<div class="col-12 col-sm-6">
+  <a href="#"><img class="shadow img-thumbnail img-fluid rounded" src="photos/compound-interest.jpg" alt="compound interest calculator link"></a>
+</div>
   </div>
   </div>
-  <div class="form-group row">
-<label for="si_t" class="col-form-label col-12 col-md-5">Time</label>
-<div class="col-8 col-md-4 col-lg-5">
-  <input type="text" required class="form-control" id="si_t">
-</div>
-<div class="col-4 col-md-3 col-lg-2">
- <input type="text" readonly class="form-control-plaintext" value="year(s)">
-</div>
-</div>
-    <div class="row">
-    <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
-    <button type="button" class=" btn btn-primary" onclick="simint()" name="button">Calculate</button>
-    </div>
-    <div class="col-1 offset-3 offset-md-1 offset-lg-2">
-    <button type="button" class=" btn btn-danger" onclick="resetsimint()" name="button">Reset</button>
-    </div>
-    </div>
-  </form>
 
-    <form>
-    <div class="form-group row">
-      <label for="si" class="col-form-label col-12 col-md-5">Simple Interest</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly  class="form-control" id="si">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="si_a" class="col-form-label col-12 col-md-5">Amount</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly  class="form-control" id="si_a">
-      </div>
-    </div>
-    </form>
-  </div>
-<div class="card-footer border-top border-primary">
-  <div class="text-center border border-dark wrong">
-   <h5>If you find anything wrong in this Calculation.</h5>
-        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Simple Interest Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
-  </div>
+<div class="card-footer border border-primary">
     <div class="text-center card-header border border-primary">
-      <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
+      <h5>&#128151; Like this Website? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/simple-interest-calculator.html"&gt;Simple Interest Calculator&lt;a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/finance-calculator.html"&gt;Finance Calculator&lt;a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/simple-interest-calculator.html"&gt;Simple Interest Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/simple-interest-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
-  <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/finance-calculator.html"&gt;Finance Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/finance-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="photos/mail-link.png" alt="mail-link icon"></button></a>
+  <button type="button" id="link" class="share-btn rounded" name="button"><img src="photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
 </div>
@@ -163,12 +116,12 @@
 </div>
 <div class="col-lg-4 d-none d-lg-block ">
   <div class="btn-group-vertical">
-    <h3 class="text-warning" >More Calculators</h3>
-  <button type="button" class="btn btn-outline-primary" >Cuboid Calculator</button>
-  <button type="button" class="btn btn-outline-primary" >Cylinder Calculator</button>
-  <button type="button" class="btn btn-outline-primary" >Cone Calculator</button>
-  <button type="button" class="btn btn-outline-primary" >Sphere Calculator</button>
-  <button type="button" class="btn btn-outline-primary" >Hemisphere Calculator</button>
+    <h3 class="text-primary" >More Calculators</h3>
+  <button type="button" class="text-white btn btn-warning" >Cuboid Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cylinder Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Cone Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Sphere Calculator</button>
+  <button type="button" class="text-white btn btn-warning" >Hemisphere Calculator</button>
   <button type="button" class="text-white btn btn-warning" >VolumeCalculator</button>
   <button type="button" class="text-white btn btn-warning" >Surface Area Calculator</button>
   <button type="button" class="text-white btn btn-warning" >Statistics Calculator</button>
@@ -187,25 +140,6 @@
 
   </div>
 </div>
-</div>
-<div class="row">
-  <div class="col-lg-8">
-    <div class="card how-to-calculate border border-primary shadow rounded">
-      <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Calculate Simple Interest&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
-      </div>
-      <div class="card-body" id="description">
-        <p>Let the Radius the Circle be \(R\) units.</p>
-        <p>Then</p>
-          <p>the Diameter of the Circle will be \(2R\) units.</p>
-            <p>the Circumference of the Circle will be \(2\pi R\) units.</p>
-            <p>the Area of the Circle will be \(\pi R^2\) square units.</p>
-      </div>
-      <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Interest#Simple_interest" target="_blank" rel="nofollow" class="text-white">Learn more about Simple Interest</a>
-      </div>
-    </div>
-  </div>
 </div>
 
 <div class="row d-lg-none">
@@ -283,15 +217,15 @@
 </div>
   </div>
 </footer>
-<a href="#" id="back-to-top" ><img class="rounded-circle btn btn-info" src="../photos/arrow-up.png" alt="Scroll to Top"> </a>
+<a href="#" id="back-to-top" ><img class="rounded-circle btn btn-info" src="photos/arrow-up.png" alt="Scroll to Top"></a>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js" charset="utf-8"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="../js/common-script.js"></script>
-<script src="../js/finance.js"></script>
+<script src="js/common-script.js" charset="utf-8"></script>
+<script src="js/solid-geometry.js" charset="utf-8"></script>
 
   </body>
 </html>

@@ -94,9 +94,9 @@
       </div>
     </div>
     <div class="form-group row">
-  <label for="ci_i" class="col-form-label col-12 col-md-5">Annual Interest Rate</label>
+  <label for="ci_r" class="col-form-label col-12 col-md-5">Annual Interest Rate</label>
   <div class="col-8 col-md-4 col-lg-5">
-    <input type="text" required class="form-control" id="ci_i">
+    <input type="text" required class="form-control" id="ci_r">
   </div>
   <div class="col-4 col-md-3 col-lg-2">
    <input type="text" readonly class="form-control-plaintext" value="%">
@@ -112,15 +112,16 @@
 </div>
 </div>
 <div class="text-center col-12 ">
-  <label for="compound">Compounded</label>
-  <select id="compound">
-      <option value="1">annually</option>
+  <label>Compounded &nbsp;&nbsp;</label>
+  <select id="compd">
+      <option selected value="1">annually</option>
       <option value="2">half yearly</option>
       <option value="3">quarterly</option>
       <option value="4">monthly</option>
-      <option value="5">biennially</option>
+      <option value="0.5">biennially</option>
   </select>
 </div>
+<br>
     <div class="row">
     <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
     <button type="button" class=" btn btn-primary" onclick="compint()" name="button">Calculate</button>
@@ -301,7 +302,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="../js/common-script.js"></script>
-<script src="../js/plane-geometry.js"></script>
+<script src="../js/finance.js"></script>
 
   </body>
 </html>
