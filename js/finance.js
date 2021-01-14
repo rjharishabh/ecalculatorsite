@@ -54,7 +54,7 @@ function compint(){
     var p=parseFloat(document.getElementById('ci_p').value);
     var r=parseFloat(document.getElementById('ci_r').value);
     var t=parseFloat(document.getElementById('ci_t').value);
-    var n=parseFloat(document.getElementById('compd').value)
+    var n=parseFloat(document.getElementById('compd').value);
   if(p<=0){
           document.getElementById('ci_p').value="Only positive numbers";
            document.getElementById('ci_p').style.backgroundColor="#97b17eeb";
@@ -101,4 +101,43 @@ function resetcompint(){
         document.getElementById('ci').value="";
           document.getElementById('ci_a').value="";
           document.getElementById('compd').value=1;
+}
+
+function disc(){
+    var p=parseFloat(document.getElementById('op').value);
+    var d=parseFloat(document.getElementById('dis').value);
+
+  if(p<=0){
+          document.getElementById('op').value="Only positive numbers";
+           document.getElementById('op').style.backgroundColor="#97b17eeb";
+       }
+   if(d<=0){
+          document.getElementById('dis').value="Only positive numbers";
+          document.getElementById('dis').style.backgroundColor="#97b17eeb";
+       }
+
+      if(isNaN(p)){
+        document.getElementById('op').value="Only positive numbers";
+         document.getElementById('op').style.backgroundColor="#97b17eeb";
+      }
+      if(isNaN(d)){
+        document.getElementById('dis').value="Only positive numbers";
+         document.getElementById('dis').style.backgroundColor="#97b17eeb";
+      }
+
+     if (!isNaN(p) && !isNaN(d) && p>0 && d>0) {
+          document.getElementById('yp').value=(p-0.01*d*p).toFixed(2);
+            document.getElementById('yas').value=(0.01*d*p).toFixed(2);
+        }
+}
+
+function resetdisc(){
+          document.getElementById('op').style.backgroundColor="#fff";
+          document.getElementById('dis').style.backgroundColor="#fff";
+      document.getElementById('op').value="";
+      document.getElementById('dis').value="";
+      document.getElementById('op').placeholder="Please Enter Value";
+      document.getElementById('dis').placeholder="Please Enter Value";
+        document.getElementById('yp').value="";
+          document.getElementById('yas').value="";
 }
