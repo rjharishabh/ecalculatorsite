@@ -319,3 +319,51 @@ function resetbmi(){
     document.getElementById('bmi_val').value="";
     document.getElementById('message_bmi').innerHTML="";
 }
+
+function gcd() {
+  const exp = /\s*(?:,|$)\s*/;
+var  raw_data=document.getElementById('gcddata').value.split(exp);
+if(raw_data==''){
+  document.getElementById('gcddata').value="Please Enter Values";
+    document.getElementById('gcddata').style.backgroundColor="#97b17eeb";
+}
+else{
+    var org_data=[];
+  for (var i = 0; i < raw_data.length; i++) {
+  org_data[i]=parseFloat(raw_data[i]);
+  }
+
+  document.getElementById('gcd_ans').value=math.gcd(...org_data);
+}
+}
+
+function resetgcd() {
+    document.getElementById('gcddata').value="";
+  document.getElementById('gcddata').placeholder="Please Enter Values";
+    document.getElementById('gcddata').style.backgroundColor="#fff";
+    document.getElementById('gcd_ans').value="";
+}
+
+function lcm() {
+  const exp = /\s*(?:,|$)\s*/;
+var  raw_data=document.getElementById('lcmdata').value.split(exp);
+if(raw_data==''){
+  document.getElementById('lcmdata').value="Please Enter Values";
+    document.getElementById('lcmdata').style.backgroundColor="#97b17eeb";
+}
+else{
+    var org_data=[];
+  for (var i = 0; i < raw_data.length; i++) {
+  org_data[i]=parseFloat(raw_data[i]);
+  }
+
+  document.getElementById('lcm_ans').value=math.lcm(...org_data);
+}
+}
+
+function resetlcm() {
+    document.getElementById('lcmdata').value="";
+  document.getElementById('lcmdata').placeholder="Please Enter Values";
+    document.getElementById('lcmdata').style.backgroundColor="#fff";
+    document.getElementById('lcm_ans').value="";
+}
