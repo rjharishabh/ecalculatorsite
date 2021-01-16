@@ -367,3 +367,24 @@ function resetlcm() {
     document.getElementById('lcmdata').style.backgroundColor="#fff";
     document.getElementById('lcm_ans').value="";
 }
+
+function distFormCalc() {
+let x1=parseFloat(document.querySelector('#x1').value);
+let y1=parseFloat(document.querySelector('#y1').value);
+let x2=parseFloat(document.querySelector('#x2').value);
+let y2=parseFloat(document.querySelector('#y2').value);
+if(!isNaN(x1)&&!isNaN(y1)&&!isNaN(x2)&&!isNaN(y2)){
+  let x= Math.pow(x1-x2,2);
+  let y=  Math.pow(y1-y2,2);
+  let dist=Math.sqrt(x+y);
+  document.querySelector('#dis_res').value=dist.toFixed(6);
+}
+}
+
+function resetdistFormCalc() {
+  document.querySelector('#x1').value="";
+  document.querySelector('#y1').value="";
+  document.querySelector('#x2').value="";
+  document.querySelector('#y2').value="";
+  document.querySelector('#dis_res').value="";
+}
