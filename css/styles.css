@@ -6,7 +6,25 @@
 *{
   box-sizing: border-box;
 }
-
+#a,#b{
+  text-align: center;
+}
+#label,#ans{
+  text-align: center;
+}
+#results{
+  background-color: floralwhite;
+  padding: 10px;
+}
+.complex-btn button,.complex-btn-a button,.complex-btn-b button{
+  margin: 2px;
+}
+.comp-a-reset{
+  float: left;
+  }
+.comp-b-reset,.comp-clear{
+float: right;
+}
 .github{
   width:10%;
   float: right;
