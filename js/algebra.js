@@ -115,7 +115,8 @@ if(isNaN(max)){
 if(isNaN(min)&&isNaN(max))
 document.getElementById('random-num').value=Math.random();
 if(!isNaN(min)&&!isNaN(max)){
-  document.getElementById('random-num').value=(Math.random()*(max-min)+min);
+  document.getElementById('random-num').value=(Math.random()*(max-min)+min).toFixed(6);
+  document.getElementById('random-int').value=Math.floor(Math.random()*(max-min)+min);
 }
 }
 
@@ -127,6 +128,7 @@ function resetrng() {
   document.getElementById('min-val').placeholder="Please Enter a Value";
   document.getElementById('max-val').placeholder="Please Enter a Value";
   document.getElementById('random-num').value="";
+  document.getElementById('random-int').value="";
 }
 
 function sqcb(){
