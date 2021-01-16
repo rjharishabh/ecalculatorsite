@@ -1,7 +1,2 @@
 User-agent: Googlebot-Image
 Disallow: /photos/
-
-User-agent: Googlebot
-Disallow: /privacy-policy.html
-Disallow: /terms-of-use.html
-Disallow: /about.html
