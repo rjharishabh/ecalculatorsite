@@ -25,6 +25,11 @@
 .comp-b-reset,.comp-clear{
 float: right;
 }
+.diff-btn{
+  margin: 1vw;
+  text-align: center;
+  display: none;
+}
 .github{
   width:10%;
   float: right;
