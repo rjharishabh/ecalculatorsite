@@ -93,3 +93,52 @@ function resetleg(){
   document.getElementById('lleg1').placeholder="Please Enter Value";
   document.getElementById('lleg2').value="";
 }
+
+function rt(){
+  let h=parseFloat(document.getElementById('height').value);
+  let b=parseFloat(document.getElementById('base').value);
+  if(h<=0){
+          document.getElementById('height').value="Only positive numbers";
+          document.getElementById('height').style.backgroundColor="#97b17eeb";
+       }
+  if(b<=0){
+          document.getElementById('base').value="Only positive numbers";
+          document.getElementById('base').style.backgroundColor="#97b17eeb";
+       }
+
+      if(isNaN(h)){
+        document.getElementById('height').value="Only positive numbers";
+        document.getElementById('height').style.backgroundColor="#97b17eeb";
+      }
+      if(isNaN(b)){
+        document.getElementById('base').value="Only positive numbers";
+        document.getElementById('base').style.backgroundColor="#97b17eeb";
+      }
+
+     if (!isNaN(h) && !isNaN(b) && h>0 && b>0) {
+       let hypo=(Math.hypot(h,b)).toFixed(4);
+       let sp=((h+b+parseFloat(hypo))/2).toFixed(4);
+       let area=(0.5*b*h).toFixed(4);
+       let inr=(area/sp).toFixed(4);
+       let ccr=(hypo/2).toFixed(4);
+          document.getElementById('hypotenuse').value=hypo;
+          document.getElementById('sp').value=sp;
+          document.getElementById('inr').value=inr;
+          document.getElementById('ccr').value=ccr;
+          document.getElementById('area').value=area;
+        }
+}
+
+function resetrt(){
+  document.getElementById('base').style.backgroundColor="#fff";
+  document.getElementById('height').style.backgroundColor="#fff";
+  document.getElementById('base').value="";
+  document.getElementById('height').value="";
+  document.getElementById('base').placeholder="Please Enter Value";
+  document.getElementById('height').placeholder="Please Enter Value";
+  document.getElementById('hypotenuse').value="";
+  document.getElementById('sp').value="";
+  document.getElementById('inr').value="";
+  document.getElementById('ccr').value="";
+  document.getElementById('area').value="";
+}
