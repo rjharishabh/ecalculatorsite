@@ -10,7 +10,7 @@
    <meta name="description" content="">
 
 
-    <title>Right Triangle Calculator - E Calculator Site</title>
+    <title>Scalene Triangle Calculator - E Calculator Site</title>
 <link rel="canonical" href="">
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -83,47 +83,44 @@
 <div class="col-lg-8">
   <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Right Triangle Calculator</h1></center>
+    <center><h1 class="text-white">Scalene Triangle Calculator</h1></center>
 </div>
 <div class="card-body">
     <form>
         <div class="form-group row">
-      <label for="base" class="col-form-label col-12 col-md-5 ">Length of Base of △</label>
+      <label for="sla" class="col-form-label col-12 col-md-5 ">Side Length of △ (a)</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" required class="form-control" id="base">
+        <input type="text" required class="form-control" id="sla">
       </div>
       <div class="col-4 col-md-3 col-lg-2">
        <input type="text" readonly class="form-control-plaintext" value="units">
      </div>
     </div>
-
     <div class="form-group row">
-  <label for="height" class="col-form-label col-12 col-md-5 ">Height of △</label>
+  <label for="slb" class="col-form-label col-12 col-md-5 ">Side Length of △ (b)</label>
   <div class="col-8 col-md-4 col-lg-5">
-    <input type="text" required class="form-control" id="height">
+    <input type="text" required class="form-control" id="slb">
   </div>
   <div class="col-4 col-md-3 col-lg-2">
    <input type="text" readonly class="form-control-plaintext" value="units">
-  </div>
-  </div>
-
+ </div>
+</div>
+<div class="form-group row">
+<label for="slc" class="col-form-label col-12 col-md-5 ">Side Length of △ (c)</label>
+<div class="col-8 col-md-4 col-lg-5">
+<input type="text" required class="form-control" id="slc">
+</div>
+<div class="col-4 col-md-3 col-lg-2">
+<input type="text" readonly class="form-control-plaintext" value="units">
+</div>
+</div>
     <div class="row">
     <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
-    <button type="button" class=" btn btn-primary" onclick="rt()" name="button">Calculate</button>
+    <button type="button" class=" btn btn-primary" onclick="st()" name="button">Calculate</button>
     </div>
     <div class="col-1 offset-3 offset-md-1 offset-lg-2">
-    <button type="button" class=" btn btn-danger" onclick="resetrt()" name="button">Reset</button>
+    <button type="button" class=" btn btn-danger" onclick="resetst()" name="button">Reset</button>
     </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="hypotenuse" class="col-form-label col-12 col-md-5">Length of Hypotenuse of △</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="hypotenuse">
-      </div>
-      <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="units">
-     </div>
     </div>
     <div class="form-group row">
       <label for="p" class="col-form-label col-12 col-md-5">Perimeter of △</label>
@@ -176,18 +173,18 @@
 <div class="card-footer border-top border-primary">
   <div class="text-center border border-dark wrong">
    <h5>If you find anything wrong in this Calculation.</h5>
-        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Right Triangle Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Scalene Triangle Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
       <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/right-triangle-calculator.html"&gt;Right Triangle Calculator&lt;/a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/scalene-triangle-calculator.html"&gt;Scalene Triangle Calculator&lt;/a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/right-triangle-calculator.html"&gt;Right Triangle Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/right-triangle-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/scalene-triangle-calculator.html"&gt;Scalence Triangle Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/scalene-triangle-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
@@ -229,7 +226,7 @@
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Use Right Triangle Calculator &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h3 class="text-white">How To Use Scalene Triangle Calculator &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
         <p>Number of Edges: 4</p>
@@ -243,7 +240,7 @@
             <p>the Area of the Rectangle will be \(L.B\) square units.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Right_triangle" target="_blank" class="text-white">Learn more about Right Triangle</a>
+        <a href="https://en.wikipedia.org/wiki/Triangle#Types_of_triangle" target="_blank" class="text-white">Learn more about Scalene Triangle</a>
       </div>
     </div>
   </div>

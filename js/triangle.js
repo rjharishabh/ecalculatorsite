@@ -122,6 +122,7 @@ function rt(){
        let inr=(area/sp).toFixed(4);
        let ccr=(hypo/2).toFixed(4);
           document.getElementById('hypotenuse').value=hypo;
+          document.getElementById('p').value=(2*sp).toFixed(4);
           document.getElementById('sp').value=sp;
           document.getElementById('inr').value=inr;
           document.getElementById('ccr').value=ccr;
@@ -137,6 +138,66 @@ function resetrt(){
   document.getElementById('base').placeholder="Please Enter Value";
   document.getElementById('height').placeholder="Please Enter Value";
   document.getElementById('hypotenuse').value="";
+  document.getElementById('p').value="";
+  document.getElementById('sp').value="";
+  document.getElementById('inr').value="";
+  document.getElementById('ccr').value="";
+  document.getElementById('area').value="";
+}
+
+function st(){
+  let a=parseFloat(document.getElementById('sla').value);
+  let b=parseFloat(document.getElementById('slb').value);
+  let c=parseFloat(document.getElementById('slc').value);
+  if(a<=0){
+          document.getElementById('sla').value="Only positive numbers";
+          document.getElementById('sla').style.backgroundColor="#97b17eeb";
+       }
+  if(b<=0){
+          document.getElementById('slb').value="Only positive numbers";
+          document.getElementById('slb').style.backgroundColor="#97b17eeb";
+       }
+  if(c<=0){
+               document.getElementById('slc').value="Only positive numbers";
+               document.getElementById('slc').style.backgroundColor="#97b17eeb";
+       }
+       if(isNaN(a)){
+               document.getElementById('sla').value="Only positive numbers";
+               document.getElementById('sla').style.backgroundColor="#97b17eeb";
+            }
+       if(isNaN(b)){
+               document.getElementById('slb').value="Only positive numbers";
+               document.getElementById('slb').style.backgroundColor="#97b17eeb";
+            }
+       if(isNaN(c)){
+                    document.getElementById('slc').value="Only positive numbers";
+                    document.getElementById('slc').style.backgroundColor="#97b17eeb";
+            }
+
+     if (!isNaN(a) && !isNaN(b) && !isNaN(c) && a>0 && b>0 && c>0) {
+       let sp=((a+b+c)/2).toFixed(4);
+       let area=(Math.sqrt(sp*(sp-a)*(sp-b)*(sp-c))).toFixed(4);
+       let inr=(area/sp).toFixed(4);
+       let ccr=((a*b*c)/(4*area)).toFixed(4);
+          document.getElementById('p').value=(2*sp).toFixed(4);
+          document.getElementById('sp').value=sp;
+          document.getElementById('inr').value=inr;
+          document.getElementById('ccr').value=ccr;
+          document.getElementById('area').value=area;
+        }
+}
+
+function resetst(){
+  document.getElementById('sla').style.backgroundColor="#fff";
+  document.getElementById('slb').style.backgroundColor="#fff";
+  document.getElementById('slc').style.backgroundColor="#fff";
+  document.getElementById('sla').value="";
+  document.getElementById('slb').value="";
+  document.getElementById('slc').value="";
+  document.getElementById('sla').placeholder="Please Enter Value";
+  document.getElementById('slb').placeholder="Please Enter Value";
+  document.getElementById('slc').placeholder="Please Enter Value";
+  document.getElementById('p').value="";
   document.getElementById('sp').value="";
   document.getElementById('inr').value="";
   document.getElementById('ccr').value="";
