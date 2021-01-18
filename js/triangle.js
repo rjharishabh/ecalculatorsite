@@ -250,3 +250,38 @@ function resetit(){
   document.getElementById('ccr').value="";
   document.getElementById('area').value="";
 }
+function et(){
+  let a=parseFloat(document.getElementById('side').value);
+  if(a<=0){
+          document.getElementById('side').value="Only positive numbers";
+          document.getElementById('side').style.backgroundColor="#97b17eeb";
+       }
+       if(isNaN(a)){
+               document.getElementById('side').value="Only positive numbers";
+               document.getElementById('side').style.backgroundColor="#97b17eeb";
+       }
+
+     if (!isNaN(a) && a>0) {
+       let p=(3*a).toFixed(4);
+       let area=(0.25*Math.sqrt(3)*a*a).toFixed(4);
+       let ccr=(a/Math.sqrt(3)).toFixed(4);
+       let inr=(ccr/2).toFixed(4);
+       let alt=(0.5*Math.sqrt(3)*a).toFixed(4);
+          document.getElementById('p').value=p;
+          document.getElementById('alt').value=alt;
+          document.getElementById('inr').value=inr;
+          document.getElementById('ccr').value=ccr;
+          document.getElementById('area').value=area;
+        }
+}
+
+function resetet(){
+  document.getElementById('side').style.backgroundColor="#fff";
+  document.getElementById('side').value="";
+  document.getElementById('side').placeholder="Please Enter Value";
+  document.getElementById('p').value="";
+  document.getElementById('alt').value="";
+  document.getElementById('inr').value="";
+  document.getElementById('ccr').value="";
+  document.getElementById('area').value="";
+}
