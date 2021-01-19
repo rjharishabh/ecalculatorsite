@@ -53,6 +53,88 @@ function resetsquare(){
   document.getElementById('asquare').value="";
 }
 
+function atri(){
+    var h=parseFloat(document.getElementById('heightt').value);
+    var b=parseFloat(document.getElementById('baset').value);
+  if(h<=0){
+          document.getElementById('heightt').value="Only positive numbers";
+           document.getElementById('heightt').style.backgroundColor="#97b17eeb";
+       }
+ if(b<=0){
+          document.getElementById('baset').value="Only positive numbers";
+              document.getElementById('baset').style.backgroundColor="#97b17eeb";
+       }
+
+      if(isNaN(h)){
+        document.getElementById('heightt').value="Only positive numbers";
+         document.getElementById('heightt').style.backgroundColor="#97b17eeb";
+      }
+      if(isNaN(b)){
+        document.getElementById('baset').value="Only positive numbers";
+         document.getElementById('baset').style.backgroundColor="#97b17eeb";
+      }
+
+     if (!isNaN(h) && !isNaN(b) && h>0 && b>0) {
+              document.getElementById('aatri').value=0.5*b*h;
+        }
+}
+
+function resetatri(){
+  document.getElementById('heightt').style.backgroundColor="#fff";
+  document.getElementById('baset').style.backgroundColor="#fff";
+document.getElementById('heightt').value="";
+document.getElementById('baset').value="";
+document.getElementById('heightt').placeholder="Please Enter Value";
+document.getElementById('baset').placeholder="Please Enter Value";
+      document.getElementById('aatri').value="";
+}
+
+function ctri(){
+    var a=parseFloat(document.getElementById('csideat').value);
+    var b=parseFloat(document.getElementById('csidebt').value);
+    var c=parseFloat(document.getElementById('csidect').value);
+  if(a<=0){
+          document.getElementById('csideat').value="Only positive numbers";
+          document.getElementById('csideat').style.backgroundColor="#97b17eeb";
+       }
+ if(b<=0){
+          document.getElementById('csidebt').value="Only positive numbers";
+          document.getElementById('csidebt').style.backgroundColor="#97b17eeb";
+       }
+  if(c<=0){
+                document.getElementById('csidect').value="Only positive numbers";
+                document.getElementById('csidect').style.backgroundColor="#97b17eeb";
+        }
+      if(isNaN(a)){
+        document.getElementById('csideat').value="Only positive numbers";
+         document.getElementById('csideat').style.backgroundColor="#97b17eeb";
+      }
+      if(isNaN(b)){
+        document.getElementById('csidebt').value="Only positive numbers";
+         document.getElementById('csidebt').style.backgroundColor="#97b17eeb";
+      }
+      if(isNaN(c)){
+        document.getElementById('csidect').value="Only positive numbers";
+         document.getElementById('csidect').style.backgroundColor="#97b17eeb";
+      }
+     if (!isNaN(a) && !isNaN(b) && a>0 && b>0 && !isNaN(c) && c>0) {
+              document.getElementById('ptriangle').value=a+b+c;
+        }
+}
+
+function resetctri(){
+  document.getElementById('csideat').style.backgroundColor="#fff";
+  document.getElementById('csidebt').style.backgroundColor="#fff";
+  document.getElementById('csidect').style.backgroundColor="#fff";
+document.getElementById('csideat').value="";
+document.getElementById('csidebt').value="";
+document.getElementById('csidect').value="";
+document.getElementById('csideat').placeholder="Please Enter Value";
+document.getElementById('csidebt').placeholder="Please Enter Value";
+document.getElementById('csidect').placeholder="Please Enter Value";
+      document.getElementById('ptriangle').value="";
+}
+
 function rect(){
     var l=parseFloat(document.getElementById('lrect').value);
     var b=parseFloat(document.getElementById('brect').value);
