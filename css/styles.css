@@ -6,6 +6,13 @@
 *{
   box-sizing: border-box;
 }
+#rowa,#cola,#rowb,#colb{
+  text-align: center;
+}
+#resa input,#resb input{
+   margin:2px;
+   text-align: center;
+}
 #a,#b{
   text-align: center;
 }
@@ -16,14 +23,17 @@
   background-color: floralwhite;
   padding: 10px;
 }
-.complex-btn button,.complex-btn-a button,.complex-btn-b button{
+.complex-btn button,.complex-btn-a button,.complex-btn-b button,.matrix-btn button{
   margin: 2px;
 }
-.comp-a-reset{
+.comp-a-reset,.matrix-a-reset{
   float: left;
   }
-.comp-b-reset,.comp-clear{
+.comp-b-reset,.comp-clear,.matrix-b-reset,.matrix-clear{
 float: right;
+}
+#aset,#bset,#aconfirm,#bconfirm{
+  margin:5px;
 }
 .diff-btn{
   margin: 1vw;

@@ -9,8 +9,7 @@
    <meta name="author" content="Rishabh Ranjan Jha">
    <meta name="description" content="">
 
-
-    <title>Equilateral Triangle Calculator - E Calculator Site</title>
+    <title>Basic Matrix Calculator - E Calculator Site</title>
 <link rel="canonical" href="">
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -51,7 +50,7 @@
         <a class="nav-link" href="http://www.ecalculatorsite.com">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="statistics.html">Statistics</a>
+        <a class="nav-link" href="../statistics-calculator.html">Statistics</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="solid-geometry.html">Solid Geometry</a>
@@ -83,91 +82,86 @@
 <div class="col-lg-8">
   <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Equilateral Triangle Calculator</h1></center>
+    <center><h1 class="text-white">Basic Matrix Calculator</h1></center>
 </div>
 <div class="card-body">
-    <form>
-        <div class="form-group row">
-      <label for="side" class="col-form-label col-12 col-md-5 ">Each Side of △</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" required class="form-control" id="side">
+  <div class="row">
+    <div class="text-center col-12 col-sm-6">
+      <button type="button" class="btn btn-sm btn-danger matrix-a-reset" onclick="reseta()" name="button">Reset</button>
+      <label for="rowa">Matrix A</label><br>
+      <div class="col-12 text-center">
+        <input type="text" id="rowa" value="3" size="2">&nbsp;X&nbsp;<input type="text" id="cola"  value="3" size="2">
+        <button type="button" id="aset" class="btn btn-sm btn-warning" name="button">set</button>
       </div>
-      <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="units">
-     </div>
+<div id="resa"></div>
+<button type="button" id="aconfirm" class="btn btn-sm btn-warning" name="button">confirm</button>
+<br><br>
+<div class="matrix-btn">
+  <button type="button" class="btn btn-dark" id="aidentity">Identity(A)</button>
+  <button type="button" class="btn btn-dark" id="aones">Ones(A)</button>
+  <button type="button" class="btn btn-dark" id="asinm">Sin(A)</button>
+  <button type="button" class="btn btn-dark" id="acosm">Cos(A)</button>
+  <button type="button" class="btn btn-dark" id="atanm">Tan(A)</button>
+  <button type="button" class="btn btn-dark" id="acscm">Csc(A)</button>
+  <button type="button" class="btn btn-dark" id="asecm">Sec(A)</button>
+  <button type="button" class="btn btn-dark" id="acotm">Cot(A)</button>
+  <button type="button" class="btn btn-dark" id="aabsm">Abs(A)</button>
+  <button type="button" class="btn btn-dark" id="alogm">Log(A)</button>
+</div>
     </div>
 
-    <div class="row">
-    <div class="col-1 col-md-1 offset-md-5 offset-lg-5">
-    <button type="button" class=" btn btn-primary" onclick="et()" name="button">Calculate</button>
-    </div>
-    <div class="col-1 offset-3 offset-md-1 offset-lg-2">
-    <button type="button" class=" btn btn-danger" onclick="resetet()" name="button">Reset</button>
-    </div>
-    </div>
-    <div class="form-group row">
-      <label for="alt" class="col-form-label col-12 col-md-5">Altitude of △</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="alt">
+    <div class="text-center col-12 col-sm-6">
+      <button type="button" class="btn btn-sm btn-danger matrix-b-reset" onclick="resetb()" name="button">Reset</button>
+      <label for="rowb">Matrix B</label><br>
+      <div class="col-12 text-center">
+        <input type="text" id="rowb" value="3" size="2">&nbsp;X&nbsp;<input type="text" value="3" id="colb"  size="2">
+        <button type="button" id="bset" class="btn btn-sm btn-warning" name="button">set</button>
       </div>
-      <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="units">
-     </div>
+      <div id="resb"></div>
+          <button type="button" id="bconfirm" class="btn btn-sm btn-warning" name="button">confirm</button>
+      <br><br>
+<div class="matrix-btn">
+    <button type="button" class="btn btn-dark" id="bidentity">Identity(B)</button>
+    <button type="button" class="btn btn-dark" id="bones">Ones(B)</button>
+    <button type="button" class="btn btn-dark" id="bsinm">Sin(B)</button>
+    <button type="button" class="btn btn-dark" id="bcosm">Cos(B)</button>
+    <button type="button" class="btn btn-dark" id="btanm">Tan(B)</button>
+    <button type="button" class="btn btn-dark" id="bcscm">Csc(B)</button>
+    <button type="button" class="btn btn-dark" id="bsecm">Sec(B)</button>
+    <button type="button" class="btn btn-dark" id="bcotm">Cot(B)</button>
+    <button type="button" class="btn btn-dark" id="babsm">Abs(B)</button>
+    <button type="button" class="btn btn-dark" id="blogm">Log(B)</button>
+</div>
     </div>
-    <div class="form-group row">
-      <label for="p" class="col-form-label col-12 col-md-5">Perimeter of △</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly class="form-control" id="p">
-      </div>
-      <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="units">
-     </div>
+    <div class=" text-center matrix-btn text-center col-12">
+      <br>
+      <button type="button" class="btn btn-primary text-white" id="aplusb">A+B</button>
+      <button type="button" class="btn btn-primary text-white" id="asubb">A-B</button>
+      <button type="button" class="btn btn-primary text-white" id="bsuba">B-A</button>
     </div>
-      <div class="form-group row">
-        <label for="inr" class="col-form-label col-12 col-md-5">Inradius of △</label>
-        <div class="col-8 col-md-4 col-lg-5">
-          <input type="text" readonly class="form-control" id="inr">
-        </div>
-        <div class="col-4 col-md-3 col-lg-2">
-         <input type="text" readonly class="form-control-plaintext" value="units">
-       </div>
-      </div>
-      <div class="form-group row">
-        <label for="ccr" class="col-form-label col-12 col-md-5">Circum-radius of △</label>
-        <div class="col-8 col-md-4 col-lg-5">
-          <input type="text" readonly class="form-control" id="ccr">
-        </div>
-        <div class="col-4 col-md-3 col-lg-2">
-         <input type="text" readonly class="form-control-plaintext" value="units">
-       </div>
-      </div>
-    <div class="form-group row">
-      <label for="area" class="col-form-label col-12 col-md-5">Area of △</label>
-      <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" readonly  class="form-control" id="area">
-      </div>
-      <div class="col-4 col-md-3 col-lg-2">
-       <input type="text" readonly class="form-control-plaintext" value="sq. units">
-     </div>
-    </div>
-
-    </form>
+  </div>
+<hr>
+<div id="results"><button type="button" class="btn btn-sm btn-danger matrix-clear" name="button">Clear</button>
+<h2>Result:</h2>
+<h5 class="text-center" id="label"></h5>
+<h4 class="text-center" id="ans"></h4>
+</div>
   </div>
 <div class="card-footer border-top border-primary">
   <div class="text-center border border-dark wrong">
    <h5>If you find anything wrong in this Calculation.</h5>
-        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Equilateral Triangle Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Basic Matrix Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
       <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/equilateral-triangle-calculator.html"&gt;Equilateral Triangle Calculator&lt;/a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/basic-matrix-calculator.html"&gt;Basic Matrix Calculator&lt;/a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/equilateral-triangle-calculator.html"&gt;Equilateral Triangle Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/equilateral-triangle-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/basic-matrix-calculator.html"&gt;Basic Matrix Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/basic-matrix-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
@@ -180,12 +174,12 @@
 </div>
 <div class="col-lg-4 d-none d-lg-block ">
   <div class="btn-group-vertical">
-    <h3 class="text-primary" >More Calculators</h3>
-  <button type="button" class="text-white btn btn-warning" >Cuboid Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Cylinder Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Cone Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Sphere Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Hemisphere Calculator</button>
+    <h3 class="text-warning" >More Calculators</h3>
+  <button type="button" class="btn btn-outline-primary" >Cuboid Calculator</button>
+  <button type="button" class="btn btn-outline-primary" >Cylinder Calculator</button>
+  <button type="button" class="btn btn-outline-primary" >Cone Calculator</button>
+  <button type="button" class="btn btn-outline-primary" >Sphere Calculator</button>
+  <button type="button" class="btn btn-outline-primary" >Hemisphere Calculator</button>
   <button type="button" class="text-white btn btn-warning" >VolumeCalculator</button>
   <button type="button" class="text-white btn btn-warning" >Surface Area Calculator</button>
   <button type="button" class="text-white btn btn-warning" >Statistics Calculator</button>
@@ -209,21 +203,17 @@
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Use Equilateral Triangle Calculator &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h3 class="text-white">How To Use Basic Matrix Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Number of Edges: 4</p>
-        <p>Number of Vertices: 4</p>
-        <br>
-        <p>Let the Length of the Rectangle be \(L\) units</p>
-        <p>and the Width of the Rectangle be \(W\) units.</p>
+        <p>Let the Radius the Circle be \(R\) units.</p>
         <p>Then</p>
-          <p>the Diagonal of the Rectangle will be \(\sqrt{L^2 + W^2}\) units.</p>
-            <p>the Perimeter of the Rectangle will be \(2(L + B)\) units.</p>
-            <p>the Area of the Rectangle will be \(L.B\) square units.</p>
+          <p>the Diameter of the Circle will be \(2R\) units.</p>
+            <p>the Circumference of the Circle will be \(2\pi R\) units.</p>
+            <p>the Area of the Circle will be \(\pi R^2\) square units.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Equilateral_triangle" target="_blank" class="text-white">Learn more about Equilateral Triangle</a>
+        <a href="https://en.wikipedia.org/wiki/Matrix_(mathematics)" target="_blank" rel="nofollow" class="text-white">Learn more about Matrix</a>
       </div>
     </div>
   </div>
@@ -312,7 +302,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="../js/common-script.js"></script>
-<script src="../js/triangle.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/mathjs@8.1.0/lib/browser/math.min.js"></script>
+<script src="../js/matrix.js"></script>
   </body>
 </html>
