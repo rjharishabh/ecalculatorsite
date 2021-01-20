@@ -1,4 +1,2 @@
 *.log
-statistics/debug.log
-plane-geometry/debug.log
-solid-geometry/debug.log
+/*.log
