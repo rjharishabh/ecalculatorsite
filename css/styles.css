@@ -23,6 +23,9 @@
 #label,#ans{
   text-align: center;
 }
+nav button{
+  background-color:#36a9ee;
+}
 #results{
   background-color: floralwhite;
   padding: 10px;
