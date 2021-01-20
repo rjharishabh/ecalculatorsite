@@ -16,6 +16,10 @@
 #a,#b{
   text-align: center;
 }
+.ftr-head{
+  color:#e83e8c;
+  font-size: 22px;
+}
 #label,#ans{
   text-align: center;
 }
