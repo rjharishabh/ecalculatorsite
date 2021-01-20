@@ -87,7 +87,7 @@ if(rowa>5){
   rowa=5;
   document.querySelector('#rowa').value=5;
 }
-else if(rowa<=0) {
+else if(rowa<=0){
   rowa=1;
   document.querySelector('#rowa').value=1;
 }
@@ -95,7 +95,7 @@ if(cola>5){
   cola=5;
   document.querySelector('#cola').value=5;
 }
-else if(cola<=0) {
+else if(cola<=0){
   cola=1;
   document.querySelector('#cola').value=1;
 }
@@ -163,234 +163,69 @@ document.querySelector('#aconfirm').addEventListener('click',aconfirm);
 
 document.querySelector('#bconfirm').addEventListener('click',bconfirm);
 
-document.querySelector('#adotmultb').addEventListener('click',function(){
+document.querySelector('#invaplusb').addEventListener('click',function(){
   try {
-    var prod=[];
-  prod=math.round(math.dotMultiply(matrixA,matrixB),2);
+    var sum=[];
+  sum=math.round(math.inv(math.add(matrixA,matrixB)),2);
+
   var z="";
-  for(var i=0;i<prod.length;i++){
-    for(var j=0;j<prod[i].length;j++){
-      z+=(prod[i][j]).toString();
+  for(var i=0;i<sum.length;i++){
+    for(var j=0;j<sum[i].length;j++){
+      z+=(sum[i][j]).toString();
   z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
     }
   z+="<br>";
   }
 
-  document.querySelector('#label').innerHTML="A.B = ";
+  document.querySelector('#label').innerHTML="(A + B)<sup>-1</sup> = ";
   document.querySelector('#ans').innerHTML=z;
   } catch (e) {
       document.querySelector('#label').innerHTML="Please check the dimension of the matrices.";
-        document.querySelector('#ans').innerHTML="Dimension of both the matrices should be same.";
+        document.querySelector('#ans').innerHTML="Dimension of both the matrix should be same & |A+B| should not be zero.";
   }
 });
 
-document.querySelector('#amultb').addEventListener('click',function(){
+document.querySelector('#invasubb').addEventListener('click',function(){
   try {
-    var prod=[];
-  prod=math.round(math.multiply(matrixA,matrixB),2);
+    var diff=[];
+  diff=math.round(math.inv(math.subtract(matrixA,matrixB)),2);
+
   var z="";
-  for(var i=0;i<prod.length;i++){
-    for(var j=0;j<prod[i].length;j++){
-      z+=(prod[i][j]).toString();
+  for(var i=0;i<diff.length;i++){
+    for(var j=0;j<diff[i].length;j++){
+      z+=(diff[i][j]).toString();
   z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
     }
   z+="<br>";
   }
 
-  document.querySelector('#label').innerHTML="A * B = ";
+  document.querySelector('#label').innerHTML="(A - B)<sup>-1</sup> = ";
   document.querySelector('#ans').innerHTML=z;
   } catch (e) {
       document.querySelector('#label').innerHTML="Please check the dimension of the matrices.";
-        document.querySelector('#ans').innerHTML="Number of columns in A should be equal to the number of rows in B.";
+        document.querySelector('#ans').innerHTML="Dimension of both the matrix should be same & |A-B| should not be zero.";
   }
 });
 
-document.querySelector('#bmulta').addEventListener('click',function(){
+document.querySelector('#invbsuba').addEventListener('click',function(){
   try {
-    var prod=[];
-  prod=math.round(math.multiply(matrixB,matrixA),2);
+    var diff=[];
+  diff=math.round(math.inv(math.subtract(matrixB,matrixA)),2);
+
   var z="";
-  for(var i=0;i<prod.length;i++){
-    for(var j=0;j<prod[i].length;j++){
-      z+=(prod[i][j]).toString();
+  for(var i=0;i<diff.length;i++){
+    for(var j=0;j<diff[i].length;j++){
+      z+=(diff[i][j]).toString();
   z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
     }
   z+="<br>";
   }
 
-  document.querySelector('#label').innerHTML="B * A = ";
+  document.querySelector('#label').innerHTML="(B - A)<sup>-1</sup> = ";
   document.querySelector('#ans').innerHTML=z;
   } catch (e) {
       document.querySelector('#label').innerHTML="Please check the dimension of the matrices.";
-        document.querySelector('#ans').innerHTML="Number of columns in B should be equal to the number of rows in A.";
-  }
-});
-
-document.querySelector('#adivb').addEventListener('click',function(){
-  try {
-    var quot=[];
-  quot=math.round(math.divide(matrixA,matrixB),2);
-  var z="";
-  for(var i=0;i<quot.length;i++){
-    for(var j=0;j<quot[i].length;j++){
-      z+=(quot[i][j]).toString();
-  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
-    }
-  z+="<br>";
-  }
-
-  document.querySelector('#label').innerHTML="A / B = ";
-  document.querySelector('#ans').innerHTML=z;
-  } catch (e) {
-      document.querySelector('#label').innerHTML="Please check the dimension of the matrices.";
-        document.querySelector('#ans').innerHTML="Number of columns in A should be equal to the number of rows in B & Matrix B should be square.";
-  }
-});
-
-document.querySelector('#bdiva').addEventListener('click',function(){
-  try {
-    var quot=[];
-  quot=math.round(math.divide(matrixB,matrixA),2);
-  var z="";
-  for(var i=0;i<quot.length;i++){
-    for(var j=0;j<quot[i].length;j++){
-      z+=(quot[i][j]).toString();
-  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
-    }
-  z+="<br>";
-  }
-
-  document.querySelector('#label').innerHTML="B / A = ";
-  document.querySelector('#ans').innerHTML=z;
-  } catch (e) {
-      document.querySelector('#label').innerHTML="Please check the dimension of the matrices.";
-        document.querySelector('#ans').innerHTML="Number of columns in B should be equal to the number of rows in A & Matrix A should be square.";
-  }
-});
-
-document.querySelector('#a').addEventListener('click',function(){
-  try {
-    var p=[];
-p=matrixA;
-  var z="";
-  for(var i=0;i<p.length;i++){
-    for(var j=0;j<p[i].length;j++){
-      z+=(p[i][j]).toString();
-  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
-    }
-  z+="<br>";
-  }
-
-  document.querySelector('#label').innerHTML="A = ";
-  document.querySelector('#ans').innerHTML=z;
-  } catch (e) {
-      document.querySelector('#label').innerHTML="ERROR";
-  }
-});
-
-document.querySelector('#b').addEventListener('click',function(){
-  try {
-    var p=[];
-p=matrixB;
-  var z="";
-  for(var i=0;i<p.length;i++){
-    for(var j=0;j<p[i].length;j++){
-      z+=(p[i][j]).toString();
-  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
-    }
-  z+="<br>";
-  }
-
-  document.querySelector('#label').innerHTML="B = ";
-  document.querySelector('#ans').innerHTML=z;
-  } catch (e) {
-      document.querySelector('#label').innerHTML="ERROR";
-  }
-});
-
-document.querySelector('#a2').addEventListener('click',function(){
-  try {
-    var p=[];
-p=math.round(math.pow(matrixA,2),2);
-  var z="";
-  for(var i=0;i<p.length;i++){
-    for(var j=0;j<p[i].length;j++){
-      z+=(p[i][j]).toString();
-  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
-    }
-  z+="<br>";
-  }
-
-  document.querySelector('#label').innerHTML="A<sup>"+2+"</sup> = ";
-  document.querySelector('#ans').innerHTML=z;
-  } catch (e) {
-    document.querySelector('#label').innerHTML="Please check the dimension of the matrix A.";
-    document.querySelector('#ans').innerHTML="Matrix A should be square.";
-  }
-});
-
-document.querySelector('#b2').addEventListener('click',function(){
-  try {
-    var p=[];
-p=math.round(math.pow(matrixB,2),2);
-  var z="";
-  for(var i=0;i<p.length;i++){
-    for(var j=0;j<p[i].length;j++){
-      z+=(p[i][j]).toString();
-  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
-    }
-  z+="<br>";
-  }
-
-  document.querySelector('#label').innerHTML="B<sup>"+2+"</sup> = ";
-  document.querySelector('#ans').innerHTML=z;
-  } catch (e) {
-    document.querySelector('#label').innerHTML="Please check the dimension of the matrix B.";
-    document.querySelector('#ans').innerHTML="Matrix B should be square.";
-  }
-});
-
-document.querySelector('#apown').addEventListener('click',function(){
-  try {
-    var p=[];
-    var n=parseInt(document.querySelector('#an').value);
-p=math.round(math.pow(matrixA,n),2);
-  var z="";
-  for(var i=0;i<p.length;i++){
-    for(var j=0;j<p[i].length;j++){
-      z+=(p[i][j]).toString();
-  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
-    }
-  z+="<br>";
-  }
-
-  document.querySelector('#label').innerHTML="A<sup>"+n+"</sup> = ";
-  document.querySelector('#ans').innerHTML=z;
-  } catch (e) {
-    document.querySelector('#label').innerHTML="Please check the dimension of the matrix A.";
-    document.querySelector('#ans').innerHTML="Matrix A should be square.";
-  }
-});
-
-document.querySelector('#bpown').addEventListener('click',function(){
-  try {
-    var p=[];
-    var n=parseInt(document.querySelector('#bn').value);
-p=math.round(math.pow(matrixA,n),2);
-  var z="";
-  for(var i=0;i<p.length;i++){
-    for(var j=0;j<p[i].length;j++){
-      z+=(p[i][j]).toString();
-  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
-    }
-  z+="<br>";
-  }
-
-  document.querySelector('#label').innerHTML="B<sup>"+n+"</sup> = ";
-  document.querySelector('#ans').innerHTML=z;
-  } catch (e) {
-    document.querySelector('#label').innerHTML="Please check the dimension of the matrix A.";
-    document.querySelector('#ans').innerHTML="Matrix A should be square.";
+        document.querySelector('#ans').innerHTML="Dimension of both the matrix should be same & |B-A| should not be zero.";
   }
 });
 
@@ -565,4 +400,202 @@ else{
   document.querySelector('#label').innerHTML="Please check the dimension of the matrix B.";
   document.querySelector('#ans').innerHTML="Matrix B should be square.";
 }
+});
+
+document.querySelector('#invadotmultb').addEventListener('click',function(){
+  try {
+    var prod=[];
+  prod=math.round(math.inv(math.dotMultiply(matrixA,matrixB)),2);
+
+  var z="";
+  for(var i=0;i<prod.length;i++){
+    for(var j=0;j<prod[i].length;j++){
+      z+=(prod[i][j]).toString();
+  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+  z+="<br>";
+  }
+
+  document.querySelector('#label').innerHTML="(A.B)<sup>-1</sup> = ";
+  document.querySelector('#ans').innerHTML=z;
+  } catch (e) {
+      document.querySelector('#label').innerHTML="Please check the dimension of the matrices.";
+        document.querySelector('#ans').innerHTML="Dimension of both the matrix should be same & |A.B| should not be zero.";
+  }
+});
+
+document.querySelector('#invamultb').addEventListener('click',function(){
+  try {
+    var prod=[];
+  prod=math.round(math.inv(math.multiply(matrixA,matrixB)),2);
+
+  var z="";
+  for(var i=0;i<prod.length;i++){
+    for(var j=0;j<prod[i].length;j++){
+      z+=(prod[i][j]).toString();
+  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+  z+="<br>";
+  }
+
+  document.querySelector('#label').innerHTML="(A * B)<sup>-1</sup> = ";
+  document.querySelector('#ans').innerHTML=z;
+  } catch (e) {
+      document.querySelector('#label').innerHTML="Please check the dimension of the matrices.";
+        document.querySelector('#ans').innerHTML="Number of columns in A should be equal to the number of rows in B & |A*B| should not be zero.";
+  }
+});
+
+document.querySelector('#invbmulta').addEventListener('click',function(){
+  try {
+    var prod=[];
+  prod=math.round(math.inv(math.multiply(matrixB,matrixA)),2);
+
+  var z="";
+  for(var i=0;i<prod.length;i++){
+    for(var j=0;j<prod[i].length;j++){
+      z+=(prod[i][j]).toString();
+  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+  z+="<br>";
+  }
+
+  document.querySelector('#label').innerHTML="(B * A)<sup>-1</sup> = ";
+  document.querySelector('#ans').innerHTML=z;
+  } catch (e) {
+      document.querySelector('#label').innerHTML="Please check the dimension of the matrices.";
+        document.querySelector('#ans').innerHTML="Number of columns in B should be equal to the number of rows in A & |B*A| should not be zero.";
+  }
+});
+
+document.querySelector('#inva').addEventListener('click',function(){
+  try {
+    var inv=[];
+  inv=math.round(math.inv(matrixA),2);
+
+  var z="";
+  for(var i=0;i<inv.length;i++){
+    for(var j=0;j<inv[i].length;j++){
+      z+=(inv[i][j]).toString();
+  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+  z+="<br>";
+  }
+
+  document.querySelector('#label').innerHTML="A<sup>-1</sup> = ";
+  document.querySelector('#ans').innerHTML=z;
+  } catch (e) {
+      document.querySelector('#label').innerHTML="Please check the dimension of the matrix A.";
+        document.querySelector('#ans').innerHTML="Matrix A should be square & |A| should not be zero.";
+  }
+});
+
+document.querySelector('#invb').addEventListener('click',function(){
+  try {
+    var inv=[];
+  inv=math.round(math.inv(matrixB),2);
+
+  var z="";
+  for(var i=0;i<inv.length;i++){
+    for(var j=0;j<inv[i].length;j++){
+      z+=(inv[i][j]).toString();
+  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+  z+="<br>";
+  }
+
+  document.querySelector('#label').innerHTML="B<sup>-1</sup> = ";
+  document.querySelector('#ans').innerHTML=z;
+  } catch (e) {
+      document.querySelector('#label').innerHTML="Please check the dimension of the matrix B.";
+        document.querySelector('#ans').innerHTML="Matrix B should be square & |B| should not be zero.";
+  }
+});
+
+document.querySelector('#inva2').addEventListener('click',function(){
+  try {
+    var inv=[];
+  inv=math.round(math.inv(math.pow(matrixA,2)),2);
+
+  var z="";
+  for(var i=0;i<inv.length;i++){
+    for(var j=0;j<inv[i].length;j++){
+      z+=(inv[i][j]).toString();
+  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+  z+="<br>";
+  }
+
+  document.querySelector('#label').innerHTML="(A<sup>2</sup>)<sup>-1</sup> = ";
+  document.querySelector('#ans').innerHTML=z;
+  } catch (e) {
+      document.querySelector('#label').innerHTML="Please check the dimension of the matrix A.";
+        document.querySelector('#ans').innerHTML="Matrix A should be square & |A<sup>2</sup>| should not be zero.";
+  }
+});
+
+document.querySelector('#invb2').addEventListener('click',function(){
+  try {
+    var inv=[];
+  inv=math.round(math.inv(math.pow(matrixB,2)),2);
+
+  var z="";
+  for(var i=0;i<inv.length;i++){
+    for(var j=0;j<inv[i].length;j++){
+      z+=(inv[i][j]).toString();
+  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+  z+="<br>";
+  }
+
+  document.querySelector('#label').innerHTML="(B<sup>2</sup>)<sup>-1</sup> = ";
+  document.querySelector('#ans').innerHTML=z;
+  } catch (e) {
+      document.querySelector('#label').innerHTML="Please check the dimension of the matrix B.";
+        document.querySelector('#ans').innerHTML="Matrix B should be square & |B<sup>2</sup>| should not be zero.";
+  }
+});
+
+document.querySelector('#inva3').addEventListener('click',function(){
+  try {
+    var inv=[];
+  inv=math.round(math.inv(math.pow(matrixA,3)),2);
+
+  var z="";
+  for(var i=0;i<inv.length;i++){
+    for(var j=0;j<inv[i].length;j++){
+      z+=(inv[i][j]).toString();
+  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+  z+="<br>";
+  }
+
+  document.querySelector('#label').innerHTML="(A<sup>3</sup>)<sup>-1</sup> = ";
+  document.querySelector('#ans').innerHTML=z;
+  } catch (e) {
+      document.querySelector('#label').innerHTML="Please check the dimension of the matrix A.";
+        document.querySelector('#ans').innerHTML="Matrix A should be square & |A<sup>3</sup>| should not be zero.";
+  }
+});
+
+document.querySelector('#invb3').addEventListener('click',function(){
+  try {
+    var inv=[];
+  inv=math.round(math.inv(math.pow(matrixB,3)),2);
+
+  var z="";
+  for(var i=0;i<inv.length;i++){
+    for(var j=0;j<inv[i].length;j++){
+      z+=(inv[i][j]).toString();
+  z+=" &nbsp;&nbsp;&nbsp;&nbsp;";
+    }
+  z+="<br>";
+  }
+
+  document.querySelector('#label').innerHTML="(B<sup>3</sup>)<sup>-1</sup> = ";
+  document.querySelector('#ans').innerHTML=z;
+  } catch (e) {
+      document.querySelector('#label').innerHTML="Please check the dimension of the matrix B.";
+        document.querySelector('#ans').innerHTML="Matrix B should be square & |B<sup>3</sup>| should not be zero.";
+  }
 });

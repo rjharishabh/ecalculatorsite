@@ -80,6 +80,10 @@ if(dima>5){
   dima=5;
   document.querySelector('#dima').value=5;
 }
+else if(dima<=0){
+  dima=1;
+  document.querySelector('#dima').value=1;
+}
 resa=document.getElementById('resa');
 resa.innerHTML=" ";
   var aid=1;
@@ -103,6 +107,10 @@ dimb=parseInt(document.querySelector('#dimb').value);
 if(dimb>5){
   dimb=5;
   document.querySelector('#dimb').value=5;
+}
+else if(dimb<=0){
+  dimb=1;
+  document.querySelector('#dimb').value=1;
 }
 resb=document.getElementById('resb');
 resb.innerHTML=" ";
@@ -132,7 +140,7 @@ document.querySelector('#detaplusb').addEventListener('click',function(){
     var sum=[];
   sum=math.add(matrixA,matrixB);
 var det;
-det=math.det(sum);
+det=math.round(math.det(sum),2);
   document.querySelector('#ans').innerHTML="|A+B| = "+det;
 } catch (e){
     document.querySelector('#ans').innerHTML="ERROR";
@@ -144,7 +152,7 @@ document.querySelector('#detasubb').addEventListener('click',function(){
     var diff=[];
   diff=math.subtract(matrixA,matrixB);
 var det;
-det=math.det(diff);
+det=math.round(math.det(diff),2);
   document.querySelector('#ans').innerHTML="|A-B| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -156,7 +164,7 @@ document.querySelector('#detbsuba').addEventListener('click',function(){
     var diff=[];
   diff=math.subtract(matrixB,matrixA);
 var det;
-det=math.det(diff);
+det=math.round(math.det(diff),2);
   document.querySelector('#ans').innerHTML="|B-A| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -323,12 +331,23 @@ else if(dimb===5){
 bconfirm();
 });
 
+document.querySelector('#detadotmultb').addEventListener('click',function(){
+  try {
+    var mult=[];
+  mult=math.dotMultiply(matrixA,matrixB);
+var det;
+det=math.round(math.det(mult),2);
+  document.querySelector('#ans').innerHTML="|A.B| = "+det;
+  } catch (e) {
+      document.querySelector('#ans').innerHTML="ERROR";
+  }
+});
 document.querySelector('#detamultb').addEventListener('click',function(){
   try {
     var mult=[];
   mult=math.multiply(matrixA,matrixB);
 var det;
-det=math.det(mult);
+det=math.round(math.det(mult),2);
   document.querySelector('#ans').innerHTML="|A*B| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -340,7 +359,7 @@ document.querySelector('#detbmulta').addEventListener('click',function(){
     var mult=[];
   mult=math.multiply(matrixB,matrixA);
 var det;
-det=math.det(mult);
+det=math.round(math.det(mult),2);
   document.querySelector('#ans').innerHTML="|B*A| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -352,7 +371,7 @@ document.querySelector('#detadivb').addEventListener('click',function(){
     var quot=[];
   quot=math.divide(matrixA,matrixB);
 var det;
-det=math.det(quot);
+det=math.round(math.det(quot),2);
 document.querySelector('#ans').innerHTML="|A/B| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -362,9 +381,9 @@ document.querySelector('#ans').innerHTML="|A/B| = "+det;
 document.querySelector('#detbdiva').addEventListener('click',function(){
   try {
     var quot=[];
-  quot=math.divide(matrixB,matrixA);
+  quot=math.round(math.divide(matrixB,matrixA),2);
 var det;
-det=math.det(quot);
+det=math.round(math.det(quot),2);
 document.querySelector('#ans').innerHTML="|B/A| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -374,7 +393,7 @@ document.querySelector('#ans').innerHTML="|B/A| = "+det;
 document.querySelector('#deta').addEventListener('click',function() {
   try {
 var det;
-det=math.det(matrixA);
+det=math.round(math.det(matrixA),2);
 document.querySelector('#ans').innerHTML="|A| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -384,7 +403,7 @@ document.querySelector('#ans').innerHTML="|A| = "+det;
 document.querySelector('#detb').addEventListener('click',function() {
   try {
 var det;
-det=math.det(matrixB);
+det=math.round(math.det(matrixB),2);
 document.querySelector('#ans').innerHTML="|B| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -394,7 +413,7 @@ document.querySelector('#ans').innerHTML="|B| = "+det;
 document.querySelector('#deta2').addEventListener('click',function() {
   try {
 var det;
-det=math.det(math.pow(matrixA,2));
+det=math.round(math.det(math.pow(matrixA,2)),2);
 document.querySelector('#ans').innerHTML="|A<sup>2</sup>| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -404,7 +423,7 @@ document.querySelector('#ans').innerHTML="|A<sup>2</sup>| = "+det;
 document.querySelector('#detb2').addEventListener('click',function() {
   try {
 var det;
-det=math.det(math.pow(matrixB,2));
+det=math.round(math.det(math.pow(matrixB,2)),2);
 document.querySelector('#ans').innerHTML="|B<sup>2</sup>| = "+det;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -415,7 +434,7 @@ document.querySelector('#detan').addEventListener('click',function() {
   try {
     var n=parseInt(document.querySelector('#an').value);
 var pow;
-pow=math.pow(math.det(matrixA),n);
+pow=math.round(math.pow(math.det(matrixA),n),2);
 document.querySelector('#ans').innerHTML="|A<sup>"+n+"</sup>| = "+pow;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";
@@ -426,7 +445,7 @@ document.querySelector('#detbn').addEventListener('click',function() {
   try {
     var n=parseInt(document.querySelector('#bn').value);
     var pow;
-    pow=math.pow(math.det(matrixB),n);
+    pow=math.round(math.pow(math.det(matrixB),n),2);
 document.querySelector('#ans').innerHTML="|B<sup>"+n+"</sup>| = "+pow;
   } catch (e) {
       document.querySelector('#ans').innerHTML="ERROR";

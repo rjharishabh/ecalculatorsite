@@ -9,7 +9,7 @@
    <meta name="author" content="Rishabh Ranjan Jha">
    <meta name="description" content="">
 
-    <title>Matrix Multiplication Calculator - E Calculator Site</title>
+    <title>Inverse of Matrix Calculator - E Calculator Site</title>
 <link rel="canonical" href="">
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -82,7 +82,7 @@
 <div class="col-lg-8">
   <div class="card border border-primary shadow rounded">
 <div class="card-header border border-primary bg-primary">
-    <center><h1 class="text-white">Matrix Multiplication Calculator</h1></center>
+    <center><h1 class="text-white">Inverse of Matrix Calculator</h1></center>
 </div>
 <div class="card-body">
   <div class="row">
@@ -97,9 +97,9 @@
 <button type="button" id="aconfirm" class="btn btn-sm btn-warning" name="button">confirm</button>
 <br><br>
 <div class="matrix-btn">
-  <button type="button" class="btn btn-dark" id="a">A</button>
-  <button type="button" class="btn btn-dark" id="a2">A<sup>2</sup></button>
-  <button type="button" class="btn btn-dark" id="apown">A</button><sup><input type="text" id="an" size="1" value="3"></sup>
+  <button type="button" class="btn btn-dark" id="inva">A<sup>-1</sup></button>
+  <button type="button" class="btn btn-dark" id="inva2">(A<sup>2</sup>)<sup>-1</sup></button>
+  <button type="button" class="btn btn-dark" id="inva3">(A<sup>3</sup>)<sup>-1</sup></button>
   <button type="button" class="btn btn-dark" id="aones">Ones(A)</button>
   <button type="button" class="btn btn-dark" id="aidentity">Identity(A)</button>
 </div>
@@ -116,20 +116,21 @@
           <button type="button" id="bconfirm" class="btn btn-sm btn-warning" name="button">confirm</button>
       <br><br>
 <div class="matrix-btn">
-  <button type="button" class="btn btn-dark" id="b">B</button>
-  <button type="button" class="btn btn-dark" id="b2">B<sup>2</sup></button>
-  <button type="button" class="btn btn-dark" id="bpown">B</button><sup><input type="text" id="bn" size="1" value="3"></sup>
-  <button type="button" class="btn btn-dark" id="bones">Ones(B)</button>
-  <button type="button" class="btn btn-dark" id="bidentity">Identity(B)</button>
+    <button type="button" class="btn btn-dark" id="invb">B<sup>-1</sup></button>
+    <button type="button" class="btn btn-dark" id="invb2">(B<sup>2</sup>)<sup>-1</sup></button>
+    <button type="button" class="btn btn-dark" id="invb3">(B<sup>3</sup>)<sup>-1</sup></button>
+    <button type="button" class="btn btn-dark" id="bones">Ones(B)</button>
+    <button type="button" class="btn btn-dark" id="bidentity">Identity(B)</button>
 </div>
     </div>
     <div class=" text-center matrix-btn text-center col-12">
       <br>
-      <button type="button" class="btn btn-primary text-white" id="adotmultb">A.B</button>
-      <button type="button" class="btn btn-primary text-white" id="amultb">A*B</button>
-      <button type="button" class="btn btn-primary text-white" id="bmulta">B*A</button>
-      <button type="button" class="btn btn-primary text-white" id="adivb">\(\dfrac{A}{B}\)</button>
-      <button type="button" class="btn btn-primary text-white" id="bdiva">\(\dfrac{B}{A}\)</button>
+      <button type="button" class="btn btn-primary text-white" id="invaplusb">(A+B)<sup>-1</sup></button>
+      <button type="button" class="btn btn-primary text-white" id="invasubb">(A-B)<sup>-1</sup></button>
+      <button type="button" class="btn btn-primary text-white" id="invbsuba">(B-A)<sup>-1</sup></button>
+      <button type="button" class="btn btn-primary text-white" id="invadotmultb">(A.B)<sup>-1</sup></button>
+      <button type="button" class="btn btn-primary text-white" id="invamultb">(A*B)<sup>-1</sup></button>
+      <button type="button" class="btn btn-primary text-white" id="invbmulta">(B*A)<sup>-1</sup></button>
     </div>
   </div>
 <hr>
@@ -142,18 +143,18 @@
 <div class="card-footer border-top border-primary">
   <div class="text-center border border-dark wrong">
    <h5>If you find anything wrong in this Calculation.</h5>
-        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Matrix Multiplication Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
+        <h5>Please <a href="mailto:ecalculatorsite@gmail.com?subject=Error in the Inverse of Matrix Calculator&body=Please write the error." class="badge badge-primary">Contact Us</a></h5>
   </div>
     <div class="text-center card-header border border-primary">
       <h5>&#128151; Like this Calculator? Please Share it with your friends or Add a link to your site.</h5>
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="http://www.ecalculatorsite.com/matrix-multiplication-calculator.html"&gt;Matrix Multiplication Calculator&lt;/a&gt;</code>
+<code id="code">&lt;a href="http://www.ecalculatorsite.com/inverse-of-matrix-calculator.html"&gt;Inverse of Matrix Calculator&lt;/a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/matrix-multiplication-calculator.html"&gt;Matrix Multiplication Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/matrix-multiplication-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="http://www.ecalculatorsite.com/inverse-of-matrix-calculator.html"&gt;Inverse of Matrix Calculator&lt;a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttp://www.ecalculatorsite.com/inverse-of-matrix-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
@@ -195,7 +196,7 @@
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Use Matrix Multiplication Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h3 class="text-white">How To Use Inverse of Matrix Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
         <p>Let the Radius the Circle be \(R\) units.</p>
@@ -205,7 +206,7 @@
             <p>the Area of the Circle will be \(\pi R^2\) square units.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
-        <a href="https://en.wikipedia.org/wiki/Matrix_multiplication" target="_blank" rel="nofollow" class="text-white">Learn more about Matrix Multiplication</a>
+        <a href="https://en.wikipedia.org/wiki/Invertible_matrix" target="_blank" rel="nofollow" class="text-white">Learn more about Inverse of a Matrix</a>
       </div>
     </div>
   </div>
@@ -295,6 +296,6 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="../js/common-script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjs@8.1.0/lib/browser/math.min.js"></script>
-<script src="../js/matrix_mult.js"></script>
+<script src="../js/matrix_inv.js"></script>
   </body>
 </html>

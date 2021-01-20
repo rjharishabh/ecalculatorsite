@@ -87,9 +87,17 @@ if(rowa>5){
   rowa=5;
   document.querySelector('#rowa').value=5;
 }
+else if(rowa<=0){
+  rowa=1;
+  document.querySelector('#rowa').value=1;
+}
 if(cola>5){
   cola=5;
   document.querySelector('#cola').value=5;
+}
+else if(cola<=0){
+  cola=1;
+  document.querySelector('#cola').value=1;
 }
 resa=document.getElementById('resa');
 resa.innerHTML=" ";
@@ -117,9 +125,17 @@ if(rowb>5){
   rowb=5;
   document.querySelector('#rowb').value=5;
 }
+else if(rowb<=0){
+  rowb=1;
+  document.querySelector('#rowb').value=1;
+}
 if(colb>5){
   colb=5;
   document.querySelector('#colb').value=5;
+}
+else if(colb<=0){
+  colb=1;
+  document.querySelector('#colb').value=1;
 }
 resb=document.getElementById('resb');
 resb.innerHTML=" ";
@@ -150,7 +166,7 @@ document.querySelector('#bconfirm').addEventListener('click',bconfirm);
 document.querySelector('#aplusb').addEventListener('click',function(){
   try {
     var sum=[];
-  sum=math.add(matrixA,matrixB);
+  sum=math.round(math.add(matrixA,matrixB),2);
 
   var z="";
   for(var i=0;i<sum.length;i++){
@@ -172,7 +188,7 @@ document.querySelector('#aplusb').addEventListener('click',function(){
 document.querySelector('#asubb').addEventListener('click',function(){
   try {
     var diffa=[];
-  diffa=math.subtract(matrixA,matrixB);
+  diffa=math.round(math.subtract(matrixA,matrixB),2);
 
   var z="";
   for(var i=0;i<diffa.length;i++){
@@ -194,7 +210,7 @@ document.querySelector('#asubb').addEventListener('click',function(){
 document.querySelector('#bsuba').addEventListener('click',function(){
   try {
     var diffb=[];
-  diffb=math.subtract(matrixB,matrixA);
+  diffb=math.round(math.subtract(matrixB,matrixA),2);
 
   var z="";
   for(var i=0;i<diffb.length;i++){
@@ -307,7 +323,7 @@ aconfirm();
 }
 else{
   document.querySelector('#label').innerHTML="Please check the dimension of the matrix A.";
-  document.querySelector('#ans').innerHTML="Matrix should be square.";
+  document.querySelector('#ans').innerHTML="Matrix A should be square.";
 }
 });
 
@@ -382,7 +398,7 @@ bconfirm();
 }
 else{
   document.querySelector('#label').innerHTML="Please check the dimension of the matrix B.";
-  document.querySelector('#ans').innerHTML="Matrix should be square.";
+  document.querySelector('#ans').innerHTML="Matrix B should be square.";
 }
 });
 
