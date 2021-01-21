@@ -6,7 +6,7 @@ function pen(){
      document.getElementById('slpen').style.backgroundColor="#97b17eeb";
   }
  else if (!isNaN(l)) {
-    document.getElementById('apen').value=areapent(l);
+    document.getElementById('apen').value=(areapent(l)).toFixed(6);
   }
 else {
  document.getElementById('slpen').value="Only positive numbers";
@@ -28,7 +28,7 @@ function hex(){
      document.getElementById('slhex').style.backgroundColor="#97b17eeb";
   }
  else if (!isNaN(l)) {
-    document.getElementById('ahex').value=areahexa(l);
+    document.getElementById('ahex').value=(areahexa(l)).toFixed(6);
   }
 else {
  document.getElementById('slhex').value="Only positive numbers";
@@ -51,7 +51,7 @@ function hep(){
      document.getElementById('slhep').style.backgroundColor="#97b17eeb";
   }
  else if (!isNaN(l)) {
-    document.getElementById('ahep').value=areahept(l);
+    document.getElementById('ahep').value=(areahept(l)).toFixed(6);
   }
 else {
  document.getElementById('slhep').value="Only positive numbers";
@@ -73,7 +73,7 @@ function oct(){
      document.getElementById('sloct').style.backgroundColor="#97b17eeb";
   }
  else if (!isNaN(l)) {
-    document.getElementById('aoct').value=areaocta(l);
+    document.getElementById('aoct').value=(areaocta(l)).toFixed(6);
   }
 else {
  document.getElementById('sloct').value="Only positive numbers";
@@ -96,7 +96,7 @@ function non(){
      document.getElementById('slnon').style.backgroundColor="#97b17eeb";
   }
  else if (!isNaN(l)) {
-    document.getElementById('anon').value=areanona(l);
+    document.getElementById('anon').value=(areanona(l)).toFixed(6);
   }
 else {
  document.getElementById('slnon').value="Only positive numbers";
@@ -119,7 +119,7 @@ function dec(){
      document.getElementById('sldec').style.backgroundColor="#97b17eeb";
   }
  else if (!isNaN(l)) {
-    document.getElementById('adec').value=areadeca(l);
+    document.getElementById('adec').value=(areadeca(l)).toFixed(6);
   }
 else {
  document.getElementById('sldec').value="Only positive numbers";

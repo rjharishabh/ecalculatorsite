@@ -23,7 +23,7 @@
 #label,#ans{
   text-align: center;
 }
-nav button{
+.navbar-toggler{
   background-color:#36a9ee;
 }
 #results{

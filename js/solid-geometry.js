@@ -7,11 +7,11 @@ function cube(){
      document.getElementById('elcube').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(el)) {
-    document.getElementById('volcube').value=volcube(el);
-      document.getElementById('tsacube').value=tsacube(el);
-        document.getElementById('lsacube').value=lsacube(el);
-          document.getElementById('losdcube').value=losdcube(el);
-          document.getElementById('lofdcube').value=lofdcube(el);
+    document.getElementById('volcube').value=volcube(el).toFixed(4);
+      document.getElementById('tsacube').value=tsacube(el).toFixed(4);
+        document.getElementById('lsacube').value=lsacube(el).toFixed(4);
+          document.getElementById('losdcube').value=losdcube(el).toFixed(4);
+          document.getElementById('lofdcube').value=lofdcube(el).toFixed(4);
   }
 else {
  document.getElementById('elcube').value="Only positive numbers";
@@ -64,10 +64,10 @@ function cuboid(){
       }
 
      if (!isNaN(l) && !isNaN(b) && !isNaN(h) && l>0 && b>0 && h>0) {
-          document.getElementById('volcuboid').value=volcuboid(l,b,h);
-            document.getElementById('tsacuboid').value=tsacuboid(l,b,h);
-              document.getElementById('lsacuboid').value=lsacuboid(l,b,h);
-                document.getElementById('losdcuboid').value=losdcuboid(l,b,h);
+          document.getElementById('volcuboid').value=volcuboid(l,b,h).toFixed(4);
+            document.getElementById('tsacuboid').value=tsacuboid(l,b,h).toFixed(4);
+              document.getElementById('lsacuboid').value=lsacuboid(l,b,h).toFixed(4);
+                document.getElementById('losdcuboid').value=losdcuboid(l,b,h).toFixed(4);
         }
 }
 
@@ -110,9 +110,9 @@ if(r<=0){
     }
 
    if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
-        document.getElementById('volcyl').value=volcyl(r,h);
-          document.getElementById('tsacyl').value=tsacyl(r,h);
-            document.getElementById('csacyl').value=csacyl(r,h);
+        document.getElementById('volcyl').value=volcyl(r,h).toFixed(4);
+          document.getElementById('tsacyl').value=tsacyl(r,h).toFixed(4);
+            document.getElementById('csacyl').value=csacyl(r,h).toFixed(4);
       }
 }
 
@@ -151,10 +151,10 @@ if(r<=0){
     }
 
    if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
-        document.getElementById('volcone').value=volcone(r,h);
-          document.getElementById('tsacone').value=tsacone(r,h);
-            document.getElementById('csacone').value=csacone(r,h);
-              document.getElementById('shcone').value=shcone(r,h);
+        document.getElementById('volcone').value=volcone(r,h).toFixed(4);
+          document.getElementById('tsacone').value=tsacone(r,h).toFixed(4);
+            document.getElementById('csacone').value=csacone(r,h).toFixed(4);
+              document.getElementById('shcone').value=shcone(r,h).toFixed(4);
       }
 }
 
@@ -179,8 +179,8 @@ function sphere(){
      document.getElementById('rsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
-    document.getElementById('volsph').value=volsphere(r);
-      document.getElementById('sasph').value=sasphere(r);
+    document.getElementById('volsph').value=volsphere(r).toFixed(4);
+      document.getElementById('sasph').value=sasphere(r).toFixed(4);
     }
 else {
  document.getElementById('rsph').value="Only positive numbers";
@@ -204,9 +204,9 @@ function hemisphere(){
      document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
-    document.getElementById('volhsph').value=volhemisphere(r);
-      document.getElementById('tsahsph').value=tsahemisphere(r);
-          document.getElementById('csahsph').value=csahemisphere(r);
+    document.getElementById('volhsph').value=volhemisphere(r).toFixed(4);
+      document.getElementById('tsahsph').value=tsahemisphere(r).toFixed(4);
+          document.getElementById('csahsph').value=csahemisphere(r).toFixed(4);
     }
 else {
  document.getElementById('rhsph').value="Only positive numbers";
@@ -255,10 +255,10 @@ if(R<=0){
     }
 
    if (!isNaN(r) && !isNaN(R) && !isNaN(h) && r>0 && R>0 && h>0) {
-        document.getElementById('volfrustum').value=volfrustum(r,R,h);
-          document.getElementById('tsafrustum').value=tsafrustum(r,R,h);
-            document.getElementById('csafrustum').value=csafrustum(r,R,h);
-              document.getElementById('shfrustum').value=shfrustum(r,R,h);
+        document.getElementById('volfrustum').value=volfrustum(r,R,h).toFixed(4);
+          document.getElementById('tsafrustum').value=tsafrustum(r,R,h).toFixed(4);
+            document.getElementById('csafrustum').value=csafrustum(r,R,h).toFixed(4);
+              document.getElementById('shfrustum').value=shfrustum(r,R,h).toFixed(4);
       }
 }
 
@@ -286,7 +286,7 @@ function vcube(){
      document.getElementById('elcube').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(el)) {
-    document.getElementById('volcube').value=volcube(el);
+    document.getElementById('volcube').value=volcube(el).toFixed(4);
   }
 else {
  document.getElementById('elcube').value="Only positive numbers";
@@ -332,7 +332,7 @@ function vcuboid(){
       }
 
      if (!isNaN(l) && !isNaN(b) && !isNaN(h) && l>0 && b>0 && h>0) {
-          document.getElementById('volcuboid').value=volcuboid(l,b,h);
+          document.getElementById('volcuboid').value=volcuboid(l,b,h).toFixed(4);
         }
 }
 
@@ -372,7 +372,7 @@ if(r<=0){
     }
 
    if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
-        document.getElementById('volcone').value=volcone(r,h);
+        document.getElementById('volcone').value=volcone(r,h).toFixed(4);
       }
 }
 
@@ -408,7 +408,7 @@ if(r<=0){
     }
 
    if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
-        document.getElementById('volcyl').value=volcyl(r,h);
+        document.getElementById('volcyl').value=volcyl(r,h).toFixed(4);
       }
 }
 
@@ -429,7 +429,7 @@ function vsph(){
      document.getElementById('rsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
-    document.getElementById('volsph').value=volsphere(r);
+    document.getElementById('volsph').value=volsphere(r).toFixed(4);
     }
 else {
  document.getElementById('rsph').value="Only positive numbers";
@@ -451,7 +451,7 @@ function vhsph(){
      document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
-    document.getElementById('volhsph').value=volhemisphere(r);
+    document.getElementById('volhsph').value=volhemisphere(r).toFixed(4);
     }
 else {
  document.getElementById('rhsph').value="Only positive numbers";
@@ -459,7 +459,7 @@ else {
 }
 }
 
-function resethsph(){
+function resetvhsph(){
   document.getElementById('rhsph').style.backgroundColor="#fff";
   document.getElementById('rhsph').value="";
   document.getElementById('rhsph').placeholder="Please Enter Value";
@@ -497,7 +497,7 @@ if(R<=0){
     }
 
    if (!isNaN(r) && !isNaN(R) && !isNaN(h) && r>0 && R>0 && h>0) {
-        document.getElementById('volfrustum').value=volfrustum(r,R,h);
+        document.getElementById('volfrustum').value=volfrustum(r,R,h).toFixed(4);
       }
 }
 
@@ -522,8 +522,8 @@ function sacube(){
      document.getElementById('elcube').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(el)) {
-      document.getElementById('tsacube').value=tsacube(el);
-        document.getElementById('lsacube').value=lsacube(el);
+      document.getElementById('tsacube').value=tsacube(el).toFixed(4);
+        document.getElementById('lsacube').value=lsacube(el).toFixed(4);
   }
 else {
  document.getElementById('elcube').value="Only positive numbers";
@@ -574,8 +574,8 @@ function sacuboid(){
       }
 
      if (!isNaN(l) && !isNaN(b) && !isNaN(h) && l>0 && b>0 && h>0) {
-            document.getElementById('tsacuboid').value=tsacuboid(l,b,h);
-              document.getElementById('lsacuboid').value=lsacuboid(l,b,h);
+            document.getElementById('tsacuboid').value=tsacuboid(l,b,h).toFixed(4);
+              document.getElementById('lsacuboid').value=lsacuboid(l,b,h).toFixed(4);
         }
 }
 
@@ -616,8 +616,8 @@ if(r<=0){
     }
 
    if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
-          document.getElementById('tsacyl').value=tsacyl(r,h);
-            document.getElementById('csacyl').value=csacyl(r,h);
+          document.getElementById('tsacyl').value=tsacyl(r,h).toFixed(4);
+            document.getElementById('csacyl').value=csacyl(r,h).toFixed(4);
       }
 }
 
@@ -655,8 +655,8 @@ if(r<=0){
     }
 
    if (!isNaN(r) && !isNaN(h) && r>0 && h>0) {
-          document.getElementById('tsacone').value=tsacone(r,h);
-            document.getElementById('csacone').value=csacone(r,h);
+          document.getElementById('tsacone').value=tsacone(r,h).toFixed(4);
+            document.getElementById('csacone').value=csacone(r,h).toFixed(4);
       }
 }
 
@@ -679,7 +679,7 @@ function sasphr(){
      document.getElementById('rsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
-      document.getElementById('sasph').value=sasphere(r);
+      document.getElementById('sasph').value=sasphere(r).toFixed(4);
     }
 else {
  document.getElementById('rsph').value="Only positive numbers";
@@ -702,8 +702,8 @@ function sahemisph(){
      document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
-      document.getElementById('tsahsph').value=tsahemisphere(r);
-          document.getElementById('csahsph').value=csahemisphere(r);
+      document.getElementById('tsahsph').value=tsahemisphere(r).toFixed(4);
+          document.getElementById('csahsph').value=csahemisphere(r).toFixed(4);
     }
 else {
  document.getElementById('rhsph').value="Only positive numbers";
@@ -751,8 +751,8 @@ if(R<=0){
     }
 
    if (!isNaN(r) && !isNaN(R) && !isNaN(h) && r>0 && R>0 && h>0) {
-          document.getElementById('tsafrustum').value=tsafrustum(r,R,h);
-            document.getElementById('csafrustum').value=csafrustum(r,R,h);
+          document.getElementById('tsafrustum').value=tsafrustum(r,R,h).toFixed(4);
+            document.getElementById('csafrustum').value=csafrustum(r,R,h).toFixed(4);
       }
 }
 

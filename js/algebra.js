@@ -3,8 +3,8 @@ function cbroot(){
 
 
 if (!isNaN(num)) {
-    document.getElementById('cbr').value=Math.cbrt(num);
-    document.getElementById('sr').value=Math.sqrt(num);
+    document.getElementById('cbr').value=Math.cbrt(num).toFixed(4);
+    document.getElementById('sr').value=Math.sqrt(num).toFixed(4);
   }
 else {
  document.getElementById('cbn').value="Please Enter a Number";
@@ -34,7 +34,7 @@ function expt(){
        }
 
      if (!isNaN(base) && !isNaN(exp) ) {
-          document.getElementById('ab').value=Math.pow(base,exp);
+          document.getElementById('ab').value=Math.pow(base,exp).toFixed(4);
 }
 }
 
@@ -58,8 +58,8 @@ function leq() {
 if(!isNaN(a1)&&!isNaN(a2)&&!isNaN(b1)&&!isNaN(b2)&&!isNaN(c1)&&!isNaN(c2)){
   obj=lesolve(a1,a2,b1,b2,c1,c2);
     document.getElementById('aboutsol').textContent=obj.prop;
-  document.getElementById('x').value=obj.x;
-    document.getElementById('y').value=obj.y;
+  document.getElementById('x').value=(obj.x).toFixed(2);
+    document.getElementById('y').value=(obj.y).toFixed(2);
 }
 if(isNaN(a1)||isNaN(a2)||isNaN(b1)||isNaN(b2)||isNaN(c1)||isNaN(c2)){
       document.getElementById('aboutsol').textContent="Please Fill in the All Fields.";
@@ -113,7 +113,7 @@ if(isNaN(max)){
    document.getElementById('max-val').style.backgroundColor="#fff";
 }
 if(isNaN(min)&&isNaN(max))
-document.getElementById('random-num').value=Math.random();
+document.getElementById('random-num').value=(Math.random()).toFixed(6);
 if(!isNaN(min)&&!isNaN(max)){
   document.getElementById('random-num').value=(Math.random()*(max-min)+min).toFixed(6);
   document.getElementById('random-int').value=Math.floor(Math.random()*(max-min)+min);
@@ -136,8 +136,8 @@ function sqcb(){
 
 
 if (!isNaN(num)) {
-    document.getElementById('cb').value=Math.pow(num,3);
-    document.getElementById('sq').value=Math.pow(num,2);
+    document.getElementById('cb').value=(Math.pow(num,3)).toFixed(4);
+    document.getElementById('sq').value=(Math.pow(num,2)).toFixed(4);
   }
 else {
  document.getElementById('no').value="Please Enter a Number";
@@ -185,18 +185,18 @@ function quad_roots(a,b,c){
   d=obj.dis=(b*b)-(4*a*c);
 if(obj.dis>0){
   obj.prop="Given equation has two distinct real roots.";
-  obj.x1=(-b+Math.sqrt(d))/(2*a);
-  obj.x2=(-b-Math.sqrt(d))/(2*a);
+  obj.x1=((-b+Math.sqrt(d))/(2*a)).toFixed(4);
+  obj.x2=((-b-Math.sqrt(d))/(2*a)).toFixed(4);
 }
 else if(obj.dis===0){
   obj.prop="Given equation has two equal real roots.";
-  obj.x1=(-b)/(2*a);
+  obj.x1=((-b)/(2*a)).toFixed(4);
   obj.x2=obj.x1;
 }
 else{
   obj.prop="Given equation has two distinct complex roots.";
-  var re=(-b)/(2*a);
-  var im=Math.sqrt(-d)/(2*a);
+  var re=((-b)/(2*a)).toFixed(4);
+  var im=(Math.sqrt(-d)/(2*a)).toFixed(4);
   obj.x1=re+" + "+im+" i";
   obj.x2=re+" - "+im+" i";
 }

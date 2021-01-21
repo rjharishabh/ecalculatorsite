@@ -6,9 +6,9 @@ function circle(){
      document.getElementById('rcircle').style.backgroundColor="#97b17eeb";
   }
  else if (!isNaN(r)) {
-    document.getElementById('dcircle').value=diacircle(r);
-      document.getElementById('cfcircle').value=cfcircle(r);
-        document.getElementById('acircle').value=areacircle(r);
+    document.getElementById('dcircle').value=diacircle(r).toFixed(6);
+      document.getElementById('cfcircle').value=cfcircle(r).toFixed(6);
+        document.getElementById('acircle').value=areacircle(r).toFixed(6);
   }
 else {
  document.getElementById('rcircle').value="Only positive numbers";
@@ -34,7 +34,7 @@ function square(){
      document.getElementById('lsquare').style.backgroundColor="#97b17eeb";
   }
  else if (!isNaN(side)) {
-    document.getElementById('dsquare').value=diasquare(side);
+    document.getElementById('dsquare').value=(diasquare(side)).toFixed(6);
       document.getElementById('psquare').value=psquare(side);
         document.getElementById('asquare').value=areasquare(side);
   }
@@ -157,7 +157,7 @@ function rect(){
       }
 
      if (!isNaN(l) && !isNaN(b) && l>0 && b>0) {
-          document.getElementById('drect').value=diarect(l,b);
+          document.getElementById('drect').value=(diarect(l,b)).toFixed(6);
             document.getElementById('prect').value=prect(l,b);
               document.getElementById('arect').value=arearect(l,b);
         }
@@ -296,7 +296,7 @@ function para2(){
       }
      if (!isNaN(a) && !isNaN(b) && a>0 && b>0) {
           document.getElementById('ppara').value=prect(a,b);
-          document.getElementById('a2para').value=areapara2(a,b,angle);
+          document.getElementById('a2para').value=(areapara2(a,b,angle)).toFixed(6);
         }
 }
 
@@ -336,7 +336,7 @@ function ellipse(){
           document.getElementById('minellipse').value=2*b;
           document.getElementById('majellipse').value=2*a;
           document.getElementById('cirellipse').value=circumellipse(a,b)+" (approx.)";
-          document.getElementById('areaellipse').value=areaellipse(a,b);
+          document.getElementById('areaellipse').value=(areaellipse(a,b)).toFixed(6);
         }
 }
 
@@ -413,7 +413,7 @@ function acircle(){
      document.getElementById('radcir').style.backgroundColor="#97b17eeb";
   }
  else if (!isNaN(r)) {
-        document.getElementById('acir').value=areacircle(r);
+        document.getElementById('acir').value=(areacircle(r)).toFixed(6);
   }
 else {
  document.getElementById('radcir').value="Only positive numbers";
@@ -542,7 +542,7 @@ var a=parseFloat(document.getElementById('smajaellipse').value);
          document.getElementById('sminaellipse').style.backgroundColor="#97b17eeb";
       }
      if (!isNaN(a) && !isNaN(b) && a>0 && b>0) {
-          document.getElementById('aaellipse').value=areaellipse(a,b);
+          document.getElementById('aaellipse').value=(areaellipse(a,b)).toFixed(6);
         }
 }
 
@@ -618,7 +618,7 @@ function apara2(){
          document.getElementById('angleapara2').style.backgroundColor="#97b17eeb";
       }
      if (!isNaN(a) && !isNaN(b) && a>0 && b>0) {
-          document.getElementById('areaapara2').value=areapara2(a,b,angle);
+          document.getElementById('areaapara2').value=(areapara2(a,b,angle)).toFixed(6);
         }
 }
 
@@ -644,7 +644,7 @@ function ccir(){
      document.getElementById('rccir').style.backgroundColor="#97b17eeb";
   }
 else if (!isNaN(r)) {
-        document.getElementById('cccir').value=cfcircle(r);
+        document.getElementById('cccir').value=(cfcircle(r)).toFixed(6);
   }
 else {
  document.getElementById('rccir').value="Only positive numbers";
@@ -759,7 +759,7 @@ var a=parseFloat(document.getElementById('smajcellipse').value);
          document.getElementById('smincellipse').style.backgroundColor="#97b17eeb";
       }
      if (!isNaN(a) && !isNaN(b) && a>0 && b>0) {
-          document.getElementById('ccellipse').value=circumellipse(a,b);
+          document.getElementById('ccellipse').value=(circumellipse(a,b)).toFixed(6);
         }
 }
 
