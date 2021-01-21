@@ -20,6 +20,10 @@
   color:#e83e8c;
   font-size: 22px;
 }
+.mug,.cookies{
+  width: 100%;
+  height: 100%;
+}
 #label,#ans{
   text-align: center;
 }
@@ -142,10 +146,6 @@ height: 50px;
     border: 1px solid #fd7e14;
 }
 
-.support a{
-  margin-left: 20px;
-  margin-right: 20px;
-}
 .wrong{
   background-color:#b1a4cd47;
   padding-top: 10px;
@@ -204,7 +204,7 @@ ul{
 }
 .support{
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color:#f3c848;
 padding-top: 50px;
 padding-bottom: 50px;
