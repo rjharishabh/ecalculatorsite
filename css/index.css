@@ -7,6 +7,20 @@ height:45px;
 color:black;
 font-size: 25px;
 }
+.index-link{
+  display: flex;
+  flex-flow: row wrap;;
+  justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.index-link a{
+  background-color:#fff ;
+  width: 125px;
+  height: 100px;
+  margin: 10px;
+  border:1px solid #007bff;
+}
 .calculator #half{
   text-align: right;
   margin-top: 5px;
