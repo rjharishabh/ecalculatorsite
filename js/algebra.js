@@ -7,7 +7,6 @@ if (!isNaN(num)) {
     document.getElementById('sr').value=Math.sqrt(num).toFixed(4);
   }
 else {
- document.getElementById('cbn').value="Please Enter a Number";
   document.getElementById('cbn').style.backgroundColor="#97b17eeb";
 }
 }
@@ -25,11 +24,9 @@ function expt(){
     var exp=parseFloat(document.getElementById('exp').value);
 
       if(isNaN(base)){
-        document.getElementById('base').value="Please Enter a Number";
          document.getElementById('base').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(exp)){
-        document.getElementById('exp').value="Please Enter a Number";
          document.getElementById('exp').style.backgroundColor="#97b17eeb";
        }
 
@@ -140,7 +137,6 @@ if (!isNaN(num)) {
     document.getElementById('sq').value=(Math.pow(num,2)).toFixed(4);
   }
 else {
- document.getElementById('no').value="Please Enter a Number";
   document.getElementById('no').style.backgroundColor="#97b17eeb";
 }
 }
@@ -263,11 +259,9 @@ function bmi(){
     var h=parseFloat(document.getElementById('height').value);
 
       if(isNaN(m)){
-        document.getElementById('mass').value="Please Enter a Number";
          document.getElementById('mass').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(h)){
-        document.getElementById('height').value="Please Enter a Number";
          document.getElementById('height').style.backgroundColor="#97b17eeb";
        }
 
