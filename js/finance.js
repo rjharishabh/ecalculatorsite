@@ -4,35 +4,29 @@ function simint(){
     var t=parseFloat(document.getElementById('si_t').value);
 
   if(p<=0){
-          document.getElementById('si_p').value="Only positive numbers";
            document.getElementById('si_p').style.backgroundColor="#97b17eeb";
        }
    if(r<=0){
-          document.getElementById('si_r').value="Only positive numbers";
               document.getElementById('si_r').style.backgroundColor="#97b17eeb";
        }
    if(t<=0){
-          document.getElementById('si_t').value="Only positive numbers";
               document.getElementById('si_t').style.backgroundColor="#97b17eeb";
        }
 
 
       if(isNaN(p)){
-        document.getElementById('si_p').value="Only positive numbers";
          document.getElementById('si_p').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(r)){
-        document.getElementById('si_r').value="Only positive numbers";
          document.getElementById('si_r').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(t)){
-        document.getElementById('si_t').value="Only positive numbers";
          document.getElementById('si_t').style.backgroundColor="#97b17eeb";
       }
 
      if (!isNaN(p) && !isNaN(r) && !isNaN(t) && p>0 && r>0 && t>0) {
           document.getElementById('si').value=(p*r*t*0.01).toFixed(2);
-            document.getElementById('si_a').value=(0.01*p*r*t).toFixed(2)+p.toFixed(2);
+            document.getElementById('si_a').value=((0.01*p*r*t)+p).toFixed(2);
         }
 }
 
@@ -56,29 +50,23 @@ function compint(){
     var t=parseFloat(document.getElementById('ci_t').value);
     var n=parseFloat(document.getElementById('compd').value);
   if(p<=0){
-          document.getElementById('ci_p').value="Only positive numbers";
            document.getElementById('ci_p').style.backgroundColor="#97b17eeb";
        }
    if(r<=0){
-          document.getElementById('ci_r').value="Only positive numbers";
           document.getElementById('ci_r').style.backgroundColor="#97b17eeb";
        }
    if(t<=0){
-          document.getElementById('ci_t').value="Only positive numbers";
               document.getElementById('ci_t').style.backgroundColor="#97b17eeb";
        }
 
 
       if(isNaN(p)){
-        document.getElementById('ci_p').value="Only positive numbers";
          document.getElementById('ci_p').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(r)){
-        document.getElementById('ci_r').value="Only positive numbers";
          document.getElementById('ci_r').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(t)){
-        document.getElementById('ci_t').value="Only positive numbers";
          document.getElementById('ci_t').style.backgroundColor="#97b17eeb";
       }
 
@@ -108,20 +96,16 @@ function disc(){
     var d=parseFloat(document.getElementById('dis').value);
 
   if(p<=0){
-          document.getElementById('op').value="Only positive numbers";
            document.getElementById('op').style.backgroundColor="#97b17eeb";
        }
    if(d<=0){
-          document.getElementById('dis').value="Only positive numbers";
           document.getElementById('dis').style.backgroundColor="#97b17eeb";
        }
 
       if(isNaN(p)){
-        document.getElementById('op').value="Only positive numbers";
          document.getElementById('op').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(d)){
-        document.getElementById('dis').value="Only positive numbers";
          document.getElementById('dis').style.backgroundColor="#97b17eeb";
       }
 

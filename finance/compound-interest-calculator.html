@@ -75,13 +75,13 @@
         <div class="form-group row">
       <label for="ci_p" class="col-form-label col-12 col-md-5">Principal Sum</label>
       <div class="col-8 col-md-4 col-lg-5">
-        <input type="text" required class="form-control" id="ci_p">
+        <input type="number" required class="form-control" id="ci_p">
       </div>
     </div>
     <div class="form-group row">
   <label for="ci_r" class="col-form-label col-12 col-md-5">Annual Interest Rate</label>
   <div class="col-8 col-md-4 col-lg-5">
-    <input type="text" required class="form-control" id="ci_r">
+    <input type="number" required class="form-control" id="ci_r">
   </div>
   <div class="col-4 col-md-3 col-lg-2">
    <input type="text" readonly class="form-control-plaintext" value="%">
@@ -90,7 +90,7 @@
   <div class="form-group row">
 <label for="ci_t" class="col-form-label col-12 col-md-5">Time</label>
 <div class="col-8 col-md-4 col-lg-5">
-  <input type="text" required class="form-control" id="ci_t">
+  <input type="number" required class="form-control" id="ci_t">
 </div>
 <div class="col-4 col-md-3 col-lg-2">
  <input type="text" readonly class="form-control-plaintext" value="year(s)">
@@ -154,33 +154,29 @@
 
 </div>
 </div>
-
-
 </div>
+
 <div class="col-lg-4 d-none d-lg-block ">
   <div class="btn-group-vertical">
-    <h3 class="text-warning" >More Calculators</h3>
-  <button type="button" class="btn btn-outline-primary" >Cuboid Calculator</button>
-  <button type="button" class="btn btn-outline-primary" >Cylinder Calculator</button>
-  <button type="button" class="btn btn-outline-primary" >Cone Calculator</button>
-  <button type="button" class="btn btn-outline-primary" >Sphere Calculator</button>
-  <button type="button" class="btn btn-outline-primary" >Hemisphere Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >VolumeCalculator</button>
-  <button type="button" class="text-white btn btn-warning" >Surface Area Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Statistics Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Algebra Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Arithmetic Progression Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Geometric Progression Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Cuboid Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Cylinder Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Cone Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Sphere Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Hemisphere Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >VolumeCalculator</button>
-  <button type="button" class="text-white btn btn-warning" >Surface Area Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Statistics Calculator</button>
-  <button type="button" class="text-white btn btn-warning" >Algebra Calculator</button>
-
+  <h3 class="text-warning text-center">More Calculators</h3>
+  <a href="../plane-geometry/centroid-calculator.html" class="btn btn-outline-info">Centroid Calculator</a>
+  <a href="../discount-calculator.html" class="btn btn-outline-info">Discount Calculator</a>
+  <a href="../algebra/exponent-calculator.html" class="btn btn-outline-info">Exponent Calculator</a>
+  <a href="../statistics/variance-calculator.html" class="btn btn-outline-info">Variance Calculator</a>
+  <a href="../derivative-calculator.html" class="btn btn-outline-info">Derivative Calculator</a>
+  <a href="../algebra/percentage-calculator.html" class="btn btn-outline-info">Percentage Calculator</a>
+  <a href="../solid-geometry/surface-area-calculator.html" class="btn btn-outline-info">Surface Area Calculator</a>
+  <a href="../plane-geometry/circumference-calculator.html" class="btn btn-outline-info">Circumference Calculator</a>
+  <a href="../plane-geometry/right-triangle-calculator.html" class="btn btn-outline-info">Right Triangle Calculator</a>
+  <a href="../algebra/quadratic-equation-solver.html" class="btn btn-outline-info">Quadratic Equation Solver</a>
+  <a href="../algebra/random-number-generator.html" class="btn btn-outline-info">Random Number Generator</a>
+    <a href="../algebra/complex-number-calculator.html" class="btn btn-outline-info">Complex Number Calculator</a>
+  <a href="../algebra/linear-equation-calculator.html" class="btn btn-outline-info">Linear Equation Calculator</a>
+  <a href="simple-interest-calculator.html" class="btn btn-outline-info">Simple Interest Calculator</a>
+  <a href="../statistics/standard-deviation-calculator.html" class="btn btn-outline-info">Standard Deviation Calculator</a>
+  <a href="../matrix/matrix-determinant-calculator.html" class="btn btn-outline-info">Matrix Determinant Calculator</a>
+  <a href="../plane-geometry/pythagoras-theorem-calculator.html" class="btn btn-outline-info">Pythagoras Theorem Calculator</a>
+  <a href="../matrix/matrix-multiplication-calculator.html" class="btn btn-outline-info">Matrix Multiplication Calculator</a>
   </div>
 </div>
 </div>
@@ -204,35 +200,34 @@
   </div>
 </div>
 
-<div class="row d-lg-none">
+<div class="row more d-lg-none">
   <div class="col-12">
-    <div class="card border border-warning">
-      <div class="card-header  bg-info">
-    <h3 class="text-white">More Calculators</h3>
-      </div>
-      <div class="card-body more">
+    <div class="card border border-primary">
+      <div class="card-header bg-info"><h3 class="text-white text-center">More Calculators</h3></div>
+      <div class="card-body">
         <div class="row">
-<div class=" col-sm-6 align-items-center">
-<ul>
-  <li><a href="">Cuboid Calculator</a></li>
-    <li><a href="">Cylinder Calculator</a></li>
-      <li><a href="">Cone Calculator</a></li>
+<div class="col-md-6">
+<ul class="text-center">
+<li><a href="../solid-geometry/surface-area-calculator.html">Surface Area Calculator</a></li>
+  <li><a href="../plane-geometry/circumference-calculator.html">Circumference Calculator</a></li>
+  <li><a href="../plane-geometry/right-triangle-calculator.html">Right Triangle Calculator</a></li>
+  <li><a href="../algebra/quadratic-equation-solver.html">Quadratic Equation Solver</a></li>
+  <li><a href="../algebra/random-number-generator.html">Random Number Generator</a></li>
 </ul>
 </div>
-
-<div class="col-sm-6">
-<ul>
-  <li><a href="">Volume Calculator</a></li>
-    <li><a href="">Surface Area Calculator</a></li>
-      <li><a href="">Sphere Calculator</a></li>
+<div class="col-md-6">
+<ul class="text-center">
+  <li><a href="../algebra/complex-number-calculator.html">Complex Number Calculator</a></li>
+  <li><a href="../algebra/linear-equation-calculator.html">Linear Equation Calculator</a></li>
+  <li><a href="simple-interest-calculator.html">Simple Interest Calculator</a></li>
+  <li><a href="../statistics/standard-deviation-calculator.html">Standard Deviation Calculator</a></li>
+  <li><a href="../matrix/matrix-determinant-calculator.html">Matrix Determinant Calculator</a></li>
 </ul>
 </div>
-
         </div>
       </div>
     </div>
   </div>
-
 </div>
 
 </main>
