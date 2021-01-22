@@ -178,7 +178,7 @@ document.getElementById('r2').value="";
 }
 function quad_roots(a,b,c){
   var obj={};
-  d=obj.dis=(b*b)-(4*a*c);
+  d=obj.dis=((b*b)-(4*a*c)).toFixed(4);
 if(obj.dis>0){
   obj.prop="Given equation has two distinct real roots.";
   obj.x1=((-b+Math.sqrt(d))/(2*a)).toFixed(4);
