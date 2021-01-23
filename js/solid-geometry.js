@@ -3,7 +3,6 @@ function cube(){
   var el=parseFloat(document.getElementById('elcube').value);
 
   if(el<=0){
-    document.getElementById('elcube').value="Only positive numbers";
      document.getElementById('elcube').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(el)) {
@@ -14,7 +13,6 @@ function cube(){
           document.getElementById('lofdcube').value=lofdcube(el).toFixed(4);
   }
 else {
- document.getElementById('elcube').value="Only positive numbers";
   document.getElementById('elcube').style.backgroundColor="#97b17eeb";
 }
 }
@@ -37,29 +35,23 @@ function cuboid(){
     var h=parseFloat(document.getElementById('hcuboid').value);
 
   if(l<=0){
-          document.getElementById('lcuboid').value="Only positive numbers";
            document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
        }
    if(b<=0){
-          document.getElementById('bcuboid').value="Only positive numbers";
               document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
        }
    if(h<=0){
-          document.getElementById('hcuboid').value="Only positive numbers";
               document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
        }
 
 
       if(isNaN(l)){
-        document.getElementById('lcuboid').value="Only positive numbers";
          document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(b)){
-        document.getElementById('bcuboid').value="Only positive numbers";
          document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(h)){
-        document.getElementById('hcuboid').value="Only positive numbers";
          document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
       }
 
@@ -92,20 +84,16 @@ function cylinder(){
   var h=parseFloat(document.getElementById('hcyl').value);
 
 if(r<=0){
-        document.getElementById('rcyl').value="Only positive numbers";
          document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
      }
  if(h<=0){
-        document.getElementById('hcyl').value="Only positive numbers";
             document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('rcyl').value="Only positive numbers";
        document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hcyl').value="Only positive numbers";
        document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
     }
 
@@ -133,20 +121,16 @@ function cone(){
   var h=parseFloat(document.getElementById('hcone').value);
 
 if(r<=0){
-        document.getElementById('rcone').value="Only positive numbers";
          document.getElementById('rcone').style.backgroundColor="#97b17eeb";
      }
  if(h<=0){
-        document.getElementById('hcone').value="Only positive numbers";
             document.getElementById('hcone').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('rcone').value="Only positive numbers";
        document.getElementById('rcone').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hcone').value="Only positive numbers";
        document.getElementById('hcone').style.backgroundColor="#97b17eeb";
     }
 
@@ -175,7 +159,6 @@ function sphere(){
   var r=parseFloat(document.getElementById('rsph').value);
 
   if(r<=0){
-    document.getElementById('rsph').value="Only positive numbers";
      document.getElementById('rsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
@@ -183,7 +166,6 @@ function sphere(){
       document.getElementById('sasph').value=sasphere(r).toFixed(4);
     }
 else {
- document.getElementById('rsph').value="Only positive numbers";
   document.getElementById('rsph').style.backgroundColor="#97b17eeb";
 }
 }
@@ -200,7 +182,6 @@ function hemisphere(){
   var r=parseFloat(document.getElementById('rhsph').value);
 
   if(r<=0){
-    document.getElementById('rhsph').value="Only positive numbers";
      document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
@@ -209,7 +190,6 @@ function hemisphere(){
           document.getElementById('csahsph').value=csahemisphere(r).toFixed(4);
     }
 else {
- document.getElementById('rhsph').value="Only positive numbers";
   document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
 }
 }
@@ -229,28 +209,22 @@ function frustum(){
   var h=parseFloat(document.getElementById('hfrustum').value);
 
 if(r<=0){
-        document.getElementById('srfrustum').value="Only positive numbers";
          document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
      }
 if(R<=0){
-             document.getElementById('lrfrustum').value="Only positive numbers";
               document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
           }
  if(h<=0){
-        document.getElementById('hfrustum').value="Only positive numbers";
             document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('srfrustum').value="Only positive numbers";
        document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(R)){
-      document.getElementById('lrfrustum').value="Only positive numbers";
        document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hfrustum').value="Only positive numbers";
        document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
     }
 
@@ -282,14 +256,12 @@ function vcube(){
   var el=parseFloat(document.getElementById('elcube').value);
 
   if(el<=0){
-    document.getElementById('elcube').value="Only positive numbers";
      document.getElementById('elcube').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(el)) {
     document.getElementById('volcube').value=volcube(el).toFixed(4);
   }
 else {
- document.getElementById('elcube').value="Only positive numbers";
   document.getElementById('elcube').style.backgroundColor="#97b17eeb";
 }
 }
@@ -305,29 +277,21 @@ function vcuboid(){
     var h=parseFloat(document.getElementById('hcuboid').value);
 
   if(l<=0){
-          document.getElementById('lcuboid').value="Only positive numbers";
            document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
        }
   else if(b<=0){
-          document.getElementById('bcuboid').value="Only positive numbers";
               document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
        }
    if(h<=0){
-          document.getElementById('hcuboid').value="Only positive numbers";
               document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
        }
-
-
       if(isNaN(l)){
-        document.getElementById('lcuboid').value="Only positive numbers";
          document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(b)){
-        document.getElementById('bcuboid').value="Only positive numbers";
          document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(h)){
-        document.getElementById('hcuboid').value="Only positive numbers";
          document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
       }
 
@@ -354,20 +318,15 @@ function vcone(){
   var h=parseFloat(document.getElementById('hcone').value);
 
 if(r<=0){
-        document.getElementById('rcone').value="Only positive numbers";
          document.getElementById('rcone').style.backgroundColor="#97b17eeb";
      }
  if(h<=0){
-        document.getElementById('hcone').value="Only positive numbers";
             document.getElementById('hcone').style.backgroundColor="#97b17eeb";
      }
-
     if(isNaN(r)){
-      document.getElementById('rcone').value="Only positive numbers";
        document.getElementById('rcone').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hcone').value="Only positive numbers";
        document.getElementById('hcone').style.backgroundColor="#97b17eeb";
     }
 
@@ -390,20 +349,16 @@ function vcyl(){
   var h=parseFloat(document.getElementById('hcyl').value);
 
 if(r<=0){
-        document.getElementById('rcyl').value="Only positive numbers";
          document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
      }
  if(h<=0){
-        document.getElementById('hcyl').value="Only positive numbers";
             document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('rcyl').value="Only positive numbers";
        document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hcyl').value="Only positive numbers";
        document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
     }
 
@@ -425,14 +380,12 @@ function vsph(){
   var r=parseFloat(document.getElementById('rsph').value);
 
   if(r<=0){
-    document.getElementById('rsph').value="Only positive numbers";
      document.getElementById('rsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
     document.getElementById('volsph').value=volsphere(r).toFixed(4);
     }
 else {
- document.getElementById('rsph').value="Only positive numbers";
   document.getElementById('rsph').style.backgroundColor="#97b17eeb";
 }
 }
@@ -447,14 +400,12 @@ function vhsph(){
   var r=parseFloat(document.getElementById('rhsph').value);
 
   if(r<=0){
-    document.getElementById('rhsph').value="Only positive numbers";
      document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
     document.getElementById('volhsph').value=volhemisphere(r).toFixed(4);
     }
 else {
- document.getElementById('rhsph').value="Only positive numbers";
   document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
 }
 }
@@ -471,28 +422,22 @@ function vfrustum(){
   var h=parseFloat(document.getElementById('hfrustum').value);
 
 if(r<=0){
-        document.getElementById('srfrustum').value="Only positive numbers";
          document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
      }
 if(R<=0){
-             document.getElementById('lrfrustum').value="Only positive numbers";
               document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
           }
  if(h<=0){
-        document.getElementById('hfrustum').value="Only positive numbers";
             document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('srfrustum').value="Only positive numbers";
        document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(R)){
-      document.getElementById('lrfrustum').value="Only positive numbers";
        document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hfrustum').value="Only positive numbers";
        document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
     }
 
@@ -518,7 +463,6 @@ function sacube(){
   var el=parseFloat(document.getElementById('elcube').value);
 
   if(el<=0){
-    document.getElementById('elcube').value="Only positive numbers";
      document.getElementById('elcube').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(el)) {
@@ -526,7 +470,6 @@ function sacube(){
         document.getElementById('lsacube').value=lsacube(el).toFixed(4);
   }
 else {
- document.getElementById('elcube').value="Only positive numbers";
   document.getElementById('elcube').style.backgroundColor="#97b17eeb";
 }
 }
@@ -547,29 +490,23 @@ function sacuboid(){
     var h=parseFloat(document.getElementById('hcuboid').value);
 
   if(l<=0){
-          document.getElementById('lcuboid').value="Only positive numbers";
            document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
        }
   else if(b<=0){
-          document.getElementById('bcuboid').value="Only positive numbers";
               document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
        }
    if(h<=0){
-          document.getElementById('hcuboid').value="Only positive numbers";
               document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
        }
 
 
       if(isNaN(l)){
-        document.getElementById('lcuboid').value="Only positive numbers";
          document.getElementById('lcuboid').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(b)){
-        document.getElementById('bcuboid').value="Only positive numbers";
          document.getElementById('bcuboid').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(h)){
-        document.getElementById('hcuboid').value="Only positive numbers";
          document.getElementById('hcuboid').style.backgroundColor="#97b17eeb";
       }
 
@@ -598,20 +535,16 @@ function sacyl(){
   var h=parseFloat(document.getElementById('hcyl').value);
 
 if(r<=0){
-        document.getElementById('rcyl').value="Only positive numbers";
          document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
      }
  if(h<=0){
-        document.getElementById('hcyl').value="Only positive numbers";
             document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('rcyl').value="Only positive numbers";
        document.getElementById('rcyl').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hcyl').value="Only positive numbers";
        document.getElementById('hcyl').style.backgroundColor="#97b17eeb";
     }
 
@@ -637,20 +570,16 @@ function sacone(){
   var h=parseFloat(document.getElementById('hcone').value);
 
 if(r<=0){
-        document.getElementById('rcone').value="Only positive numbers";
          document.getElementById('rcone').style.backgroundColor="#97b17eeb";
      }
  if(h<=0){
-        document.getElementById('hcone').value="Only positive numbers";
             document.getElementById('hcone').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('rcone').value="Only positive numbers";
        document.getElementById('rcone').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hcone').value="Only positive numbers";
        document.getElementById('hcone').style.backgroundColor="#97b17eeb";
     }
 
@@ -675,14 +604,12 @@ function sasphr(){
   var r=parseFloat(document.getElementById('rsph').value);
 
   if(r<=0){
-    document.getElementById('rsph').value="Only positive numbers";
      document.getElementById('rsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
       document.getElementById('sasph').value=sasphere(r).toFixed(4);
     }
 else {
- document.getElementById('rsph').value="Only positive numbers";
   document.getElementById('rsph').style.backgroundColor="#97b17eeb";
 }
 }
@@ -698,7 +625,6 @@ function sahemisph(){
   var r=parseFloat(document.getElementById('rhsph').value);
 
   if(r<=0){
-    document.getElementById('rhsph').value="Only positive numbers";
      document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
   }
   else if (!isNaN(r)) {
@@ -706,7 +632,6 @@ function sahemisph(){
           document.getElementById('csahsph').value=csahemisphere(r).toFixed(4);
     }
 else {
- document.getElementById('rhsph').value="Only positive numbers";
   document.getElementById('rhsph').style.backgroundColor="#97b17eeb";
 }
 }
@@ -725,28 +650,22 @@ function safrustum(){
   var h=parseFloat(document.getElementById('hfrustum').value);
 
 if(r<=0){
-        document.getElementById('srfrustum').value="Only positive numbers";
          document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
      }
 if(R<=0){
-             document.getElementById('lrfrustum').value="Only positive numbers";
               document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
           }
  if(h<=0){
-        document.getElementById('hfrustum').value="Only positive numbers";
             document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
      }
 
     if(isNaN(r)){
-      document.getElementById('srfrustum').value="Only positive numbers";
        document.getElementById('srfrustum').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(R)){
-      document.getElementById('lrfrustum').value="Only positive numbers";
        document.getElementById('lrfrustum').style.backgroundColor="#97b17eeb";
     }
     if(isNaN(h)){
-      document.getElementById('hfrustum').value="Only positive numbers";
        document.getElementById('hfrustum').style.backgroundColor="#97b17eeb";
     }
 

@@ -26,20 +26,16 @@ function hypot(){
   let a=parseFloat(document.getElementById('leg1').value);
   let b=parseFloat(document.getElementById('leg2').value);
   if(a<=0){
-          document.getElementById('leg1').value="Only positive numbers";
            document.getElementById('leg1').style.backgroundColor="#97b17eeb";
        }
   if(b<=0){
-          document.getElementById('leg2').value="Only positive numbers";
               document.getElementById('leg2').style.backgroundColor="#97b17eeb";
        }
 
       if(isNaN(a)){
-        document.getElementById('leg1').value="Only positive numbers";
          document.getElementById('leg1').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(b)){
-        document.getElementById('leg2').value="Only positive numbers";
             document.getElementById('leg2').style.backgroundColor="#97b17eeb";
       }
 
@@ -62,20 +58,16 @@ function leg(){
   let a=parseFloat(document.getElementById('lleg1').value);
   let b=parseFloat(document.getElementById('lhypot').value);
   if(a<=0){
-          document.getElementById('lleg1').value="Only positive numbers";
            document.getElementById('lleg1').style.backgroundColor="#97b17eeb";
        }
   if(b<=0){
-          document.getElementById('lhypot').value="Only positive numbers";
-              document.getElementById('lhypot').style.backgroundColor="#97b17eeb";
+        document.getElementById('lhypot').style.backgroundColor="#97b17eeb";
        }
 
       if(isNaN(a)){
-        document.getElementById('lleg1').value="Only positive numbers";
          document.getElementById('lleg1').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(b)){
-        document.getElementById('lhypot').value="Only positive numbers";
             document.getElementById('lhypot').style.backgroundColor="#97b17eeb";
       }
 
@@ -98,20 +90,16 @@ function rt(){
   let h=parseFloat(document.getElementById('height').value);
   let b=parseFloat(document.getElementById('base').value);
   if(h<=0){
-          document.getElementById('height').value="Only positive numbers";
           document.getElementById('height').style.backgroundColor="#97b17eeb";
        }
   if(b<=0){
-          document.getElementById('base').value="Only positive numbers";
           document.getElementById('base').style.backgroundColor="#97b17eeb";
        }
 
       if(isNaN(h)){
-        document.getElementById('height').value="Only positive numbers";
         document.getElementById('height').style.backgroundColor="#97b17eeb";
       }
       if(isNaN(b)){
-        document.getElementById('base').value="Only positive numbers";
         document.getElementById('base').style.backgroundColor="#97b17eeb";
       }
 
@@ -150,27 +138,21 @@ function st(){
   let b=parseFloat(document.getElementById('slb').value);
   let c=parseFloat(document.getElementById('slc').value);
   if(a<=0){
-          document.getElementById('sla').value="Only positive numbers";
           document.getElementById('sla').style.backgroundColor="#97b17eeb";
        }
   if(b<=0){
-          document.getElementById('slb').value="Only positive numbers";
           document.getElementById('slb').style.backgroundColor="#97b17eeb";
        }
   if(c<=0){
-               document.getElementById('slc').value="Only positive numbers";
                document.getElementById('slc').style.backgroundColor="#97b17eeb";
        }
        if(isNaN(a)){
-               document.getElementById('sla').value="Only positive numbers";
                document.getElementById('sla').style.backgroundColor="#97b17eeb";
             }
        if(isNaN(b)){
-               document.getElementById('slb').value="Only positive numbers";
                document.getElementById('slb').style.backgroundColor="#97b17eeb";
             }
        if(isNaN(c)){
-                    document.getElementById('slc').value="Only positive numbers";
                     document.getElementById('slc').style.backgroundColor="#97b17eeb";
             }
 
@@ -208,19 +190,15 @@ function it(){
   let a=parseFloat(document.getElementById('ita').value);
   let b=parseFloat(document.getElementById('itb').value);
   if(a<=0){
-          document.getElementById('ita').value="Only positive numbers";
           document.getElementById('ita').style.backgroundColor="#97b17eeb";
        }
   if(b<=0){
-          document.getElementById('itb').value="Only positive numbers";
           document.getElementById('itb').style.backgroundColor="#97b17eeb";
        }
        if(isNaN(a)){
-               document.getElementById('ita').value="Only positive numbers";
                document.getElementById('ita').style.backgroundColor="#97b17eeb";
             }
        if(isNaN(b)){
-               document.getElementById('itb').value="Only positive numbers";
                document.getElementById('itb').style.backgroundColor="#97b17eeb";
             }
 
@@ -253,11 +231,9 @@ function resetit(){
 function et(){
   let a=parseFloat(document.getElementById('side').value);
   if(a<=0){
-          document.getElementById('side').value="Only positive numbers";
           document.getElementById('side').style.backgroundColor="#97b17eeb";
        }
        if(isNaN(a)){
-               document.getElementById('side').value="Only positive numbers";
                document.getElementById('side').style.backgroundColor="#97b17eeb";
        }
 
