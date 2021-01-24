@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="">
+   <meta name="description" content="This BMI calculator calculates your BMI in less than a minute and it's free. Also you
+   will understand, how you can calculate the BMI on your own and you will learn more about BMI, BMI prime and proposed method of calculating BMI,
+   so that you will not need calculator to do this. ">
     <title>BMI Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -91,7 +93,7 @@
 
     <form>
       <div class="form-group row">
-        <label for="bmi_val" class="col-form-label col-12 col-md-5">Body Mass Index (in kg/m<sup>2</sup>)</label>
+        <label for="bmi_val" class="col-form-label col-12 col-md-5">BMI (in kg/m<sup>2</sup>)</label>
         <div class="col-8 col-md-4 col-lg-5">
           <input type="text" readonly class="form-control" id="bmi_val">
         </div>
@@ -153,14 +155,59 @@
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Calculate BMI&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h3 class="text-white">How To Use BMI Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the Radius the Circle be \(R\) units.</p>
-        <p>Then</p>
-          <p>the Diameter of the Circle will be \(2R\) units.</p>
-            <p>the Circumference of the Circle will be \(2\pi R\) units.</p>
-            <p>the Area of the Circle will be \(\pi R^2\) square units.</p>
+        <p>Lets first understand, what is BMI and how we can calculate BMI?</p>
+        <p>Body Mass Index (BMI) is a value derived from the mass (weight) and height of a person.</p>
+        <p class="description-head">We can calculate BMI using below formula:</p>
+        $$BMI = {{Mass_{kg}} \over {Height_m}^2}$$
+        $$BMI = {{Mass_{lb}} \over {Height_{in}}^2} * 703$$
+        <p>The BMI is a convenient rule of thumb used to broadly categorize a person as
+           underweight, normal weight, overweight, or obese based on mass and height.</p>
+           <p><span class="description-head">Example : </span>Calculate BMI for mass = 56 kg and height = 170 cm</p>
+           <p class="description-head">Solution: </p>
+           $$BMI = {{56\hspace{0.1cm}{kg}} \over {{1.7\hspace{0.1cm}{m}}*{1.7\hspace{0.1cm}{m}}}}$$
+           $$ BMI = {{56\hspace{0.1cm}{kg}} \over {{2.89\hspace{0.1cm}m^2}}}$$
+           $$ BMI = {19.377}\hspace{0.1cm}\dfrac{kg}{m^2}$$
+
+           <p class="description-head">Commonly accepted BMI ranges are:</p>
+           <p>underweight - BMI under 18.5 kg/m<sup>2</sup>,</p>
+           <p>normal weight - BMI between 18.5 kg/m<sup>2</sup> to 25 kg/m<sup>2</sup>,</p>
+           <p>overweight - BMI between 25 kg/m<sup>2</sup> to 30kg/m<sup>2</sup> and </p>
+           <p>obese - BMI over 30 kg/m<sup>2</sup>.</p>
+           <p>BMI is proportional to the mass and inversely proportional to the square of the height.
+             So, if all body dimensions double, and mass scales naturally with the cube of the height,
+             then BMI doubles instead of remaining the same. <br>This results in taller people having a reported BMI
+             that is uncharacteristically high, compared to their actual body fat levels.</p>
+
+             <p class="description-head">BMI for Children (aged 2 to 20)</p>
+             <p>BMI is used differently for children. It is calculated in the same way as for adults,
+               but then compared to typical values for other children of the same age.
+               Instead of comparison against fixed thresholds for underweight and overweight,
+               the BMI is compared against the percentiles for children of the same sex and age.</p>
+              <p>A BMI that is less than the 5<sup>th</sup> percentile is considered underweight and above the 95<sup>th</sup> percentile is
+                considered obese. Children with a BMI between the 85<sup>th</sup> and 95<sup>th</sup> percentile are considered to be overweight.</p>
+
+                <p>According to mathematician <a href="https://en.wikipedia.org/wiki/Nick_Trefethen" target="_blank" rel="nofollow">Nick Trefethen,</a>
+                  "BMI divides the weight by too large a number for short people and too small a number for tall people.
+                  So short people are misled into thinking that they are thinner than they are, and tall people are misled into thinking they are fatter."</p>
+                  <br>
+                  <p>For calculating BMI using above BMI calculator,
+                  you have to just write the mass (in kilograms) and height (in meters) in the given
+                  input box and press the calculate button, you will get the BMI.</p>
+                  <p class="description-head">Proposed New BMI</p>
+                  <p>A new formula for computing BMI that accounts for the distortions of the traditional BMI formula
+                    for shorter and taller individuals has been proposed by <a href="https://en.wikipedia.org/wiki/Nick_Trefethen" target="_blank" rel="nofollow">Nick Trefethen,</a></p>
+                    $$BMI_{new} = 1.3*{{Mass_{kg}} \over {Height_{m}}^{2.5}}$$
+                    <p class="description-head">BMI Prime</p>
+                    <p>BMI prime, a modification of the BMI system, is the ratio of actual BMI to upper limit optimal BMI
+                      (currently defined at 25 kg/m2), i.e., the actual BMI expressed as a proportion of upper limit optimal.
+                      The ratio of actual body weight to body weight for upper limit optimal BMI (25 kg/m2) is equal to BMI Prime.
+                      BMI Prime is a dimensionless number independent of units.</p>
+                      <p>Individuals with BMI Prime less than 0.74 are underweight;
+                        those with between 0.74 and 1.00 have optimal weight; and those at 1.00 or greater are overweight.</p>
+
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://en.wikipedia.org/wiki/Body_mass_index" target="_blank" rel="nofollow" class="text-white">Learn more about BMI</a>

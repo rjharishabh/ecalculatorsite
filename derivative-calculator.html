@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="">
+   <meta name="description" content="This derivative calculator calculates the derivative of most of the functions for you in less than a minute and it's free. Also you
+   will understand, how you can calculate the derivative of the some important functions on your own, so that you will not need calculator to do this. ">
     <title>Derivative Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -165,12 +166,57 @@
           <h3 class="text-white">How To Use Derivative Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the Radius the Circle be \(R\) units.</p>
-        <p>Then</p>
-          <p>the Diameter of the Circle will be \(2R\) units.</p>
-            <p>the Circumference of the Circle will be \(2\pi R\) units.</p>
-            <p>the Area of the Circle will be \(\pi R^2\) square units.</p>
-      </div>
+        <p>Lets first understand, what is derivative and how we can calculate the derivative?</p>
+        <p>The derivative of a function measures the sensitivity to
+          change of output value of the function with respect to a change in its input value.</p>
+          <p>The derivative of a function of a single variable at a point, when it exists,
+            is the slope of the tangent line to the graph of the function at that point.</p>
+            <p>The derivative is also called the "instantaneous rate of change" and
+            the process of finding the derivative is called differentiation.</p>
+            <p><span class="description-head">Definition: </span> Suppose f is a real valued function and a is a point in its domain of
+            definition. The derivative of f at a is defined by</p>
+            $$\displaystyle{\lim_{h \to 0}} {f(a+h)-f(a) \over h}$$
+            <p>provided this limit exists. Derivative of f(x) at a is denoted by f′(a).</p>
+            <p><span class="description-head">Example 1: </span>Find the derivative at x = 2 of the function f(x) = 16x.</p>
+            <p><span class="description-head">Solution:</span></p>
+            $$f′(2) = \displaystyle{\lim_{h \to 0}} {f(2+h)-f(2) \over h} $$
+            $$f′(2) = \displaystyle{\lim_{h \to 0}} {16(2+h)-16(2) \over h}$$
+            $$f′(2) = \displaystyle{\lim_{h \to 0}} {32+16h-32 \over h}$$
+            $$f′(2) = \displaystyle{\lim_{h \to 0}} {16h \over h}$$
+            $$f′(2) = \displaystyle{\lim_{h \to 0}} 16$$
+              $$f′(2) = 16$$
+            <p><span class="description-head">Example 2: </span>Find the derivative of sin(x) at x = 0.</p>
+            <p><span class="description-head">Solution: </span>Let f(x) = sin(x). Then</p>
+            $$f′(0) = \displaystyle{\lim_{h \to 0}} {f(0+h)-f(0) \over h} $$
+            $$f′(x) = \displaystyle{\lim_{h \to 0}} {sin(0+h)-sin(0) \over h}$$
+            $$f′(x) = \displaystyle{\lim_{h \to 0}} {sin(h)-0 \over h}$$
+            $$f′(x) = \displaystyle{\lim_{h \to 0}} {sin(h) \over h}$$
+              $$f′(x) = 1$$
+
+            <p class="description-head">Derivative of some basic functions:</p>
+            <p>1. Derivative of &nbsp;\(sin(x)\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(cos(x)\).</p>
+            <p>2. Derivative of &nbsp;\(cos(x)\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(-sin(x)\).</p>
+            <p>3. Derivative of &nbsp;\(tan(x)\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(sec\hspace{0.1cm}^2(x)\).</p>
+            <p>4. Derivative of &nbsp;\(csc(x)\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(-(csc(x)*cot(x))\).</p>
+            <p>5. Derivative of &nbsp;\(sec(x)\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(sec(x)*tan(x)\).</p>
+            <p>6. Derivative of &nbsp;\(cot(x)\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(csc\hspace{0.1cm}^2(x)\).</p>
+            <p>7. Derivative of &nbsp;\(y*sin(x)\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(y*cos(x)\).</p>
+            <p>8. Derivative of &nbsp;\(y*sin(x)\)&nbsp; w.r.t.&nbsp; \(y\)&nbsp; is &nbsp;\(sin(x)\).</p>
+            <p>9. Derivative of &nbsp;\(e\hspace{0.1cm}^x\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(e\hspace{0.1cm}^x\).</p>
+            <p>10. Derivative of &nbsp;\(log(x)\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(\frac{1}{x}\).</p>
+            <p>11. Derivative of &nbsp;\(x^2+2x\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(2x+2\).</p>
+            <p>12. Derivative of &nbsp;\(x^2+2x+6\)&nbsp; w.r.t.&nbsp; \(x\)&nbsp; is &nbsp;\(2x+2\).</p>
+            <br>
+            <p>For calculating derivative using above derivative calculator,
+            you have to just type the function (for which you want to find the derivative) in the given
+            input box and press the calculate button, you will get the
+          derivative of the input function.</p>
+          <p>Please don't use MathJax in this derivative calculator.</p>
+          <p>For example, if you want to find the derivative of \(sin(x)\), then you have to write sin(x) in the input box and you will get the correct derivative using this
+            derivative calculator. Otherwise if you type Sin(x) or Sinx or sinx or Sin(X), you will get incorrect derivative.</p>
+            <p>You can use examples provided in this derivative calculator.</p>
+            <p>If you don't want to calculate the derivative w.r.t. x, just change the variable in the second input box, you will get the derivative accordingly.</p>
+          </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://en.wikipedia.org/wiki/Derivative" target="_blank" class="text-white">Learn more about Derivative</a>
       </div>

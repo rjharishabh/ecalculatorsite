@@ -20,8 +20,8 @@ document.getElementById('sum').value=sum(org_data);
   document.getElementById('mean').value=mean(org_data);
   document.getElementById('median').value=median(org_data);
     document.getElementById('mode').value=mode(org_data);
-    document.getElementById('var').value=variance(org_data);
-      document.getElementById('std-dev').value=std_dev(org_data);
+    document.getElementById('var').value=(variance(org_data)).toFixed(4);
+      document.getElementById('std-dev').value=(std_dev(org_data)).toFixed(4);
 }
 
 }

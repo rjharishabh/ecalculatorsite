@@ -6,6 +6,9 @@
 *{
   box-sizing: border-box;
 }
+input[readonly]{
+  text-align: center;
+}
 .more{
   margin-top: 30px;
   margin-bottom: 50px;
@@ -19,6 +22,10 @@
 }
 #a,#b{
   text-align: center;
+}
+.description-head{
+  font-size: 20px;
+  font-weight: bold;
 }
 .ftr-head{
   color:#e83e8c;
