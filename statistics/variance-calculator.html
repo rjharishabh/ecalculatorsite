@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="">
+   <meta name="description" content="This variance calculator calculates the variance of the given data for you
+   in less than a minute and it's free. Also you will understand, what is variance and how you can calculate variance on your own,
+   so that you will not need calculator to do this. ">
     <title>Variance Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -136,12 +138,41 @@
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h3 class="text-white">How To Use Variance Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the set of n terms be x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, x<sub>4</sub>, x<sub>5</sub>, x<sub></sub>, ......, x<sub>n</sub>.</p>
-          $$Mean,\hspace{1cm}\mu = \frac{1}{n}\sum_{i=1}^n x_n = \frac{1}{n}(x_1 + x_2 + x_3 + ... + x_n)$$
-        $$Variance,\hspace{1cm}\sigma^2 = \frac{1}{n}\sum_{i=1}^n (x_i\hspace{0.1cm}-\hspace{0.1cm}\mu)^2 $$
+        <p>Lets first understand, what is variance and how we can calculate variance?</p>
+        <p>Variance is the average of the squared deviation of a random variable from its mean and
+        it measures how far a set of numbers is spread out from their average value and variance has a central role in statistics.</p>
+        <p>Variance is an important tool in the sciences, where statistical analysis of data is common. The variance is the square of the standard deviation and
+          it is often represented by \(\sigma ^2\), s<sup>2</sup> or Var(X).</p>
+          <p class="description-head">Calculation of Variance</p>
+          $$Mean(\mu)= \frac{1}{n}\sum_{i=1}^n x_n$$
+          $$\mu= \frac{1}{n}(x_1 + x_2 + x_3 + ... + x_n)$$
+        $$Variance(\sigma^2)=\frac{1}{n}\sum_{i=1}^n (x_i\hspace{0.1cm}-\hspace{0.1cm}\mu)^2 $$
+        <p><span class="description-head">Example : </span>Calculate the variation for the data set 20, 22, 28, 32, 56.</p>
+        <p><span class="description-head">Solution: </span></p>
+        $$\mu=\frac{20+22+28+32+56}{5}$$
+        $$\mu=\frac{158}{5}$$
+        $$\mu=31.6$$
+        $$(31.6-20)^2=134.56$$
+        $$(31.6-22)^2=92.16$$
+        $$(31.6-28)^2=12.96$$
+        $$(31.6-32)^2=0.16$$
+        $$(31.6-56)^2=595.36$$
+        $$Variance(\sigma ^2)=\frac{835.2}{5}$$
+        $$Variance(\sigma ^2)=167.04$$
+          <p class="description-head">Basic properties</p>
+          <p>1. Variance is non-negative.</p>
+          <p>2. The variance of a constant is zero.</p>
+          <p>3. Conversely, if the variance of a random variable is 0, then it is almost surely a constant.</p>
+          <p>4. If a constant is added to all values of the variable, the variance is unchanged.</p>
+          <p>5. If all values are scaled by a constant, the variance is scaled by the square of that constant.</p>
+
+          <p>For variance calculation using above variance calculator,
+          you have to just write the comma separated values in the given input box and press the calculate button, you will get the result as the variance of the given data set.</p>
+
+
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://en.wikipedia.org/wiki/Variance" target="_blank" rel="nofollow" class="text-white">Learn more about Variance</a>

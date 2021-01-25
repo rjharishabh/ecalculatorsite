@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="">
+   <meta name="description" content="This free online matrix calculator calculates the basic operations on matrices size upto 5x5 for you
+    in less than a minute. Also you will learn, how you can calculate the same on your own, so that you will not need calculator to do this. ">
     <title>Basic Matrix Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -181,11 +182,55 @@
           <h3 class="text-white">How To Use Basic Matrix Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the Radius the Circle be \(R\) units.</p>
-        <p>Then</p>
-          <p>the Diameter of the Circle will be \(2R\) units.</p>
-            <p>the Circumference of the Circle will be \(2\pi R\) units.</p>
-            <p>the Area of the Circle will be \(\pi R^2\) square units.</p>
+        <p>Lets first understand, what is a matrix and how we can perform operations on matrices?</p>
+      <p><span class="description-head">Definition: </span>A matrix is an ordered rectangular array of numbers or functions. The
+        numbers or functions are called the elements or the entries of the matrix.</p>
+        <p>A matrix having m rows and n columns is called a matrix of order m × n or simply m × n matrix (read as an m by n matrix).</p>
+      <p>We denote matrices by capital letters. Some examples of matrices:</p>
+      \[  A_{2\times 3}=\begin{bmatrix}  a  &  b & c \\    d  &  e & f\end{bmatrix},B_{3\times 2}=\begin{bmatrix} g  &  h \\  i  &  j \\  k  &  l  \end{bmatrix} \]
+\[   C_{3\times 3}=  \begin{bmatrix}  m  &  n & o \\  p  &  q & r \\  s  &  t & u  \end{bmatrix}  \]
+<p  class="description-head">Types of Matrices</p>
+<p class="description-head">1. Column matrix</p>
+<p>A matrix is said to be a column matrix if it has only one column.</p>
+\[  X_{3\times 1}=\begin{bmatrix}  1 \\ 2 \\ 3 \end{bmatrix} \]
+<p class="description-head">2. Row matrix</p>
+<p>A matrix is said to be a row matrix if it has only one row.</p>
+\[  Y_{3\times 1}=\begin{bmatrix}  4 & 5 & 6 \end{bmatrix} \]
+<p class="description-head">3. Square matrix</p>
+<p>A matrix in which the number of rows are equal to the number of columns, is
+said to be a square matrix.</p>
+\[ Z_{3\times 3}=  \begin{bmatrix}  1  &  2 & 3 \\  4  &  5 & 6 \\  7  & 8 & 9  \end{bmatrix}  \]
+<p class="description-head">4. Diagonal matrix</p>
+<p>A square matrix is said to be a diagonal matrix if all its non diagonal elements are zero.</p>
+\[  P_{1\times 1}=\begin{bmatrix}  1 \end{bmatrix},Q_{2\times 2}=\begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix} \]
+\[ R_{3\times 3}=  \begin{bmatrix}   1 &  0 & 0 \\  0  & 2 & 0 \\  0  & 0 & 3  \end{bmatrix}  \]
+<p class="description-head">5. Scalar matrix</p>
+<p>A diagonal matrix is said to be a scalar matrix if its diagonal elements are equal.</p>
+\[  P_{1\times 1}=\begin{bmatrix}  6 \end{bmatrix},Q_{2\times 2}=\begin{bmatrix} 2 & 0 \\ 0 & 2 \end{bmatrix} \]
+\[ R_{3\times 3}=  \begin{bmatrix}   5 &  0 & 0 \\  0 & 5 & 0 \\  0 & 0 & 5  \end{bmatrix}  \]
+<p class="description-head">6. Identity matrix</p>
+<p>A square matrix in which elements in the diagonal are all 1 and rest are all zero
+is called an identity matrix.</p>
+\[  I_{1}=\begin{bmatrix}  1 \end{bmatrix},I_{2}=\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \]
+\[ I_{3}=  \begin{bmatrix}   1 &  0 & 0 \\  0 & 1 & 0 \\  0 & 0 & 1  \end{bmatrix}  \]
+<p class="description-head">7. Zero matrix</p>
+<p>A matrix is said to be zero matrix or null matrix if all its elements are zero. We denote
+zero matrix by O.</p>
+\[  O_{1}=\begin{bmatrix}  0 \end{bmatrix},O_{2}=\begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} \]
+\[ O_{3}=  \begin{bmatrix}  0 &  0 & 0 \\  0 & 0 & 0 \\  0 & 0 & 0  \end{bmatrix}  \]
+<p class="description-head">8. Ones matrix</p>
+<p>A matrix is said to be ones matrix if all its elements are one.</p>
+\[ A_{3\times 3}=  \begin{bmatrix}  1 & 1 & 1 \\  1 & 1 & 1 \\  1 & 1 & 1  \end{bmatrix}  \]
+<p class="description-head">Operations on Matrices</p>
+<p class="description-head">1. Addition of matrices</p>
+\[ A = \begin{bmatrix}  1 & 2 & 3 \\  4  &  5 & 6 \end{bmatrix}, B= \begin{bmatrix}  3 & 4 & 5 \\  6  & 8 & 9 \end{bmatrix} \]
+\[ A+B = \begin{bmatrix}  4  & 6 & 8 \\ 10 & 13 & 15  \end{bmatrix}  \]
+<p class="description-head">2. Subtraction of matrices</p>
+\[ A=\begin{bmatrix}  3 & 4 & 5 \\  7  & 8 & 9 \end{bmatrix}, B= \begin{bmatrix}  1 & 2 & 3 \\  4  &  5 & 6 \end{bmatrix} \]
+\[ A - B =\begin{bmatrix}  2 & 2 & 2 \\ 3 & 3 & 3  \end{bmatrix}  \]
+        <p>For calculating different operations on matrices using above basic matrix calculator,
+        you have to first set the order of matrix, then enter the matrix and press confirm button, after that choose the operation, then
+        you will get the resultant matrix in the Result section.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://en.wikipedia.org/wiki/Matrix_(mathematics)" target="_blank" rel="nofollow" class="text-white">Learn more about Matrix</a>

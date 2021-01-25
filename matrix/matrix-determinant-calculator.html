@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="">
+   <meta name="description" content="This free online matrix determinant calculator calculates the determinant of the matrix size upto 5x5 for you
+    in less than a minute. Also you will learn, how you can calculate the same on your own, so that you will not need calculator to do this. ">
     <title>Matrix Determinant Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -174,11 +175,41 @@
           <h3 class="text-white">How To Use Matrix Determinant Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the Radius the Circle be \(R\) units.</p>
-        <p>Then</p>
-          <p>the Diameter of the Circle will be \(2R\) units.</p>
-            <p>the Circumference of the Circle will be \(2\pi R\) units.</p>
-            <p>the Area of the Circle will be \(\pi R^2\) square units.</p>
+        <p>Lets first understand, what is the determinant of a matrix and how we can find the determinant of a matrix?</p>
+        <p><span class="description-head">Definition: </span>A matrix is an ordered rectangular array of numbers or functions. The
+          numbers or functions are called the elements or the entries of the matrix.</p>
+          <p>A matrix having m rows and n columns is called a matrix of order m × n or simply m × n matrix (read as an m by n matrix).</p>
+        <p>We denote matrices by capital letters. Some examples of matrices:</p>
+        \[  A_{2\times 3}=\begin{bmatrix}  a  &  b & c \\    d  &  e & f\end{bmatrix},B_{3\times 2}=\begin{bmatrix} g  &  h \\  i  &  j \\  k  &  l  \end{bmatrix} \]
+  \[   C_{3\times 3}=  \begin{bmatrix}  m  &  n & o \\  p  &  q & r \\  s  &  t & u  \end{bmatrix}  \]
+  <p class="description-head">Square matrix</p>
+  <p>A matrix in which the number of rows are equal to the number of columns, is
+  said to be a square matrix.</p>
+  \[ P_{3\times 3}=  \begin{bmatrix}  1  &  2 & 3 \\  4  &  5 & 6 \\  7  & 8 & 9  \end{bmatrix}  \]
+  <p class="description-head">Determinant of a matrix</p>
+  <p>To every square matrix A = [a<sub>ij</sub>] of order n, we can associate a number (real or
+complex) called determinant of the square matrix A.</p>
+<p>Determinant is denoted by | A| or det A or ∆.</p>
+  \[ If\hspace{0.3cm}  A= \begin{bmatrix}  a  & b \\  c & d \end{bmatrix},\hspace{0.3cm} then\hspace{0.3cm} |A|= \begin{vmatrix}  a  & b \\  c & d \end{vmatrix}=det(A) \]
+  <p><span class="description-head">Example : </span>Evaluate the determinant, \[ Δ =  \begin{vmatrix}  1  &  3 & 5 \\  6  & 7 & 9 \\  8  & 9 & 8  \end{vmatrix}\] </p>
+  <p><span class="description-head">Solution: </span>Expanding along first row,</p>
+  \[ Δ =  1\begin{vmatrix} 7  & 9 \\ 9  & 8 \end{vmatrix}-3\begin{vmatrix} 6  & 9 \\ 8 & 8 \end{vmatrix}+5\begin{vmatrix} 6  & 7 \\ 8  & 9 \end{vmatrix}\]
+  <p></p>
+  $$Δ = 1(56-81)-3(48-72)+5(54-56)$$
+    $$Δ = -25+72-10$$
+      $$Δ = 37$$
+      <p class="description-head">Properties of Determinants</p>
+      <p>1. The value of the determinant remains unchanged if its rows and columns are interchanged.</p>
+      <p>2. If any two rows (or columns) of a determinant are interchanged, then sign of determinant changes.</p>
+      <p>3. If any two rows (or columns) of a determinant are identical, then the value of determinant is zero.</p>
+      <p>4. If each element of a row (or a column) of a determinant is multiplied by a constant k, then its value gets multiplied by k.</p>
+      <p>5. If some or all elements of a row or column of a determinant are expressed
+        as sum of two (or more) terms, then the determinant can be expressed as sum of two (or more) determinants.</p>
+      <p>6. If, to each element of any row or column of a determinant, the equimultiples
+     of corresponding elements of other row (or column) are added, then value of determinant remains the same,</p>
+     <p>For calculating the determinant of a matrix using above matrix determinant calculator,
+     you have to first set the order of matrix, then enter the matrix and press confirm button, after that choose the operation, then
+     you will get the resultant matrix in the Result section.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://en.wikipedia.org/wiki/Determinant" target="_blank" rel="nofollow" class="text-white">Learn more about Determinant</a>

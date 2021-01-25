@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="">
+   <meta name="description" content="This standard deviation calculator calculates the standard deviation of the given data for you
+   in less than a minute and it's free. Also you will understand, what is standard deviation and how you can calculate standard deviation on your own,
+   so that you will not need calculator to do this. ">
     <title>Standard Deviation Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -136,12 +138,47 @@
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h3 class="text-white">How To Use Standard Deviation Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the set of n terms be x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, x<sub>4</sub>, x<sub>5</sub>, x<sub></sub>, ......, x<sub>n</sub>.</p>
-        $$Mean,\hspace{1cm}\mu = \frac{1}{n}\sum_{i=1}^n x_n = \frac{1}{n}(x_1 + x_2 + x_3 + ... + x_n)$$
-        $$Standard \hspace{0.3cm}Deviation,\hspace{1cm}\sigma = \sqrt{\frac{1}{n}\sum_{i=1}^n (x_i\hspace{0.1cm}-\hspace{0.1cm}\mu)^2}$$
+          <p>Lets first understand, what is standard deviation and how we can calculate standard deviation?</p>
+          <p>The standard deviation is a measure of the amount of variation or dispersion of a set of values.
+            A low standard deviation indicates that the values tend to be close to the mean (also called the expected value) of the set,
+            while a high standard deviation indicates that the values are spread out over a wider range.</p>
+            <p>Standard deviation may be abbreviated SD, and is most commonly represented by \(\sigma\), for the population standard deviation
+               or s, for the sample standard deviation.</p>
+          <p>The standard deviation of a data set is the square root of its <a href="variance-calculator.html">variance.</a></p>
+          <p>A useful property of the standard deviation is that it is expressed in the same unit as the data.</p>
+          <p class="description-head">Calculation of Standard Deviation</p>
+          <p>For a finite set of numbers, the population standard deviation is found by taking the square root of the average of the
+            squared deviations of the values subtracted from their average value.</p>
+            <p>Let the set of n terms be x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ......, x<sub>n</sub>.</p>
+            $$Mean(\mu) = \frac{1}{n}\sum_{i=1}^n x_n $$
+            $$\mu= \frac{1}{n}(x_1 + x_2 + x_3 + ... + x_n)$$
+            $$\sigma ^2 = \frac{1}{n}\sum_{i=1}^n (\mu-x_i)^2$$
+            $$Standard \hspace{0.1cm}Deviation(\sigma) = \sqrt{\sigma ^2}$$
+            $$Standard \hspace{0.1cm}Deviation(\sigma) = \sqrt{\frac{1}{n}\sum_{i=1}^n (\mu-x_i)^2}$$
+            <p><span class="description-head">Example : </span>Calculate the standard deviation for the data set 20, 22, 28, 32, 56.</p>
+            <p><span class="description-head">Solution: </span></p>
+            $$\mu=\frac{20+22+28+32+56}{5}$$
+            $$\mu=\frac{158}{5}$$
+            $$\mu=31.6$$
+            $$(31.6-20)^2=134.56$$
+            $$(31.6-22)^2=92.16$$
+            $$(31.6-28)^2=12.96$$
+            $$(31.6-32)^2=0.16$$
+            $$(31.6-56)^2=595.36$$
+            $$\sigma ^2=\frac{835.2}{5}$$
+            $$\sigma ^2=167.04$$
+            $$Standard\hspace{0.1cm}Deviation(\sigma)=\sqrt{\sigma ^2}$$
+            $$Standard\hspace{0.1cm}Deviation(\sigma)=\sqrt{167.04}$$
+            $$Standard\hspace{0.1cm}Deviation(\sigma)=12.92$$
+            <p>The Standard Deviation σ of X is defined as</p>
+            $$\sigma =\sqrt{E[(X-\mu)^2]}$$
+            <p>The Standard Deviation is the square root of the Variance of X.</p>
+            <p>The standard deviation of a probability distribution is the same as that of a random variable having that distribution.</p>
+            <p>For standard deviation calculation using above standard deviation calculator,
+            you have to just write the comma separated values in the given input box and press the calculate button, you will get the result as the standard deviation of the data set.</p>
   </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://en.wikipedia.org/wiki/Standard_deviation" target="_blank" rel="nofollow" class="text-white">Learn more about Standard Deviation</a>

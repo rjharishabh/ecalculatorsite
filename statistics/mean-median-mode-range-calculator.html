@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="">
+   <meta name="description" content="This mean, median, mode, range calculator calculates the mean, median, mode and range of the given data
+   in less than a minute and it's free. Also you will understand, how you can calculate the mean, median, mode and range on your own,
+   so that you will not need calculator to do this. ">
     <title>Mean Median Mode Range Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -161,16 +163,80 @@
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Calculate &nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h3 class="text-white">How To Calculate Mean, Median, Mode & Range&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the set of n terms be x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, x<sub>4</sub>, x<sub>5</sub>, x<sub></sub>, ......, x<sub>n</sub>.</p>
-        <p>Then the Range will be Maximum Value - Minimum Value.</p>
-        $$Mean,\hspace{1cm}\mu = \frac{1}{n}\sum_{i=1}^n x_n = \frac{1}{n}(x_1 + x_2 + x_3 + ... + x_n)$$
-        In other words, $$Mean,\hspace{1cm}\mu = \frac{Sum \hspace{0.2cm}of \hspace{0.2cm}terms}{Number\hspace{0.2cm} of\hspace{0.2cm} terms}$$
-<p>For finding the Median, first sort the array in the Ascending or Descending Order.Then<br>  <br>if the number of terms is odd, then the median will be (\(\frac{n\hspace{0.1cm}+\hspace{0.1cm}1}{2}\)) th term.
-<br>  <br>if the number of terms is even, then the median will be \(\frac{1}{2}\)(\(\frac{n}{2}\) th term + \((\frac{n}{2}\hspace{0.1cm}+\hspace{0.1cm}1)\) th term).</p>
-<p>The term with Maximum Occurences will be Mode.</p>
+        <p>Lets first understand, what is mean, median, mode and range?</p>
+        <p class="description-head">Mean:</p>
+        <p>For a data set, the arithmetic mean, also called the expected value or average, is the central value of
+          a discrete set of numbers: specifically, the sum of the values divided by the number of values. </p>
+        <p>The arithmetic mean of a set of numbers x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ......, x<sub>n</sub> is typically denoted by \(\bar{x}\).</p>
+          $$Mean(\bar{x}) = \frac{1}{n}\sum_{i=1}^n x_i $$
+          $$\bar{x}= \frac{1}{n}(x_1 + x_2 + x_3 + ... + x_n)$$
+          In other words, $$Mean = \frac{Sum \hspace{0.2cm}of \hspace{0.2cm}terms}{Number\hspace{0.2cm} of\hspace{0.2cm} terms}$$
+          <p><span class="description-head">Example 1: </span>Calculate mean for the data set 20, 22, 28, 32, 56.</p>
+          <p><span class="description-head">Solution: </span>We know,</p>
+          $$Mean = \frac{Sum \hspace{0.2cm}of \hspace{0.2cm}terms}{Number\hspace{0.2cm} of\hspace{0.2cm} terms}$$
+          <p>Sum of terms = 20+22+28+32+56 = 158</p>
+          <p>Number of terms = 5</p>
+          $$Mean = \frac{158}{5}$$
+          $$Mean = 31.6$$
+          <p>If the data set were based on a series of observations obtained by sampling from a statistical population,
+            the arithmetic mean is the sample mean (denoted by \(\bar{x}\)) to distinguish it from the mean of
+            the underlying distribution, the population mean (denoted by \(\mu\)).</p>
+          <p>The population mean, or expected value, is a measure of the central tendency either of a
+            probability distribution or of the random variable characterized by that distribution.</p>
+            <p> In a discrete probability distribution of a random variable X, the mean is equal to the sum over every possible value
+              weighted by the probability of that value; that is, it is computed by taking the product of each possible value x of X and its
+              probability p(x), and then adding all these products together, giving</p>
+              $$Mean(\mu)=\sum xp(x)  $$
+              <p>For a finite population, the population mean of a property is equal to the arithmetic mean of the given property, while considering every member of the population.
+                For example, the population mean height is equal to the sum of the heights of every individual—divided by the total number of individuals.</p>
+        <p class="description-head">Types of Means</p>
+        <p class="description-head">1. Arithmetic Mean (AM)</p>
+        <p>The arithmetic mean (or simply mean) of a list of numbers, is the sum of all of the numbers divided by the amount of numbers.
+          Similarly, the mean of a sample \(x_{1},x_{2},\ldots ,x_{n}\), usually denoted by \(\bar {x}\) is the sum of the sampled values divided by the
+          number of items in the sample</p>
+          $$Mean(\bar{x})= \frac{1}{n}\sum_{i=1}^n x_i$$
+          <p class="description-head">2. Geometric Mean (GM)</p>
+          <p>The geometric mean is an average that is useful for sets of positive numbers, that are interpreted according to their product.</p>
+          $$Mean(\bar{x}) = \biggl(\prod_{i=1}^n x_i\biggr)^{\frac{1}{n}}$$
+          $$Mean(\bar{x}) = (x_1x_2 \ldots x_n)^{\frac{1}{n}}$$
+          <p>For example, the geometric mean of five values: 2, 4, 6, 8, 10 is</p>
+          $$Mean=(2*4*6*8*10)^{\frac{1}{5}}$$
+          $$Mean=\sqrt[5]{3840} = 5.21$$
+          <p class="description-head">3. Harmonic Mean (HM)</p>
+          $$Mean(\bar{x})= n\biggr(\sum_{i=1}^n \dfrac{1}{x_i}\biggr)^{-1}$$
+          <p class="description-head">Median:</p>
+          <p>The median is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution.
+            For a data set, it may be thought of as the middle value.</p>
+            <p>For finding the Median, first sort the data in the Ascending or Descending Order.Then<br>
+              if the number of terms is odd, then the median will be \(\bigl(\frac{n\hspace{0.1cm}+\hspace{0.1cm}1}{2}\bigr)\)th term or
+              <br>if the number of terms is even, then the median
+            will be \(\dfrac{1}{2}\biggl(\bigl(\frac{n}{2}\bigr)th\hspace{0.1cm}term + \bigl(\frac{n}{2}\hspace{0.1cm}+\hspace{0.1cm}1\bigr)th\hspace{0.1cm}term\biggr)\).</p>
+            <p><span class="description-head">Example 2: </span>Find the median for data set 13, 16, 10, 5, 8.</p>
+            <p><span class="description-head">Solution: </span>First sort the data in the ascending order:</p>
+            <p class="text-center">5, 8, 10, 13, 16</p>
+            <p>Number of terms is odd, so the median will be middle term (3<sup>rd</sup> term) will be 10.</p>
+            <p><span class="description-head">Example 3: </span>Find the median for the data set 13, 16, 10, 5, 8, 12.</p>
+            <p><span class="description-head">Solution: </span>First sort the data in the ascending order:</p>
+            <p class="text-center">5, 8, 10, 12, 13, 16</p>
+            <p>Number of terms is even, so the median will be average of 3<sup>rd</sup> and 4<sup>th</sup> term.</p>
+            $$Median=\frac{10+12}{2}$$
+            $$Median=11$$
+            <p class="description-head">Mode:</p>
+            <p>Mode is the value that has maximum number of occurences.</p>
+            <p>Mode is very easy to understand and calculate.</p>
+            <p><span class="description-head">Example 4: </span>Find the mode for the data set 2, 4, 2, 5, 6, 8, 10, 10, 2, 4.</p>
+            <p><span class="description-head">Solution: </span>Mode will be 2 because in this data set, 2 has maximum number of occurences.</p>
+            <p class="description-head">Range:</p>
+        <p>Range will be the difference between the maximum value and the minimum value.</p>
+        <p><span class="description-head">Example 5: </span>Find the range for the data set 2, 4, 2, 5, 6, 8, 10, 10, 2, 4.</p>
+        <p><span class="description-head">Solution: </span>Range = 10 - 2 = 8</p>
+        <p>For mean, median, mode and range calculation using above calculator,
+        you have to just write the comma separated values in the given input box and press the calculate button, you will get all the result.</p>
+
+
 </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/mean-and-median/v/mean-median-and-mode" rel="nofollow" target="_blank" class="text-white">Learn more about Mean Median Mode Range</a>

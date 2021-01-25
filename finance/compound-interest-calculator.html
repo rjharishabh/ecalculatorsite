@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="">
+   <meta name="description" content="This free online compound interest calculator calculates the compound interest for you in less than a minute. Also you
+   will understand, how you can calculate compound interest on your own, so that you will not need calculator to do this. ">
     <title>Compound Interest Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -172,14 +173,47 @@
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Calculate Compound Interest&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h3 class="text-white">How To Use Compound Interest Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
       </div>
       <div class="card-body" id="description">
-        <p>Let the Radius the Circle be \(R\) units.</p>
-        <p>Then</p>
-          <p>the Diameter of the Circle will be \(2R\) units.</p>
-            <p>the Circumference of the Circle will be \(2\pi R\) units.</p>
-            <p>the Area of the Circle will be \(\pi R^2\) square units.</p>
+      <p>Lets first understand, what is compound interest and how we can calculate compound interest?</p>
+      <p>Compound interest is the addition of interest to the principal sum of a loan or deposit, or in other words, interest on interest.
+        It is the result of reinvesting interest, rather than paying it out, so that interest in the next period is then earned on the principal sum plus previously
+        accumulated interest. Compound interest is standard in finance and economics.</p>
+      <p>Compound interest is contrasted with simple interest, where previously accumulated interest is not added to the principal amount of the current period,
+        so there is no compounding.</p>
+        <p>The compounding frequency is the number of times per year, the accumulated interest is paid out</p>
+           <p>The compounding frequency could be yearly, half-yearly, quarterly, monthly, weekly, daily.</p>
+           <p class="description-head">Calculation of Compound Interest</p>
+           <p class="description-head">1. Periodic compounding</p>
+           $$Amount=P\biggl(1+\frac{r}{n}\biggr)^{nt}$$
+           <p>where,</p>
+           <p>P is the original principal sum,</p>
+           <p>r is the annual interest rate,</p>
+           <p>n is the compounding frequency,</p>
+           <p>t is the overall time and </p>
+           <p>A is the amount.</p>
+           $$Compound\hspace{0.1cm}Interest=Amount-Principal\hspace{0.1cm}Sum$$
+           <p><span class="description-head">Example 1: </span>Calculate the compound interest for the sum $ 10000 with 5% annual rate of interest, compounded quarterly for 2 years.</p>
+           <p><span class="description-head">Solution:</span>Here, P = $ 10000, r = 5%, t = 2 years and n = 4</p>
+           $$Amount=10000\biggl(1+\frac{0.05}{4}\biggr)^{8}$$
+          $$Amount=10000*1.1045$$
+          $$Amount=$\hspace{0.1cm}11042.60$$
+          $$Compound\hspace{0.1cm}Interest=$\hspace{0.1cm}11042.60-$\hspace{0.1cm}10000$$
+          $$Compound\hspace{0.1cm}Interest=$\hspace{0.1cm}1042.60$$
+          <p><span class="description-head">Example 2: </span>Calculate the compound interest for the sum $ 10000 with 5% annual rate of interest, compounded half yearly for 2 years.</p>
+          <p><span class="description-head">Solution:</span>Here, P = $ 10000, r = 5%, t = 2 years and n = 2</p>
+          $$Amount=10000\biggl(1+\frac{0.05}{2}\biggr)^{4}$$
+          $$Amount=$\hspace{0.1cm}11038.13$$
+          $$Compound\hspace{0.1cm}Interest=$\hspace{0.1cm}11038.13-$\hspace{0.1cm}10000$$
+          $$Compound\hspace{0.1cm}Interest=$\hspace{0.1cm}1038.13$$
+           <p class="description-head">2. Continuous compounding</p>
+           <p>As n, the number of compounding periods per year, increases without limit, the case is known as continuous compounding.</p>
+           <p>The amount after t periods of continuous compounding can be expressed in terms of the initial amount P<sub>0</sub> as</p>
+           $$P(t)=P_0e^{rt}$$
+          <p>For calculating compound interest using above compound interest calculator,
+          you have to just fill the given input boxes and press the calculate button, you will get
+          compound interest and amount based on your entries.</p>
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://en.wikipedia.org/wiki/Compound_interest" target="_blank" rel="nofollow" class="text-white">Learn more about Compound Interest</a>
