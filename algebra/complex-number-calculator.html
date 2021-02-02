@@ -14,11 +14,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="This free online complex number calculator calculates the sum, difference, product, square root and many more properties of complex numbers,
-  all  at one place for you  in less than a minute. Also you will learn, how you can calculate the same on your own, so that you will not need calculator to do this. ">
+   <meta name="keywords" content="online complex number calculator,algebra of complex numbers, free online calculators, square root of complex numbers calculator, operations on complex numbers">
+   <meta name="description" content="This free online complex number calculator calculates the sum, difference, product, square root and many more properties of complex numbers, all  at one place for you in less than a minute. Also you will learn, how you can calculate the same on your own, so that you will not need calculator to do this. ">
     <title>Complex Number Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="canonical" href="https://ecalculatorsite.com/algebra/complex-number-calculator.html">
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -54,14 +55,6 @@
   </div>
     </nav>
 
-<div class="container">
-  <div class="row">
-  <div class="col-6">
-<img src="../photos/ecs-header.jpg" class="header img-fluid rounded" alt="site official image">
-  </div>
-  </div>
-</div>
-
 <main class="container-md">
 <div class="row">
 <div class="col-lg-8">
@@ -70,7 +63,6 @@
     <center><h1 class="text-white">Complex Number Calculator</h1></center>
 </div>
 <div class="card-body">
-      <p class="text-center">\(\sqrt{-1}=i\)</p>
   <div class="row">
     <div class="text-center col-12 col-sm-5">
       <button type="button" class="btn btn-sm btn-danger comp-a-reset" name="button">Reset</button>
@@ -183,11 +175,11 @@
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="https://www.ecalculatorsite.com/algebra/complex-number-calculator.html"&gt;Complex Number Calculator&lt;/a&gt;</code>
+<code id="code">&lt;a href="https://ecalculatorsite.com/algebra/complex-number-calculator.html"&gt;Complex Number Calculator&lt;/a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="https://www.ecalculatorsite.com/algebra/complex-number-calculator.html"&gt;Complex Number Calculator&lt;/a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttps://www.ecalculatorsite.com/algebra/complex-number-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="https://ecalculatorsite.com/algebra/complex-number-calculator.html"&gt;Complex Number Calculator&lt;/a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttps://ecalculatorsite.com/algebra/complex-number-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
   </div>
 </div>
@@ -229,25 +221,141 @@
 
 
 </div>
-<!-- <div class="row">
+<div class="row">
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Use Complex Number Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h2 class="text-white">How To Use Complex Number Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h2>
       </div>
       <div class="card-body" id="description">
-        <p>Let the Radius the Circle be \(R\) units.</p>
-        <p>Then</p>
-          <p>the Diameter of the Circle will be \(2R\) units.</p>
-            <p>the Circumference of the Circle will be \(2\pi R\) units.</p>
-            <p>the Area of the Circle will be \(\pi R^2\) square units.</p>
+        <p>Lets first understand, what are complex numbers and how we can perform operations on complex numbers?</p>
+        <p class="description-head">Definition of a complex number</p>
+        <p>A complex number is a number that can be expressed in the form a+bi, where a and b are real numbers, and i represents the "imaginary unit",
+          satisfying the equation \(i^{2}=-1\). Because no real number satisfies this equation, i is called an imaginary number.</p>
+        <p>For the complex number a+bi, a is called the real part and b is called the imaginary part.</p>
+          <p>A complex number is generally denoted by \(z\).</p>
+          <p>For example, 5+8i is a complex number.</p>
+          <p>A real number a can be regarded as a complex number a+0i, whose imaginary part is zero.</p>
+          <p>A purely imaginary number bi is a complex number 0+bi, whose real part is zero.</p>
+          <p>The real part of a complex number z is denoted by \(Re(z)\) and
+            the imaginary part of a complex number z is denoted by \(Im(z)\). For example,</p>
+            $$Re(5+8i)=5\hspace{0.2cm}and\hspace{0.2cm}Im(5+8i)=8 $$
+            <p class="description-head">Complex Plane</p>
+            <p>A complex number z can be represented with an ordered pair \(\bigl(Re(z),Im(z)\bigr)\) of real numbers, which is interpreted as coordinates of a point in a two-dimensional space.
+              This is called complex plane.</p>
+            <p>The definition of the complex numbers involving two arbitrary real values suggests the use of Cartesian coordinates in the complex plane.
+              The horizontal (real) axis is generally used to display the real part, with increasing values to the right, and
+              the imaginary part marks the vertical (imaginary) axis, with increasing values upwards.</p>
+            <p class="description-head">Modulus of a complex number</p>
+            <p>The modulus (or absolute value) of a complex number z = a + bi is</p>
+            $$r=|z|=\sqrt{a^2+b^2} $$
+            <p>The absolute value of a complex number is the distance from the origin to the point representing the complex number in the complex plane.</p>
+            <p>The absolute value of a real number equals its absolute value as a complex number.</p>
+            <p><span class="description-head">Example 1: </span>Find the modulus of the complex number z=3+4i.</p>
+            <p><span class="description-head">Solution: </span></p>
+              $$|z|=\sqrt{3^2+4^2}$$
+              $$|z|=5$$
+            <p class="description-head">Argument of a complex number</p>
+            <p>The argument of z is the angle of the radius with the positive real axis, and is written as Arg(z).</p>
+            $$\phi=Arg(a+bi)$$
+            $$If\hspace{0.1cm}x\ne0\hspace{0.1cm}or\hspace{0.1cm}y\ne0,$$
+            $$\phi= 2tan^{-1}\bigg(\frac{y}{\sqrt{x^2+y^2}+x}\bigg)\hspace{0.2cm}$$
+            $$Otherwise,$$
+            $$\phi=undefined$$
+            <p class="description-head">Operations on a complex number</p>
+            <p class="description-head">Equality of a complex number</p>
+            <p>Two complex numbers a<sub>1</sub>+b<sub>1</sub>i and a<sub>2</sub>+b<sub>2</sub>i are equal if and only if both their real and imaginary parts are equal, that is,
+              if a<sub>1</sub> = a<sub>2</sub> and b<sub>1</sub> = b<sub>2</sub>.</p>
+            <p class="description-head">Ordering of a complex number</p>
+            <p>Unlike the real numbers, there is no ordering of the complex numbers.
+              There is no linear ordering on the complex numbers that is compatible with addition and multiplication – the complex numbers cannot have the structure of an ordered field. </p>
+                <p class="description-head">Conjugate of a complex number</p>
+                <p>The complex conjugate of the complex number z = x+yi is given by x−yi. It is denoted by \(\bar{z}\). </p>
+                <p>Geometrically, \(\overline{z}\) is the "reflection" of complex number z about the real axis. Conjugating twice gives the original complex number.</p>
+                $$\overline{\overline{z}}=z$$
+                <p>The real and imaginary parts of a complex number z can be extracted as</p>
+                $$Re(z)=\frac{z+\overline{z}}{2}\hspace{0.2cm}and$$ $$Im(z)=\frac{z-\overline{z}}{2i}$$
+                <p>A complex number is real if and only if it equals its own conjugate.</p>
+                <p><span class="description-head">Example 2: </span>Find the conjugate of the complex number z=3+4i.</p>
+                <p><span class="description-head">Solution: </span></p>
+                $$\overline{z}=3-4i$$
+                <p class="description-head">Addition of complex numbers</p>
+                <p>Two complex numbers z<sub>1</sub> and z<sub>2</sub> are added as</p>
+                $$z_1=a_1+b_1i\hspace{0.1cm}and\hspace{0.1cm}z_2=a_2+b_2i$$
+                $$z_1+z_2=(a_1+a_2)+(b_1+b_2)i$$
+                <p><span class="description-head">Example 3: </span>Find the sum of the complex numbers z<sub>1</sub>=3+4i and z<sub>2</sub>=7+8i.</p>
+                <p><span class="description-head">Solution: </span></p>
+                $$z_1+z_2=(3+7)+(4+8)i$$
+                $$z_1+z_2=10+12i$$
+                <p class="description-head">Subtraction of complex numbers</p>
+                <p>Two complex numbers z<sub>1</sub> and z<sub>2</sub> are easily subtracted as</p>
+                $$z_1-z_2=(a_1-a_2)+(b_1-b_2)i$$
+                <p><span class="description-head">Example 4: </span>Find the difference between the complex numbers z<sub>1</sub>=3+4i and z<sub>2</sub>=7+8i.</p>
+                <p><span class="description-head">Solution: </span></p>
+                $$z_1-z_2=(3-7)+(4-8)i$$
+                $$z_1-z_2=-4-4i$$
+                <p class="description-head">Multiplication of complex numbers</p>
+                <p>Two complex numbers z<sub>1</sub> and z<sub>2</sub> are multiplied as</p>
+                $$z_1z_2=(a_1+b_1i)(a_2+b_2i)$$
+                $$=(a_1a_2-b_1b_2)+(a_1b_2+a_2b_1)i$$
+                <p><span class="description-head">Example 5: </span>Find the product of complex numbers z<sub>1</sub>=3+4i and z<sub>2</sub>=7+8i.</p>
+                <p><span class="description-head">Solution: </span></p>
+                $$z_1z_2=(3+4i)(7+8i)$$
+                $$z_1z_2=(21-32)+(24+28)i$$
+                $$z_1z_2=-11+52i$$
+                <p class="description-head">Square of a complex number</p>
+                <p>The square of the complex number z=a+bi, can be calculated as</p>
+                $$z^2=(a+bi)^2$$
+                $$z^2=a^2+(bi)^2+(2ab)i$$
+                $$z^2=(a^2-b^2)+(2ab)i$$
+                <p><span class="description-head">Example 6: </span>Find the square of the complex number z=3+4i.</p>
+                <p><span class="description-head">Solution: </span></p>
+                $$z^2=(3+4i)^2$$
+                $$z^2=3^2+(4i)^2+(2.3.4)i$$
+                $$z^2=(9-16)+24i$$
+                $$z^2=-7+24i$$
+                <p class="description-head">Reciprocal of complex number</p>
+                <p>Using conjugation, the reciprocal of a nonzero complex number z=a+bi can be written as</p>
+                $$\frac{1}{z}=\frac{\overline{z}}{z\overline{z}}=\frac{\overline{z}}{|z|^2}$$
+                $$\frac{1}{z}=\frac{\overline{z}}{a^2+b^2}$$
+                $$\frac{1}{z}={\frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}}i$$
+                <p><span class="description-head">Example 7: </span>Find the reciprocal of the complex number z=3+4i.</p>
+                <p><span class="description-head">Solution: </span></p>
+                $$\frac{1}{z}=\frac{\overline{z}}{z\overline{z}}=\frac{\overline{z}}{|z|^2}$$
+                $$\frac{1}{z}=\frac{3-4i}{5^2}$$
+                $$\frac{1}{z}={\frac{3}{25}-\frac{4}{25}i}$$
+                $$\frac{1}{z}=0.12-0.16i$$
+                <p class="description-head">Division of complex numbers</p>
+                <p>Two complex numbers z<sub>1</sub> and z<sub>2</sub> are divided as</p>
+                $$\frac{z_1}{z_2}=z_1.\frac{1}{z_2}$$
+                $$=(a_1+b_1i)\bigg(\frac{a_2}{a_2^2+b_2^2}-\frac{b_2}{a_2^2+b_2^2}i\bigg)$$
+                <p><span class="description-head">Example 8: </span>Divide the complex number z<sub>1</sub>=7+8i by the complex number z<sub>2</sub>=3+4i.</p>
+                <p><span class="description-head">Solution: </span></p>
+                $$\frac{z_1}{z_2}=(7+8i).\frac{1}{3+4i}$$
+                $$\frac{z_1}{z_2}=(7+8i)\bigg(\frac{3}{3^2+4^2}-\frac{4}{3^2+4^2}i\bigg)$$
+                $$\frac{z_1}{z_2}=(7+8i)(0.12-0.16i)$$
+                $$\frac{z_1}{z_2}=2.12-0.16i$$
+                <p class="description-head">Square root of a complex number</p>
+                <p>The square roots of complex number z=a+bi (with \(b \ne 0\)) are another complex numbers \(\pm (\alpha+\beta i)\), where</p>
+                $$\alpha=\sqrt{\frac{a+\sqrt{a^2+b^2}}{2}}\hspace{0.2cm}and$$
+                $$\beta=sgn(b)\sqrt{\frac{-a+\sqrt{a^2+b^2}}{2}}$$
+                <p>where, sgn is the <a href="https://en.wikipedia.org/wiki/Sign_function" target="_blank" rel="nofollow">signum function.</a></p>
+                <p><span class="description-head">Example 9: </span>Find the square root of the complex number z=3+4i.</p>
+                <p><span class="description-head">Solution: </span>Let square root of the complex number z be another complex numbers \(\pm (\alpha+\beta i)\),</p>
+                $$\alpha=\sqrt{\frac{3+\sqrt{3^2+4^2}}{2}}=2\hspace{0.2cm}and$$
+                $$\beta=sgn(4)\sqrt{\frac{-3+\sqrt{3^2+4^2}}{2}}=1$$
+                $$\sqrt{3+4i}=2+i$$
+                <p>For calculating the different properties of complex numbers using above complex number calculator,
+                you have to first enter the complex number, after that choose the operation, then
+                you will get the resultant complex number in the Result section.</p>
+
       </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://en.wikipedia.org/wiki/Complex_number" target="_blank" rel="nofollow" class="text-white">Learn more about Complex Number</a>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <div class="row more d-lg-none">
   <div class="col-12">
@@ -281,28 +389,6 @@
 
 </main>
 
-
-
-<div class="container-fluid support">
-  <div class="container">
-    <div class="row">
-<div class="order-1 col-6 col-sm-3">
-<img src="../photos/mug.jpg" class="mug img-fluid rounded" alt="mug image">
-</div>
-<div class="order-3 order-sm-2 col-12 col-sm-6 align-self-center">
-  <h4 class="text-danger text-center">Want to Support this Website?</h4>
-  <h3 class="text-danger text-center">Buy me a cup of tea or some cookies. &#128512;</h3>
-  <div class="row justify-content-center">
-<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GAJE6mmnGkVZNr"></script></form>
-  </div>
-</div>
-<div class="order-2 order-sm-3 col-6 col-sm-3">
-<img src="../photos/cookies.jpg" class="cookies img-fluid rounded" alt="cookies image">
-</div>
-    </div>
-  </div>
-</div>
-
 <footer class="container-fluid">
   <div class="container">
 <div class="row">
@@ -310,7 +396,7 @@
   <ul>
     <li class="ftr-head">Website</li>
       <li> <a href="../about.html" target="_blank">About</a></li>
-        <li><a href="mailto:ecalculatorsite@gmail.com?subject=Contact Us&body=https://www.ecalculatorsite.com%0d%0a%0d%0a">Contact Us</a></li>
+        <li><a href="mailto:ecalculatorsite@gmail.com?subject=Contact Us&body=https://ecalculatorsite.com%0d%0a%0d%0a">Contact Us</a></li>
           <li><a href="../terms-of-use.html" target="_blank">Terms of Use</a></li>
             <li> <a href="../privacy-policy.html" target="_blank">Privacy Policy</a></li>
   </ul>
@@ -328,9 +414,9 @@
   <ul>
     <li  class="ftr-head">More</li>
     <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
-    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Feedback&body=https://www.ecalculatorsite.com%0d%0a%0d%0aPlease write your valuable feedback.">Feedback</a></li>
-    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Report an Error&body=https://www.ecalculatorsite.com%0d%0a%0d%0aPlease write the error you have faced while using this website.">Report an Error</a></li>
-    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Request a Calculator&body=https://www.ecalculatorsite.com%0d%0a%0d%0aWhat type of calculator do you want to have on this website?">Request a Calculator</a></li>
+    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Feedback&body=https://ecalculatorsite.com%0d%0a%0d%0aPlease write your valuable feedback.">Feedback</a></li>
+    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Report an Error&body=https://ecalculatorsite.com%0d%0a%0d%0aPlease write the error you have faced while using this website.">Report an Error</a></li>
+    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Request a Calculator&body=https://ecalculatorsite.com%0d%0a%0d%0aWhat type of calculator do you want to have on this website?">Request a Calculator</a></li>
   </ul>
   </div>
 </div>
@@ -347,7 +433,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="../js/common-script-inner.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjs@8.1.0/lib/browser/math.min.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjs@8.1.0/lib/browser/math.min.js"></script>
 <script src="../js/complex-number.js"></script>
 
   </body>

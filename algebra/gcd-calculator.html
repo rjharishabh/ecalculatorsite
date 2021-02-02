@@ -14,11 +14,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#dcf5eb">
    <meta name="author" content="Rishabh Ranjan Jha">
-   <meta name="description" content="This free online gcd calculator calculates the gcd of real numbers for you  in less than a minute. Also you will learn,
-   how you can calculate the gcd on your own, so that you will not need calculator to do this. ">
+   <meta name="keywords" content="free online gcd calculator, online gcd calculator, free gcd calculator, free calculators, free online calculators">
+   <meta name="description" content="This free online gcd calculator calculates the gcd of real numbers for you  in less than a minute. Also you will learn, how you can calculate the gcd on your own, so that you will not need calculator to do this. ">
     <title>GCD Calculator - E Calculator Site</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="canonical" href="https://ecalculatorsite.com/algebra/gcd-calculator.html">
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -53,14 +54,6 @@
   </div>
   </div>
     </nav>
-
-<div class="container">
-  <div class="row">
-  <div class="col-6">
-<img src="../photos/ecs-header.jpg" class="header img-fluid rounded" alt="site official image">
-  </div>
-  </div>
-</div>
 
 <main class="container-md">
 <div class="row">
@@ -106,11 +99,11 @@
     </div>
 <div class="card-body border border-top-0 border-primary">
 <div class="code-box border border-primary d-none d-md-block">
-<code id="code">&lt;a href="https://www.ecalculatorsite.com/algebra/gcd-calculator.html"&gt;GCD Calculator&lt;/a&gt;</code>
+<code id="code">&lt;a href="https://ecalculatorsite.com/algebra/gcd-calculator.html"&gt;GCD Calculator&lt;/a&gt;</code>
 <button type="button" id="copy" class="btn btn-sm btn-outline-primary" name="button">Copy</button>
 </div>
 <div class="share-buttons text-center">
-<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="https://www.ecalculatorsite.com/algebra/gcd-calculator.html"&gt;GCD Calculator&lt;/a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttps://www.ecalculatorsite.com/algebra/gcd-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
+<a href='mailto:?subject=Please have a look at this website&body=&lt;a href="https://ecalculatorsite.com/algebra/gcd-calculator.html"&gt;GCD Calculator&lt;/a&gt;%0d%0a%0d%0aAdd it to your site or use this link: %0d%0ahttps://ecalculatorsite.com/algebra/gcd-calculator.html'> <button type="button" class="share-btn rounded" name="button"><img src="../photos/mail-link.png" alt="mail-link icon"></button></a>
   <button type="button" id="link" class="share-btn rounded" name="button"><img src="../photos/insert-link.png" alt="insert-link icon"></button>
 
   </div>
@@ -142,20 +135,57 @@
   </div>
 </div>
 </div>
-<!-- <div class="row">
+
+<div class="row">
   <div class="col-lg-8">
     <div class="card how-to-calculate border border-primary shadow rounded">
       <div class="card-header border border-primary bg-primary">
-          <h3 class="text-white">How To Use GCD Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h3>
+          <h2 class="text-white">How To Use GCD Calculator&nbsp;&nbsp;<span id="htc-button" onclick="description()" class="btn btn-sm btn-dark">Hide</span></h2>
       </div>
       <div class="card-body" id="description">
-      </div>
+        <p>Lets first understand, what is GCD and how we can calculate the GCD?</p>
+        <p>The greatest common divisor (GCD) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers.</p>
+        <p>For two integers x, y, the greatest common divisor (GCD) of x and y is denoted gcd(x,y).</p>
+        <p>We will denote the greatest common divisor (GCD) of two integers a and b as gcd(a,b). Sometimes, we use (a,b).</p>
+        <p class="description-head">Example</p>
+        <p>What is the greatest common divisor (GCD) of 48, 12 and 4?</p>
+        <p>\(4=2*2*1\)</p>
+        <p>\(12=3*2*2*1\)</p>
+        <p>\(48=3*2*2*2*2*1\)</p>
+        <p>Common divisors of 48, 12 and 4: 1, 2, 4</p>
+        <p>The greatest of these is 4. That is, the greatest common divisor (GCD) of 48, 12 and 4 is 4. So, we can write \(gcd(48,12,4)=4\).</p>
+        <p class="description-head">Coprime numbers</p>
+        <p>Two numbers are called relatively prime, or coprime, if their greatest common divisor (GCD) equals 1. For example, 7, 12 and 5 are relatively prime.</p>
+        <p class="description-head">Least common multiple</p>
+        <p>The greatest common divisor (GCD) can be used to find the least common multiple (LCM) of two numbers when the greatest common divisor is known, using the relation</p>
+        $$lcm(a,b,c)=\dfrac{|a.b.c|.gcd(a,b,c)}{gcd(a,b).gcd(a,c).gcd(b,c)}$$
+        <p>If we know LCM, then we can find the GCD, using the relation</p>
+        $$gcd(a,b,c)=\dfrac{|a.b.c|.lcm(a,b,c)}{lcm(a,b).lcm(a,c).lcm(b,c)}$$
+        <p class="description-head">Euclid's algorithm</p>
+        <p>A much more efficient method to find the GCD is the Euclidean algorithm, which uses a division algorithm such as long division in combination
+          with the observation that the gcd of two numbers also divides their difference.</p>
+          <p>\(gcd(a,0)=0\)</p>
+          <p>\(gcd(a,a)=a\)</p>
+          <p>\(gcd(a,b)=gcd(b,a\hspace{0.1cm}mod\hspace{0.1cm}b)\)</p>
+          <p>\(gcd(a,b)=gcd(a-b,b)\hspace{0.1cm},if\hspace{0.1cm}a>b\)</p>
+          <p>\(gcd(a,b)=gcd(a,b-a)\hspace{0.1cm},if\hspace{0.1cm}b>a\)</p>
+        <p class="description-head">Properties of GCD</p>
+        <p>1. Every common divisor of a and b is a divisor of gcd(a, b).</p>
+        <p>2. gcd(a, 0) = |a|, for \(a\ne 0\), since any number is a divisor of 0, and the greatest divisor of a is |a|.</p>
+        <p>3. If m is a non-negative integer, then gcd(m⋅a, m⋅b) = m⋅gcd(a, b).</p>
+        <p>4. If m is any integer, then gcd(a+m⋅b, b) = gcd(a, b).</p>
+        <p>5. The gcd is a commutative function: gcd(a, b) = gcd(b, a).</p>
+        <p>6. The gcd is an associative function: gcd(a, gcd(b, c)) = gcd(gcd(a, b), c).</p>
+        <p>For calculating GCD using above GCD calculator,
+        you have to just write the values in the given
+        input box and press the calculate button, you will get the GCD.</p>
+        </div>
       <div class="bg-info card-footer border border-left-0  border-bottom-0 border-right-0 border-primary">
         <a href="https://en.wikipedia.org/wiki/Greatest_common_divisor" rel="nofollow" target="_blank" class="text-white">Learn more about GCD</a>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <div class="row more d-lg-none">
   <div class="col-12">
@@ -189,28 +219,6 @@
 
 </main>
 
-
-
-<div class="container-fluid support">
-  <div class="container">
-    <div class="row">
-<div class="order-1 col-6 col-sm-3">
-<img src="../photos/mug.jpg" class="mug img-fluid rounded" alt="mug image">
-</div>
-<div class="order-3 order-sm-2 col-12 col-sm-6 align-self-center">
-  <h4 class="text-danger text-center">Want to Support this Website?</h4>
-  <h3 class="text-danger text-center">Buy me a cup of tea or some cookies. &#128512;</h3>
-  <div class="row justify-content-center">
-<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GAJE6mmnGkVZNr"></script></form>
-  </div>
-</div>
-<div class="order-2 order-sm-3 col-6 col-sm-3">
-<img src="../photos/cookies.jpg" class="cookies img-fluid rounded" alt="cookies image">
-</div>
-    </div>
-  </div>
-</div>
-
 <footer class="container-fluid">
   <div class="container">
 <div class="row">
@@ -218,7 +226,7 @@
   <ul>
     <li class="ftr-head">Website</li>
       <li> <a href="../about.html" target="_blank">About</a></li>
-        <li><a href="mailto:ecalculatorsite@gmail.com?subject=Contact Us&body=https://www.ecalculatorsite.com%0d%0a%0d%0a">Contact Us</a></li>
+        <li><a href="mailto:ecalculatorsite@gmail.com?subject=Contact Us&body=https://ecalculatorsite.com%0d%0a%0d%0a">Contact Us</a></li>
           <li><a href="../terms-of-use.html" target="_blank">Terms of Use</a></li>
             <li> <a href="../privacy-policy.html" target="_blank">Privacy Policy</a></li>
   </ul>
@@ -236,9 +244,9 @@
   <ul>
     <li  class="ftr-head">More</li>
     <li><a href="../sitemap.html" target="_blank">Sitemap</a></li>
-    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Feedback&body=https://www.ecalculatorsite.com%0d%0a%0d%0aPlease write your valuable feedback.">Feedback</a></li>
-    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Report an Error&body=https://www.ecalculatorsite.com%0d%0a%0d%0aPlease write the error you have faced while using this website.">Report an Error</a></li>
-    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Request a Calculator&body=https://www.ecalculatorsite.com%0d%0a%0d%0aWhat type of calculator do you want to have on this website?">Request a Calculator</a></li>
+    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Feedback&body=https://ecalculatorsite.com%0d%0a%0d%0aPlease write your valuable feedback.">Feedback</a></li>
+    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Report an Error&body=https://ecalculatorsite.com%0d%0a%0d%0aPlease write the error you have faced while using this website.">Report an Error</a></li>
+    <li><a href="mailto:ecalculatorsite@gmail.com?subject=Request a Calculator&body=https://ecalculatorsite.com%0d%0a%0d%0aWhat type of calculator do you want to have on this website?">Request a Calculator</a></li>
   </ul>
   </div>
 </div>

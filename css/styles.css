@@ -8,6 +8,7 @@
 input[readonly]{
   text-align: center;
 }
+
 .more{
   margin-top: 30px;
   margin-bottom: 50px;
@@ -68,6 +69,9 @@ float: right;
 #message_bmi{
 text-align: center;
 text-transform: uppercase;
+}
+.container-md{
+  margin-top: 50px;
 }
 .sitemap a{
 line-height: 35px;
@@ -173,6 +177,7 @@ footer{
   background-color: #d3c8e7;
   padding-top: 20px;
   padding-bottom: 15px;
+  margin-top: 50px;
 }
 a,a:hover{
 text-decoration:none;
