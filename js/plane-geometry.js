@@ -298,7 +298,7 @@ function ellipse(){
      if (!isNaN(a) && !isNaN(b) && a>0 && b>0) {
           document.getElementById('minellipse').value=2*b;
           document.getElementById('majellipse').value=2*a;
-          document.getElementById('cirellipse').value=circumellipse(a,b)+" (approx.)";
+          document.getElementById('cirellipse').value=(circumellipse(a,b)).toFixed(6)+" (approx.)";
           document.getElementById('areaellipse').value=(areaellipse(a,b)).toFixed(6);
         }
 }

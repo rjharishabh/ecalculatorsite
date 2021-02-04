@@ -171,7 +171,7 @@ height: 50px;
   border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb:hover{
-  background-color:#744eb7a1;
+  background-color:#007bff;
 }
 footer{
   background-color: #d3c8e7;
